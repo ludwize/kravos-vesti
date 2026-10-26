@@ -1,40 +1,44 @@
-200     27394  n1_sport  https://n1info.rs/sport-klub/feed/
-   article 200 423667 https://n1info.rs/sport-klub/sautemptom-optuzen-za-navodno-spijuniranje-treninga-protivnickog-tima/
-200     26367  nova_sport  https://nova.rs/sport/feed/
-   article 200 476865 https://nova.rs/sport/puma-brend-i-mihail-dudas-run-cat-ambasador-okupili-trkacku-zajednicu-na-adi-ciganliji-i-predstavili-novi-model-patika-velocity-nitro-5/
-200    241873  danas_sport  https://www.danas.rs/sport/feed/
-200     16359  b92_sport  https://www.b92.net/rss/sport
-   article 200 351818 https://www.b92.net/sport/kosarka/euroleague/279653/ibon-navaro-o-koloku-bio-sam-iskren-sa-njim/vest
-200     16359  b92_sport2  https://www.b92.net/info/rss/sport.xml
-   article 200 351818 https://www.b92.net/sport/kosarka/euroleague/279653/ibon-navaro-o-koloku-bio-sam-iskren-sa-njim/vest
-200     32140  sportske  https://www.sportske.net/rss
-   article 200 2645 https://sportske.net/vest/domaci-fudbal/dobre-vesti-tadic-spreman-za-reprezentaciju-586138
-200    149006  mozzart  https://www.mozzartsport.com/rss
-200     12557  meridian  https://meridiansport.rs/feed/
-   article 200 223204 https://meridiansport.rs/fudbal/milan-pronasao-novu-gol-masinu-tri-het-trika-za-26-dana/
-200    122191  rts_sport  https://www.rts.rs/page/sport/ci/rss.html
-   article 200 132544 https://www.rts.rs/sport/tenis/6069888/djokovic-zadrzao-12-mesto-na-atp-listi-siner-jos-nedelju-dana-prvi.html
-200    100775  blic_sport  https://www.blic.rs/rss/Sport
-   article 200 222508 https://www.blic.rs/zabava/ovako-izgleda-stan-jelice-sretenovic-salonac-u-srcu-vracara/yltcw9r
-404    217870  novosti_sport  https://www.novosti.rs/rss/2-Sport
-200     68749  sportklub  https://sportklub.n1info.rs/feed/
-   article 200 319130 https://sportklub.rs/kosarka/euroleague/koloko-zvezda-maccabi-euroleague/
-404     74361  telegraf_sport  https://www.telegraf.rs/sport/rss
-200     16479  zurnal  https://www.zurnal.rs/rss
-   article 200 116550 https://zurnal.politika.rs/scc/clanak/260061/fudbal/partizan/stanojevic-znam-u-kakvoj-je-situaciji-parizan-dosao-sam-da-pomognem
-200     54046  bbc_sport  https://feeds.bbci.co.uk/sport/rss.xml
-   article 200 482145 https://www.bbc.co.uk/sport/football/articles/cwm24jk9743yo?at_medium=RSS&at_campaign=rss
-200     57405  bbc_football  https://feeds.bbci.co.uk/sport/football/rss.xml
-   article 200 482145 https://www.bbc.co.uk/sport/football/articles/cwm24jk9743yo?at_medium=RSS&at_campaign=rss
-200    166374  guardian_sport  https://www.theguardian.com/sport/rss
-   article 200 351251 https://www.theguardian.com/football/2026/oct/26/wsl-talking-points-alessia-russo-arsenal-tottenham-manchester-united-city
-200    224520  guardian_football  https://www.theguardian.com/football/rss
-   article 200 351251 https://www.theguardian.com/football/2026/oct/26/wsl-talking-points-alessia-russo-arsenal-tottenham-manchester-united-city
-202         0  espn  https://www.espn.com/espn/rss/news
-200     91837  eurohoops  https://www.eurohoops.net/en/feed/
-   article 200 328223 https://www.eurohoops.net/en/heba/2026380/giannis-vroutsis-angelos-papanikolaou-talk-greek-federation-elections/
-200     15956  skysports  https://www.skysports.com/rss/12040
-   article 200 292550 https://www.skysports.com/football/live-blog/13279286/bournemouth-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights
-403      5846  atp  https://www.atptour.com/en/media/rss-feed/xml-feed
-200     70055  motorsport  https://www.motorsport.com/rss/f1/news/
-   article 200 574755 https://www.motorsport.com/f1/news/mercedes-pokes-fun-at-kimi-antonelli-after-awkward-austin-mishap/10868627/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www
+$ dig +short CNAME vesti.kravos.net
+ludwize.github.io.
+
+$ dig +short A vesti.kravos.net
+ludwize.github.io.
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+
+$ dig +short TXT _github-pages-challenge-ludwize.kravos.net
+"ec5ad72ff3ba8aa77268271342b77d"
+
+$ dig +short NS kravos.net
+ns1.dns-parking.com.
+ns2.dns-parking.com.
+
+$ curl -sI -m 20 http://vesti.kravos.net | head -5
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 31156
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+
+$ curl -sI -m 20 https://vesti.kravos.net | head -5
+HTTP/2 200 
+server: GitHub.com
+content-type: text/html; charset=utf-8
+last-modified: Mon, 26 Oct 2026 14:32:19 GMT
+access-control-allow-origin: *
+
+$ echo | openssl s_client -connect vesti.kravos.net:443 -servername vesti.kravos.net 2>/dev/null | openssl x509 -noout -subject -issuer -dates
+subject=CN = vesti.kravos.net
+issuer=C = US, O = Let's Encrypt, CN = YR2
+notBefore=Oct 26 14:05:13 2026 GMT
+notAfter=Jan 24 14:05:12 2027 GMT
+
+$ curl -sI -m 20 https://ludwize.github.io/kravos-vesti/ | head -5
+HTTP/2 301 
+server: GitHub.com
+content-type: text/html
+location: http://vesti.kravos.net/
+x-github-request-id: CAE4:149D63:37B2371:3ECA04E:6ADF6C19
+
