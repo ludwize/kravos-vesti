@@ -1,0 +1,40 @@
+shot 01-danas
+shot 02-danas-scroll
+shot 03-danas-scroll2
+shot 04-danas-scroll3
+shot 05-warm-start
+NOT FOUND /[0-9]+ izvora/
+shot 10-story
+shot 11-story-scroll
+tapped /pre [0-9]+ (min|h)/
+shot 20-reader
+shot 21-reader-scroll
+shot 22-reader-scroll2
+NOT FOUND: Sačuvaj
+NOT FOUND: Srbija
+shot 30-srbija
+NOT FOUND: Najnovije
+shot 31-srbija-najnovije
+NOT FOUND: Svet
+shot 40-svet
+NOT FOUND /[0-9]+ izvora/
+shot 41-svet-story
+NOT FOUND /pre [0-9]+ (min|h)/
+shot 42-svet-reader
+shot 43-svet-reader-scroll
+NOT FOUND: Bezbednost
+shot 50-bezbednost
+NOT FOUND /.{40,}/
+shot 51-bezb-reader
+NOT FOUND: Sačuvano
+shot 60-sacuvano
+NOT FOUND: Danas
+NOT FOUND: Podešavanja
+shot 70-settings
+shot 71-settings-scroll
+shot 72-settings-scroll2
+NOT FOUND: Tamna
+shot 80-dark-danas
+NOT FOUND /[0-9]+ izvora/
+NOT FOUND /pre [0-9]+ (min|h)/
+shot 81-dark-reader
