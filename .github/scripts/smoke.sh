@@ -91,6 +91,7 @@ back
 tap_text "Svet"; sleep 3; shot 40-svet
 scroll
 tap_regex '[0-9]+ izvora'; sleep 3; shot 41-svet-story
+scroll
 tap_regex 'pre [0-9]+ (min|h)'; sleep 10; shot 42-svet-reader
 scroll; shot 43-svet-reader-scroll
 back; back
@@ -99,9 +100,10 @@ tap_regex '.{50,}'; sleep 10; shot 51-bezb-reader
 scroll; shot 52-bezb-reader-scroll
 back
 tap_text "Sačuvano"; sleep 3; shot 60-sacuvano
-tap_regex '.{30,}'; sleep 6; shot 61-saved-reader
+tap_regex 'NOVA.*|N1.*|DANAS.*|[A-Z ]+ · .*'; sleep 6; shot 61-saved-reader
 back
 tap_text "Danas"; sleep 2
+tap_text "Danas"; sleep 3; shot 69-danas-top
 tap_text "Podešavanja"; sleep 3; shot 70-settings
 scroll; shot 71-settings-scroll
 scroll; shot 72-settings-scroll2
@@ -112,7 +114,8 @@ tap_text "Tamna"; sleep 2; shot 73-settings-dark
 back
 shot 80-dark-danas
 scroll
-tap_regex '[0-9]+ izvora'; sleep 3
+tap_regex '[0-9]+ izvora'; sleep 3; shot 80b-dark-story
+scroll
 tap_regex 'pre [0-9]+ (min|h)'; sleep 10; shot 81-dark-reader
 
 PID=$(adb shell pidof $PKG | tr -d '\r')

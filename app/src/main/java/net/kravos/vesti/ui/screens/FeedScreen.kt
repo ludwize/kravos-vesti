@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -26,6 +27,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -74,6 +76,10 @@ fun FeedScreen(tab: Tab, pad: PaddingValues) {
     val scope = rememberCoroutineScope()
     val animOff = Fmt.animationsOff(LocalContext.current)
     val open = rememberOpenArticle()
+    val listState = rememberLazyListState()
+    val reselect = nav.reselect.intValue
+    val reselectAtStart = remember { reselect }
+    LaunchedEffect(reselect) { if (reselect != reselectAtStart && nav.tab.value == tab) { if (animOff) listState.scrollToItem(0) else listState.animateScrollToItem(0) } }
     val openStory: (Story) -> Unit = { s -> if (s.articles.size == 1) open(s.lead) else nav.go(Route.Story(s.id)) }
 
     PullToRefreshBox(
@@ -81,7 +87,7 @@ fun FeedScreen(tab: Tab, pad: PaddingValues) {
         onRefresh = { pulled = true; scope.launch { app.repo.refresh(force = true); pulled = false } },
         modifier = Modifier.fillMaxSize(),
     ) {
-        LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = pad.calculateBottomPadding() + 24.dp)) {
+        LazyColumn(Modifier.fillMaxSize(), state = listState, contentPadding = PaddingValues(bottom = pad.calculateBottomPadding() + 24.dp)) {
             item("mast") { Masthead(tab.label) }
             item("mode") { ModeSwitch(mode) { mode = it } }
             val f = feed

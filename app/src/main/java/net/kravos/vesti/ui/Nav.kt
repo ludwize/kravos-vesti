@@ -1,5 +1,6 @@
 package net.kravos.vesti.ui
 
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.staticCompositionLocalOf
@@ -27,7 +28,12 @@ class Navigator {
     val tab = mutableStateOf(Tab.DANAS)
     fun go(r: Route) { stack.add(r) }
     fun back(): Boolean = if (stack.isNotEmpty()) { stack.removeAt(stack.lastIndex); true } else false
-    fun tab(t: Tab) { stack.clear(); tab.value = t }
+    /** Bumped when the already-open tab is tapped again: scroll it back to the top. */
+    val reselect = mutableIntStateOf(0)
+    fun tab(t: Tab) {
+        if (stack.isEmpty() && tab.value == t) reselect.intValue++
+        stack.clear(); tab.value = t
+    }
 }
 
 val LocalNav = staticCompositionLocalOf { Navigator() }

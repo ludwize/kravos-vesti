@@ -2,6 +2,7 @@ package net.kravos.vesti.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -19,6 +20,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.Newspaper
@@ -72,6 +76,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             val theme by app.prefs.theme.collectAsState()
             VestiTheme(theme) {
+                // status/nav bar icons follow the app theme, not just the system one
+                val dark = LocalPalette.current.dark
+                LaunchedEffect(dark) {
+                    val t = android.graphics.Color.TRANSPARENT
+                    val style = if (dark) SystemBarStyle.dark(t) else SystemBarStyle.light(t, t)
+                    enableEdgeToEdge(statusBarStyle = style, navigationBarStyle = style)
+                }
                 CompositionLocalProvider(LocalNav provides nav, LocalApp provides app) { Root(app) }
             }
         }
@@ -168,6 +179,8 @@ private fun Root(app: App) {
                         }
                     }
                 }
+                // paper-coloured strip behind the status bar so scrolled text doesn't run under the clock
+                Box(Modifier.fillMaxWidth().windowInsetsTopHeight(WindowInsets.statusBars).background(MaterialTheme.colorScheme.background.copy(alpha = 0.96f)))
             }
         }
     }
