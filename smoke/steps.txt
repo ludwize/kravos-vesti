@@ -18,6 +18,13 @@ tapped Najnovije
 shot 31-srbija-najnovije
 tapped /.{50,}/
 shot 32-najnovije-reader
+tapped Najvažnije
+tapped Kategorija
+shot 33-category-menu
+tapped Politika
+shot 34-politika
+tapped Kategorija
+tapped Sve vesti
 tapped Svet
 shot 40-svet
 tapped /[0-9]+ izvora/
@@ -30,6 +37,15 @@ shot 50-bezbednost
 tapped /.{50,}/
 shot 51-bezb-reader
 shot 52-bezb-reader-scroll
+tapped Sport
+shot 55-sport
+shot 56-sport-scroll
+NOT FOUND: Kategorija
+shot 57-sport-menu
+NOT FOUND: Košarka
+shot 58-kosarka
+tapped /.{50,}/
+shot 59-sport-reader
 tapped Sačuvano
 shot 60-sacuvano
 NOT FOUND /NOVA.*|N1.*|DANAS.*|[A-Z ]+ · .*/
