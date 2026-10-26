@@ -106,6 +106,7 @@ scroll; shot 52-bezb-reader-scroll
 back
 tap_text "Sport"; sleep 3; shot 55-sport
 scroll; shot 56-sport-scroll
+tap_text "Sport"; sleep 2
 tap_text "Kategorija"; sleep 2; shot 57-sport-menu
 tap_text "Košarka"; sleep 3; shot 58-kosarka
 tap_regex '.{50,}'; sleep 10; shot 59-sport-reader

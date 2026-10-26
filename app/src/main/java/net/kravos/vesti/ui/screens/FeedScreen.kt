@@ -132,7 +132,7 @@ private fun Masthead(tab: Tab, cat: String?, counts: Map<String, Int>, onCat: (S
         Row(verticalAlignment = Alignment.Top) {
             Column(Modifier.weight(1f)) {
                 Text(
-                    (if (catLabel != null) tab.label + " · " else "").uppercase() + Fmt.masthead().uppercase(),
+                    (if (catLabel != null) tab.label else Fmt.masthead()).uppercase(),
                     style = MaterialTheme.typography.labelSmall, color = if (catLabel != null) p.accent else p.dim, maxLines = 1,
                 )
                 Spacer(Modifier.height(2.dp))
