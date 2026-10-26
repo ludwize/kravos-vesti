@@ -1,0 +1,43 @@
+65:> Task :app:minifyReleaseWithR8 FAILED
+66-ERROR: Missing classes detected while running R8. Please add the missing classes or apply additional keep rules that are generated in /home/runner/work/kravos-vesti/kravos-vesti/app/build/outputs/mapping/release/missing_rules.txt.
+67-ERROR: R8: Missing class org.jspecify.annotations.NullMarked (referenced from: org.jsoup.helper.package-info and 6 other contexts)
+68-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1793016477019.json
+69-
+70:FAILURE: Build failed with an exception.
+71-
+72:* What went wrong:
+73:Execution failed for task ':app:minifyReleaseWithR8'.
+74-> A failure occurred while executing com.android.build.gradle.internal.tasks.R8Task$R8Runnable
+75-   > Compilation failed to complete
+76-
+77-* Try:
+--
+83:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:minifyReleaseWithR8'.
+84-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+85-	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
+86-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+87-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+--
+144:Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.internal.tasks.R8Task$R8Runnable
+145-	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:287)
+146-	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+147-	at org.gradle.internal.Factories$1.create(Factories.java:31)
+148-	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:335)
+--
+302:Caused by: com.android.tools.r8.CompilationFailedException: Compilation failed to complete
+303-	at Version.fakeStackEntry(Version_8.7.18.java:0)
+304-	at com.android.tools.r8.T.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:5)
+305-	at com.android.tools.r8.internal.yu.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:82)
+306-	at com.android.tools.r8.internal.yu.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:32)
+--
+340:Caused by: com.android.tools.r8.internal.g: Missing class org.jspecify.annotations.NullMarked (referenced from: org.jsoup.helper.package-info and 6 other contexts)
+341-	at com.android.tools.r8.internal.bd0.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:21)
+342-	at com.android.tools.r8.internal.bd0.error(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1)
+343-	at com.android.tools.r8.shaking.M.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1948)
+344-	at com.android.tools.r8.shaking.M.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1634)
+--
+397:	Caused by: [CIRCULAR REFERENCE: com.android.tools.r8.internal.g: Missing class org.jspecify.annotations.NullMarked (referenced from: org.jsoup.helper.package-info and 6 other contexts)]
+398-
+399-
+400-BUILD FAILED in 1m 47s
+401-41 actionable tasks: 41 executed
