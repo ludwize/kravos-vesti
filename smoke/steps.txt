@@ -22,7 +22,7 @@ tapped Svet
 shot 40-svet
 tapped /[0-9]+ izvora/
 shot 41-svet-story
-NOT FOUND /pre [0-9]+ (min|h)/
+tapped /pre [0-9]+ (min|h)/
 shot 42-svet-reader
 shot 43-svet-reader-scroll
 tapped Sajber
@@ -32,17 +32,19 @@ shot 51-bezb-reader
 shot 52-bezb-reader-scroll
 tapped Sačuvano
 shot 60-sacuvano
-NOT FOUND /.{30,}/
+NOT FOUND /NOVA.*|N1.*|DANAS.*|[A-Z ]+ · .*/
 shot 61-saved-reader
 tapped Danas
-NOT FOUND: Podešavanja
+tapped Danas
+shot 69-danas-top
+tapped Podešavanja
 shot 70-settings
 shot 71-settings-scroll
 shot 72-settings-scroll2
-NOT FOUND: Tamna
+tapped Tamna
 shot 73-settings-dark
-app not in front, relaunching
 shot 80-dark-danas
 tapped /[0-9]+ izvora/
-NOT FOUND /pre [0-9]+ (min|h)/
+shot 80b-dark-story
+tapped /pre [0-9]+ (min|h)/
 shot 81-dark-reader
