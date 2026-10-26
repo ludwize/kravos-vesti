@@ -1,552 +1,301 @@
 
-### n1: 50 items, root=rss
-- (BLOG) Dan nakon izbora u Srbiji: Slavlje duboko u noć, Pionirski park prohodan, RIK objavio preliminarne rezu
-  link=https://n1info.rs/vesti/blog-26-oktobar-2026-izbori-dan-posle/
-  date=Mon, 26 Oct 2026 12:51:17 +0100 cats=['Vesti', 'izbori 2026', 'skupština srbije', 'izbori', 'studentska lista']
-  desc=150 content=269 media=['https://n1info.rs/media/images/2026/10/26/1792992976_srbija_slavlje_26_oktobar_2026.width-1200.png'] enc=[]
-  desc0='U Srbiji su juče, nakon skoro dve godine masovnih studentskih i građanskih protesta, održani parlamentarni izbori na kojima je pobedu odnela "Students'
-- Velika akcija čišćenja Pionirskog parka: "Srbi su se složili", "Potrebno je čišćenje celog društva"
-  link=https://n1info.rs/vesti/velika-akcija-ciscenja-pionirskog-parka-srbi-su-se-slozili-potrebno-je-ciscenje-celog-drustva/
-  date=Mon, 26 Oct 2026 12:43:45 +0100 cats=['Vesti', 'ćacilend', 'čišćenje', 'pionirski park']
-  desc=104 content=203 media=['https://n1info.rs/media/images/2026/10/26/1793015330_Ciscenje_2.width-1200.png'] enc=[]
-  desc0='Dan nakon demoliranja i uklanjanja Ćacilenda, u Pionirskom parku u toku je velika radna akcija čišćenja.'
-- Prosečna plata u avgustu 117.282 dinara, pola radilo za manje od 93.325 dinara
-  link=https://n1info.rs/biznis/prosecna-plata-u-avgustu-117282-dinara-pola-radilo-za-manje-od-93325-dinara/
-  date=Mon, 26 Oct 2026 12:40:49 +0100 cats=['Ekonomija', 'zarada', 'plata', 'rzs', 'republički zavod za statistiku']
-  desc=116 content=205 media=['https://n1info.rs/media/images/shutterstock_458343445.width-1200.jpg'] enc=[]
-  desc0='Prosečna neto zarada u avgustu u Srbiji iznosila je 117.282 dinara, objavio je danas Republički zavod za statistiku.'
+### n1_sport: 20 items, root=rss
+- Šolakov Sautempton optužen za navodno špijuniranje treninga protivničkog tima
+  link=https://n1info.rs/sport-klub/sautemptom-optuzen-za-navodno-spijuniranje-treninga-protivnickog-tima/
+  date=Sat, 09 May 2026 22:01:15 +0200 cats=['Sport Klub', 'Svet', 'fk sautempton', 'fudbal', 'fk midlzbro']
+  desc=150 content=257 media=['https://n1info.rs/media/images/2026/5/9/1778356414_sautempton_midlzboro.width-1200.JPG'] enc=[]
+  desc0='Engleska fudbalska liga pokrenula je postupak protiv fudbalskog kluba Sautempton nakon žalbe koju je podneo FK Midlzboro. Sautempton, koji je u vlasni'
+- Vlahović najplaćeniji srpski fudbaler u Italiji, ispred samo Lukaku i Pogba
+  link=https://n1info.rs/sport-klub/vlahovic-najplaceniji-srpski-fudbaler-u-italiji-ispred-samo-lukaku-i-pogba/
+  date=Thu, 30 Mar 2023 23:43:01 +0200 cats=['Fudbal', 'Sport Klub', 'paul pogba', 'serija a', 'dušan vlahović']
+  desc=149 content=236 media=['https://n1info.rs/media/images/1680212449-RTSHD3NB.width-1200.JPG'] enc=[]
+  desc0='Reprezentativac Srbije i golgeter Juventusa Dušan Vlahović ima najveću bruto zaradu u italijanskom fudbalu i najplaćeniji je srpski fudbaler u Seriji'
+- Najplaćeniji fudbalski treneri: Simeoneu čak 12 miliona € više od Gvardiole
+  link=https://n1info.rs/sport-klub/najplaceniji-fudbalski-treneri-simeoneu-cak-12-miliona-e-vise-od-gvardiole/
+  date=Thu, 30 Mar 2023 19:19:15 +0200 cats=['Sport Klub', 'Fudbal', 'pep gvardiola', 'dijego simeone', 'jirgen klop']
+  desc=150 content=238 media=['https://n1info.rs/media/images/1680196476-1011090914.width-1200.jpg'] enc=[]
+  desc0="Francuski L'Ekip objavio je listu najplaćenijih fudbalskih trenera na svetu na kojoj je ubedljivo prvi strateg madridskog Atletika Dijego Čolo Simeone"
 
-### n1_vesti: 20 items, root=rss
-- (BLOG) Dan nakon izbora u Srbiji: Slavlje duboko u noć, Pionirski park prohodan, RIK objavio preliminarne rezu
-  link=https://n1info.rs/vesti/blog-26-oktobar-2026-izbori-dan-posle/
-  date=Mon, 26 Oct 2026 12:51:17 +0100 cats=['Vesti', 'skupština srbije', 'izbori', 'aleksandar vučić', 'vanredni parlamentarni izbori']
-  desc=150 content=269 media=['https://n1info.rs/media/images/2026/10/26/1792992976_srbija_slavlje_26_oktobar_2026.width-1200.png'] enc=[]
-  desc0='U Srbiji su juče, nakon skoro dve godine masovnih studentskih i građanskih protesta, održani parlamentarni izbori na kojima je pobedu odnela "Students'
-- Velika akcija čišćenja Pionirskog parka: "Srbi su se složili", "Potrebno je čišćenje celog društva"
-  link=https://n1info.rs/vesti/velika-akcija-ciscenja-pionirskog-parka-srbi-su-se-slozili-potrebno-je-ciscenje-celog-drustva/
-  date=Mon, 26 Oct 2026 12:43:45 +0100 cats=['Vesti', 'pionirski park', 'ćacilend', 'čišćenje']
-  desc=104 content=203 media=['https://n1info.rs/media/images/2026/10/26/1793015330_Ciscenje_2.width-1200.png'] enc=[]
-  desc0='Dan nakon demoliranja i uklanjanja Ćacilenda, u Pionirskom parku u toku je velika radna akcija čišćenja.'
-- Transparentnost Srbija: Koje su ključne mere za iskorenjivanje korupcije nakon izbora
-  link=https://n1info.rs/vesti/transparentnost-srbija-koje-su-kljucne-mere-za-iskorenjivanje-korupcije-nakon-izbora/
-  date=Mon, 26 Oct 2026 12:40:14 +0100 cats=['Vesti', 'izbori', 'transparentnost srbija', 'ts', 'borba protiv korupcije']
-  desc=150 content=276 media=['https://n1info.rs/media/images/2026/6/26/1782498698_park_korupcije_spens_novi_park_foto_n1.width-1200.jpg'] enc=[]
-  desc0='Nadmoćna pobeda liste koja je u svoj predizborni program uvrstila brojne mere za borbu protiv korupcije, pruža nadu da će Srbija konačno zaustaviti na'
+### nova_sport: 20 items, root=rss
+- PUMA brend i Mihail Dudaš, Run Cat Ambasador, okupili trkačku zajednicu na Adi Ciganliji i predstavili novi mo
+  link=https://nova.rs/sport/puma-brend-i-mihail-dudas-run-cat-ambasador-okupili-trkacku-zajednicu-na-adi-ciganliji-i-predstavili-novi-model-patika-velocity-nitro-5/
+  date=Fri, 28 Aug 2026 18:43:11 +0200 cats=['Sport', 'pr', 'mihail dudaš', 'puma', 'nitrot 5']
+  desc=150 content=274 media=['https://nova.rs/media/images/2026/8/28/1787932322_PUMA_Velocity_5_Demo_day_Mihail_Dudas2.width-1200.png'] enc=[]
+  desc0='Naš proslavljeni atletičar Mihail Dudaš i 40 trkača iz dva domaća kluba okupili su se na zajedničkom treningu povodom predstavljanja novog PUMA Veloci'
+- Uspeh nije došao preko noći: Priča o Adriani Vilagoš, devojci koja pomera granice srpskog sporta
+  link=https://nova.rs/sport/uspeh-nije-dosao-preko-noci-prica-o-adriani-vilagos-devojci-koja-pomera-granice-srpskog-sporta/
+  date=Thu, 11 Jun 2026 11:00:00 +0200 cats=['Sport', 'trik', 'adriana vilagoš', 'jaffa']
+  desc=150 content=246 media=['https://nova.rs/media/images/2026/3/23/1774290799_13360951_1.width-1200.jpg'] enc=[]
+  desc0='Mlada atletičarka Adriana Vilagoš danas je jedno od najvažnijih imena nove generacije domaćeg sporta. Ali ono što njen uspeh čini posebnim nisu samo m'
+- Stanković odredio putnike za Švedsku, oni će konkurisati za meč protiv Malmea
+  link=https://nova.rs/sport/stankovic-odredio-putnike-za-svedsku-oni-ce-konkurisati-za-mec-protiv-malmea/
+  date=Wed, 21 Jan 2026 16:56:51 +0100 cats=['Sport', 'dejan stanković', 'fk partizan']
+  desc=150 content=272 media=['https://nova.rs/media/images/2026/1/1768869698_1766412997-STANKOVIC-DEJAN-PROMOCIJA_01.width-1200.JPG'] enc=[]
+  desc0='Fudbaleri Crvene zvezde u sredu su čarter letom otputovali u Malme gde ih čeka meč sedmog kola Lige Evrope u kojem igraju protiv švedskog predstavnika'
 
-### danas: 50 items, root=rss
-- Član biračkog odbora koji je Vučiću dodao glasački listić: „On je znao da je gotov“
-  link=https://www.danas.rs/vesti/politika/clan-birackog-odbora-predrag-popovic-vucic/
-  date=Mon, 26 Oct 2026 11:51:48 +0000 cats=['Politika', 'Izbori26', 'Aleksandar Vučić', 'član biračkog odbora', 'Predrag Popović']
-  desc=1124 content=0 media=[] enc=['https://cdn-uc.brid.tv/shared/27328/live/partners/26834/sd/2860352.mp4']
-  desc0=' Među upečatljivim momentima izbornog dana u Srbiji izdvaja se i momenat kada član biračkog odbora na biračkom mestu gde je glasao Aleksandar Vučić sa suprugom '
-- Izborni rezultat ukazuje da podrška Bele kuće „nije presudan faktor“: Lula da Silva osvojio četvrti neuzastopn
-  link=https://www.danas.rs/svet/lula-da-silva-cetvrti-mandat-brazil/
-  date=Mon, 26 Oct 2026 11:38:50 +0000 cats=['Svet', 'Brazil', 'Donald Tramp', 'Izbori', 'Luiz Inasio Lula da Silva']
-  desc=1097 content=0 media=[] enc=[]
-  desc0=' Luiz Inasio Lula da Silva, glasni kritičar američkog predsednika Donalda Trampa, ponovo je juče izabran za predsednika Brazila, što znači da će najveća ekono'
-- Poznati košarkaški portal pisao o pobedi studenata: U centru pažnje Dejan Bodiroga
-  link=https://www.danas.rs/sport/dejan-bodiroga-studenti-izbori-pobeda-eurohups/
-  date=Mon, 26 Oct 2026 11:37:57 +0000 cats=['Sport', 'Dejan Bodiroga', 'Eurohups', 'studenstka lista', 'Studentska lista – Studenti pobeđuju']
-  desc=755 content=0 media=[] enc=[]
-  desc0=' Parlamentarnim izborima u Srbiji bavio se i jedan od najpoznatijih košarkaških portala - Eurohoops.'
+### danas_sport -> PARSE ERROR not well-formed (invalid token): line 1, column 217 b'<!DOCTYPE html><html lang="sr-RS" prefix="og: https://ogp.me/ns#" class="antialiased leading-normal"><head><script data-no-optimize="1">var litespeed_docref=ses'
 
-### nova: 50 items, root=rss
-- UŽIVO Partizan objavljuje ime novog trenera
-  link=https://nova.rs/sport/fudbal/uzivo-partizan-objavljuje-ime-novog-trenera/
-  date=Mon, 26 Oct 2026 12:49:57 +0100 cats=['Fudbal', 'aleksandar stanojević', 'fk partizan']
-  desc=108 content=216 media=['https://nova.rs/media/images/2026/10/24/1792855152_PARTIZAN-CUKARICKI_16.width-1200.JPG'] enc=[]
-  desc0='FK Partizan je sazvao vanrednu konferenciju za medije na kojoj će biti predstavljen novi šef stručnog štaba.'
-- Premijer Švedske čestitao Studentskoj listi pobedu na izborima u Srbiji: Prilika za jačanje demokratije i borb
-  link=https://nova.rs/vesti/svet/premijer-svedske-cestitao-studentskoj-listi-pobedu-na-izborima-u-srbiji-prilika-za-jacanje-demokratije-i-borbu-protiv-korupcije/
-  date=Mon, 26 Oct 2026 12:40:28 +0100 cats=['Svet', 'ulf kristerson', 'izbori 2026.']
-  desc=150 content=244 media=['https://nova.rs/media/images/2026/9/13/1789336856_14289072.width-1200.jpg'] enc=[]
-  desc0='Premijer Švedske Ulf Kristerson čestitao je Studentskoj listi pobedu na parlamentarnim izborima u Srbiji, ističući da izborni rezultat predstavlja pri'
-- Slobodan univerzitet Novi Sad: Rektor Madić u roku od 72 sata da podnese ostavku
-  link=https://nova.rs/vesti/drustvo/rektor-dejan-madic-u-roku-od-72-sata-da-podnese-ostavku/
-  date=Mon, 26 Oct 2026 12:39:45 +0100 cats=['Društvo', 'novi sad', 'dejan madić', 'slobodan univerzitet novi sad']
-  desc=150 content=245 media=['https://nova.rs/media/images/2026/2/1771494202_Screenshot_1.width-1200.jpg'] enc=[]
-  desc0='Slobodan univerzitet Novi Sad zatražio je danas od dekana Univerziteta u Novom Sadu Dejana Madića da, zajedno sa svojim timom, u roku od 72 sata podne'
+### b92_sport: 20 items, root=rss
+- Navaro: &quot;On ne zna ni imena saigrača...&quot;
+  link=https://www.b92.net/sport/kosarka/euroleague/279653/ibon-navaro-o-koloku-bio-sam-iskren-sa-njim/vest
+  date=Mon, 26 Oct 2026 12:51:00 +0000 cats=['Najnovije - sport']
+  desc=150 content=0 media=[] enc=['https://www.b92.net/data/images/2026-10-26/283167_partizan-zvezda-139_f.JPG']
+  desc0='Ibon Navaro, trener Crvene zvezde, izneo je očekivanja pred okršaj protiv Makabija, te govorio o najnovijem pojačanju njegovog tima Kristijanu Koloku.'
+- Batler: &quot;Mogu da budem još bolji – znam da se mnogo očekuje od mene&quot;
+  link=https://www.b92.net/sport/kosarka/euroleague/279651/batler-mogu-da-budem-jos-bolji-znam-da-se-mnogo-ocekuje-od-mene/vest
+  date=Mon, 26 Oct 2026 12:42:00 +0000 cats=['Najnovije - sport']
+  desc=95 content=0 media=[] enc=['https://www.b92.net/data/images/2026-10-26/283163_zvezda-paris-55675152_f.JPG']
+  desc0='Džered Batler, košarkaš Crvene zvezde, izneo je očekivanja pred duel sa Makabijem iz Tel Aviva.'
+- Stanojević: &quot;To je ludost koja se ne kontroliše&quot;; &quot;Marko Nikolić me pitao...&quot; VIDEO
+  link=https://www.b92.net/sport/fudbal/srpski-fudbal/279622/uzivo-aleksandar-stanojevic-konferencija-u-humskoj/vest
+  date=Mon, 26 Oct 2026 12:30:00 +0000 cats=['Najnovije - sport']
+  desc=77 content=0 media=[] enc=['https://www.b92.net/data/images/2026-10-26/283157_stanojevic-promocija-04_f.JPG']
+  desc0='FK Partizan predstavio je Aleksandra Stanojević kao novog trenera crno-belih.'
 
-### vreme: 12 items, root=rss
-- Izborni fijasko: Koliko para patuljaste stranke moraju da vrate državi
-  link=https://vreme.com/vesti/izborni-fijasko-stranke-vracanje-novca-budzet-kampanja/
-  date=Mon, 26 Oct 2026 11:34:13 +0000 cats=['Izbori 2026', 'Vesti', 'Budžet', 'Finansiranje kampanje', 'Izbori']
-  desc=1167 content=8788 media=[] enc=[]
-  desc0=' Zakon kaže da 0,07 odsto državnog budžeta odlazi na potrebe izborne kampanje. Pred protekle izbore, na kojima je Studentska lista oduvala Srpsku naprednu stran'
-- Deo zaposlenih u RTS-u: Zahtevamo odgovornost, biće dosta materijala za lustraciju
-  link=https://vreme.com/drustvo/rts-lustracija-aleksandar-vucic-krivicna-odgovornsot/
-  date=Mon, 26 Oct 2026 10:35:19 +0000 cats=['Društvo', 'Mediji', 'RTS', 'Radio televizija Srbije', 'Lustracija']
-  desc=1048 content=6388 media=[] enc=[]
-  desc0=' Grupa zaposlenih na Radio-televiziji Srbije (RTS) oglasila se nakon što je Aleksandar Vučić izgubio na parlamentarnim izborima. Radnici Radio televizije Srbije'
-- Valić Nedeljković: REM će ponovo razmatrati prijave protiv Informera
-  link=https://vreme.com/drustvo/valic-nedeljkovic-rem-ce-ponovo-razmatrati-prijave-protiv-informera/
-  date=Mon, 26 Oct 2026 10:06:33 +0000 cats=['Društvo', 'Mediji', 'Informer', 'Regulatorno telo za elektronske medije', 'Dragan J. Vučićević']
-  desc=1283 content=4763 media=[] enc=[]
-  desc0=' Oko 80 prijava protiv elektronskih medija, među kojima su i one koje se odnose na rad televizije Informer, trebalo bi da se nađe pred Savetom Regulatornog tela'
+### b92_sport2: 20 items, root=rss
+- Navaro: &quot;On ne zna ni imena saigrača...&quot;
+  link=https://www.b92.net/sport/kosarka/euroleague/279653/ibon-navaro-o-koloku-bio-sam-iskren-sa-njim/vest
+  date=Mon, 26 Oct 2026 12:51:00 +0000 cats=['Najnovije - sport']
+  desc=150 content=0 media=[] enc=['https://www.b92.net/data/images/2026-10-26/283167_partizan-zvezda-139_f.JPG']
+  desc0='Ibon Navaro, trener Crvene zvezde, izneo je očekivanja pred okršaj protiv Makabija, te govorio o najnovijem pojačanju njegovog tima Kristijanu Koloku.'
+- Batler: &quot;Mogu da budem još bolji – znam da se mnogo očekuje od mene&quot;
+  link=https://www.b92.net/sport/kosarka/euroleague/279651/batler-mogu-da-budem-jos-bolji-znam-da-se-mnogo-ocekuje-od-mene/vest
+  date=Mon, 26 Oct 2026 12:42:00 +0000 cats=['Najnovije - sport']
+  desc=95 content=0 media=[] enc=['https://www.b92.net/data/images/2026-10-26/283163_zvezda-paris-55675152_f.JPG']
+  desc0='Džered Batler, košarkaš Crvene zvezde, izneo je očekivanja pred duel sa Makabijem iz Tel Aviva.'
+- Stanojević: &quot;To je ludost koja se ne kontroliše&quot;; &quot;Marko Nikolić me pitao...&quot; VIDEO
+  link=https://www.b92.net/sport/fudbal/srpski-fudbal/279622/uzivo-aleksandar-stanojevic-konferencija-u-humskoj/vest
+  date=Mon, 26 Oct 2026 12:30:00 +0000 cats=['Najnovije - sport']
+  desc=77 content=0 media=[] enc=['https://www.b92.net/data/images/2026-10-26/283157_stanojevic-promocija-04_f.JPG']
+  desc0='FK Partizan predstavio je Aleksandra Stanojević kao novog trenera crno-belih.'
 
-### radar: 50 items, root=rss
-- Mrak pred svitanje ili tunel bez kraja
-  link=https://radar.nova.rs/drustvo/veljanovski-o-medijima-pred-izbore/
-  date=Sun, 25 Oct 2026 23:03:00 +0000 cats=['Društvo', 'Aleksandar Vučić', 'Izbori', 'mediji', 'Sloboda medija']
-  desc=1042 content=0 media=[] enc=[]
-  desc0=' Nikad prljavija kampanja i nagoveštaj bezizlaza za medije'
-- Naprednjaci „lagerovali“ 81.000 stanova
-  link=https://radar.nova.rs/ekonomija/sns-lagerovao-81-000-stanova/
-  date=Sun, 25 Oct 2026 23:03:00 +0000 cats=['Ekonomija', 'Cene stanova', 'Nekretnine', 'SNS', 'Stanovi']
-  desc=1073 content=0 media=[] enc=[]
-  desc0=' Masovno zaduživanje države, javne investicije i usmeravanje koruptivnih prihoda u stanogradnju'
-- Dijagnoza društva iz dečjeg ugla
-  link=https://radar.nova.rs/kultura-radar/dejan-kaludjerovic-izlozba/
-  date=Sun, 25 Oct 2026 23:03:00 +0000 cats=['Kultura', 'Dejan Kaludjerović', 'Instalacija', 'Izložba', 'Maja Ćirić']
-  desc=913 content=0 media=[] enc=[]
-  desc0=' Instalacija Dejana Kaludjerovića u bašti kuće u Pop Stojanovoj ulici'
+### sportske: 40 items, root=rss
+- Dobre vesti, Tadić spreman za reprezentaciju
+  link=https://sportske.net/vest/domaci-fudbal/dobre-vesti-tadic-spreman-za-reprezentaciju-586138
+  date=2026-10-20T10:28:03+02:00 cats=['Reprezentacija Srbije']
+  desc=31 content=0 media=[] enc=[]
+  desc0='Dušan Tadić nije teže povređen.'
+- Šelton iz Ilirije MVP četvrtog kola AdmiralBet ABA lige
+  link=https://sportske.net/vest/kosarka/selton-iz-ilirije-mvp-cetvrtog-kola-admiralbet-aba-lige-586139
+  date=2026-10-20T10:30:33+02:00 cats=['AdmiralBet ABA liga']
+  desc=0 content=0 media=[] enc=[]
+  desc0=''
+- Luis Enrike otkrio da li će Kvarachelija dobiti zamenu
+  link=https://sportske.net/vest/medjunarodni-fudbal/luis-enrike-otkrio-da-li-ce-kvarachelija-dobiti-zamenu-586604
+  date=2026-10-26T13:44:39+01:00 cats=['Francuska']
+  desc=25 content=0 media=[] enc=[]
+  desc0='Španac je prilično jasan.'
 
-### krik: 10 items, root=rss
-- Gorski Matović vređao građane u Novom Sadu, policija ga smirivala
-  link=https://www.krik.rs/gorski-matovic-vredao-gradane-u-novom-sadu-policija-ga-smirivala/
-  date=Sun, 25 Oct 2026 16:08:09 +0000 cats=['Vesti', 'Gorski Matović', 'korupcija-vesti']
-  desc=595 content=0 media=[] enc=[]
-  desc0=' Gorski Matović, osuđivan zbog nasilja i optužen zbog napada na studente tokom protesta u februaru ove godine, danas je vređao i psovao građane u Novom Sadu. Na'
-- U Austriji podnete prijave nakon otkrića KRIK-a o manipulacijama u vezi sa izborima
-  link=https://www.krik.rs/u-austriji-podnete-prijave-nakon-otkrica-krik-a-o-manipulacijama-u-vezi-sa-izborima/
-  date=Fri, 23 Oct 2026 11:32:58 +0000 cats=['Vesti', 'Andrej Leskovac', 'korupcija-vesti', 'Pekarica', 'Udruženje Srba u Austriji']
-  desc=656 content=0 media=[] enc=[]
-  desc0=' Nakon što je KRIK otkrio da je Udruženje Srba u Austriji, blisko Srpskoj naprednoj stranci, organizovano prijavljivalo ljude za glasanje u Beču i vrbovalo ih d'
-- Uglješa Mrdić kupio dva stana u Beogradu za mesec i po dana
-  link=https://www.krik.rs/ugljesa-mrdic-kupio-dva-stana-u-beogradu-za-mesec-i-po-dana/
-  date=Thu, 22 Oct 2026 09:35:02 +0000 cats=['Vesti', 'imovina političara', 'korupcija-vesti', 'Srpska napredna stranka', 'uglješa mrdić']
-  desc=573 content=0 media=[] enc=[]
-  desc0=' Uglješa Mrdić, funkcioner Srpske napredne stranke poznat po tome što je štrajkovao glađu u šatoru ispred Narodne skupštine, ove godine je značajno uvećao imovi'
+### mozzart -> PARSE ERROR not well-formed (invalid token): line 5, column 108 b'<!DOCTYPE html><html  lang="sr"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Rss vesti | Mozzart Spo'
 
-### cins: 10 items, root=rss
-- Istinomer i CINS Info kviz #148 – 23.10.2026.
-  link=https://www.cins.rs/cins-info-kviz-148-23-10-2026/
-  date=Thu, 22 Oct 2026 16:49:18 +0000 cats=['CINS Info kviz', 'Kviz']
-  desc=449 content=0 media=[] enc=[]
-  desc0=' Da li ste pratili vesti ove nedelje? Odigrajte naš kviz i saznajte koliko ste informisani o nekim od najbitnijih događaja u zemlji i svetu u proteklih sedam da'
-- Kako se gradi EXPO: Greške koje su mogle da koštaju života
-  link=https://www.cins.rs/kako-se-gradi-expo-greske-koje-su-mogle-da-kostaju-zivota/
-  date=Thu, 22 Oct 2026 06:47:50 +0000 cats=['Istraživačke priče', 'Srbija', 'bezbednost', 'EXPO', 'gradnja']
-  desc=653 content=0 media=[] enc=[]
-  desc0=' Izgradnju stambenog kompleksa EXPO-a u Surčinu pratile su brojne greške od kojih su neke „mogle da budu fatalne“ i dovedu do urušavanja u kompleksu, otkriva CI'
-- „Otmica aktiviste u Resniku“: CINS objavljuje snimke razgovora iz kola
-  link=https://www.cins.rs/otmica-aktiviste-u-resniku-cins-objavljuje-snimke-razgovora-iz-kola/
-  date=Wed, 21 Oct 2026 06:28:02 +0000 cats=['Aktuelno', 'Drugo osnovno javno tužilaštvo', 'Resnik']
-  desc=719 content=0 media=[] enc=[]
-  desc0=' Prošlo je pola godine otkako je grupa muškaraca pretukla i nasilno ugurala u auto aktivistu Zbora Rakovica Vojislava Z. nakon akcije podrške studentima u Resni'
+### meridian: 5 items, root=rss
+- Milan pronašao novu gol-mašinu: Tri het-trika za 26 dana
+  link=https://meridiansport.rs/fudbal/milan-pronasao-novu-gol-masinu-tri-het-trika-za-26-dana/
+  date=Mon, 26 Oct 2026 12:48:43 +0000 cats=['Fudbal', 'Lige petice', 'Svet', 'FK Klub Briž', 'FK Milan']
+  desc=185 content=0 media=['https://www.youtube.com/embed/2CEc-Vxp9R0'] enc=[]
+  desc0='Milan traži napadača koji bi mogao da donese svežinu i golove, a jedno ime sve češće iskače u italijanskim medijima. Nikolo Tresoldi iz Klub Briža igra u životn'
+- Raća Petrović: Dogovorili smo se sa Stanojevićem za dva minuta, uslovi ga nisu zanimali… Voleo bih da se Sale 
+  link=https://meridiansport.rs/fudbal/raca-petrovic-dogovorili-smo-se-sa-stanojevicem-za-dva-minuta-uslovi-ga-nisu-zanimali-voleo-bih-da-se-sale-ilic-vrati-u-svoju-kuci-i-dovrsi-zapoceto/
+  date=Mon, 26 Oct 2026 12:40:41 +0000 cats=['Fudbal', 'Domaći fudbal', 'WAPLIKACIJA', 'Aleksandar Stanojević', 'FK Partizan']
+  desc=196 content=0 media=['https://www.youtube.com/embed/YYf5X69WZXI'] enc=[]
+  desc0='Aleksandar Stanojević je novi-stari trener Partizana, a to je bio povod okupljanja na stadionu u Humskoj ulici ovog ponedeljka. NOVI BONUS DOBRODOŠLICE – Regist'
+- Stanojević: Nisam ni razmišljao o povratku, a onda me je nešto zagolicalo u stomaku posle poziva iz Humske
+  link=https://meridiansport.rs/fudbal/stanojevic-nisam-ni-razmisljao-o-povratku-a-onda-me-je-nesto-zagolicalo-u-stomaku-posle-poziva-iz-humske/
+  date=Mon, 26 Oct 2026 12:36:32 +0000 cats=['Fudbal', 'Domaći fudbal', 'WAPLIKACIJA', 'Aleksandar Stanojević', 'FK Partizan']
+  desc=203 content=0 media=['https://www.youtube.com/embed/YYf5X69WZXI'] enc=[]
+  desc0='Četvrti put u uspešnoj trenerskoj karijeri Aleksandar Stanojević predvodiće ekipu Partizana! Iskusni stručnjak vraća se u redove crno-belih u veoma teškom trenu'
 
-### birn_rs -> PARSE ERROR syntax error: line 1, column 0 b'<!doctype html>\n<html lang="sr-RS" class="no-js">\n\t<head>\n\t\t<meta charset="UTF-8">\n\t\t\n\n\t\t<link href="//www.google-analytics.com" rel="dns-prefetch">\n\n\t\t<meta ht'
+### rts_sport: 20 items, root=rss
+- Ђоковић задржао 12. место на АТП листи, Синер још недељу дана први
+  link=https://www.rts.rs/sport/tenis/6069888/djokovic-zadrzao-12-mesto-na-atp-listi-siner-jos-nedelju-dana-prvi.html
+  date=Mon, 26 Oct 2026 13:48:35 +0100 cats=['Тенис']
+  desc=159 content=0 media=[] enc=[]
+  desc0='Најбољи српски тенисер Новак Ђоковић задржао је 12. место на најновијој АТП листи са 3.090 бодова, док ће Јаник Синер још недељу дана остати на првој позицији.'
+- Костовић 143. тенисерка света, Рибакина задржала прво место на ВТА листи
+  link=https://www.rts.rs/sport/tenis/6069881/kostovic-143-teniserka-sveta-ribakina-zadrzala-prvo-mesto-na-vta-listi.html
+  date=Mon, 26 Oct 2026 13:44:30 +0100 cats=['Тенис']
+  desc=222 content=0 media=[] enc=[]
+  desc0='Најбоље рангирана српска тенисерка Теодора Костовић напредовала је за једну позицију на најновијој ВТА листи и тренутно је 143. тенисерка света са 506 бодова, д'
+- Станојевић четврти пут на клупи Партизана: Кад Партизан зове, мењају се планови
+  link=https://www.rts.rs/sport/fudbal/superliga_srbije/6069859/stanojevic-cetvrti-put-na-klupi-partizana-kad-partizan-zove-menjaju-se-planovi.html
+  date=Mon, 26 Oct 2026 13:37:47 +0100 cats=['Суперлига Србије']
+  desc=280 content=0 media=[] enc=[]
+  desc0='Александар Станојевић представљен је као нови тренер фудбалера Партизана. На почетку четвртог мандата на клупи црно-белих поручио је да верује у излазак из резу'
 
-### balkaninsight: 90 items, root=rss
-- Student List Wins Outright Majority in Serbian Parliamentary Polls
-  link=https://balkaninsight.com/2026/10/26/student-list-wins-outright-majority-in-serbian-parliamentary-polls/bi/
-  date=Mon, 26 Oct 2026 11:07:02 +0000 cats=['All Countries', 'All Countries - Politics and Society', 'Balkan Insight', 'Serbia', 'Serbia - Politics and Society']
-  desc=197 content=197 media=['https://balkaninsight.com/wp-content/uploads/2026/10/14393244-scaled-e1793008767778-1-640x360.jpg'] enc=[]
-  desc0='Latest figures confirm that the Student List won an outright majority in the parliamentary elections, ending the 14-year rule of the Serbian Progressive Party a'
-- Monday Briefing from the Balkans: October 26, 2026
-  link=https://balkaninsight.com/2026/10/26/monday-briefing-from-the-balkans-october-26-2026/bi/
-  date=Mon, 26 Oct 2026 10:42:00 +0000 cats=['All Countries', 'All Countries - Politics and Society', 'All Countries - Premium Only', 'Balkan Insight', 'Bulgaria']
-  desc=124 content=124 media=['https://balkaninsight.com/wp-content/uploads/2026/10/2C270E43-CD9B-43E3-9D19-867F499E2AE9-640x427.jpeg'] enc=[]
-  desc0='Catch up on the weekend’s most important developments with Balkan Insight’s digest of news from countries across the region.'
-- Bulgaria’s Presidential Election Heads to Runoff After Record Low Turnout
-  link=https://balkaninsight.com/2026/10/26/bulgarias-presidential-election-heads-to-runoff-after-record-low-turnout/bi/
-  date=Mon, 26 Oct 2026 10:14:08 +0000 cats=['All Countries', 'All Countries - Politics and Society', 'Balkan Insight', 'Bulgaria', 'Bulgaria - Politics and Society']
-  desc=214 content=214 media=['https://balkaninsight.com/wp-content/uploads/2026/10/14391282-scaled-e1793002078261-640x361.jpg'] enc=[]
-  desc0='After securing an unexpectedly small lead, government-aligned acting President Iliana Iotova will face opposition candidate Andrey Gyurov in a November 1 runoff'
+### blic_sport: 70 items, root=rss
+- (FOTO) MALA KUHINJA, OGLEDALO NAPOLEONA III I STILSKI NAMEŠTAJ Ovako izgleda salonac u srcu Vračara u kome živ
+  link=https://www.blic.rs/zabava/ovako-izgleda-stan-jelice-sretenovic-salonac-u-srcu-vracara/yltcw9r
+  date=Mon, 26 Oct 2026 13:50:28 +0100 cats=[]
+  desc=213 content=535 media=[] enc=[]
+  desc0='Čuvena glumica Jelica Sretenović pokazala je svoj životni prostor u srcu Vračara, koji odiše toplinom i tradicijom, ispunjen stilskim nameštajem, bogatom zbirko'
+- BACIO BOMBU NA POZNATI RESTORAN U CENTRU BEOGRADA Živa Velimirov pravosnažno osuđen na 6 godina robije: U koli
+  link=https://www.blic.rs/vesti/hronika/ziva-velimirov-pravosnazno-osudjen-na-6-godina-robije-zbog-paljenja-lokala/y43qvt2
+  date=Mon, 26 Oct 2026 13:49:31 +0100 cats=[]
+  desc=197 content=526 media=[] enc=[]
+  desc0='Apelacioni sud u Beogradu pravosnažno je osudio Živu Velimirova na kaznu zatvora od šest godina jer je 30. aprila prošle godine aktivirao i bacio ručnu bombu na'
+- NOĆNA ISKLJUČENJA VODE U GROCKOJ Od sutra do petka povremeni prekidi i slabiji pritisak u četiri naselja
+  link=https://www.blic.rs/vesti/beograd/bez-vode-u-grockoj-nocna-iskljucenja-od-sutra-do-petka-u-cetiri-naselja/nzgz65y
+  date=Mon, 26 Oct 2026 13:45:51 +0100 cats=[]
+  desc=245 content=529 media=[] enc=[]
+  desc0='U opštini Grocka od sutra do petka, 30. oktobra, izvodiće se radovi na ispiranju vodovodne mreže, što će usloviti povremene prekide u snabdevanju i umanjen prit'
 
-### istinomer: 10 items, root=rss
-- Bilbord Studentske liste sa porukom o platama vodoinstalatera napravljen pomoću veštačke inteligencije
-  link=https://www.istinomer.rs/facebook-provere/bilbord-studentske-liste-sa-porukom-o-platama-vodoinstalatera-napravljen-pomocu-vestacke-inteligencije/
-  date=Wed, 21 Oct 2026 13:30:34 +0000 cats=['Viralne manipulacije', 'AI', 'AI fotografije', 'AI manipulacije', 'Studentska lista - Studenti pobeđuju']
-  desc=527 content=0 media=[] enc=[]
-  desc0=' Slika bilborda Studentske liste sa porukom: „Zaslužujemo bolje! Nije normalno da vodoinstalater zarađuje više od doktora nauka!“ generisana je pomoću veštačke '
-- Besplatno rešenje #Retrovizor
-  link=https://www.istinomer.rs/retrovizor2/besplatno-resenje-retrovizor/
-  date=Wed, 21 Oct 2026 13:15:09 +0000 cats=['2026.', 'RETROVIZOR - Ljubomira Živkova', 'Retrovizor2', 'Video', 'Dragan Bujošević']
-  desc=574 content=0 media=[] enc=[]
-  desc0=' Možda bi, kad ne bude više živih svedoka RTS-ove i "Politikine" sramote, na stabla hrastova, koja bi u tom trenutku njihovog dijalektičkog razvoja postala stog'
-- Istinomer NL: Predizborna taština
-  link=https://www.istinomer.rs/analize/istinomer-nl-predizborna-tastina/
-  date=Wed, 21 Oct 2026 09:40:59 +0000 cats=['Analize']
-  desc=541 content=0 media=[] enc=[]
-  desc0=' Nedelja je još daleko, nego gde ćete u četvrtak? Dok jedne „Pobeda zove” sa Slavije, druge je možda pozvala Cica iz računovodstva u toku radnog vremena da svra'
+### novosti_sport -> 404 b'<!DOCTYPE html>\n<html lang="sr">\n    <head>\n        <script type="text/javascript">\n            var domain = window.loca'
 
-### insajder: 100 items, root=rss
-- Vrhovna rada Ukrajine produžila ratno stanje i mobilizaciju za još 90 dana
-  link=https://insajder.net/prenosimo/vrhovna-rada-ukrajine-produzila-ratno-stanje-i-mobilizaciju-za-jos-90-dana
-  date=Mon, 26 Oct 2026 11:45:00 GMT cats=[]
-  desc=141 content=0 media=['https://insajder.mpanel.app/image/cache/extra-large-full/files/images/tan2026-10-1418424737-0.jpg'] enc=['https://insajder.mpanel.app/image/cache/extra-large-full/files/images/tan2026-10-1418424737-0.jpg']
-  desc0='Vrhovna rada Ukrajine produžila je ratno stanje i opštu mobilizaciju u zemlji za još 90 dana, do 29. januara 2027. godine, prenosi Ukrinform.'
-- Kako je Srbija glasala po gradovima: Rezultati RIK-a na osnovu do sada obrađenih biračkih mesta
-  link=https://insajder.net/teme/kako-je-srbija-glasala-po-gradovima-rezultati-rik-a-na-osnovu-do-sada-obradenih-birackih-mesta
-  date=Mon, 26 Oct 2026 11:28:00 GMT cats=[]
-  desc=297 content=0 media=['https://insajder.mpanel.app/image/cache/extra-large-full/files/images/izbori-2026-glasanje-novi-beograd-25-okt-2026-17-srdjan-ilic.jpg'] enc=['https://insajder.mpanel.app/image/cache/extra-large-full/files/images/izbori-2026-glasanje-novi-beograd-25-okt-2026-17-srdjan-ilic.jpg']
-  desc0='Prema podacima Republičke izborne komisije (RIK), na osnovu do sada obrađenih biračkih mesta, Studentska lista „Studenti pobeđuju” osvojila je najviše glasova u'
-- Zelenski čestitao pobedu studentskoj listi: Otvoreno novo poglavlje u istoriji zemlje i njenog naroda
-  link=https://insajder.net/prenosimo/zelenski-cestitao-pobedu-studentskoj-listi-zelimo-srbiji-uspeh-i-razvoj
-  date=Mon, 26 Oct 2026 11:14:00 GMT cats=[]
-  desc=247 content=0 media=['https://insajder.mpanel.app/image/cache/extra-large-full/files/images/sig6796.JPG'] enc=['https://insajder.mpanel.app/image/cache/extra-large-full/files/images/sig6796.JPG']
-  desc0='Predsednik Ukrajine Volodimir Zelenski ocenio je da je pobedom studentske liste na izborima u Srbiji otvoreno novo poglavlje u istoriji zemlje i njenog naroda, '
+### sportklub: 50 items, root=rss
+- (VIDEO) Koloko: Sviđa mi se šta mi je Navaro rekao
+  link=https://sportklub.rs/kosarka/euroleague/koloko-zvezda-maccabi-euroleague/
+  date=Mon, 26 Oct 2026 13:52:13 +0100 cats=['Euroleague', 'Christian Koloko', 'Ibon Navarro', 'KK Crvena Zvezda Meridianbet']
+  desc=106 content=241 media=[] enc=[]
+  desc0='Kristijan Koloko trebalo bi da debituje u dresu Crvene zvezde u duelu osmog kola Evrolige protiv Makabija.'
+- Stanojević se vratio u Partizan: Sudite mi po rezultatima!
+  link=https://sportklub.rs/fudbal/srbija-super-liga/uzivo-sasa-ilic-aleksandar-stanojevic-partizan-trener-povratak/
+  date=Mon, 26 Oct 2026 13:45:20 +0100 cats=['Superliga Srbije', 'Aleksandar Stanojević', 'FK Partizan', 'Saša Ilić', 'Super liga Srbije']
+  desc=164 content=309 media=[] enc=[]
+  desc0='Aleksandar Stanojević se vratio u Humsku i nasledio Sašu Ilića na klupi Partizana. To je četvrti put u karijeri da je 52-godišnji trener preuzeo kormilo crno-be'
+- Zverevu dovoljno četvrtfinale u Beču za broj 1
+  link=https://sportklub.rs/tenis/atp/zverevu-dovoljno-cetvrtfinale-u-becu-za-broj-1/
+  date=Mon, 26 Oct 2026 13:16:45 +0100 cats=['ATP']
+  desc=244 content=369 media=[] enc=[]
+  desc0='Aleksandru Zverevu je dovoljan plasman u četvrtfinale serije 500 u Beču da postane 30. teniski kralj u istoriji. Njegov zaostatak za vodećim Janikom Sinerom izn'
 
-### bbc_world: 23 items, root=rss
-- Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement
-  link=https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss
-  date=Mon, 26 Oct 2026 11:02:20 GMT cats=[]
-  desc=137 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f0c7/live/712973e0-d110-11f1-b441-2b33b063138f.jpg'] enc=[]
-  desc0='The populist right-wing leader of 12 years says it is "clear" his party has lost the vote billed as a referendum on the country\'s future.'
-- Venezuelan opposition leader María Machado returns after months in exile
-  link=https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss
-  date=Mon, 26 Oct 2026 05:20:19 GMT cats=[]
-  desc=110 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4dcf/live/679d8fc0-d0a0-11f1-87fa-c1809f43a7a8.jpg'] enc=[]
-  desc0='Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro.'
-- Australian murderer loses bid to eat Vegemite in prison
-  link=https://www.bbc.co.uk/news/articles/cvwy7wz9x12go?at_medium=RSS&at_campaign=rss
-  date=Mon, 26 Oct 2026 04:05:28 GMT cats=[]
-  desc=104 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1263/live/4ad06900-d12a-11f1-b441-2b33b063138f.jpg'] enc=[]
-  desc0='Andre McKechnie, who murdered a property developer, argued it was his right to enjoy Australian culture.'
+### telegraf_sport -> 404 b'<!DOCTYPE html>\n<html lang="sr">\n<head>\n    <title>Stranica nije prona\xc4\x91ena - Telegraf.rs</title>\n    <meta name="descri'
 
-### bbc_europe: 21 items, root=rss
-- Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement
-  link=https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss
-  date=Mon, 26 Oct 2026 11:02:20 GMT cats=[]
-  desc=137 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f0c7/live/712973e0-d110-11f1-b441-2b33b063138f.jpg'] enc=[]
-  desc0='The populist right-wing leader of 12 years says it is "clear" his party has lost the vote billed as a referendum on the country\'s future.'
-- How a movement of students brought down Serbia's Vučić
-  link=https://www.bbc.co.uk/news/articles/c574pvy82k0mo?at_medium=RSS&at_campaign=rss
-  date=Mon, 26 Oct 2026 07:49:53 GMT cats=[]
-  desc=121 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ec54/live/9d3eb1f0-d0d1-11f1-a058-dfc7f6e2951c.jpg'] enc=[]
-  desc0='In just under two years the students have succeeded in tearing up 14 years of political dominance under Aleksandar Vučić.'
-- Joy and disbelief on Serbian streets as Vučić concedes election defeat
-  link=https://www.bbc.co.uk/news/videos/c8x23x1yn6w6o?at_medium=RSS&at_campaign=rss
-  date=Sun, 25 Oct 2026 22:59:00 GMT cats=[]
-  desc=143 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c357/live/315a7280-d0c2-11f1-b63a-2f4562e77934.jpg'] enc=[]
-  desc0='BBC correspondent Nick Thorpe reports from Belgrade, where there were rapturous celebrations following the victory of the student-led movement.'
+### zurnal: 20 items, root=rss
+- Станојевић: Знам у каквој је ситуацији Паризан, дошао сам да помогнем
+  link=https://zurnal.politika.rs/scc/clanak/260061/fudbal/partizan/stanojevic-znam-u-kakvoj-je-situaciji-parizan-dosao-sam-da-pomognem
+  date=Mon, 26 Oct 2026 13:45:00 +0100 cats=[]
+  desc=54 content=0 media=[] enc=['https://zurnal.politika.rs/thumbs/upload/Article/Image/2026_10//160z120_Tan2026-10-26133827026.jpg']
+  desc0='„Да ме је неко пре два дана питао, никад не бих рекао“'
+- „Не знам где је граница између рамена и руке”
+  link=https://zurnal.politika.rs/scc/clanak/260035/fudbal/vojvodina/ne-znam-gde-je-granica-izmedu-ramena-i-ruke
+  date=Mon, 26 Oct 2026 13:30:00 +0100 cats=[]
+  desc=82 content=0 media=[] enc=['https://zurnal.politika.rs/thumbs/upload/Article/Image/2026_10//160z120_stanisavljevic678.jpg']
+  desc0='Стефану Станисављевићу поништен гол за вођство Војводине у Лучанима, на крају реми'
+- Теодора Костовић поражена на старту турнира у Гванџоу
+  link=https://zurnal.politika.rs/scc/clanak/260057/tenis/srpski-teniseri-i-teniserke/teodora-kostovic-porazena-na-startu-turnira-u-gvandzou
+  date=Mon, 26 Oct 2026 13:15:00 +0100 cats=[]
+  desc=36 content=0 media=[] enc=['https://zurnal.politika.rs/thumbs/upload/Article/Image/2026_10//160z120_14108756-6adf2554bf887.jpg']
+  desc0='Боља је била Узбекистанка Тимофејева'
 
-### guardian_world: 45 items, root=rss
-- US forces accused of ‘weaponising’ Somalia’s floods by trapping women and children in the path of El Niño
-  link=https://www.theguardian.com/global-development/2026/oct/26/us-forces-accused-of-weaponising-somalia-flood-el-nino
-  date=Mon, 26 Oct 2026 11:00:40 GMT cats=['Global development', 'Somalia', 'Africa', 'Middle East and north Africa', 'World news']
-  desc=890 content=0 media=['https://i.guim.co.uk/img/media/68be86b57a97943a5a7cf6e880f044f52347de5e/0_0_7116_5694/master/7116.jpg?width=140&quality=85&auto=format&fit=max&s=08617e496ea6e3377e65977ddde4e73a'] enc=[]
-  desc0='  Exclusive:  Coordinated airstrikes on territory held by al-Shabaab are driving the civilian population to find refuge alongside a river where rising water lev'
-- Sudan paramilitary drone strikes cause mass power cuts in eastern states
-  link=https://www.theguardian.com/world/2026/oct/26/sudan-paramilitary-drone-strikes-rapid-support-forces-power-cuts-eastern-states
-  date=Mon, 26 Oct 2026 09:59:27 GMT cats=['Sudan', 'Africa', 'Middle East and north Africa', 'World news']
-  desc=687 content=0 media=['https://i.guim.co.uk/img/media/01da2c62d76761f8f011d8881a3751607009102c/216_0_2446_1957/master/2446.jpg?width=140&quality=85&auto=format&fit=max&s=36d61eccf7ea4657be712b8fb32bf9fd'] enc=[]
-  desc0=' Rapid Support Forces strike five power stations in three states controlled by Sudanese army  Sudan’s paramilitary Rapid Support Forces have launched a coordina'
-- UK poised to miss reduced aid spending target of 0.3% of national income
-  link=https://www.theguardian.com/politics/2026/oct/26/uk-international-aid-target-spending-shortfall-budget-research
-  date=Mon, 26 Oct 2026 06:59:36 GMT cats=['Foreign policy', 'Labour', 'Aid', 'Budget 2026', 'Africa']
-  desc=597 content=0 media=['https://i.guim.co.uk/img/media/e4b910342ba76f8b20dec9eadb10a03041a5c598/939_0_4942_3956/master/4942.jpg?width=140&quality=85&auto=format&fit=max&s=b118ef44eeb47e1943719be68a607ca7'] enc=[]
-  desc0=' Calculations from the Center for Global Development say spending next year is likely to be £410m less than anticipated  The UK is on course to miss its target '
+### bbc_sport: 67 items, root=rss
+- End approaching for Carrick but Man Utd fans make clear who they blame
+  link=https://www.bbc.co.uk/sport/football/articles/cwm24jk9743yo?at_medium=RSS&at_campaign=rss
+  date=Sun, 25 Oct 2026 21:24:21 GMT cats=[]
+  desc=164 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a6b1/live/b4ad99d0-d0b5-11f1-960c-a30ffadcd9ea.jpg'] enc=[]
+  desc0="Manchester United's fans sang their support for Michael Carrick during the 3-0 home defeat by Bournemouth, but voiced their opposition to virtually everything e"
+- Mourinho keeps Clasico midas touch 13 years on as La Liga heats up
+  link=https://www.bbc.co.uk/sport/football/articles/cr3wvz20pglqo?at_medium=RSS&at_campaign=rss
+  date=Mon, 26 Oct 2026 00:07:16 GMT cats=[]
+  desc=124 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9581/live/b729bb60-d0cb-11f1-b86a-c167c5eb76b4.jpg'] enc=[]
+  desc0="Kylian Mbappe's two goals at Barcelona have opened up La Liga, as Jose Mourinho's Real Madrid leave Camp Nou with a victory."
+- Borthwick's autumn questions as World Cup looms
+  link=https://www.bbc.co.uk/sport/rugby-union/articles/ck20wj7znqy8o?at_medium=RSS&at_campaign=rss
+  date=Mon, 26 Oct 2026 12:14:29 GMT cats=[]
+  desc=149 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9613/live/122fd290-d132-11f1-be77-d1864d279cb0.jpg'] enc=[]
+  desc0="The upcoming Nations Championship matches present a selection dilemma for Steve Borthwick's England with just nine matches to go until the World Cup."
 
-### guardian_europe: 20 items, root=rss
-- I would like to rejoin EU, says Burnham, but ‘British public are the bosses’ – UK politics live
-  link=https://www.theguardian.com/politics/live/2026/oct/26/andy-burnham-labour-brexit-eu-homelessness-immigration-budget-rosebank-reform-latest-news-updates
-  date=Mon, 26 Oct 2026 11:34:00 GMT cats=['Politics', 'UK news', 'Andy Burnham', 'Labour', 'Budget 2026']
-  desc=1033 content=0 media=['https://i.guim.co.uk/img/media/9101b7d3ce50d4f8e23d844f2aae5d321100834c/380_25_885_708/master/885.jpg?width=140&quality=85&auto=format&fit=max&s=73fce6395128ef28c5de6d9ad69e51d2'] enc=[]
-  desc0=' PM says talking about changing the relationship with the bloc would not be divisive but ‘can start to bring people together’  The Times is reporting this morni'
-- Serbia wakes up to new reality after student-led movement ousts Vučić – Europe live
-  link=https://www.theguardian.com/world/live/2026/oct/26/serbia-vucic-elections-students-bulgaria-france-urkaine-russia-latest-news-updates
-  date=Mon, 26 Oct 2026 11:15:15 GMT cats=['Serbia', 'Bulgaria', 'France', 'Ukraine', 'Russia']
-  desc=2728 content=0 media=['https://i.guim.co.uk/img/media/0ecbf6d6594ec38c4ed669e70a2eae735e525a69/781_0_4900_3920/master/4900.jpg?width=140&quality=85&auto=format&fit=max&s=9b422724dee4493ab9d5d78b29797add'] enc=[]
-  desc0=' Hopes raised for a reset in relations with EU and other partners following the defeat of authoritarian president     Serbian leader ousted by student movement '
-- Drone footage shows crowds in Belgrade celebrating defeat of Aleksandar Vučić – video
-  link=https://www.theguardian.com/world/video/2026/oct/26/drone-footage-shows-crowds-in-belgrade-celebrating-defeat-of-aleksandar-vucic-video
-  date=Mon, 26 Oct 2026 10:57:21 GMT cats=['Serbia', 'Europe', 'World news']
-  desc=734 content=0 media=['https://i.guim.co.uk/img/media/e258ee20f5b8ee7ad813451aae5135e6a4aec6be/285_0_1350_1080/master/1350.jpg?width=140&quality=85&auto=format&fit=max&s=c98f38af9b0b362a949a40345916ecdb'] enc=[]
-  desc0=" Huge crowds gathered in Slavija Square in Belgrade to celebrate after Serbia's long-serving leader, Aleksandar Vučić, conceded defeat in an election. Late on S"
+### bbc_football: 74 items, root=rss
+- End approaching for Carrick but Man Utd fans make clear who they blame
+  link=https://www.bbc.co.uk/sport/football/articles/cwm24jk9743yo?at_medium=RSS&at_campaign=rss
+  date=Sun, 25 Oct 2026 21:24:21 GMT cats=[]
+  desc=164 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a6b1/live/b4ad99d0-d0b5-11f1-960c-a30ffadcd9ea.jpg'] enc=[]
+  desc0="Manchester United's fans sang their support for Michael Carrick during the 3-0 home defeat by Bournemouth, but voiced their opposition to virtually everything e"
+- Mourinho keeps Clasico midas touch 13 years on as La Liga heats up
+  link=https://www.bbc.co.uk/sport/football/articles/cr3wvz20pglqo?at_medium=RSS&at_campaign=rss
+  date=Mon, 26 Oct 2026 00:07:16 GMT cats=[]
+  desc=124 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9581/live/b729bb60-d0cb-11f1-b86a-c167c5eb76b4.jpg'] enc=[]
+  desc0="Kylian Mbappe's two goals at Barcelona have opened up La Liga, as Jose Mourinho's Real Madrid leave Camp Nou with a victory."
+- Who should win the men's Ballon d'Or? BBC Sport pundits have their say
+  link=https://www.bbc.co.uk/sport/football/articles/cqjdmn0ndxjxo?at_medium=RSS&at_campaign=rss
+  date=Mon, 26 Oct 2026 06:19:12 GMT cats=[]
+  desc=109 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cc7/live/9ef6d620-cbd7-11f1-b139-f77a8b036d06.png'] enc=[]
+  desc0="The Ballon d'Or winner will be announced in London on Monday - but who is going to claim the showpiece award?"
 
-### politico_eu: 10 items, root=rss
-- Liz Truss claims Brits would be on Mars by 2040 if she hadn’t been ousted
-  link=https://www.politico.eu/article/liz-truss-claims-brits-would-be-on-mars-by-2040-if-she-hadnt-been-ousted/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication
-  date=Mon, 26 Oct 2026 11:49:49 +0000 cats=['Artificial Intelligence', 'Banks', 'Bonds', 'Books', 'British politics']
-  desc=62 content=2068 media=[] enc=[]
-  desc0='Former prime minister dreams of a brighter alternative future.'
-- Burnham wants UK back in EU within his lifetime
-  link=https://www.politico.eu/article/burnham-wants-uk-back-in-eu-within-his-lifetime/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication
-  date=Mon, 26 Oct 2026 10:13:20 +0000 cats=['Brexit', 'British politics', 'Customs Union', 'Elections', 'Immigration']
-  desc=71 content=2102 media=[] enc=[]
-  desc0='But British prime minister rules out rejoin push in current parliament.'
-- Cyberangriffe kommen nicht nur zu Bürozeiten
-  link=https://www.politico.eu/sponsored-content/cyberangriffe-kommen-nicht-nur-zu-buerozeiten/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication
-  date=Mon, 26 Oct 2026 09:17:40 +0000 cats=['Cybersicherheit', 'Künstliche Intelligenz', 'Technologie & KI']
-  desc=242 content=10223 media=[] enc=[]
-  desc0='Künstliche Intelligenz verschärft die Bedrohungslage für Unternehmen und stellt klassische Schutzkonzepte auf die Probe. Wie sich IT-Systeme dennoch wirksam und'
+### guardian_sport: 48 items, root=rss
+- WSL talking points: Russo to Arsenal’s rescue and Olid makes Manchester United progress
+  link=https://www.theguardian.com/football/2026/oct/26/wsl-talking-points-alessia-russo-arsenal-tottenham-manchester-united-city
+  date=Mon, 26 Oct 2026 11:59:27 GMT cats=["Women's Super League", 'Football', 'Sport', "Women's football", 'Arsenal Women']
+  desc=1435 content=0 media=['https://i.guim.co.uk/img/media/100a2bd792886a678d994fc1b1c19158b8f530c3/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=9cdd2928914c90b38a71044f15846d8e'] enc=[]
+  desc0=' Gunners edged north London derby while new United manager put the brakes on Manchester City’s winning start  The penalty that allowed Arsenal to come from a go'
+- Fernandes gamble leaves Carrick to carry the can for United’s institutional failures | Will Unwin
+  link=https://www.theguardian.com/football/2026/oct/25/manchester-united-michael-carrick-bruno-fernandes-jim-ratcliffe-institutional-failures
+  date=Sun, 25 Oct 2026 17:56:06 GMT cats=['Premier League', 'Manchester United', 'Michael Carrick', 'Football', 'Jim Ratcliffe']
+  desc=1568 content=0 media=['https://i.guim.co.uk/img/media/f9c37837f5ef7bff712297f1299885e9a23ea012/307_36_1224_979/master/1224.jpg?width=140&quality=85&auto=format&fit=max&s=5e68364626609c7a0221edc6478ed491'] enc=[]
+  desc0=' Leaving out his captain was doomed to fail but so are the club under the current leadership and the fans at Old Trafford know that all too well  Dropping your '
+- TNT Sports close to securing live UK rights for England white-ball cricket tour of Australia
+  link=https://www.theguardian.com/sport/2026/oct/26/tnt-sports-close-to-securing-live-uk-rights-england-white-ball-limited-overs-tour-australia-cricket
+  date=Mon, 26 Oct 2026 12:10:32 GMT cats=['England cricket team', 'Australia cricket team', 'Cricket', 'Sport', 'Sports rights']
+  desc=778 content=0 media=['https://i.guim.co.uk/img/media/17ef13394ff2cf75457d2842a755d2fb6c35818b/509_48_3168_2534/master/3168.jpg?width=140&quality=85&auto=format&fit=max&s=c75a2ccb16146b56cccde9497a46b802'] enc=[]
+  desc0='   Channel 5 in advanced talks over highlights package    Opening game may be also be free-to-air in deal    TNT Sports is close to securing live UK rights for '
 
-### euronews: 50 items, root=rss
-- Trump officials back Orbán bid for UN secretary-general, WSJ reports
-  link=https://www.euronews.com/2026/10/26/trump-officials-back-orban-bid-for-un-secretary-general-wsj-reports
-  date=Mon, 26 Oct 2026 12:11:58 +0100 cats=[]
-  desc=248 content=0 media=[] enc=[]
-  desc0='The WSJ reports that Trump administration officials are floating former Hungarian prime minister Viktor Orbán for UN secretary-general, potentially backed by th'
-- Why Israel’s wartime election isn’t just about the battle with Iran and Hamas
-  link=https://www.euronews.com/2026/10/26/why-israels-wartime-election-isnt-just-about-the-battle-with-iran-and-hamas
-  date=Mon, 26 Oct 2026 12:01:54 +0100 cats=[]
-  desc=149 content=0 media=[] enc=[]
-  desc0='From army exemptions for the ultra-Orthodox to a stalled 7 October inquiry, the issues splitting voters have little to do with Gaza, Lebanon or Iran.'
-- Latest news bulletin | October 26th, 2026 – Midday
-  link=https://www.euronews.com/video/2026/10/26/latest-news-bulletin-october-26th-2026-midday
-  date=Mon, 26 Oct 2026 12:00:15 +0100 cats=[]
-  desc=183 content=0 media=[] enc=[]
-  desc0='Catch up with the most important stories from around Europe and beyond this October 26th, 2026 - latest news, breaking news, World, Business, Entertainment, Pol'
+### guardian_football: 63 items, root=rss
+- WSL talking points: Russo to Arsenal’s rescue and Olid makes Manchester United progress
+  link=https://www.theguardian.com/football/2026/oct/26/wsl-talking-points-alessia-russo-arsenal-tottenham-manchester-united-city
+  date=Mon, 26 Oct 2026 11:59:27 GMT cats=["Women's Super League", 'Football', 'Sport', "Women's football", 'Arsenal Women']
+  desc=1435 content=0 media=['https://i.guim.co.uk/img/media/100a2bd792886a678d994fc1b1c19158b8f530c3/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=9cdd2928914c90b38a71044f15846d8e'] enc=[]
+  desc0=' Gunners edged north London derby while new United manager put the brakes on Manchester City’s winning start  The penalty that allowed Arsenal to come from a go'
+- Fernandes gamble leaves Carrick to carry the can for United’s institutional failures | Will Unwin
+  link=https://www.theguardian.com/football/2026/oct/25/manchester-united-michael-carrick-bruno-fernandes-jim-ratcliffe-institutional-failures
+  date=Sun, 25 Oct 2026 17:56:06 GMT cats=['Premier League', 'Manchester United', 'Michael Carrick', 'Football', 'Jim Ratcliffe']
+  desc=1568 content=0 media=['https://i.guim.co.uk/img/media/f9c37837f5ef7bff712297f1299885e9a23ea012/307_36_1224_979/master/1224.jpg?width=140&quality=85&auto=format&fit=max&s=5e68364626609c7a0221edc6478ed491'] enc=[]
+  desc0=' Leaving out his captain was doomed to fail but so are the club under the current leadership and the fans at Old Trafford know that all too well  Dropping your '
+- McTominay stars in Napoli draw that leaves Allegri ‘not lucid enough’ to talk
+  link=https://www.theguardian.com/football/2026/oct/26/scott-mctominay-napoli-roma-serie-a-massimiliano-allegri-not-lucid-enough
+  date=Mon, 26 Oct 2026 11:21:26 GMT cats=['Serie A', 'Napoli', 'Roma', 'European club football', 'Football']
+  desc=959 content=0 media=['https://i.guim.co.uk/img/media/ef4e1223a0fb1aebff9a577a57f2c2b4a723c926/909_391_4511_3609/master/4511.jpg?width=140&quality=85&auto=format&fit=max&s=baa838c59c0d82754f7cca1a47950688'] enc=[]
+  desc0='  Gli Azzurri  show positive signs of improvement in seesaw 3-3 draw against a Roma side inspired by Messi-like Matías Soulé  Scott McTominay was leaving nothin'
 
-### euronews_my -> 404 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n\n    <!-- level: light trigger: api  domain: euronews.c'
+### espn -> 202 b''
 
-### aljazeera: 25 items, root=rss
-- Serbia after Vucic: Who will be PM and when will a government be formed?
-  link=https://www.aljazeera.com/news/2026/10/26/serbia-after-vucic-who-will-be-pm-and-when-will-a-government-be-formed?traffic_source=rss
-  date=Mon, 26 Oct 2026 11:28:25 +0000 cats=['News']
-  desc=125 content=0 media=[] enc=[]
-  desc0='Uncertainty remains over key positions after student-led movement deals a blow to longtime leader&#039;s political dominance.'
-- Jordan arrests three suspects over church attack in dawn raid: What to know
-  link=https://www.aljazeera.com/news/2026/10/26/jordan-arrests-three-suspects-over-church-attack-in-dawn-raid-what-to-know?traffic_source=rss
-  date=Mon, 26 Oct 2026 11:08:48 +0000 cats=['News']
-  desc=113 content=0 media=[] enc=[]
-  desc0='Jordanian authorities have not named the individuals or any group involved in the &#039;terrorist incident&#039;.'
-- Key European defence ministers meet in Paris to discuss Ukraine support
-  link=https://www.aljazeera.com/news/2026/10/26/key-european-defence-ministers-meet-in-paris-to-discuss-ukraine-support?traffic_source=rss
-  date=Mon, 26 Oct 2026 11:04:55 +0000 cats=['News']
-  desc=118 content=0 media=[] enc=[]
-  desc0='Defence ministers from France, Germany, Italy, Poland and the UK to discuss increasing military assistance to Ukraine.'
+### eurohoops: 20 items, root=rss
+- Greek state, federation president back immediate transition and elections
+  link=https://www.eurohoops.net/en/heba/2026380/giannis-vroutsis-angelos-papanikolaou-talk-greek-federation-elections/
+  date=Mon, 26 Oct 2026 11:39:24 +0000 cats=['HEBA', 'Greece', 'Άγγελος Παπανικολάου', 'Βαγγέλης Λιόλιος', 'Γιάννης Βρούτσης']
+  desc=441 content=2686 media=[] enc=['https://images.eurohoops.net/2026/10/fe5d54ba-vroutsis.jpg']
+  desc0=' Elections loom in Greece as the state and the new Hellenic Basketball Federation president seek a transitional cleanup \n The post  Greek state, federation pres'
+- Ataman reacts to Greece scandal: “Following by shock all the news”
+  link=https://www.eurohoops.net/en/heba/2026326/ergin-ataman-talks-greece-scandal-panathinaiko/
+  date=Mon, 26 Oct 2026 10:21:03 +0000 cats=['HEBA', 'dimitris giannakopoulos', 'Ergin Ataman', 'Greece', 'Panathinaikos']
+  desc=385 content=2733 media=[] enc=['https://images.eurohoops.net/2026/06/f43d48a9-ergin-ataman.jpg']
+  desc0=" Greece's match-fixing and bribery scandal captures the attention of 60-year-old Ergin Ataman \n The post  Ataman reacts to Greece scandal: “Following by shock a"
+- Jalen Williams stretchered off court after devastating leg injury
+  link=https://www.eurohoops.net/en/nba-news/2026292/jalen-williams-injury-oklahoma-city-thunder-nba/
+  date=Mon, 26 Oct 2026 08:21:04 +0000 cats=['NBA news', 'jalen williams', 'Mark Daigneault', 'Oklahoma City Thunder', 'Shai Gilgeous-Alexander']
+  desc=428 content=2646 media=[] enc=['https://images.eurohoops.net/2026/10/fecc953f-jalen-williams-handles-oklahoma-city-thunder-vs-los-angeles-clippers.jpg']
+  desc0=' The Oklahoma City Thunder depth is facing an early test in the 2026–27 NBA Regular Season, particularly after losing Jalen Williams \n The post  Jalen Williams '
 
-### dw_en: 129 items, root={http://www.w3.org/1999/02/22-rdf-syntax-ns#}RDF
-- Jordan: 3 arrested over deadly church attack
-  link=https://www.dw.com/en/jordan-3-arrested-over-deadly-church-attack/a-79760441?maca=en-rss-en-all-1573-rdf
-  date=2026-10-26T10:12:00Z cats=[]
-  desc=215 content=0 media=[] enc=[]
-  desc0='Three men have been arrested in Jordan in connection with an attack on a Greek Orthodox church last week. The arrests took place following a dawn shootout with '
-- Germany news: Union slams Audi CEO for joining Trump at campaign rally, while Chancellor Merz and President St
-  link=https://www.dw.com/en/germany-news-union-slams-audi-ceo-for-joining-trump-at-campaign-rally-while-chancellor-merz-and-president-steinmeier-embark-on-separate-asia-tours/live-79760097?maca=en-rss-en-all-1573-rdf
-  date=2026-10-26T10:00:00Z cats=[]
-  desc=215 content=0 media=[] enc=[]
-  desc0="Audi's boss is facing a backlash in Germany after appearing alongside Donald Trump at a campaign rally. Meanwhile, Germany's chancellor and president are headin"
-- Venezuela: Opposition leader Machado returns from exile, received by thousands of supporters in Caracas
-  link=https://www.dw.com/en/venezuela-opposition-leader-machado-returns-from-exile-received-by-thousands-of-supporters-in-caracas/a-79759187?maca=en-rss-en-all-1573-rdf
-  date=2026-10-26T09:08:00Z cats=[]
-  desc=202 content=0 media=[] enc=[]
-  desc0='Nobel Peach Prize winner and popular Venezuelan political opposition figure Maria Corina Machado has returned from nearly a year in exile. She was greeted by th'
+### skysports: 20 items, root=rss
+- Bournemouth latest: We're in 'good spot' ahead of Villa cup tie, says Rose
+  link=https://www.skysports.com/football/live-blog/12040/13279286/bournemouth-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights
+  date=Mon, 26 Oct 2026 12:32:00 GMT cats=['Liveblog']
+  desc=0 content=0 media=[] enc=['https://e0.365dm.com/26/08/1920x1080/skysports-bournemouth-club_7326690.jpg?20260820165020']
+  desc0=''
+- How worried should England be after another unfathomable defeat?
+  link=https://www.skysports.com/cricket/news/12040/13603915/englands-odi-struggles-how-worried-should-harry-brooks-side-be-after-another-unfathomable-defeat
+  date=Mon, 26 Oct 2026 10:00:00 GMT cats=['News Story']
+  desc=61 content=0 media=[] enc=['https://e1.365dm.com/26/10/1920x1080/skysports-harry-brook-england-mens-odi-cricket_7387608.jpg?20261026094106']
+  desc0="It's not just Manchester United who've had a chastening week."
+- Kane, Mbappe and Lamine Yamal - who should win men's 2026 Ballon d'Or?
+  link=https://www.skysports.com/football/news/12040/13601847/ballon-dor-2026-harry-kane-kylian-mbappe-and-lamine-yamal-in-race-for-mens-award-stats-and-pundits-opinions
+  date=Mon, 26 Oct 2026 07:00:00 GMT cats=['News Story']
+  desc=144 content=0 media=[] enc=['https://e1.365dm.com/26/10/1920x1080/skysports-ballon-dor-football_7387626.jpg?20261026100415']
+  desc0='Harry Kane is the odds-on favourite to win the 2026 men&#8217;s Ballon d&#8217;Or, which could be one of the tightest results in recent history.'
 
-### dw_world: 11 items, root=rss
-- Venezuela: Opposition leader Machado returns from exile, received by thousands of supporters in Caracas
-  link=https://www.dw.com/en/venezuela-opposition-leader-machado-returns-from-exile-received-by-thousands-of-supporters-in-caracas/a-79759187?maca=en-rss-en-world-4025-xml-mrss
-  date=Mon, 26 Oct 2026 09:08:00 GMT cats=['News']
-  desc=202 content=0 media=[] enc=[]
-  desc0='Nobel Peach Prize winner and popular Venezuelan political opposition figure Maria Corina Machado has returned from nearly a year in exile. She was greeted by th'
-- Protein shakes for teenagers: Good or bad idea?
-  link=https://www.dw.com/en/protein-shakes-for-teenagers-good-or-bad-idea/a-79751929?maca=en-rss-en-world-4025-xml-mrss
-  date=Sun, 25 Oct 2026 16:12:00 GMT cats=['World']
-  desc=219 content=0 media=[] enc=[]
-  desc0="Protein products are marketed as a way of building muscle and losing weight — and they're very popular with young people. They also claim to promote healthy gro"
-- Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny
-  link=https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-world-4025-xml-mrss
-  date=Sun, 25 Oct 2026 13:41:00 GMT cats=['World']
-  desc=176 content=0 media=[] enc=[]
-  desc0="Health officials are investigating whether Ebola patients in Kenya and Nigeria crossed paths at Uganda's main airport as conflicting accounts cloud the source o"
+### atp -> 403 b'<!DOCTYPE html>\n<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->\n<!--[if IE 7]>    <html class'
 
-### npr: 10 items, root=rss
-- Russia says it will open humanitarian corridor to Ukrainian town
-  link=https://www.npr.org/2026/10/26/nx-s1-6014540/russia-says-it-will-open-humanitarian-corridor-to-ukrainian-town
-  date=Mon, 26 Oct 2026 04:42:00 -0400 cats=[]
-  desc=200 content=304 media=[] enc=[]
-  desc0='Russia says it will open a humanitarian corridor to the occupied Ukrainian town of Oleshky, where people have been eating weeds and pickles to survive while tra'
-- Brazil's left-wing President Lula elected for fourth term
-  link=https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election
-  date=Sun, 25 Oct 2026 20:35:00 -0400 cats=[]
-  desc=109 content=666 media=[] enc=[]
-  desc0="Brazil's 80-year-old left-wing leader President Lula defeats Flávio Bolsonaro in a bitterly contested runoff."
-- U.S. influence in Latin America at stake in runoff election in Brazil
-  link=https://www.npr.org/2026/10/25/nx-s1-6011223/u-s-influence-in-latin-america-at-stake-in-runoff-election-in-brazil
-  date=Sun, 25 Oct 2026 17:22:43 -0400 cats=[]
-  desc=210 content=314 media=[] enc=[]
-  desc0="A polarizing presidential election runoff in Latin America's largest economy and biggest democracy pits leftist Lula da Silva's legacy against Trump ally Flavio"
-
-### france24: 24 items, root=rss
-- Lula beats Bolsonaro in Brazil runoff: What does it mean for Donald Trump?
-  link=https://www.france24.com/en/video/20261026-lula-beats-bolsonaro-in-brazil-runoff-what-does-it-mean-for-donald-trump
-  date=Mon, 26 Oct 2026 11:50:55 GMT cats=['']
-  desc=388 content=0 media=['https://s.france24.com/media/display/407c3b70-d0e7-11f1-af1e-4d317af013fd/w:1024/p:16x9/AP26277709264055-1.jpg'] enc=['https://s.france24.com/media/display/407c3b70-d0e7-11f1-af1e-4d317af013fd/w:1024/p:16x9/AP26277709264055-1.jpg']
-  desc0='Lula defeated on Sunday (October 25) Flavio Bolsonaro in Brazil’s presidential election. But rather than conceding, Bolsonaro called for the result to be annull'
-- US midterms: Trump's gains among Latino voters in Texas at risk
-  link=https://www.france24.com/en/video/20261026-us-midterms-trump-s-gains-among-latino-voters-in-texas-at-risk
-  date=Mon, 26 Oct 2026 11:42:21 GMT cats=['']
-  desc=236 content=0 media=['https://s.france24.com/media/display/9c59e456-d128-11f1-ab5d-4b25c96ec90e/w:1024/p:16x9/capture-85a53c06.jpg'] enc=['https://s.france24.com/media/display/9c59e456-d128-11f1-ab5d-4b25c96ec90e/w:1024/p:16x9/capture-85a53c06.jpg']
-  desc0='Latino voters shifted toward Trump two years ago, helping him return to the White House with a Republican-controlled Congress. Now, many are souring on the US p'
-- Israeli election seen as a referendum: For or against Netanyahu?
-  link=https://www.france24.com/en/tv-shows/focus/20261026-israeli-election-seen-as-a-referendum-for-or-against-netanyahu
-  date=Mon, 26 Oct 2026 11:40:25 GMT cats=['Focus']
-  desc=435 content=0 media=['https://s.france24.com/media/display/0152e22a-cf05-11f1-a645-bdb9616e85cf/w:1024/p:16x9/NW-OOV-ECRAN-FREEZE-ISRAEL-ELEX-BIBI-BAIN-Lauren-transfer.jpg'] enc=['https://s.france24.com/media/display/0152e22a-cf05-11f1-a645-bdb9616e85cf/w:1024/p:16x9/NW-OOV-ECRAN-FREEZE-ISRAEL-ELEX-BIBI-BAIN-Lauren-transfer.jpg']
-  desc0="Israeli Prime Minister Benjamin Netanyahu has led his country almost continuously for nearly 17 years. But will he manage to retain power following Tuesday's el"
-
-### ap_gn: 100 items, root=rss
-- Iran says messages are still being passed to the US amid war concerns, and other Mideast news - AP News
-  link=https://news.google.com/rss/articles/CBMikgFBVV95cUxQeDUtVElsazdRYlBXZDhiR2lBRF9VMVFCaEVDSTQ2THNuTlpGM1BOUkF1amNpbE12eHBkNTBlV1IwMmlYRWJLWE5RcEF2Zm0yTXJnazVsV1pMbERNNl8tekRrOHdVNlBUSEVYRURPQXhpakw2aTVtX3VUSnc2aXdndVZyREsxZGF6TUdDdHhrZEQ4UQ?oc=5
-  date=Sun, 25 Oct 2026 22:16:00 GMT cats=[]
-  desc=416 content=0 media=[] enc=[]
-  desc0=' Iran says messages are still being passed to the US amid war concerns, and other Mideast news &nbsp;&nbsp; AP News '
-- NFL Scores, News & Stats | Latest Super Bowl News - AP News
-  link=https://news.google.com/rss/articles/CBMiP0FVX3lxTE9fRi02OXd4bXBMeDZqWl9nMVZwbF9YY3QyQzluc1o4U2RIR1VWMGR6VjVzTjVuSlFtOVVpeWhRRQ?oc=5
-  date=Mon, 26 Oct 2026 10:43:44 GMT cats=[]
-  desc=260 content=0 media=[] enc=[]
-  desc0=' NFL Scores, News & Stats | Latest Super Bowl News &nbsp;&nbsp; AP News '
-- NBA Scores & Daily News | NBA Stats, Scores & News Today - AP News
-  link=https://news.google.com/rss/articles/CBMiP0FVX3lxTFBwMFNyak8wbjBIcmRoX2hyLUNMU3o2NzFoa3UtTFl4UUFQU18tWnVzUWxhZGsxRS1IRXFWdWhoVQ?oc=5
-  date=Mon, 26 Oct 2026 10:57:40 GMT cats=[]
-  desc=267 content=0 media=[] enc=[]
-  desc0=' NBA Scores & Daily News | NBA Stats, Scores & News Today &nbsp;&nbsp; AP News '
-
-### reuters_gn: 100 items, root=rss
-- After Vucic defeat, Serbia waits to see how student-backed leaders will govern - Reuters
-  link=https://news.google.com/rss/articles/CBMitwFBVV95cUxNWDBXeHFlUjhKM2poLUxJVXp5S1RtbEYzVzdqeEU1d2YzNFpraU02SVhwTzVPUU9ERno4bElMZzdGQ1JJY2NraXMtRExidHpOOEtUZkVBaFk3Z2RxVjJhSHJELTFqdUx0SThqV3N5cGcwWUl2cUcxbTZrcHZBS0dXRU56MzNFTExhc0VzT1VvQUV1ejBQZlpONTgtcEFwNXRScTJVcXdGSHpmZkpXdVBsRDFGcy1wVzg?oc=5
-  date=Mon, 26 Oct 2026 10:57:53 GMT cats=[]
-  desc=450 content=0 media=[] enc=[]
-  desc0=' After Vucic defeat, Serbia waits to see how student-backed leaders will govern &nbsp;&nbsp; Reuters '
-- Japan indicts US Marine over Okinawa killing, media say - Reuters
-  link=https://news.google.com/rss/articles/CBMiqwFBVV95cUxPajVKODh3eDM4d085RlBqUFo1cU56SnU0TWQ4dGRFbjlPWGtDams3VXZ3YWJxZzlUUmdPR3dFU0ExT0VFLTZWOU96UEU2SjdTXzZFMWdKbkF3cjM4REl0TXhKdUU4cnIzMnpQRE56dEFpZFlNdmFPMXk1NEVTellVbTlROHF2VUFuMjBQVUJocHlQWnAzdm5XYlplWEhmazVrTzVyNHc5RE1XZ1U?oc=5
-  date=Mon, 26 Oct 2026 10:21:26 GMT cats=[]
-  desc=411 content=0 media=[] enc=[]
-  desc0=' Japan indicts US Marine over Okinawa killing, media say &nbsp;&nbsp; Reuters '
-- EXCLUSIVE: Ambani, Adani outlets among Indian publishers contesting Modi’s privacy law - Reuters
-  link=https://news.google.com/rss/articles/CBMizAFBVV95cUxNanFza21ic1VNOTdSMzhhUTBrQVRqYVhhZWdxYUF5cTJueG9XSEV6NFg4aWc1ZnRHenhTdGtpdDhDdlJjUWFhUnlXN1pUckxqWjMxbENtZ2dNZjh6MHVwOEptMi04QW5WaVBJTUFoM1JMSUpQRENLVE5Ud0JYX3dCM2F6VHBRd2ZHVWkzSGU4VjhQdF9TRVR6RmlYZ05HV2JSVUxPbWN5UTVqNXBuS25OamFEVnVqV0l3Q1RlM2lteXM5MG5pallBZ0hxTW0?oc=5
-  date=Mon, 26 Oct 2026 10:26:30 GMT cats=[]
-  desc=486 content=0 media=[] enc=[]
-  desc0=' EXCLUSIVE: Ambani, Adani outlets among Indian publishers contesting Modi’s privacy law &nbsp;&nbsp; Reuters '
-
-### ap_hub -> 403 b'<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/htm'
-
-### reuters_world -> 401 b'<html lang="en"><head><title>reuters.com</title><style>#cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0'
-
-### therecord: 5 items, root=rss
-- FCC bans two devices with surveillance chips linked to Huawei
-  link=https://therecord.media/fcc-bans-devices-huawei-surveillance-chips
-  date=Fri, 23 Oct 2026 17:28:00 GMT cats=['Government', 'News', 'News Briefs', 'Technology', 'Privacy']
-  desc=205 content=0 media=[] enc=['http://cms.therecord.media/uploads/fcc_f0096cadc5.jpg']
-  desc0='The banned items — a wireless video transmitter and dashboard camera — are made with chips manufactured by Huawei subsidiary HiSilicon, which markets its produc'
-- UK proposes 14-year prison terms for undersea cable sabotage
-  link=https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines
-  date=Fri, 23 Oct 2026 13:26:00 GMT cats=['Technology', 'Nation-state', 'News', 'Industry', 'Government']
-  desc=200 content=0 media=[] enc=['http://cms.therecord.media/uploads/undersea_cables_illustration_getty_unsplash_36603fb153.jpg']
-  desc0='In an era of hybrid threats, the British government wants to update the Submarine Telegraph Act 1885, which carries a maximum fine of £1,000 and five years’ imp'
-- Quest Diagnostics warns of potential data theft after attack on lab service system
-  link=https://therecord.media/quest-diagnostics-network-intrusion
-  date=Fri, 23 Oct 2026 12:52:00 GMT cats=['Cybercrime', 'Industry', 'News Briefs', 'News']
-  desc=120 content=0 media=[] enc=['http://cms.therecord.media/uploads/DSC_05112_bf00638451.jpg']
-  desc0='Nationwide lab test company Quest Diagnostics said one of its key systems may have experienced a breach of patient data.'
-
-### bleeping: 15 items, root=rss
-- Kali Linux 2026.3 released with 6 new tools, desktop updates
-  link=https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/
-  date=Mon, 26 Oct 2026 06:26:52 -0400 cats=['Linux', 'Security']
-  desc=176 content=0 media=[] enc=[]
-  desc0='Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts,'
-- PHP2Shell security flaws now sucessfully exploited in the wild
-  link=https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/
-  date=Mon, 26 Oct 2026 05:19:57 -0400 cats=['Security']
-  desc=158 content=0 media=[] enc=[]
-  desc0='Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]'
-- AI coding agents hijacked using AGENTS.md file in Downloads folder
-  link=https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/
-  date=Sun, 25 Oct 2026 11:49:38 -0400 cats=['Security', 'Artificial Intelligence']
-  desc=170 content=0 media=[] enc=[]
-  desc0="Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that tricked an AI coding agent into installing a rogue npm pack"
-
-### securityweek: 10 items, root=rss
-- Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts
-  link=https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/
-  date=Mon, 26 Oct 2026 11:47:52 +0000 cats=['Cybercrime', 'Mobile & Wireless', 'arrested', 'hacker', 'Netherlands']
-  desc=422 content=0 media=[] enc=[]
-  desc0=' The individuals called victims and persuaded them to install an app and scan their credit cards to loot their bank accounts. \n The post  Dutch Police Arrest Tw'
-- Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages
-  link=https://www.securityweek.com/node2shell-brotli-flaw-triggers-patching-across-microsoft-node-js-python-packages/
-  date=Mon, 26 Oct 2026 10:21:57 +0000 cats=['Vulnerabilities', 'Broccoli2Shell', 'Brotli', 'Featured', 'HTTP2Shell']
-  desc=446 content=0 media=[] enc=[]
-  desc0=' An out-of-bounds write in Google’s Brotli decoder affects Node.js, .NET, PowerShell, and Python packages, and can lead to code execution. \n The post  Node2Shel'
-- Mythos 5 Ignored Real-World Harm in July Attack
-  link=https://www.securityweek.com/mythos-5-ignored-real-world-harm-in-july-attack/
-  date=Mon, 26 Oct 2026 09:10:03 +0000 cats=['Artificial Intelligence', 'AI', 'Featured', 'Mythos', 'rogue AI']
-  desc=357 content=0 media=[] enc=[]
-  desc0=' The model engaged in severe overreach and dishonesty, creating fake identities and submitting malicious code on GitHub. \n The post  Mythos 5 Ignored Real-World'
-
-### krebs: 10 items, root=rss
-- Widespread PHP Flaw May Cause Many Site Outages Today
-  link=https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/
-  date=Wed, 21 Oct 2026 15:26:07 +0000 cats=['Latest Warnings', 'Security Tools', 'The Coming Storm', 'Time to Patch', 'CVE-2026-109618']
-  desc=372 content=7438 media=[] enc=[]
-  desc0='Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pai'
-- Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
-  link=https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/
-  date=Mon, 19 Oct 2026 13:48:56 +0000 cats=['A Little Sunshine', 'Breadcrumbs', 'Data Breaches', "Ne'er-Do-Well News", 'Ransomware']
-  desc=460 content=23047 media=[] enc=[]
-  desc0='U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two diff'
-- U.K. Sanctions Cryptomus for RU Money Laundering
-  link=https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/
-  date=Wed, 14 Oct 2026 14:22:49 +0000 cats=['A Little Sunshine', "Ne'er-Do-Well News", "Russia's War on Ukraine", 'Web Fraud 2.0', 'Certa Payments']
-  desc=310 content=8431 media=[] enc=[]
-  desc0='The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payment'
-
-### thehackernews: 50 items, root=rss
-- Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses
-  link=https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html
-  date=Mon, 26 Oct 2026 16:53:56 +0530 cats=[]
-  desc=391 content=0 media=[] enc=['https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH3sLtMeyrqaZo1e2DoGlQohJtAM96DKv9JxQVxynJVNyJ_76dwQQAvkcN2xeos8NtStnH6A3B4bOwtFvdsNSxdBkR6so5s66iBb0ApIhIJ2cs3hVCYdh6oOnO4K_kwKOJsDSqL4wsPrOJ48x3VmSXiQwpcxm_ULL7En-Xw_9Rc1sEFQvCdb9Sr0NwUH0/s1600/Misses.jpg']
-  desc0='Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed. Network data, like that from a network d'
-- uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts
-  link=https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html
-  date=Mon, 26 Oct 2026 15:24:02 +0530 cats=[]
-  desc=395 content=0 media=[] enc=['https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdBBtFdo2KmBzapUDlLWoS0hh17lYfWUw0kOLWTfbgeNOTP5F5pEJPmWSzBHkjSv4HR-vwfJ-Ba38Tg_su11Zi4CDKXJ29BnlQdCrU-oU84jl7TAET_aPyWV2fRazSLy0hBz8sBP3EhFubGETPdPwpnAFAX0CSbEQfsA65JqQMob9R_4cPbbJRi91KAkY/s1600/telegram-wechat.jpg']
-  desc0='A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi '
-- Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations
-  link=https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html
-  date=Mon, 26 Oct 2026 14:05:51 +0530 cats=[]
-  desc=398 content=0 media=[] enc=['https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKwJ8hpTcgaV_VMCyzQDPQQOPlZmmE3Fg-XAOrUfFazMKgVGEoT7OHQgWhyJLhCpHO6Hvp35u_YZGBfyGXAuJfpwP4BriicsNfvhPXjq4BzNyULVQPzNCWzmSIGnDLN7P2RNW2sfm15qZxLrVzpDg8FvOcGTZBhMsBFPH3IhiV1k3NdGAHFRC7kkKaOMMn/s1600/contoso.jpg']
-  desc0='Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in s'
-
-### darkreading: 50 items, root=rss
-- Trust Is Not What It Seems — And Fraudsters Are Counting on It
-  link=https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it
-  date=Fri, 23 Oct 2026 20:57:56 GMT cats=[]
-  desc=191 content=0 media=['https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt34579512de050396/6a5a6336b09056633bee9fe7/trust_dial-NicoElNino-getty-2079838824.jpg?width=720&quality=80&disable=upscale'] enc=[]
-  desc0="Threat actors don't need to rely on malware to breach organizations anymore. They're simply calling help desks and politely asking for access, with a little hel"
-- Exposed to PHP2Shell? Cyber Experts Weigh in With Advice
-  link=https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice
-  date=Fri, 23 Oct 2026 19:41:23 GMT cats=[]
-  desc=151 content=0 media=['https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte307a3bd1a7bcb35/6adb9c8d2d5b887cc408cb52/Globe_bandages-zennie-Getty.jpg?width=720&quality=80&disable=upscale'] enc=[]
-  desc0="Fixing the critical PHP flaws is not as simple as clicking &quot;Update.&quot; Here's how to assess your risk, and what you can do to protect yourself."
-- AI Tools Are Generating Massive Attacks for Little Cost
-  link=https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost
-  date=Fri, 23 Oct 2026 17:26:59 GMT cats=[]
-  desc=153 content=0 media=['https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte7023e63db2b06bb/6adb780c560f54c5dbf647e8/economics-cybersecurity-Ton_Wanniwat-shutterstock.jpg?width=720&quality=80&disable=upscale'] enc=[]
-  desc0='One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12. Cyber-defense will have to change.'
-
-### arstech: 20 items, root=rss
-- A 1,000-mile cloud on Mars may reveal physics never seen in nature
-  link=https://arstechnica.com/science/2026/10/a-1000-mile-cloud-on-mars-may-reveal-physics-never-seen-in-nature/
-  date=Sat, 24 Oct 2026 11:50:28 +0000 cats=['Science', 'Arsia Mons', 'Mars', 'planetary science', 'syndication']
-  desc=86 content=1981 media=['https://cdn.arstechnica.net/wp-content/uploads/2026/10/marscloud-1152x648.jpg'] enc=[]
-  desc0='A new model suggests Mars may host ice-forming physics never directly observed before.'
-- Ice sheet expansion may have started 2,000 years ago, but we canceled that
-  link=https://arstechnica.com/science/2026/10/ice-sheet-expansion-may-have-started-2000-years-go-but-we-canceled-that/
-  date=Sat, 24 Oct 2026 11:00:09 +0000 cats=['Science', 'climate change', 'Earth science', 'glaciation', 'global warming']
-  desc=78 content=1654 media=['https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1458824614-1152x648.jpg'] enc=[]
-  desc0='The tiny remains of the Laurentide Ice Sheet began getting somewhat less tiny.'
-- NASA updates lander plans for Moon landings, finally solves long-festering Orion issue
-  link=https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/
-  date=Fri, 23 Oct 2026 22:48:25 +0000 cats=['Space', 'blue moon', 'NASA', 'orion', 'space']
-  desc=84 content=1293 media=['https://cdn.arstechnica.net/wp-content/uploads/2026/10/centaur-1002x648.jpg'] enc=[]
-  desc0='"We have the mandate, we have the resources, and the support from our stakeholders."'
-
-### ars_security: 20 items, root=rss
-- Knicks sent employees fake offer of championship rings in phishing test: Report
-  link=https://arstechnica.com/tech-policy/2026/10/knicks-sent-employees-fake-offer-of-championship-rings-in-phishing-test-report/
-  date=Fri, 23 Oct 2026 16:51:59 +0000 cats=['Policy', 'Security', 'corporate cybersecurity tests', 'new york knicks']
-  desc=71 content=1522 media=['https://cdn.arstechnica.net/wp-content/uploads/2026/10/james-dolan-knicks-championship-1152x648-1792772606.jpg'] enc=[]
-  desc0='Corporate phishing tests are common, but this one was especially cruel.'
-- Disgraced eMudhra drops out of TLS business after using cert private key of 4
-  link=https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/
-  date=Thu, 22 Oct 2026 20:17:52 +0000 cats=['Biz & IT', 'Security', 'cerfificate authority', 'encryption', 'tls']
-  desc=79 content=1465 media=['https://cdn.arstechnica.net/wp-content/uploads/2025/02/GettyImages-1778229942-1152x648.jpg'] enc=[]
-  desc0='Flubbed key signing "ceremony" allowed minting of web credentials for any site.'
-- Hackers got a four-day head start on epic PHP2Shell vulnerability
-  link=https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/
-  date=Thu, 22 Oct 2026 15:25:02 +0000 cats=['AI', 'Security', 'php', 'PHP exploit', 'syndication']
-  desc=75 content=921 media=['https://cdn.arstechnica.net/wp-content/uploads/2022/03/internet-routing-1000x648.jpeg'] enc=[]
-  desc0='Hackers were already probing the bug before defenders were told it existed.'
+### motorsport: 50 items, root=rss
+- Mercedes pokes fun at Kimi Antonelli after awkward Austin mishap
+  link=https://www.motorsport.com/f1/news/mercedes-pokes-fun-at-kimi-antonelli-after-awkward-austin-mishap/10868627/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www
+  date=Mon, 26 Oct 2026 12:39:00 +0000 cats=['Circuit of the Americas', 'Formula 1']
+  desc=635 content=0 media=[] enc=['https://cdn-1.motorsport.com/images/amp/YWKA1geY/s6/motorsport-com-graphics-16.jpg']
+  desc0='Mercedes has poked fun at Kimi Antonelli\'s awkward reversing mishap in Austin, sharing in-car footage of the moment on its TikTok account with the caption, "Cha'
+- Franco Colapinto responds to Jeremy Clarkson’s controversial comment about him
+  link=https://www.motorsport.com/f1/news/franco-colapinto-responds-to-jeremy-clarksons-controversial-comment-about-him/10868562/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www
+  date=Mon, 26 Oct 2026 11:35:03 +0000 cats=['Circuit of the Americas', 'Formula 1']
+  desc=640 content=0 media=[] enc=['https://cdn-3.motorsport.com/images/amp/6VyKX7dY/s6/franco-colapinto-alpine.jpg']
+  desc0='Franco Colapinto has responded to Jeremy Clarkson’s comment that he would give the Alpine Formula 1 driver a grid penalty for being Argentinian. Clarkson was a '
+- Juan Pablo Montoya questions George Russell's F1 United States GP penalty
+  link=https://www.motorsport.com/f1/news/juan-pablo-montoya-questions-george-russells-f1-united-states-gp-penalty/10868603/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www
+  date=Mon, 26 Oct 2026 11:25:23 +0000 cats=['Circuit of the Americas', 'Formula 1']
+  desc=642 content=0 media=[] enc=['https://cdn-6.motorsport.com/images/amp/6lmANE80/s6/motorsport-com-graphics-15.jpg']
+  desc0='Former Formula 1 driver Juan Pablo Montoya was "surprised" by George Russell\'s penalty at the United States Grand Prix, claiming the Mercedes driver did not gai'
