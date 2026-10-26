@@ -1,6 +1,7 @@
 package net.kravos.vesti.data
 
 import net.kravos.vesti.data.Section.BEZBEDNOST
+import net.kravos.vesti.data.Section.SPORT
 import net.kravos.vesti.data.Section.SRBIJA
 import net.kravos.vesti.data.Section.SVET
 
@@ -40,6 +41,17 @@ object Sources {
         Source("thn", "The Hacker News", BEZBEDNOST, listOf("https://feeds.feedburner.com/TheHackersNews"), lang = "en"),
         Source("darkreading", "Dark Reading", BEZBEDNOST, listOf("https://www.darkreading.com/rss.xml"), lang = "en", reader = false),
         Source("ars", "Ars Technica", BEZBEDNOST, listOf("https://arstechnica.com/security/feed/"), lang = "en"),
+        // Sport (N1, Nova, Danas, BBC, Al Jazeera... also feed their sport pieces into this tab)
+        Source("sportklub", "Sport Klub", SPORT, listOf("https://sportklub.n1info.rs/feed/")),
+        Source("b92sport", "B92 Sport", SPORT, listOf("https://www.b92.net/rss/sport")),
+        Source("rtssport", "RTS Sport", SPORT, listOf("https://www.rts.rs/page/sport/ci/rss.html")),
+        Source("zurnal", "Žurnal", SPORT, listOf("https://www.zurnal.rs/rss")),
+        Source("meridian", "Meridian Sport", SPORT, listOf("https://meridiansport.rs/feed/")),
+        Source("sportske", "Sportske.net", SPORT, listOf("https://www.sportske.net/rss"), reader = false),
+        Source("bbcsport", "BBC Sport", SPORT, listOf("https://feeds.bbci.co.uk/sport/rss.xml"), lang = "en"),
+        Source("guardiansport", "Guardian Sport", SPORT, listOf("https://www.theguardian.com/sport/rss"), lang = "en"),
+        Source("eurohoops", "Eurohoops", SPORT, listOf("https://www.eurohoops.net/en/feed/"), lang = "en"),
+        Source("motorsport", "Motorsport F1", SPORT, listOf("https://www.motorsport.com/rss/f1/news/"), lang = "en"),
     )
 
     private val byId = ALL.associateBy { it.id }
@@ -49,11 +61,15 @@ object Sources {
     /** Serbian-language world sections that should land in the "Svet" tab. */
     val WORLD_TAGS = setOf("svet", "global", "world")
 
-    /** Sport / entertainment / lifestyle, hidden when "Sakrij sport i zabavu" is on. */
-    val SOFT_TAGS = setOf(
-        "sport", "sport-klub", "fudbal", "košarka", "kosarka", "tenis", "odbojka", "vaterpolo", "formula 1",
+    /** Sport pieces from general outlets move to the Sport tab. */
+    val SPORT_TAGS = setOf(
+        "sport", "sport-klub", "sport klub", "sports", "fudbal", "košarka", "kosarka", "tenis", "odbojka", "vaterpolo",
+        "formula 1", "football", "rukomet",
+    )
+
+    /** Showbiz / lifestyle, hidden when "Sakrij zabavu i lifestyle" is on. */
+    val ENT_TAGS = setOf(
         "zabava", "magazin", "showbiz", "lifestyle", "zivot", "život", "priča se", "prica-se", "horoskop", "auto",
-        "radar-kolaz", "kolaž", "video", "football", "sports", "culture", "music", "film", "tv-and-radio",
-        "fashion", "lifeandstyle", "travel", "food",
+        "radar-kolaz", "kolaž", "video", "fashion", "lifeandstyle", "travel", "food", "tv-and-radio",
     )
 }

@@ -72,10 +72,11 @@ fun SavedScreen(pad: PaddingValues) {
     val items by app.saved.items.collectAsState()
     val scope = rememberCoroutineScope()
     val p = LocalPalette.current
+    Column(Modifier.fillMaxSize()) {
+    TopBar("Za kasnije")
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = pad.calculateBottomPadding() + 24.dp)) {
         item("mast") {
-            Column(Modifier.fillMaxWidth().statusBarsPadding().padding(start = 18.dp, end = 18.dp, top = 14.dp)) {
-                Text("ZA KASNIJE", style = MaterialTheme.typography.labelSmall, color = p.dim)
+            Column(Modifier.fillMaxWidth().padding(start = 18.dp, end = 18.dp, top = 14.dp)) {
                 Spacer(Modifier.height(2.dp))
                 Text("Sačuvano", style = MaterialTheme.typography.displaySmall)
                 Spacer(Modifier.height(10.dp))
@@ -102,6 +103,7 @@ fun SavedScreen(pad: PaddingValues) {
             }
             Rule(Modifier.padding(horizontal = 18.dp))
         }
+    }
     }
 }
 
@@ -139,7 +141,7 @@ fun SettingsScreen(pad: PaddingValues, release: Release?, onCheck: () -> Unit) {
     val p = LocalPalette.current
     val theme by app.prefs.theme.collectAsState()
     val latin by app.prefs.latin.collectAsState()
-    val hideSoft by app.prefs.hideSoft.collectAsState()
+    val hideEnt by app.prefs.hideEnt.collectAsState()
     val on by app.prefs.sources.collectAsState()
     var progress by remember { mutableStateOf<Float?>(null) }
     var updErr by remember { mutableStateOf<String?>(null) }
@@ -163,7 +165,7 @@ fun SettingsScreen(pad: PaddingValues, release: Release?, onCheck: () -> Unit) {
                     }
                 }
                 Toggle("Sve latinicom", "Ćirilične izvore prikaži latinicom", latin) { app.prefs.setLatin(it) }
-                Toggle("Sakrij sport i zabavu", "Sport, šou-biznis i lifestyle ne ulaze u feed", hideSoft) { app.prefs.setHideSoft(it); changed() }
+                Toggle("Sakrij zabavu i lifestyle", "Šou-biznis, magazin i lifestyle ne ulaze u feed (sport ima svoj tab)", hideEnt) { app.prefs.setHideEnt(it); changed() }
             }
             Section.entries.forEach { sec ->
                 item("src-${sec.name}") {

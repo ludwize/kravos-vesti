@@ -75,7 +75,7 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
     suspend fun rebuild() = withContext(Dispatchers.Default) {
         val now = System.currentTimeMillis()
         val on = prefs.sources.value
-        val hideSoft = prefs.hideSoft.value
+        val hideEnt = prefs.hideEnt.value
         val seen = HashSet<String>()
         val seenTitle = HashSet<String>()
         val arts = ArrayList<Article>()
@@ -84,10 +84,17 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
             val src = Sources.of(sid) ?: continue
             for (a0 in list) {
                 if (a0.tags.any { it in src.skip }) continue
-                if (hideSoft && a0.tags.any { it in Sources.SOFT_TAGS }) continue
+                if (hideEnt && a0.tags.any { it in Sources.ENT_TAGS }) continue
                 val maxAge = if (src.section == Section.BEZBEDNOST) 7 * 86400_000L else 3 * 86400_000L
                 if (now - a0.published > maxAge) continue
-                val a = if (src.section == Section.SRBIJA && src.lang == "sr" && a0.tags.any { it in Sources.WORLD_TAGS }) a0.copy(section = Section.SVET) else a0
+                val section = when {
+                    src.section == Section.SPORT || src.section == Section.BEZBEDNOST -> src.section
+                    a0.tags.any { it in Sources.SPORT_TAGS } -> Section.SPORT
+                    src.section == Section.SRBIJA && src.lang == "sr" && a0.tags.any { it in Sources.WORLD_TAGS } -> Section.SVET
+                    else -> src.section
+                }
+                val routed = if (section != a0.section) a0.copy(section = section) else a0
+                val a = routed.copy(cats = Categories.assign(routed))
                 if (!seen.add(a.id)) continue
                 if (!seenTitle.add(sid + "|" + Text.norm(a.title))) continue
                 arts += a
@@ -131,7 +138,7 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
         return r
     }
 
-    private fun isSmall(u: String) = u.contains("i.guim.co.uk") && u.contains("width=140")
+    private fun isSmall(u: String) = (u.contains("i.guim.co.uk") && u.contains("width=140")) || u.contains("/thumbs/")
 
     private companion object {
         val OG = Regex("<meta[^>]+property=[\"']og:image[\"'][^>]*content=[\"']([^\"']+)[\"']", RegexOption.IGNORE_CASE)

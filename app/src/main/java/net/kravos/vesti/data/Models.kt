@@ -1,6 +1,6 @@
 package net.kravos.vesti.data
 
-enum class Section(val label: String) { SRBIJA("Srbija"), SVET("Svet"), BEZBEDNOST("Bezbednost") }
+enum class Section(val label: String) { SRBIJA("Srbija"), SVET("Svet"), BEZBEDNOST("Bezbednost"), SPORT("Sport") }
 
 /**
  * A news outlet. [reader] = false means the in-app reader can't get the text (e.g. Google News
@@ -32,6 +32,8 @@ data class Article(
     val live: Boolean,
     /** Lower-cased categories + URL path segments, used for filtering. */
     val tags: Set<String>,
+    /** Category ids from [Categories], assigned when the feed is rebuilt. */
+    val cats: Set<String> = emptySet(),
 )
 
 data class Story(val id: String, val section: Section, val articles: List<Article>) {
@@ -41,6 +43,7 @@ data class Story(val id: String, val section: Section, val articles: List<Articl
     val first: Long get() = articles.minOf { it.published }
     val image: String? get() = articles.firstNotNullOfOrNull { it.image }
     val live: Boolean get() = articles.any { it.live }
+    val cats: Set<String> get() = articles.flatMapTo(HashSet()) { it.cats }
 }
 
 data class Feed(

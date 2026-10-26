@@ -88,6 +88,11 @@ tap_text "Srbija"; sleep 3; shot 30-srbija
 tap_text "Najnovije"; sleep 3; shot 31-srbija-najnovije
 tap_regex '.{50,}'; sleep 10; shot 32-najnovije-reader
 back
+tap_text "Najvažnije"; sleep 2
+tap_text "Kategorija"; sleep 2; shot 33-category-menu
+tap_text "Politika"; sleep 3; shot 34-politika
+tap_text "Kategorija"; sleep 2
+tap_text "Sve vesti"; sleep 2
 tap_text "Svet"; sleep 3; shot 40-svet
 scroll
 tap_regex '[0-9]+ izvora'; sleep 3; shot 41-svet-story
@@ -98,6 +103,12 @@ back; back
 tap_text "Sajber"; sleep 3; shot 50-bezbednost
 tap_regex '.{50,}'; sleep 10; shot 51-bezb-reader
 scroll; shot 52-bezb-reader-scroll
+back
+tap_text "Sport"; sleep 3; shot 55-sport
+scroll; shot 56-sport-scroll
+tap_text "Kategorija"; sleep 2; shot 57-sport-menu
+tap_text "Košarka"; sleep 3; shot 58-kosarka
+tap_regex '.{50,}'; sleep 10; shot 59-sport-reader
 back
 tap_text "Sačuvano"; sleep 3; shot 60-sacuvano
 tap_regex 'NOVA.*|N1.*|DANAS.*|[A-Z ]+ · .*'; sleep 6; shot 61-saved-reader

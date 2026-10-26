@@ -13,7 +13,7 @@ enum class Tab(val label: String, val section: Section?, val short: String = lab
     SRBIJA("Srbija", Section.SRBIJA),
     SVET("Svet", Section.SVET),
     BEZBEDNOST("Bezbednost", Section.BEZBEDNOST, "Sajber"),
-    SACUVANO("Sačuvano", null),
+    SPORT("Sport", Section.SPORT),
 }
 
 sealed class Route {
@@ -21,6 +21,7 @@ sealed class Route {
     data class Reader(val article: Article) : Route()
     data class SourceFeed(val sourceId: String) : Route()
     data object Settings : Route()
+    data object Saved : Route()
 }
 
 class Navigator {

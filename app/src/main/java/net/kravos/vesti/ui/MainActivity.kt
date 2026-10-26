@@ -24,7 +24,7 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Bookmark
+import androidx.compose.material.icons.filled.SportsSoccer
 import androidx.compose.material.icons.filled.Newspaper
 import androidx.compose.material.icons.filled.Public
 import androidx.compose.material.icons.filled.Shield
@@ -132,7 +132,7 @@ private fun Root(app: App) {
                                         Tab.SRBIJA -> Icons.Filled.Place
                                         Tab.SVET -> Icons.Filled.Public
                                         Tab.BEZBEDNOST -> Icons.Filled.Shield
-                                        Tab.SACUVANO -> Icons.Filled.Bookmark
+                                        Tab.SPORT -> Icons.Filled.SportsSoccer
                                     },
                                     null,
                                 )
@@ -173,7 +173,7 @@ private fun Root(app: App) {
                             is Route.Reader -> ReaderScreen(dest.article, padding)
                             is Route.SourceFeed -> SourceScreen(dest.sourceId, padding)
                             is Route.Settings -> SettingsScreen(padding, release) { scope.launch { release = Updater.latest() } }
-                            Tab.SACUVANO -> SavedScreen(padding)
+                            is Route.Saved -> SavedScreen(padding)
                             is Tab -> FeedScreen(dest, padding)
                             else -> Unit
                         }

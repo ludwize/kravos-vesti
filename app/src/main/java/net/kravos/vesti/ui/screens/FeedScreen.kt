@@ -19,6 +19,14 @@ import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
+import androidx.compose.foundation.layout.size
+import androidx.compose.material.icons.filled.ArrowDropDown
+import androidx.compose.material.icons.outlined.BookmarkBorder
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.ui.unit.sp
+import net.kravos.vesti.data.Categories
 import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -72,6 +80,7 @@ fun FeedScreen(tab: Tab, pad: PaddingValues) {
     val feed by app.repo.feed.collectAsState()
     val refreshing by app.repo.refreshing.collectAsState()
     var mode by rememberSaveable(tab) { mutableIntStateOf(0) }
+    var cat by rememberSaveable(tab) { mutableStateOf<String?>(null) }
     var pulled by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
     val animOff = Fmt.animationsOff(LocalContext.current)
@@ -88,40 +97,88 @@ fun FeedScreen(tab: Tab, pad: PaddingValues) {
         modifier = Modifier.fillMaxSize(),
     ) {
         LazyColumn(Modifier.fillMaxSize(), state = listState, contentPadding = PaddingValues(bottom = pad.calculateBottomPadding() + 24.dp)) {
-            item("mast") { Masthead(tab.label) }
-            item("mode") { ModeSwitch(mode) { mode = it } }
             val f = feed
+            val counts = remember(f, tab) {
+                val m = HashMap<String, Int>()
+                tab.section?.let { sec -> f?.stories?.get(sec)?.forEach { st -> st.cats.forEach { c -> m[c] = (m[c] ?: 0) + 1 } } }
+                m
+            }
+            item("mast") { Masthead(tab, cat, counts) { cat = it; scope.launch { listState.scrollToItem(0) } } }
+            item("mode") { ModeSwitch(mode) { mode = it } }
             when {
                 f == null -> item("load") { Spinner() }
                 f.articles.isEmpty() -> item("err") {
                     if (refreshing) Spinner()
                     else ErrorBox(if (f.failed.isNotEmpty()) "Ne odgovaraju: " + f.failed.joinToString(", ") else null) { scope.launch { app.repo.refresh(force = true) } }
                 }
-                mode == 1 -> latest(f, tab.section, open)
+                mode == 1 -> latest(f, tab.section, cat, open)
                 tab == Tab.DANAS -> digest(f, openStory, open) { nav.tab(it) }
-                else -> section(f, tab.section!!, openStory)
+                else -> section(f, tab.section!!, cat, openStory)
             }
             if (f != null && f.articles.isNotEmpty()) item("foot") { Footer(f) }
         }
     }
 }
 
+/** Date line, section title (a category menu on section tabs), saved + settings icons, heavy rule. */
 @Composable
-private fun Masthead(title: String) {
+private fun Masthead(tab: Tab, cat: String?, counts: Map<String, Int>, onCat: (String?) -> Unit) {
     val nav = LocalNav.current
     val p = LocalPalette.current
+    val sec = tab.section
+    var menu by remember { mutableStateOf(false) }
+    val catLabel = cat?.let { Categories.of(it)?.label }
     Column(Modifier.fillMaxWidth().statusBarsPadding().padding(start = 18.dp, end = 6.dp, top = 14.dp)) {
         Row(verticalAlignment = Alignment.Top) {
             Column(Modifier.weight(1f)) {
-                Text(Fmt.masthead().uppercase(), style = MaterialTheme.typography.labelSmall, color = p.dim)
+                Text(
+                    (if (catLabel != null) tab.label + " · " else "").uppercase() + Fmt.masthead().uppercase(),
+                    style = MaterialTheme.typography.labelSmall, color = if (catLabel != null) p.accent else p.dim, maxLines = 1,
+                )
                 Spacer(Modifier.height(2.dp))
-                Text(title, style = MaterialTheme.typography.displaySmall)
+                Box {
+                    Row(
+                        if (sec != null) Modifier.clickable { menu = true } else Modifier,
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Text(
+                            catLabel ?: tab.label, Modifier.weight(1f, fill = false),
+                            style = if (catLabel == null) MaterialTheme.typography.displaySmall
+                            else MaterialTheme.typography.displaySmall.copy(fontSize = 28.sp, lineHeight = 33.sp),
+                            maxLines = 2, overflow = TextOverflow.Ellipsis,
+                        )
+                        if (sec != null) Icon(Icons.Filled.ArrowDropDown, "Kategorija", Modifier.size(34.dp), tint = p.dim)
+                    }
+                    if (sec != null) DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, containerColor = MaterialTheme.colorScheme.surfaceContainerLowest) {
+                        CatItem("Sve vesti", null, cat == null) { onCat(null); menu = false }
+                        HorizontalDivider(color = p.rule)
+                        Categories.forSection(sec).forEach { c ->
+                            val n = counts[c.id] ?: 0
+                            if (n > 0) CatItem(c.label, n, cat == c.id) { onCat(c.id); menu = false }
+                        }
+                    }
+                }
             }
+            IconButton(onClick = { nav.go(Route.Saved) }) { Icon(Icons.Outlined.BookmarkBorder, "Sačuvano", tint = p.dim) }
             IconButton(onClick = { nav.go(Route.Settings) }) { Icon(Icons.Outlined.Settings, "Podešavanja", tint = p.dim) }
         }
         Spacer(Modifier.height(10.dp))
         Box(Modifier.fillMaxWidth().padding(end = 12.dp).height(2.dp).background(p.ink))
     }
+}
+
+@Composable
+private fun CatItem(label: String, count: Int?, selected: Boolean, onClick: () -> Unit) {
+    val p = LocalPalette.current
+    DropdownMenuItem(
+        text = {
+            Row(Modifier.width(220.dp), verticalAlignment = Alignment.CenterVertically) {
+                Text(label, Modifier.weight(1f), style = MaterialTheme.typography.titleMedium, color = if (selected) p.accent else p.ink)
+                if (count != null) Text("$count", style = MaterialTheme.typography.labelMedium, color = p.dim)
+            }
+        },
+        onClick = onClick,
+    )
 }
 
 @Composable
@@ -148,7 +205,7 @@ private fun LazyListScope.digest(f: Feed, openStory: (Story) -> Unit, open: (Art
         items(live, key = { "live-" + it.id }) { a -> LiveRow(a) { open(a) } }
         item("live-rule") { Rule() }
     }
-    val plan = listOf(Triple(Section.SRBIJA, Tab.SRBIJA, 6), Triple(Section.SVET, Tab.SVET, 5), Triple(Section.BEZBEDNOST, Tab.BEZBEDNOST, 4))
+    val plan = listOf(Triple(Section.SRBIJA, Tab.SRBIJA, 6), Triple(Section.SVET, Tab.SVET, 5), Triple(Section.BEZBEDNOST, Tab.BEZBEDNOST, 4), Triple(Section.SPORT, Tab.SPORT, 4))
     for ((sec, tab, n) in plan) {
         val list = f.stories[sec].orEmpty().take(n)
         if (list.isEmpty()) continue
@@ -162,9 +219,9 @@ private fun LazyListScope.digest(f: Feed, openStory: (Story) -> Unit, open: (Art
     }
 }
 
-private fun LazyListScope.section(f: Feed, sec: Section, openStory: (Story) -> Unit) {
-    val list = f.stories[sec].orEmpty().take(150)
-    if (list.isEmpty()) { item("none") { net.kravos.vesti.ui.components.Empty("Nema vesti iz uključenih izvora.") }; return }
+private fun LazyListScope.section(f: Feed, sec: Section, cat: String?, openStory: (Story) -> Unit) {
+    val list = f.stories[sec].orEmpty().filter { cat == null || cat in it.cats }.take(150)
+    if (list.isEmpty()) { item("none") { net.kravos.vesti.ui.components.Empty(if (cat != null) "Trenutno nema vesti u ovoj kategoriji." else "Nema vesti iz uključenih izvora.") }; return }
     list.forEachIndexed { i, s ->
         item("s-${s.id}") {
             if (i == 0) StoryHero(s) { openStory(s) } else StoryRow(s) { openStory(s) }
@@ -173,10 +230,10 @@ private fun LazyListScope.section(f: Feed, sec: Section, openStory: (Story) -> U
     }
 }
 
-private fun LazyListScope.latest(f: Feed, sec: Section?, open: (Article) -> Unit) {
+private fun LazyListScope.latest(f: Feed, sec: Section?, cat: String?, open: (Article) -> Unit) {
     val coverage = HashMap<String, Int>()
     f.stories.values.forEach { l -> l.forEach { s -> val n = s.sources.size - 1; if (n > 0) s.articles.forEach { coverage[it.id] = n } } }
-    val list = f.articles.filter { sec == null || it.section == sec }.take(200)
+    val list = f.articles.filter { (sec == null || it.section == sec) && (cat == null || cat in it.cats) }.take(200)
     items(list, key = { "n-" + it.id }) { a ->
         ArticleRow(a, coverage[a.id] ?: 0) { open(a) }
         Rule(Modifier.padding(horizontal = 18.dp))

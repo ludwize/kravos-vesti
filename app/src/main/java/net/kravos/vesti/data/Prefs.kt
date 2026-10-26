@@ -18,10 +18,10 @@ class Prefs(context: Context) {
     val latin: StateFlow<Boolean> = _latin
     fun setLatin(v: Boolean) { sp.edit().putBoolean("latin", v).apply(); _latin.value = v }
 
-    private val _hideSoft = MutableStateFlow(sp.getBoolean("hideSoft", true))
-    /** Hide sport, showbiz and lifestyle. */
-    val hideSoft: StateFlow<Boolean> = _hideSoft
-    fun setHideSoft(v: Boolean) { sp.edit().putBoolean("hideSoft", v).apply(); _hideSoft.value = v }
+    private val _hideEnt = MutableStateFlow(sp.getBoolean("hideEnt", true))
+    /** Hide showbiz and lifestyle (sport has its own tab now). */
+    val hideEnt: StateFlow<Boolean> = _hideEnt
+    fun setHideEnt(v: Boolean) { sp.edit().putBoolean("hideEnt", v).apply(); _hideEnt.value = v }
 
     private val _textSize = MutableStateFlow(sp.getInt("textSize", 1))
     /** Reader text size step 0..3. */
