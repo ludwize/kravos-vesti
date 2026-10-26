@@ -7,11 +7,11 @@ import net.kravos.vesti.App
 import net.kravos.vesti.data.Article
 import net.kravos.vesti.data.Section
 
-enum class Tab(val label: String, val section: Section?) {
+enum class Tab(val label: String, val section: Section?, val short: String = label) {
     DANAS("Danas", null),
     SRBIJA("Srbija", Section.SRBIJA),
     SVET("Svet", Section.SVET),
-    BEZBEDNOST("Bezbednost", Section.BEZBEDNOST),
+    BEZBEDNOST("Bezbednost", Section.BEZBEDNOST, "Sajber"),
     SACUVANO("Sačuvano", null),
 }
 

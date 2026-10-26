@@ -126,7 +126,7 @@ private fun Root(app: App) {
                                     null,
                                 )
                             },
-                            label = { Text(t.label, fontSize = 11.sp, maxLines = 1) },
+                            label = { Text(t.short, fontSize = 11.sp, maxLines = 1) },
                             colors = NavigationBarItemDefaults.colors(
                                 indicatorColor = MaterialTheme.colorScheme.secondaryContainer,
                                 selectedIconColor = p.accent,

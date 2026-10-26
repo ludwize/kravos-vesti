@@ -58,6 +58,14 @@ SIZE=$(adb shell wm size | grep -oE '[0-9]+x[0-9]+' | tail -1)
 W=${SIZE%x*}; H=${SIZE#*x}
 scroll() { adb shell input swipe $((W / 2)) $((H * 3 / 4)) $((W / 2)) $((H / 4)) 400; sleep 2; }
 
+ensure() {
+  if ! adb shell dumpsys window | grep -q "mCurrentFocus.*$PKG"; then
+    echo "app not in front, relaunching" >> "$OUT/steps.txt"
+    adb shell am start -W -n $PKG/.ui.MainActivity >/dev/null 2>&1; sleep 6
+  fi
+}
+back() { adb shell input keyevent KEYCODE_BACK; sleep 2; ensure; }
+
 shot 01-danas
 scroll; shot 02-danas-scroll
 scroll; shot 03-danas-scroll2
@@ -65,39 +73,45 @@ scroll; shot 04-danas-scroll3
 
 adb shell am force-stop $PKG; adb shell am start -W -n $PKG/.ui.MainActivity >/dev/null 2>&1; sleep 8
 shot 05-warm-start
-tap_regex '[0-9]+ izvora'
-sleep 3
+scroll
+tap_regex '[0-9]+ izvora'; sleep 2
 shot 10-story
 scroll; shot 11-story-scroll
-tap_regex 'pre [0-9]+ (min|h)'
-sleep 10
+tap_regex 'pre [0-9]+ (min|h)'; sleep 10
 shot 20-reader
 scroll; shot 21-reader-scroll
 scroll; shot 22-reader-scroll2
-tap_text "Sačuvaj"
-sleep 2
-adb shell input keyevent KEYCODE_BACK; sleep 2
-adb shell input keyevent KEYCODE_BACK; sleep 2
+tap_text "Sačuvaj"; sleep 2; shot 23-reader-saved
+back; back
 
 tap_text "Srbija"; sleep 3; shot 30-srbija
 tap_text "Najnovije"; sleep 3; shot 31-srbija-najnovije
+tap_regex '.{50,}'; sleep 10; shot 32-najnovije-reader
+back
 tap_text "Svet"; sleep 3; shot 40-svet
+scroll
 tap_regex '[0-9]+ izvora'; sleep 3; shot 41-svet-story
 tap_regex 'pre [0-9]+ (min|h)'; sleep 10; shot 42-svet-reader
 scroll; shot 43-svet-reader-scroll
-adb shell input keyevent KEYCODE_BACK; sleep 2
-adb shell input keyevent KEYCODE_BACK; sleep 2
-tap_text "Bezbednost"; sleep 3; shot 50-bezbednost
-tap_regex '.{40,}'; sleep 10; shot 51-bezb-reader
-adb shell input keyevent KEYCODE_BACK; sleep 2
+back; back
+tap_text "Sajber"; sleep 3; shot 50-bezbednost
+tap_regex '.{50,}'; sleep 10; shot 51-bezb-reader
+scroll; shot 52-bezb-reader-scroll
+back
 tap_text "Sačuvano"; sleep 3; shot 60-sacuvano
+tap_regex '.{30,}'; sleep 6; shot 61-saved-reader
+back
 tap_text "Danas"; sleep 2
 tap_text "Podešavanja"; sleep 3; shot 70-settings
 scroll; shot 71-settings-scroll
 scroll; shot 72-settings-scroll2
-tap_text "Tamna"; sleep 2
-adb shell input keyevent KEYCODE_BACK; sleep 3
+adb shell input swipe $((W / 2)) $((H / 4)) $((W / 2)) $((H * 3 / 4)) 300; sleep 1
+adb shell input swipe $((W / 2)) $((H / 4)) $((W / 2)) $((H * 3 / 4)) 300; sleep 1
+adb shell input swipe $((W / 2)) $((H / 4)) $((W / 2)) $((H * 3 / 4)) 300; sleep 1
+tap_text "Tamna"; sleep 2; shot 73-settings-dark
+back
 shot 80-dark-danas
+scroll
 tap_regex '[0-9]+ izvora'; sleep 3
 tap_regex 'pre [0-9]+ (min|h)'; sleep 10; shot 81-dark-reader
 
