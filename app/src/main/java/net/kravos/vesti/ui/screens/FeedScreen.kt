@@ -89,6 +89,11 @@ fun FeedScreen(tab: Tab, pad: PaddingValues) {
     val reselect = nav.reselect.intValue
     val reselectAtStart = remember { reselect }
     LaunchedEffect(reselect) { if (reselect != reselectAtStart && nav.tab.value == tab) { if (animOff) listState.scrollToItem(0) else listState.animateScrollToItem(0) } }
+    val counts = remember(feed, tab) {
+        val m = HashMap<String, Int>()
+        tab.section?.let { sec -> feed?.stories?.get(sec)?.forEach { st -> st.cats.forEach { c -> m[c] = (m[c] ?: 0) + 1 } } }
+        m
+    }
     val openStory: (Story) -> Unit = { s -> if (s.articles.size == 1) open(s.lead) else nav.go(Route.Story(s.id)) }
 
     PullToRefreshBox(
@@ -98,11 +103,6 @@ fun FeedScreen(tab: Tab, pad: PaddingValues) {
     ) {
         LazyColumn(Modifier.fillMaxSize(), state = listState, contentPadding = PaddingValues(bottom = pad.calculateBottomPadding() + 24.dp)) {
             val f = feed
-            val counts = remember(f, tab) {
-                val m = HashMap<String, Int>()
-                tab.section?.let { sec -> f?.stories?.get(sec)?.forEach { st -> st.cats.forEach { c -> m[c] = (m[c] ?: 0) + 1 } } }
-                m
-            }
             item("mast") { Masthead(tab, cat, counts) { cat = it; scope.launch { listState.scrollToItem(0) } } }
             item("mode") { ModeSwitch(mode) { mode = it } }
             when {
