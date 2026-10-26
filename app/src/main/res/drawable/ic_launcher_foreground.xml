@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <!-- a folded newspaper page -->
+    <path android:fillColor="#FFFBFAF6" android:pathData="M33,29 L75,29 A3,3 0 0,1 78,32 L78,77 A3,3 0 0,1 75,80 L33,80 A3,3 0 0,1 30,77 L30,32 A3,3 0 0,1 33,29 Z" />
+    <path android:fillColor="#FF16161A" android:pathData="M36,35 L72,35 L72,41 L36,41 Z" />
+    <path android:fillColor="#FFB3261E" android:pathData="M36,46 L52,46 L52,59 L36,59 Z" />
+    <path android:fillColor="#FF6B6B70" android:pathData="M55,46 L72,46 L72,48.5 L55,48.5 Z M55,51.5 L72,51.5 L72,54 L55,54 Z M55,57 L67,57 L67,59.5 L55,59.5 Z M36,64 L72,64 L72,66.5 L36,66.5 Z M36,69.5 L72,69.5 L72,72 L36,72 Z M36,75 L60,75 L60,77 L36,77 Z" />
+</vector>
