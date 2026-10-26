@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -22,6 +22,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      url: ${{ steps.deploy.outputs.page_url }}
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -39,3 +41,20 @@ jobs:
           path: site
       - id: deploy
         uses: actions/deploy-pages@v4
+
+  check:
+    # after a manual run or a code change (not every 10 minutes): screenshot the live site
+    if: github.event_name != 'schedule'
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Screenshot the live site
+        run: |
+          pip install --quiet playwright && python3 -m playwright install --with-deps chromium > /dev/null
+          mkdir -p webcheck && sleep 20
+          python3 web/check/shots.py "${{ needs.publish.outputs.url }}" webcheck || echo "check failed" >> webcheck/stats.txt
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .github/scripts/publish-log.sh web webcheck
