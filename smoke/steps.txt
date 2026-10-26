@@ -40,9 +40,10 @@ shot 52-bezb-reader-scroll
 tapped Sport
 shot 55-sport
 shot 56-sport-scroll
-NOT FOUND: Kategorija
+tapped Sport
+tapped Kategorija
 shot 57-sport-menu
-NOT FOUND: Košarka
+tapped Košarka
 shot 58-kosarka
 tapped /.{50,}/
 shot 59-sport-reader
