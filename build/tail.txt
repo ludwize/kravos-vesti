@@ -1,3 +1,68 @@
+> Task :app:checkReleaseAarMetadata
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources FROM-CACHE
+> Task :app:mergeReleaseResources FROM-CACHE
+> Task :app:packageReleaseResources FROM-CACHE
+> Task :app:parseReleaseLocalResources FROM-CACHE
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease FROM-CACHE
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :app:javaPreCompileRelease FROM-CACHE
+> Task :app:processReleaseManifestForPackage
+> Task :app:mergeReleaseArtProfile
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseStartupProfile
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets FROM-CACHE
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:collectReleaseDependencies
+> Task :app:processReleaseResources
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:convertLinkedResourcesToProtoRelease
+
+> Task :app:compileReleaseKotlin FAILED
+e: file:///home/runner/work/kravos-vesti/kravos-vesti/app/src/main/java/net/kravos/vesti/ui/screens/FeedScreen.kt:101:26 @Composable invocations can only happen from the context of a @Composable function
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1793019570922.json
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileReleaseKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileReleaseKotlin'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
 	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
@@ -40,7 +105,7 @@
 	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.internal.tasks.R8Task$R8Runnable
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
 	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:287)
 	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
 	at org.gradle.internal.Factories$1.create(Factories.java:31)
@@ -119,7 +184,7 @@ Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionExcept
 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
-	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
@@ -198,17 +263,10 @@ Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionExcept
 	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: com.android.tools.r8.CompilationFailedException: Compilation failed to complete
-	at Version.fakeStackEntry(Version_8.7.18.java:0)
-	at com.android.tools.r8.T.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:5)
-	at com.android.tools.r8.internal.yu.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:82)
-	at com.android.tools.r8.internal.yu.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:32)
-	at com.android.tools.r8.internal.yu.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:31)
-	at com.android.tools.r8.R8.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:86)
-	at com.android.tools.r8.R8.run(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:3)
-	at com.android.builder.dexing.R8Tool.runR8(r8Tool.kt:337)
-	at com.android.build.gradle.internal.tasks.R8Task$Companion.shrink(R8Task.kt:796)
-	at com.android.build.gradle.internal.tasks.R8Task$R8Runnable.execute(R8Task.kt:872)
+Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilation error. See log for more details
+	at org.jetbrains.kotlin.gradle.tasks.TasksUtilsKt.throwExceptionIfCompilationFailed(tasksUtils.kt:21)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:119)
+	at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:76)
 	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
@@ -236,65 +294,7 @@ Caused by: com.android.tools.r8.CompilationFailedException: Compilation failed t
 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
 	... 2 more
-Caused by: com.android.tools.r8.internal.g: Missing class org.jspecify.annotations.NullMarked (referenced from: org.jsoup.helper.package-info and 6 other contexts)
-	at com.android.tools.r8.internal.bd0.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:21)
-	at com.android.tools.r8.internal.bd0.error(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1)
-	at com.android.tools.r8.shaking.M.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1948)
-	at com.android.tools.r8.shaking.M.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1634)
-	at com.android.tools.r8.R8.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1508)
-	at com.android.tools.r8.R8.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:242)
-	at com.android.tools.r8.R8.b(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1)
-	at com.android.tools.r8.internal.yu.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:28)
-	... 33 more
-	Suppressed: java.lang.RuntimeException: com.android.tools.r8.internal.g: Missing class org.jspecify.annotations.NullMarked (referenced from: org.jsoup.helper.package-info and 6 other contexts)
-		at com.android.tools.r8.internal.bd0.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:29)
-		at com.android.tools.r8.shaking.M.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1950)
-		at com.android.tools.r8.shaking.M.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1634)
-		at com.android.tools.r8.R8.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1508)
-		at com.android.tools.r8.R8.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:242)
-		at com.android.tools.r8.R8.b(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:1)
-		at com.android.tools.r8.internal.yu.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:28)
-		at com.android.tools.r8.R8.a(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:86)
-		at com.android.tools.r8.R8.run(R8_8.7.18_f8bee6d6fb926b7ebb3b15bf98f726f9d57471456ea20fce6d17d9a020197688:3)
-		at com.android.builder.dexing.R8Tool.runR8(r8Tool.kt:337)
-		at com.android.build.gradle.internal.tasks.R8Task$Companion.shrink(R8Task.kt:796)
-		at com.android.build.gradle.internal.tasks.R8Task$R8Runnable.execute(R8Task.kt:872)
-		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
-		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
-		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
-		at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
-		at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
-		at org.gradle.internal.Factories$1.create(Factories.java:31)
-		at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
-		at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
-		at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-		at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-		at java.base/java.lang.Thread.run(Thread.java:840)
-	Caused by: [CIRCULAR REFERENCE: com.android.tools.r8.internal.g: Missing class org.jspecify.annotations.NullMarked (referenced from: org.jsoup.helper.package-info and 6 other contexts)]
 
 
-BUILD FAILED in 1m 47s
-41 actionable tasks: 41 executed
+BUILD FAILED in 25s
+35 actionable tasks: 26 executed, 9 from cache
