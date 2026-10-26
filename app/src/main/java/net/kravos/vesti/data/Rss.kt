@@ -46,7 +46,7 @@ object Rss {
         }
         if (Regex("(/live/|/blog-|uzivo|uživo)", RegexOption.IGNORE_CASE).containsMatchIn(link)) live = true
         // "(VIDEO) ...", "FOTO: ..." — media labels add noise to a clean headline
-        title = title.replace(Regex("^(\\(?(VIDEO|FOTO|AUDIO|FOTO/VIDEO|VIDEO/FOTO|ВИДЕО|ФОТО)\\)?\\s*[:|-]?\\s*)+", RegexOption.IGNORE_CASE), "").trim()
+        title = title.replace(Regex("^(\\(?(VIDEO|FOTO|AUDIO|FOTO/VIDEO|VIDEO/FOTO|ВИДЕО|ФОТО)\\)?\\s*[:|-]?\\s*)+"), "").trim()
 
         val path = link.substringAfter("://").substringAfter('/').substringBefore('?').split('/').filter { s -> s.isNotBlank() && !s.all(Char::isDigit) }
         val cats = it.getElementsByTag("category").map { c -> c.text().trim().lowercase() }
