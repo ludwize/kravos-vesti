@@ -8,3 +8,4 @@
 -dontwarn org.openjsse.**
 -dontwarn com.google.re2j.**
 -keep class org.jsoup.** { *; }
+-dontwarn org.jspecify.annotations.**
