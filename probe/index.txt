@@ -1,0 +1,67 @@
+200     69009  n1  https://n1info.rs/feed/
+   article 200 500589 https://n1info.rs/vesti/blog-26-oktobar-2026-izbori-dan-posle/
+200     28592  n1_vesti  https://n1info.rs/vesti/feed/
+   article 200 500589 https://n1info.rs/vesti/blog-26-oktobar-2026-izbori-dan-posle/
+200    105146  danas  https://www.danas.rs/feed/
+   article 200 270906 https://www.danas.rs/vesti/politika/clan-birackog-odbora-predrag-popovic-vucic/
+200     67482  nova  https://nova.rs/feed/
+   article 200 454996 https://nova.rs/sport/fudbal/uzivo-partizan-objavljuje-ime-novog-trenera/
+200     91103  vreme  https://vreme.com/feed/
+   article 200 319144 https://vreme.com/vesti/izborni-fijasko-stranke-vracanje-novca-budzet-kampanja/
+200    101022  radar  https://radar.nova.rs/feed/
+   article 200 266325 https://radar.nova.rs/drustvo/veljanovski-o-medijima-pred-izbore/
+200     13950  krik  https://www.krik.rs/feed/
+   article 200 193367 https://www.krik.rs/gorski-matovic-vredao-gradane-u-novom-sadu-policija-ga-smirivala/
+200     15913  cins  https://www.cins.rs/feed/
+   article 200 191407 https://www.cins.rs/cins-info-kviz-148-23-10-2026/
+200     86256  birn_rs  https://birn.rs/feed/
+200    154823  balkaninsight  https://balkaninsight.com/feed/
+   article 200 189628 https://balkaninsight.com/2026/10/26/student-list-wins-outright-majority-in-serbian-parliamentary-polls/bi/
+200     13651  istinomer  https://www.istinomer.rs/feed/
+   article 200 80220 https://www.istinomer.rs/facebook-provere/bilbord-studentske-liste-sa-porukom-o-platama-vodoinstalatera-napravljen-pomocu-vestacke-inteligencije/
+200    106727  insajder  https://insajder.net/feed
+   article 200 281554 https://insajder.net/prenosimo/vrhovna-rada-ukrajine-produzila-ratno-stanje-i-mobilizaciju-za-jos-90-dana
+200     18272  bbc_world  https://feeds.bbci.co.uk/news/world/rss.xml
+   article 200 404944 https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss
+200     17052  bbc_europe  https://feeds.bbci.co.uk/news/world/europe/rss.xml
+   article 200 404944 https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss
+200    160340  guardian_world  https://www.theguardian.com/world/rss
+   article 200 371744 https://www.theguardian.com/global-development/2026/oct/26/us-forces-accused-of-weaponising-somalia-flood-el-nino
+200     71141  guardian_europe  https://www.theguardian.com/world/europe-news/rss
+   article 200 683113 https://www.theguardian.com/politics/live/2026/oct/26/andy-burnham-labour-brexit-eu-homelessness-immigration-budget-rosebank-reform-latest-news-updates
+200    192421  politico_eu  https://www.politico.eu/feed/
+   article 200 301847 https://www.politico.eu/article/liz-truss-claims-brits-would-be-on-mars-by-2040-if-she-hadnt-been-ousted/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication
+200     31882  euronews  https://www.euronews.com/rss?level=theme&name=news
+   article 200 303729 https://www.euronews.com/2026/10/26/trump-officials-back-orban-bid-for-un-secretary-general-wsj-reports
+404    193491  euronews_my  https://www.euronews.com/rss?format=mrss&level=theme&name=my-europe
+200     17378  aljazeera  https://www.aljazeera.com/xml/rss/all.xml
+   article 200 205391 https://www.aljazeera.com/news/2026/10/26/serbia-after-vucic-who-will-be-pm-and-when-will-a-government-be-formed?traffic_source=rss
+200    121811  dw_en  https://rss.dw.com/rdf/rss-en-all
+200      8315  dw_world  https://rss.dw.com/xml/rss-en-world
+   article 200 226906 https://www.dw.com/en/venezuela-opposition-leader-machado-returns-from-exile-received-by-thousands-of-supporters-in-caracas/a-79759187?maca=en-rss-en-world-4025-xml-mrss
+200     13418  npr  https://feeds.npr.org/1004/rss.xml
+   article 200 149575 https://www.npr.org/2026/10/26/nx-s1-6014540/russia-says-it-will-open-humanitarian-corridor-to-ukrainian-town
+200     26440  france24  https://www.france24.com/en/rss
+   article 200 394019 https://www.france24.com/en/video/20261026-lula-beats-bolsonaro-in-brazil-runoff-what-does-it-mean-for-donald-trump
+200    115721  ap_gn  https://news.google.com/rss/search?q=when:1d+site:apnews.com&hl=en-US&gl=US&ceid=US:en
+   article 200 600681 https://news.google.com/rss/articles/CBMikgFBVV95cUxQeDUtVElsazdRYlBXZDhiR2lBRF9VMVFCaEVDSTQ2THNuTlpGM1BOUkF1amNpbE12eHBkNTBlV1IwMmlYRWJLWE5RcEF2Zm0yTXJnazVsV1pMbERNNl8tekRrOHdVNlBUSEVYRURPQXhpakw2aTVtX3VUSnc2aXdndVZyREsxZGF6TUdDdHhrZEQ4UQ?oc=5&hl=en-US&gl=US&ceid=US:en
+200    130226  reuters_gn  https://news.google.com/rss/search?q=when:1d+site:reuters.com&hl=en-US&gl=US&ceid=US:en
+   article 200 601728 https://news.google.com/rss/articles/CBMitwFBVV95cUxNWDBXeHFlUjhKM2poLUxJVXp5S1RtbEYzVzdqeEU1d2YzNFpraU02SVhwTzVPUU9ERno4bElMZzdGQ1JJY2NraXMtRExidHpOOEtUZkVBaFk3Z2RxVjJhSHJELTFqdUx0SThqV3N5cGcwWUl2cUcxbTZrcHZBS0dXRU56MzNFTExhc0VzT1VvQUV1ejBQZlpONTgtcEFwNXRScTJVcXdGSHpmZkpXdVBsRDFGcy1wVzg?oc=5&hl=en-US&gl=US&ceid=US:en
+403      5721  ap_hub  https://apnews.com/hub/world-news.rss
+401       771  reuters_world  https://www.reuters.com/world/rss
+200      5316  therecord  https://therecord.media/feed
+   article 200 80251 https://therecord.media/fcc-bans-devices-huawei-surveillance-chips
+200     12946  bleeping  https://www.bleepingcomputer.com/feed/
+   article 200 88808 https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/
+200     12351  securityweek  https://www.securityweek.com/feed/
+   article 200 162456 https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/
+200    145642  krebs  https://krebsonsecurity.com/feed/
+   article 200 47174 https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/
+200     59720  thehackernews  https://feeds.feedburner.com/TheHackersNews
+   article 200 137093 https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html?m=1
+200     78633  darkreading  https://www.darkreading.com/rss.xml
+   article 403 5974 https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it
+200     79086  arstech  https://feeds.arstechnica.com/arstechnica/index
+   article 200 148923 https://arstechnica.com/science/2026/10/a-1000-mile-cloud-on-mars-may-reveal-physics-never-seen-in-nature/
+200     76900  ars_security  https://arstechnica.com/security/feed/
+   article 200 151810 https://arstechnica.com/tech-policy/2026/10/knicks-sent-employees-fake-offer-of-championship-rings-in-phishing-test-report/

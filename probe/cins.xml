@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+xmlns:podcast="https://podcastindex.org/namespace/1.0"
+xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
+>
+
+<channel>
+	<title>Centar za istraživačko novinarstvo Srbije</title>
+	<atom:link href="https://www.cins.rs/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.cins.rs/</link>
+	<description>Dobitnik Evropske novinarske nagrade 2017</description>
+	<lastBuildDate>Thu, 22 Oct 2026 16:49:18 +0000</lastBuildDate>
+	<language>sr-RS</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.3</generator>
+
+<image>
+	<url>https://www.cins.rs/wp-content/uploads/2018/12/cropped-Cins-Logo-Align-_Logo-32x32.png</url>
+	<title>Centar za istraživačko novinarstvo Srbije</title>
+	<link>https://www.cins.rs/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<atom:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+	<itunes:author>Centar za istraživačko novinarstvo Srbije</itunes:author>
+	<itunes:explicit>false</itunes:explicit>
+	<itunes:image href="https://www.cins.rs/wp-content/plugins/powerpress/itunes_default.jpg" />
+	<podcast:medium>podcast</podcast:medium>
+	<image>
+		<title>Centar za istraživačko novinarstvo Srbije</title>
+		<url>https://www.cins.rs/wp-content/plugins/powerpress/rss_default.jpg</url>
+		<link>https://www.cins.rs</link>
+	</image>
+	<podcast:podping usesPodping="true" />
+	<item>
+		<title>Istinomer i CINS Info kviz #148 &#8211; 23.10.2026.</title>
+		<link>https://www.cins.rs/cins-info-kviz-148-23-10-2026/</link>
+					<comments>https://www.cins.rs/cins-info-kviz-148-23-10-2026/#respond</comments>
+		
+		<dc:creator><![CDATA[CINS]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2026 16:49:18 +0000</pubDate>
+				<category><![CDATA[CINS Info kviz]]></category>
+		<category><![CDATA[Kviz]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=44186</guid>
+
+					<description><![CDATA[<p>Da li ste pratili vesti ove nedelje? Odigrajte naš kviz i saznajte koliko ste informisani o nekim od najbitnijih događaja u zemlji i svetu u proteklih sedam dana.<br />
+Ove nedelje pitanja u kvizu donosi Istinomer.</p>
+<p>The post <a href="https://www.cins.rs/cins-info-kviz-148-23-10-2026/">Istinomer i CINS Info kviz #148 &#8211; 23.10.2026.</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/cins-info-kviz-148-23-10-2026/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Kako se gradi EXPO: Greške koje su mogle da koštaju života</title>
+		<link>https://www.cins.rs/kako-se-gradi-expo-greske-koje-su-mogle-da-kostaju-zivota/</link>
+					<comments>https://www.cins.rs/kako-se-gradi-expo-greske-koje-su-mogle-da-kostaju-zivota/#comments</comments>
+		
+		<dc:creator><![CDATA[Ivana Milosavljević]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2026 06:47:50 +0000</pubDate>
+				<category><![CDATA[Istraživačke priče]]></category>
+		<category><![CDATA[Srbija]]></category>
+		<category><![CDATA[bezbednost]]></category>
+		<category><![CDATA[EXPO]]></category>
+		<category><![CDATA[gradnja]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=44130</guid>
+
+					<description><![CDATA[<p>Izgradnju stambenog kompleksa EXPO-a u Surčinu pratile su brojne greške od kojih su neke „mogle da budu fatalne“ i dovedu do urušavanja u kompleksu, otkriva CINS. Jedan inženjer upozorio je na propuste, nakon čega su brojne greške otklonjene. Zbog načina na koji su problemi rešeni, stručnjaci sa kojima je CINS razgovarao dovode u pitanje da li su greške ispravljene na pravi način.</p>
+<p>The post <a href="https://www.cins.rs/kako-se-gradi-expo-greske-koje-su-mogle-da-kostaju-zivota/">Kako se gradi EXPO: Greške koje su mogle da koštaju života</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/kako-se-gradi-expo-greske-koje-su-mogle-da-kostaju-zivota/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>„Otmica aktiviste u Resniku“: CINS objavljuje snimke razgovora iz kola</title>
+		<link>https://www.cins.rs/otmica-aktiviste-u-resniku-cins-objavljuje-snimke-razgovora-iz-kola/</link>
+					<comments>https://www.cins.rs/otmica-aktiviste-u-resniku-cins-objavljuje-snimke-razgovora-iz-kola/#respond</comments>
+		
+		<dc:creator><![CDATA[Maja Repić]]></dc:creator>
+		<pubDate>Wed, 21 Oct 2026 06:28:02 +0000</pubDate>
+				<category><![CDATA[Aktuelno]]></category>
+		<category><![CDATA[Drugo osnovno javno tužilaštvo]]></category>
+		<category><![CDATA[Resnik]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=44109</guid>
+
+					<description><![CDATA[<p>Prošlo je pola godine otkako je grupa muškaraca pretukla i nasilno ugurala u auto aktivistu Zbora Rakovica Vojislava Z. nakon akcije podrške studentima u Resniku. Policija je raspisala potragu za učesnicima incidenta, a slučaj istražuje Drugo osnovno javno tužilaštvo u Beogradu. CINS je došao do izjave Vojislava Z. u Tužilaštvu i tri snimka telefonskog razgovora iz kola osumnjičenih i Vojislavljevih prijatelja od te večeri.</p>
+<p>The post <a href="https://www.cins.rs/otmica-aktiviste-u-resniku-cins-objavljuje-snimke-razgovora-iz-kola/">„Otmica aktiviste u Resniku“: CINS objavljuje snimke razgovora iz kola</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/otmica-aktiviste-u-resniku-cins-objavljuje-snimke-razgovora-iz-kola/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CINS Info kviz #147 &#8211; 16.10.2026.</title>
+		<link>https://www.cins.rs/cins-info-kviz-147-16-10-2026/</link>
+					<comments>https://www.cins.rs/cins-info-kviz-147-16-10-2026/#respond</comments>
+		
+		<dc:creator><![CDATA[CINS]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2026 12:52:41 +0000</pubDate>
+				<category><![CDATA[CINS Info kviz]]></category>
+		<category><![CDATA[Kviz]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=44092</guid>
+
+					<description><![CDATA[<p>Da li ste pratili vesti ove nedelje? Odigrajte naš kviz i saznajte koliko ste informisani o nekim od najbitnijih događaja u zemlji i svetu u proteklih sedam dana.</p>
+<p>The post <a href="https://www.cins.rs/cins-info-kviz-147-16-10-2026/">CINS Info kviz #147 &#8211; 16.10.2026.</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/cins-info-kviz-147-16-10-2026/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Napad na Stevana Filipovića: Muškarac koji je lepio nalepnice rekao tužilaštvu da je radio u Upravi Grada Beograda</title>
+		<link>https://www.cins.rs/napad-na-stevana-filipovica-muskarac-koji-je-lepio-nalepnice-rekao-tuzilastvu-da-je-radio-u-upravi-grada-beograda/</link>
+					<comments>https://www.cins.rs/napad-na-stevana-filipovica-muskarac-koji-je-lepio-nalepnice-rekao-tuzilastvu-da-je-radio-u-upravi-grada-beograda/#respond</comments>
+		
+		<dc:creator><![CDATA[Maja Repić]]></dc:creator>
+		<pubDate>Tue, 13 Oct 2026 07:21:10 +0000</pubDate>
+				<category><![CDATA[Aktuelno]]></category>
+		<category><![CDATA[Prvo osnovno javno tužilaštvo]]></category>
+		<category><![CDATA[Stevan Filipović]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=44055</guid>
+
+					<description><![CDATA[<p>Reditelja Stevana Filipovića u avgustu je napala grupa muškaraca nakon što ih je snimio kako lepe nalepnice i šaraju grafite sa političkim porukama po jednoj zgradi u centru Beograda. Slučaj istražuje Prvo osnovno javno tužilaštvo u Beogradu, a CINS je došao do novih snimaka i saslušanja okrivljenih i svedoka.</p>
+<p>The post <a href="https://www.cins.rs/napad-na-stevana-filipovica-muskarac-koji-je-lepio-nalepnice-rekao-tuzilastvu-da-je-radio-u-upravi-grada-beograda/">Napad na Stevana Filipovića: Muškarac koji je lepio nalepnice rekao tužilaštvu da je radio u Upravi Grada Beograda</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/napad-na-stevana-filipovica-muskarac-koji-je-lepio-nalepnice-rekao-tuzilastvu-da-je-radio-u-upravi-grada-beograda/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CINS Info kviz #146 &#8211; 9.10.2026.</title>
+		<link>https://www.cins.rs/cins-info-kviz-146-9-10-2026/</link>
+					<comments>https://www.cins.rs/cins-info-kviz-146-9-10-2026/#respond</comments>
+		
+		<dc:creator><![CDATA[CINS]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2026 14:47:33 +0000</pubDate>
+				<category><![CDATA[CINS Info kviz]]></category>
+		<category><![CDATA[Kviz]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=44038</guid>
+
+					<description><![CDATA[<p>Da li ste pratili vesti ove nedelje? Odigrajte naš kviz i saznajte koliko ste informisani o nekim od najbitnijih događaja u zemlji i svetu u proteklih sedam dana.</p>
+<p>The post <a href="https://www.cins.rs/cins-info-kviz-146-9-10-2026/">CINS Info kviz #146 &#8211; 9.10.2026.</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/cins-info-kviz-146-9-10-2026/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tužilaštvo u Nišu: MUP ne postupa po našim nalozima u slučaju Danke Ilić</title>
+		<link>https://www.cins.rs/tuzilastvo-u-nisu-mup-ne-postupa-po-nasim-nalozima-u-slucaju-danke-ilic/</link>
+					<comments>https://www.cins.rs/tuzilastvo-u-nisu-mup-ne-postupa-po-nasim-nalozima-u-slucaju-danke-ilic/#respond</comments>
+		
+		<dc:creator><![CDATA[Stefan Marković]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 08:42:50 +0000</pubDate>
+				<category><![CDATA[Aktuelno]]></category>
+		<category><![CDATA[Sud i tužilaštvo]]></category>
+		<category><![CDATA[podkast Tragovi]]></category>
+		<category><![CDATA[pravosuđe]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=44017</guid>
+
+					<description><![CDATA[<p>Da li je priznanje okrivljenih za ubistvo dvogodišnje Danke Ilić iznuđeno batinama u policiji i pod kojim okolnostima je brat jednog od osumnjičenih preminuo u policijskoj stanici u Boru i dalje je nepoznato. Sektor unutrašnje kontrole (SUK) odlaže postupanje, saznaje CINS, zbog čega ovi predmeti već dve godine stoje u predistražnoj fazi u Višem javnom tužilaštvu u Nišu.</p>
+<p>The post <a href="https://www.cins.rs/tuzilastvo-u-nisu-mup-ne-postupa-po-nasim-nalozima-u-slucaju-danke-ilic/">Tužilaštvo u Nišu: MUP ne postupa po našim nalozima u slučaju Danke Ilić</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/tuzilastvo-u-nisu-mup-ne-postupa-po-nasim-nalozima-u-slucaju-danke-ilic/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CINS Info kviz #145 &#8211; 2.10.2026.</title>
+		<link>https://www.cins.rs/cins-info-kviz-145-2-10-2026/</link>
+					<comments>https://www.cins.rs/cins-info-kviz-145-2-10-2026/#comments</comments>
+		
+		<dc:creator><![CDATA[CINS]]></dc:creator>
+		<pubDate>Fri, 02 Oct 2026 06:01:08 +0000</pubDate>
+				<category><![CDATA[CINS Info kviz]]></category>
+		<category><![CDATA[Kviz]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=44003</guid>
+
+					<description><![CDATA[<p>Da li ste pratili vesti ove nedelje? Odigrajte naš kviz i saznajte koliko ste informisani o nekim od najbitnijih događaja u zemlji i svetu u proteklih sedam dana.</p>
+<p>The post <a href="https://www.cins.rs/cins-info-kviz-145-2-10-2026/">CINS Info kviz #145 &#8211; 2.10.2026.</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/cins-info-kviz-145-2-10-2026/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Danka – EP 5: Nešto ne štima</title>
+		<link>https://www.cins.rs/danka-ep-5-nesto-ne-stima/</link>
+					<comments>https://www.cins.rs/danka-ep-5-nesto-ne-stima/#respond</comments>
+		
+		<dc:creator><![CDATA[Stefan Marković]]></dc:creator>
+		<pubDate>Wed, 30 Sep 2026 18:04:20 +0000</pubDate>
+				<category><![CDATA[Tragovi]]></category>
+		<category><![CDATA[podkast Tragovi]]></category>
+		<category><![CDATA[pravosuđe]]></category>
+		<category><![CDATA[ubistvo]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=43985</guid>
+
+					<description><![CDATA[<p>Prošle su više od dve godine od nestanka Danke Ilić, a optuženi radnici Vodovoda u pritvoru čekaju suđenje. Analizirajući spise predmeta, rekonstrukciju događaja i DNK veštačenja, Stefan otkriva ozbiljne rupe u zvaničnoj verziji. Ova epizoda otvara ključno pitanje: da li zvanična priča o ubistvu pije vodu ili nešto ipak ne štima. </p>
+<p>The post <a href="https://www.cins.rs/danka-ep-5-nesto-ne-stima/">Danka – EP 5: Nešto ne štima</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/danka-ep-5-nesto-ne-stima/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+				<enclosure url="https://www.cins.rs/wp-content/uploads/2026/09/cins_danka_ep05_FINALmp3.mp3" length="32812920" type="audio/mpeg" />
+
+				<itunes:episodeType>full</itunes:episodeType>
+		<itunes:duration>27:21</itunes:duration>
+	</item>
+		<item>
+		<title>1 na 1 sa izborima: praktičan program za lokalne novinare i novinarke</title>
+		<link>https://www.cins.rs/1-na-1-sa-izborima-praktican-program-za-lokalne-novinare-i-novinarke/</link>
+					<comments>https://www.cins.rs/1-na-1-sa-izborima-praktican-program-za-lokalne-novinare-i-novinarke/#respond</comments>
+		
+		<dc:creator><![CDATA[CINS]]></dc:creator>
+		<pubDate>Fri, 25 Sep 2026 15:30:38 +0000</pubDate>
+				<category><![CDATA[Aktuelno]]></category>
+		<category><![CDATA[CINS-ova škola novinarstva]]></category>
+		<guid isPermaLink="false">https://www.cins.rs/?p=43972</guid>
+
+					<description><![CDATA[<p>Izbori su blizu, a izveštavanje o njima često zahteva brzo snalaženje u velikom broju pravila, rokova, nadležnosti i izvora informacija. Zato okupljamo kolege iz lokalnih medija da zajedno prođemo kroz ključne tačke izbornog procesa – od rada izbornih organa i dostupnih podataka, do prepoznavanja i provere mogućih nepravilnosti pre izbora, na izborni dan i nakon glasanja.</p>
+<p>The post <a href="https://www.cins.rs/1-na-1-sa-izborima-praktican-program-za-lokalne-novinare-i-novinarke/">1 na 1 sa izborima: praktičan program za lokalne novinare i novinarke</a> appeared first on <a href="https://www.cins.rs">Centar za istraživačko novinarstvo Srbije</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cins.rs/1-na-1-sa-izborima-praktican-program-za-lokalne-novinare-i-novinarke/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
