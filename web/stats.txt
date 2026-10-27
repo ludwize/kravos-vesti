@@ -1,6 +1,6 @@
-generated 1793025097 failed []
-SPORT: 160 stories; top: Lučić demolirao Beč i došao do MVP nagrade
-SRBIJA: 121 stories; top: "Neka peva ova Slavija": Studenti pozvali na skup u 19h
-BEZBEDNOST: 105 stories; top: Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installin
-SVET: 160 stories; top: Lula wins fourth term in dramatic Brazil election comeback
+generated 1793108857 failed []
+SRBIJA: 123 stories; top: ANEM: Osuđujemo policijsku intervenciju i napad na novinara portala Lutajući rep
+SPORT: 160 stories; top: Moguć povratak u reprezentaciju: Ronaldo na širem spisku Portugala
+SVET: 160 stories; top: Norway and Finland leaders hold rare call with Putin
+BEZBEDNOST: 105 stories; top: CISA warns of PHP bug exploitation attempts, gives federal agencies days to patc
 page errors: []
