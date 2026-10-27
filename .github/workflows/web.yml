@@ -1,25 +1,56 @@
 name: web
 
 # Builds the web edition (data.json + index.html) and publishes it to GitHub Pages.
+#
+# GitHub's own cron skips most runs on free repos (4 runs in 20 h were seen), so each run
+# schedules the next one itself: after publishing it waits ~8 min and dispatches web.yml
+# again ("chain"). The cron below only restarts the chain if it ever breaks.
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '7,37 * * * *'
   push:
     branches: [main]
     paths: ['web/**', '.github/workflows/web.yml', 'app/src/main/java/net/kravos/vesti/data/Sources.kt', 'app/src/main/java/net/kravos/vesti/data/Categories.kt']
   workflow_dispatch:
+    inputs:
+      chain:
+        description: 'started by the previous run (internal)'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
   pages: write
   id-token: write
+  actions: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
+  guard:
+    # a cron run is only a backup: skip it when the chain is alive (a web run started in the last 15 min)
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.g.outputs.skip }}
+    steps:
+      - id: g
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          skip=false
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            since=$(date -u -d '15 minutes ago' +%Y-%m-%dT%H:%M:%SZ)
+            n=$(gh api "repos/${{ github.repository }}/actions/workflows/web.yml/runs?per_page=20" \
+                --jq "[.workflow_runs[] | select(.id != ${{ github.run_id }} and .created_at > \"$since\")] | length")
+            [ "$n" -gt 0 ] && skip=true
+          fi
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"; echo "skip=$skip"
+
   publish:
+    needs: guard
+    if: needs.guard.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
@@ -44,7 +75,7 @@ jobs:
 
   check:
     # after a manual run or a code change (not every 10 minutes): screenshot the live site
-    if: github.event_name != 'schedule'
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.chain != 'true')
     needs: publish
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -58,3 +89,19 @@ jobs:
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: bash .github/scripts/publish-log.sh web webcheck
+
+  next:
+    # schedule the next refresh ~10 min after this one started
+    needs: [guard, publish]
+    if: always() && needs.guard.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sleep 420
+          others=$(gh api "repos/${{ github.repository }}/actions/workflows/web.yml/runs?per_page=20" \
+            --jq '[.workflow_runs[] | select(.id != ${{ github.run_id }} and (.status == "queued" or .status == "in_progress" or .status == "waiting" or .status == "pending" or .status == "requested"))] | length')
+          if [ "$others" -gt 0 ]; then echo "another run is already queued; not chaining"; exit 0; fi
+          gh workflow run web.yml --repo "${{ github.repository }}" --ref main -f chain=true
