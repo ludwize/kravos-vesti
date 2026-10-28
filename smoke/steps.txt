@@ -25,11 +25,17 @@ tapped Politika
 shot 34-politika
 tapped Kategorija
 tapped Sve vesti
+tapped Beograd
+shot 35-beograd
+shot 36-beograd-scroll
+tapped Beograd
+tapped Kategorija
+shot 37-beograd-menu
 tapped Svet
 shot 40-svet
 tapped /[0-9]+ izvora/
 shot 41-svet-story
-tapped /pre [0-9]+ (min|h)/
+NOT FOUND /pre [0-9]+ (min|h)/
 shot 42-svet-reader
 shot 43-svet-reader-scroll
 tapped Sajber
