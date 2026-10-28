@@ -1,37 +1,21 @@
-200     29503  n1_bg_tag  https://n1info.rs/tag/beograd/feed/
-   article 200 421144 https://n1info.rs/vesti/danas-jesenja-akcija-suzbijanja-krpelja-u-beogradu/
-404     75189  n1_bg_cat  https://n1info.rs/vesti/beograd/feed/
-200    241069  danas_bg  https://www.danas.rs/beograd/feed/
-200    247667  danas_bg2  https://www.danas.rs/vesti/beograd/feed/
-200    116602  danas_bg_tag  https://www.danas.rs/tag/beograd/feed/
-   article 200 276532 https://www.danas.rs/vesti/ekonomija/gsp-beograd-plate-kasne-tehnicki-problem/
-404    165253  nova_bg  https://nova.rs/vesti/beograd/feed/
-200     27996  nova_bg_tag  https://nova.rs/tag/beograd/feed/
-   article 200 455296 https://nova.rs/magazin/vremenska-prognoza/u-srbiji-danas-oblacno-mestimicno-sa-kisom/
-200       726  radar_bg_tag  https://radar.nova.rs/tag/beograd/feed/
-200     99000  blic_bg  https://www.blic.rs/rss/Vesti/Beograd
-   article 200 186495 https://www.blic.rs/vesti/beograd/bez-vode-delovi-surcina-danas-do-22-sata-na-vozdovcu-do-17/ndkhcls
-200     26725  beobuild  https://www.beobuild.rs/feed
-   article 200 77670 https://beobuild.rs/vesti/the-dorcol-residence-osvojio-dve-nagrade-na-european-property-awards/
-200     26725  beobuild2  https://beobuild.rs/feed/
-   article 200 77670 https://beobuild.rs/vesti/the-dorcol-residence-osvojio-dve-nagrade-na-european-property-awards/
-404     74291  telegraf_bg  https://www.telegraf.rs/rss/vesti/beograd
-200     77439  kurir_bg  https://www.kurir.rs/rss/vesti/beograd
-   article 200 409854 https://www.kurir.rs/vesti/beograd/10146474/burna-noc-u-beogradu-hitna-pomoc-imala-pune-ruke-posla-lekari-intervenisali-cak-141-put
-404    222742  novosti_bg  https://www.novosti.rs/rss/1-Beograd
-200     95859  rts_bg  https://www.rts.rs/page/stories/sr/rss/9/Beograd.html
-   article 200 140820 https://www.rts.rs/vesti/drustvo/6070862/jovina-gimnazija-povratak-ucenika-u-zgradu-posle-dve-godine.html
-200         0  mondo_bg  https://mondo.rs/rss/628/Info/Beograd
-404    251880  b92_bg  https://www.b92.net/rss/beograd
-200    153267  nedeljnik  https://www.nedeljnik.rs/feed/
-0        52  beogradske  https://beogradske-vesti.rs/feed/
-0        63  infobeograd  https://infobeograd.rs/feed/
-404     47500  011info  https://011info.com/feed
-200    133717  gn_bg  https://news.google.com/rss/search?q=Beograd+when:1d&hl=sr&gl=RS&ceid=RS:sr-Latn
-   article 200 600119 https://news.google.com/rss/articles/CBMibkFVX3lxTE1kOXRqZWlJZ0pxVWxVbWxRaVhObUV0RUFFdVlTY1BKeTZ0SEJkMjE1MmlRUnRsQnZLS0Y4RWszVTNDQ3FTeG5zXzl4eW9mNnlQQmk3bHhxVFNwa041eXpRMUc5VkVEcVYwcFBvY0VB?oc=5&hl=en-US&gl=US&ceid=US:en
-200     72479  n1  https://n1info.rs/feed/
-   article 200 435081 https://n1info.rs/vesti/uhapsen-nacelnik-gradske-uprave-za-privredu-novog-sada-zbog-sumnje-da-je-ostetio-budzet-grada-za-vise-od-83-miliona-dinara/
-200    105196  danas  https://www.danas.rs/feed/
-   article 200 275608 https://www.danas.rs/vesti/drustvo/zagorka-dolovac-kontrola-tuzilastva-vjt/
-200     68631  nova  https://nova.rs/feed/
-   article 200 463744 https://nova.rs/vesti/hronika/dojava-o-bombama-u-dve-osnovne-skole-u-lebanu-ucenici-vraceni-kucama/
+$ dig +short CNAME vesti.kravos.net
+ludwize.github.io.
+
+$ curl -sI -m 20 http://vesti.kravos.net | head -4
+HTTP/1.1 301 Moved Permanently
+Connection: keep-alive
+Content-Length: 162
+Server: GitHub.com
+
+$ curl -sI -m 20 https://vesti.kravos.net | head -3
+HTTP/2 200 
+server: GitHub.com
+content-type: text/html; charset=utf-8
+
+$ curl -sI -m 20 https://ludwize.github.io/kravos-vesti/ | grep -i -E '^(HTTP|location)'
+HTTP/2 301 
+location: https://vesti.kravos.net/
+
+$ curl -s -m 20 https://vesti.kravos.net/data.json | python3 -c 'import json,sys,time; d=json.load(sys.stdin); print("generated", round((time.time()-d["generated"])/60), "min ago;", {k: len(v) for k, v in d["sections"].items()})'
+generated 8 min ago; {'SVET': 160, 'SRBIJA': 117, 'SPORT': 160, 'BEOGRAD': 42, 'BEZBEDNOST': 110}
+
