@@ -1,21 +1,46 @@
-$ dig +short CNAME vesti.kravos.net
-ludwize.github.io.
+vesti.kravos.net: CNAME ludwize.github.io.
+  http  301 -> https://vesti.kravos.net/
+  https 200  <title>Kravos Vesti
+  cert  subject=CN=vesti.kravos.net | notAfter=Jan 24 14:05:12 2027 GMT
+  last-modified: Wed, 28 Oct 2026 10:30:33 GMT
 
-$ curl -sI -m 20 http://vesti.kravos.net | head -4
-HTTP/1.1 301 Moved Permanently
-Connection: keep-alive
-Content-Length: 162
-Server: GitHub.com
+vreme.kravos.net: CNAME ludwize.github.io.
+  http  301 -> https://vreme.kravos.net/
+  https 200  <title>Kravos Vreme
+  cert  subject=CN=vreme.kravos.net | notAfter=Jan 24 14:25:31 2027 GMT
+  last-modified: Mon, 26 Oct 2026 14:36:45 GMT
 
-$ curl -sI -m 20 https://vesti.kravos.net | head -3
-HTTP/2 200 
-server: GitHub.com
-content-type: text/html; charset=utf-8
+weather.kravos.net: no CNAME (no record)
 
-$ curl -sI -m 20 https://ludwize.github.io/kravos-vesti/ | grep -i -E '^(HTTP|location)'
-HTTP/2 301 
-location: https://vesti.kravos.net/
+sports.kravos.net: CNAME ludwize.github.io.
+  http  301 -> https://sports.kravos.net/
+  https 200  <title>Kravos Sports
+  cert  subject=CN=sports.kravos.net | notAfter=Jan 24 14:11:26 2027 GMT
+  last-modified: Wed, 28 Oct 2026 05:27:33 GMT
 
-$ curl -s -m 20 https://vesti.kravos.net/data.json | python3 -c 'import json,sys,time; d=json.load(sys.stdin); print("generated", round((time.time()-d["generated"])/60), "min ago;", {k: len(v) for k, v in d["sections"].items()})'
-generated 8 min ago; {'SVET': 160, 'SRBIJA': 117, 'SPORT': 160, 'BEOGRAD': 42, 'BEZBEDNOST': 110}
+sport.kravos.net: no CNAME (no record)
 
+jezik.kravos.net: CNAME ludwize.github.io.
+  http  301 -> https://jezik.kravos.net/
+  https 200  <title>Kravos Jezik
+  cert  subject=CN=jezik.kravos.net | notAfter=Jan 24 14:16:29 2027 GMT
+  last-modified: Mon, 26 Oct 2026 14:51:34 GMT
+
+bas.kravos.net: CNAME ludwize.github.io.
+  http  301 -> https://bas.kravos.net/
+  https 200  <title>Kravos Bas
+  cert  subject=CN=bas.kravos.net | notAfter=Jan 24 14:20:10 2027 GMT
+  last-modified: Mon, 26 Oct 2026 14:36:55 GMT
+
+bass.kravos.net: no CNAME (no record)
+
+tab.kravos.net: CNAME ludwize.github.io.
+  http  301 -> https://tab.kravos.net/
+  https 200  
+  cert  subject=CN=tab.kravos.net | notAfter=Jan 25 14:47:26 2027 GMT
+  last-modified: Tue, 27 Oct 2026 15:59:38 GMT
+
+ludwize.github.io/kravos-weather/ -> 301 https://vreme.kravos.net/
+ludwize.github.io/kravos-sports/ -> 301 https://sports.kravos.net/
+ludwize.github.io/kravos-jezik/ -> 301 https://jezik.kravos.net/
+ludwize.github.io/kravos-bass/ -> 301 https://bas.kravos.net/
