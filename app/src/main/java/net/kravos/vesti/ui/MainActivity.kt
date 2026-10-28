@@ -29,6 +29,7 @@ import androidx.compose.material.icons.filled.Newspaper
 import androidx.compose.material.icons.filled.Public
 import androidx.compose.material.icons.filled.Shield
 import androidx.compose.material.icons.filled.Place
+import androidx.compose.material.icons.filled.LocationCity
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -132,12 +133,13 @@ private fun Root(app: App) {
                                         Tab.SRBIJA -> Icons.Filled.Place
                                         Tab.SVET -> Icons.Filled.Public
                                         Tab.BEZBEDNOST -> Icons.Filled.Shield
+                                        Tab.BEOGRAD -> Icons.Filled.LocationCity
                                         Tab.SPORT -> Icons.Filled.SportsSoccer
                                     },
                                     null,
                                 )
                             },
-                            label = { Text(t.short, fontSize = 11.sp, maxLines = 1) },
+                            label = { Text(t.short, fontSize = 10.sp, maxLines = 1, softWrap = false) },
                             colors = NavigationBarItemDefaults.colors(
                                 indicatorColor = MaterialTheme.colorScheme.secondaryContainer,
                                 selectedIconColor = p.accent,

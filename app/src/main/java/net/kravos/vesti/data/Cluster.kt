@@ -50,7 +50,7 @@ object Cluster {
         }
         return groups.map { g ->
             val arts = order(g.docs.map { it.a })
-            Story(arts.minBy { it.published }.id, g.section, arts)
+            Story(g.section.name + ":" + arts.minBy { it.published }.id, g.section, arts)
         }
     }
 

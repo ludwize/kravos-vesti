@@ -397,7 +397,7 @@ def cluster(arts, order_rank):
         if len(arts) > 1:
             lead = min(arts, key=lambda a: (0 if a["image"] and len(a["summary"]) > 40 else 1, order_rank.get(a["src"], 99), -a["ts"]))
             arts = [lead] + sorted([a for a in arts if a is not lead], key=lambda a: -a["ts"])
-        stories.append(dict(id=min(arts, key=lambda a: a["ts"])["id"], section=g["sec"], articles=arts))
+        stories.append(dict(id=g["sec"] + ":" + min(arts, key=lambda a: a["ts"])["id"], section=g["sec"], articles=arts))
     return stories
 
 
@@ -478,7 +478,7 @@ def main():
             max_age = 7 * 86400 if s["section"] == "BEZBEDNOST" else 3 * 86400
             if now - a["ts"] > max_age:
                 continue
-            if s["section"] in ("SPORT", "BEZBEDNOST"):
+            if s["section"] in ("SPORT", "BEZBEDNOST", "BEOGRAD"):
                 sec = s["section"]
             elif a["tags"] & sport_tags:
                 sec = "SPORT"
@@ -487,12 +487,12 @@ def main():
             else:
                 sec = s["section"]
             a["section"] = sec
-            if a["id"] in seen:
+            if sec + a["id"] in seen:  # same article may be in Srbija and Beograd
                 continue
             key = s["id"] + "|" + norm(a["title"])
             if key in seen_title:
                 continue
-            seen.add(a["id"]); seen_title.add(key)
+            seen.add(sec + a["id"]); seen_title.add(key)
             a["cats"] = assign(a, cats)
             arts.append(a)
     arts.sort(key=lambda a: -a["ts"])

@@ -93,6 +93,11 @@ tap_text "Kategorija"; sleep 2; shot 33-category-menu
 tap_text "Politika"; sleep 3; shot 34-politika
 tap_text "Kategorija"; sleep 2
 tap_text "Sve vesti"; sleep 2
+tap_text "Beograd"; sleep 3; shot 35-beograd
+scroll; shot 36-beograd-scroll
+tap_text "Beograd"; sleep 2
+tap_text "Kategorija"; sleep 2; shot 37-beograd-menu
+adb shell input keyevent KEYCODE_BACK; sleep 1
 tap_text "Svet"; sleep 3; shot 40-svet
 scroll
 tap_regex '[0-9]+ izvora'; sleep 3; shot 41-svet-story

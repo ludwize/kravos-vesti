@@ -150,7 +150,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 @media (max-width: 640px) {
   .wrap { padding: 0 16px; }
-  .bar nav a { padding: 13px 7px 11px; font-size: 13px; }
+  .bar nav a { padding: 13px 5px 11px; font-size: 12.5px; }
   .tools .icon { width: 32px; }
   .bar nav .full { display: none; }
   .bar nav .short { display: inline; }
@@ -195,6 +195,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   const TABS = [
     { id: "danas", label: "Danas", sec: null },
     { id: "srbija", label: "Srbija", sec: "SRBIJA" },
+    { id: "beograd", label: "Beograd", sec: "BEOGRAD" },
     { id: "svet", label: "Svet", sec: "SVET" },
     { id: "bezbednost", label: "Bezbednost", short: "Sajber", sec: "BEZBEDNOST" },
     { id: "sport", label: "Sport", sec: "SPORT" },
@@ -359,7 +360,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     let html = "";
     const live = (data.sections.SRBIJA || []).flatMap((st) => st.a).filter((a) => a.l && now() - a.ts < 12 * 3600).sort((x, y) => y.ts - x.ts).slice(0, 2);
     if (live.length) html += `<div class="livebar">${live.map((a) => `<a href="${esc(a.u)}" target="_blank" rel="noopener"><span class="live">UŽIVO</span><span>${esc(a.t)}</span></a>`).join("")}</div>`;
-    for (const [sec, tabId, n] of [["SRBIJA", "srbija", 9], ["SVET", "svet", 7], ["BEZBEDNOST", "bezbednost", 5], ["SPORT", "sport", 5]]) {
+    for (const [sec, tabId, n] of [["SRBIJA", "srbija", 9], ["BEOGRAD", "beograd", 5], ["SVET", "svet", 7], ["BEZBEDNOST", "bezbednost", 5], ["SPORT", "sport", 5]]) {
       const list = (data.sections[sec] || []).slice(0, n);
       if (!list.length) continue;
       const tab = TABS.find((t) => t.id === tabId);

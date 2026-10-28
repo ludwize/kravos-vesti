@@ -1,5 +1,6 @@
 package net.kravos.vesti.data
 
+import net.kravos.vesti.data.Section.BEOGRAD
 import net.kravos.vesti.data.Section.BEZBEDNOST
 import net.kravos.vesti.data.Section.SPORT
 import net.kravos.vesti.data.Section.SRBIJA
@@ -68,6 +69,19 @@ object Categories {
         Cat("ai_s", "AI", BEZBEDNOST, emptySet(), "=ai =llm llms =agent =agents agentic chatgpt openai gemini copilot artificial"),
         Cat("zakon", "Zakon i istrage", BEZBEDNOST, emptySet(),
             "=law =laws regulat =fcc gdpr =ban =bans sanction privacy court lawsuit =fine =fined arrest charged sentenc police europol =fbi =doj extradit indict takedown seized"),
+        // Beograd
+        Cat("saobracaj", "Saobraćaj i GSP", BEOGRAD, setOf("saobraćaj", "gsp"),
+            "=gsp saobracaj sudar guzv autobus tramvaj trolejbus metro =linij =linije linija prevoz parking naplatn zastoj obustav =most mosta =bus semafor"),
+        Cat("komunalno", "Struja, voda, grejanje", BEOGRAD, emptySet(),
+            "struj =voda =vode =vodu =vodom isklju grejanj toplan bojler vodovod kanalizac krpelj komarc cistoc smece deratizac =eps elektrodistrib"),
+        Cat("gradnja", "Gradnja i urbanizam", BEOGRAD, setOf("gradnja", "urbanizam"),
+            "gradnj izgradnj zgrad stanov rekonstru urbanist =hala =halu investitor =blok =bloku kvart akvarij =expo =ekspo pijac", setOf("beobuild")),
+        Cat("vlast", "Gradska vlast", BEOGRAD, setOf("beograd u pokretu", "skupština grada"),
+            "sapic gradonacelni gradsk =izbori izbora =cls budzet"),
+        Cat("hronika_bg", "Hronika", BEOGRAD, setOf("hronika", "crna hronika"),
+            "uhapsen hapsen ubist ubijen pucnjav nesrec policij tuzilast osumnjic pritvor napad napadac =hitna pozar eksplozij teroris"),
+        Cat("dogadjaji", "Kultura i događaji", BEOGRAD, setOf("kultura"),
+            "koncert festival izlozb pozorist muzej sajam manifestac trofej maraton dogadjaj premijer =bitef =fest"),
         // Sport
         Cat("fudbal", "Fudbal", SPORT, setOf("fudbal", "football", "soccer", "superliga", "domaći fudbal", "lige petice", "premier league", "champions league", "liga šampiona"),
             "fudbal football soccer =fk uefa fifa premier superlig =gol =golova =goal champions manchester arsenal liverpool chelsea barcelon =real bayern juventus =milan =inter =psg tottenham"),

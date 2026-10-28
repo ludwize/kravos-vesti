@@ -1,5 +1,6 @@
 package net.kravos.vesti.data
 
+import net.kravos.vesti.data.Section.BEOGRAD
 import net.kravos.vesti.data.Section.BEZBEDNOST
 import net.kravos.vesti.data.Section.SPORT
 import net.kravos.vesti.data.Section.SRBIJA
@@ -41,6 +42,13 @@ object Sources {
         Source("thn", "The Hacker News", BEZBEDNOST, listOf("https://feeds.feedburner.com/TheHackersNews"), lang = "en"),
         Source("darkreading", "Dark Reading", BEZBEDNOST, listOf("https://www.darkreading.com/rss.xml"), lang = "en", reader = false),
         Source("ars", "Ars Technica", BEZBEDNOST, listOf("https://arstechnica.com/security/feed/"), lang = "en"),
+        // Beograd (dedicated city feeds; their articles also stay in Srbija when they come from a general feed)
+        Source("blicbg", "Blic Beograd", BEOGRAD, listOf("https://www.blic.rs/rss/Vesti/Beograd")),
+        Source("kurirbg", "Kurir Beograd", BEOGRAD, listOf("https://www.kurir.rs/rss/vesti/beograd")),
+        Source("n1bg", "N1", BEOGRAD, listOf("https://n1info.rs/tag/beograd/feed/")),
+        Source("novabg", "Nova", BEOGRAD, listOf("https://nova.rs/tag/beograd/feed/"), skip = setOf("vremenska-prognoza", "vremenska prognoza")),
+        Source("danasbg", "Danas", BEOGRAD, listOf("https://www.danas.rs/tag/beograd/feed/")),
+        Source("beobuild", "Beobuild", BEOGRAD, listOf("https://www.beobuild.rs/feed"), skip = setOf("predstavljamo")),
         // Sport (N1, Nova, Danas, BBC, Al Jazeera... also feed their sport pieces into this tab)
         Source("sportklub", "Sport Klub", SPORT, listOf("https://sportklub.n1info.rs/feed/")),
         Source("b92sport", "B92 Sport", SPORT, listOf("https://www.b92.net/rss/sport")),

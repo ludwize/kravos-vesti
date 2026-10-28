@@ -88,14 +88,15 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
                 val maxAge = if (src.section == Section.BEZBEDNOST) 7 * 86400_000L else 3 * 86400_000L
                 if (now - a0.published > maxAge) continue
                 val section = when {
-                    src.section == Section.SPORT || src.section == Section.BEZBEDNOST -> src.section
+                    src.section == Section.SPORT || src.section == Section.BEZBEDNOST || src.section == Section.BEOGRAD -> src.section
                     a0.tags.any { it in Sources.SPORT_TAGS } -> Section.SPORT
                     src.section == Section.SRBIJA && src.lang == "sr" && a0.tags.any { it in Sources.WORLD_TAGS } -> Section.SVET
                     else -> src.section
                 }
                 val routed = if (section != a0.section) a0.copy(section = section) else a0
                 val a = routed.copy(cats = Categories.assign(routed))
-                if (!seen.add(a.id)) continue
+                // the same article may sit in Srbija (general feed) and in Beograd (city feed)
+                if (!seen.add(a.section.name + a.id)) continue
                 if (!seenTitle.add(sid + "|" + Text.norm(a.title))) continue
                 arts += a
             }

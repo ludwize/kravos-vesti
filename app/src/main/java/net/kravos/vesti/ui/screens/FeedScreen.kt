@@ -205,7 +205,7 @@ private fun LazyListScope.digest(f: Feed, openStory: (Story) -> Unit, open: (Art
         items(live, key = { "live-" + it.id }) { a -> LiveRow(a) { open(a) } }
         item("live-rule") { Rule() }
     }
-    val plan = listOf(Triple(Section.SRBIJA, Tab.SRBIJA, 6), Triple(Section.SVET, Tab.SVET, 5), Triple(Section.BEZBEDNOST, Tab.BEZBEDNOST, 4), Triple(Section.SPORT, Tab.SPORT, 4))
+    val plan = listOf(Triple(Section.SRBIJA, Tab.SRBIJA, 6), Triple(Section.BEOGRAD, Tab.BEOGRAD, 4), Triple(Section.SVET, Tab.SVET, 5), Triple(Section.BEZBEDNOST, Tab.BEZBEDNOST, 4), Triple(Section.SPORT, Tab.SPORT, 4))
     for ((sec, tab, n) in plan) {
         val list = f.stories[sec].orEmpty().take(n)
         if (list.isEmpty()) continue
