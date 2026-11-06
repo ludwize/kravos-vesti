@@ -9,6 +9,7 @@ for u in ["https://vesti.kravos.net/", "https://vesti.kravos.net/data.json"]:
 d = json.load(urllib.request.urlopen("https://vesti.kravos.net/data.json?x=%d" % time.time()))
 now = time.time()
 L.append(f"generated {round((now - d['generated'])/60)} min ago; failed: {d['failed']}")
+L.append("index.html has mirror logic: " + str("MIRROR" in urllib.request.urlopen("https://vesti.kravos.net/?x=%d" % now).read().decode()))
 for sec, lst in d["sections"].items():
     ts = [a["ts"] for st in lst for a in st["a"]]
     by = {}
