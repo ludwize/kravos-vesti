@@ -54,11 +54,8 @@ jobs:
     if: needs.guard.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    outputs:
-      url: ${{ steps.deploy.outputs.page_url }}
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - name: Fetch feeds and build data.json
@@ -67,20 +64,30 @@ jobs:
           cp web/index.html site/
           printf 'User-agent: *\nDisallow: /\n' > site/robots.txt
           touch site/.nojekyll
-      - name: Mirror data.json to the data branch (fallback when Pages deploys get stuck)
+      - name: Publish to gh-pages and data branches (branch-based Pages; Actions deploys can get stuck)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          d=$(mktemp -d); cp site/data.json "$d/"; cd "$d"
-          git init -q && git checkout -q -b data && git add data.json
-          git -c user.name=ci -c user.email=ci@kravos.invalid commit -qm "data $(date -u +%FT%TZ)"
-          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" data
+          echo "vesti.kravos.net" > site/CNAME
+          push() {  # push <dir> <branch> as a single fresh commit (no history growth)
+            d=$(mktemp -d); cp -r "$1"/. "$d"/; cd "$d"
+            git init -q && git checkout -q -b "$2" && git add -A
+            git -c user.name=ci -c user.email=ci@kravos.invalid commit -qm "$2 $(date -u +%FT%TZ)"
+            git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$2"
+            cd - >/dev/null
+          }
+          push site gh-pages
+          mkdir -p dataonly && cp site/data.json dataonly/ && push dataonly data
+      # Actions-based Pages deploy: only used while Settings -> Pages -> Source is "GitHub Actions"
       - uses: actions/configure-pages@v5
+        continue-on-error: true
       - uses: actions/upload-pages-artifact@v3
+        continue-on-error: true
         with:
           path: site
       - id: deploy
         uses: actions/deploy-pages@v4
+        continue-on-error: true
         timeout-minutes: 4
 
   check:
@@ -95,7 +102,7 @@ jobs:
         run: |
           pip install --quiet playwright && python3 -m playwright install --with-deps chromium > /dev/null
           mkdir -p webcheck && sleep 20
-          python3 web/check/shots.py "${{ needs.publish.outputs.url }}" webcheck || echo "check failed" >> webcheck/stats.txt
+          python3 web/check/shots.py "https://vesti.kravos.net/" webcheck || echo "check failed" >> webcheck/stats.txt
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: bash .github/scripts/publish-log.sh web webcheck
