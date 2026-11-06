@@ -67,12 +67,21 @@ jobs:
           cp web/index.html site/
           printf 'User-agent: *\nDisallow: /\n' > site/robots.txt
           touch site/.nojekyll
+      - name: Mirror data.json to the data branch (fallback when Pages deploys get stuck)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          d=$(mktemp -d); cp site/data.json "$d/"; cd "$d"
+          git init -q && git checkout -q -b data && git add data.json
+          git -c user.name=ci -c user.email=ci@kravos.invalid commit -qm "data $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" data
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
       - id: deploy
         uses: actions/deploy-pages@v4
+        timeout-minutes: 4
 
   check:
     # after a manual run or a code change (not every 10 minutes): screenshot the live site

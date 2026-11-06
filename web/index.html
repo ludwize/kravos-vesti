@@ -222,6 +222,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
   };
 
+  const MIRROR = "https://raw.githubusercontent.com/ludwize/kravos-vesti/data/data.json";
   let data = null;
   let byId = {};          // story id -> story
   let artIndex = {};      // article id -> {a, story}
@@ -280,9 +281,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   // ---------------- data
   async function load(first) {
     try {
-      const r = await fetch("data.json?t=" + Math.floor(Date.now() / 60000), { cache: "no-store" });
-      const d = await r.json();
-      if (data && d.generated === data.generated) return;
+      // Two copies of the same data: the Pages one, and a mirror on the repo's "data" branch that
+      // is updated even when GitHub Pages deployments get stuck. Use whichever is newer.
+      const t = Math.floor(Date.now() / 60000);
+      const get = (u) => fetch(u, { cache: "no-store" }).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
+      const got = await Promise.allSettled([get("data.json?t=" + t), get(MIRROR + "?t=" + t)]);
+      const ok = got.filter((x) => x.status === "fulfilled").map((x) => x.value);
+      if (!ok.length) throw got[0].reason;
+      const d = ok.reduce((a, b) => (b.generated > a.generated ? b : a));
+      if (data && d.generated <= data.generated) return;
       data = d;
       byId = {}; artIndex = {};
       for (const lst of Object.values(data.sections)) for (const st of lst) { byId[st.id] = st; for (const a of st.a) artIndex[a.id] = { a, st }; }
