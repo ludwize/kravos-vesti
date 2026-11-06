@@ -1,36 +1,22 @@
 #!/usr/bin/env python3
-"""Open sports.kravos.net in a real browser: page errors, rendered events, screenshots, network refresh cadence."""
-import asyncio, os, subprocess, sys
+"""Why does vesti.kravos.net look stale? Check data.json freshness, newest article per section, failing feeds, cache headers."""
+import json, os, subprocess, sys, time, urllib.request
 OUT = sys.argv[1]; os.makedirs(OUT, exist_ok=True)
-subprocess.run("pip install --quiet playwright && python3 -m playwright install --with-deps chromium > /dev/null 2>&1", shell=True)
-from playwright.async_api import async_playwright
-
-async def main():
-    log = []
-    async with async_playwright() as p:
-        b = await p.chromium.launch()
-        pg = await b.new_page(viewport={"width": 390, "height": 844})
-        errs, reqs = [], []
-        pg.on("pageerror", lambda e: errs.append(str(e)))
-        pg.on("request", lambda r: reqs.append(r.url) if ("fotmob" in r.url or "espn" in r.url or "euroleague" in r.url) else None)
-        await pg.goto("https://sports.kravos.net/?v=2", wait_until="networkidle"); await pg.wait_for_timeout(4000)
-        await pg.screenshot(path=f"{OUT}/1-list.png")
-        n = await pg.evaluate("document.querySelectorAll('a.ev').length")
-        live = await pg.evaluate("[...document.querySelectorAll('a.ev')].filter(a => /'|\\d+\\+?'|Uživo|LIVE/i.test(a.innerText)).length")
-        log.append(f"events on list: {n}; looks live: {live}")
-        first = len(reqs); await pg.wait_for_timeout(25000)
-        log.append(f"data requests during 25 s idle on list: {len(reqs) - first}")
-        await pg.click("a.ev"); await pg.wait_for_timeout(4000)
-        await pg.screenshot(path=f"{OUT}/2-match.png")
-        await pg.mouse.wheel(0, 600); await pg.wait_for_timeout(500)
-        y0 = await pg.evaluate("scrollY"); r0 = len(reqs)
-        await pg.wait_for_timeout(23000)
-        y1 = await pg.evaluate("scrollY")
-        log.append(f"match page: requests in 23 s {len(reqs) - r0}; scroll {y0} -> {y1}; spinner now: {await pg.evaluate('!!document.querySelector(\".spin\")')}")
-        await pg.screenshot(path=f"{OUT}/3-match-after.png")
-        log.append(f"page errors: {errs}")
-        await b.close()
-    open(f"{OUT}/index.txt", "w").write("\n".join(log) + "\n")
-    print("\n".join(log))
-
-asyncio.run(main())
+L = []
+def sh(c): return subprocess.run(c, shell=True, capture_output=True, text=True).stdout.strip()
+for u in ["https://vesti.kravos.net/", "https://vesti.kravos.net/data.json"]:
+    L.append(u + "\n" + sh(f"curl -sI -m 20 '{u}' | grep -i -E '^(HTTP|last-modified|cache-control|age|x-cache|etag|expires)'"))
+d = json.load(urllib.request.urlopen("https://vesti.kravos.net/data.json?x=%d" % time.time()))
+now = time.time()
+L.append(f"generated {round((now - d['generated'])/60)} min ago; failed: {d['failed']}")
+for sec, lst in d["sections"].items():
+    ts = [a["ts"] for st in lst for a in st["a"]]
+    by = {}
+    for st in lst:
+        for a in st["a"]: by[a["s"]] = max(by.get(a["s"], 0), a["ts"])
+    stale = {k: round((now - v)/3600, 1) for k, v in sorted(by.items(), key=lambda x: x[1])}
+    L.append(f"{sec}: {len(lst)} stories, newest article {round((now - max(ts))/60)} min ago; top: {lst[0]['a'][0]['t'][:70]}\n   newest per source (h ago): {stale}")
+# fetch feeds directly from the runner too
+for name, url in [("n1", "https://n1info.rs/feed/"), ("danas", "https://www.danas.rs/feed/"), ("nova", "https://nova.rs/feed/"), ("bbc", "https://feeds.bbci.co.uk/news/world/rss.xml")]:
+    L.append(f"direct {name}: " + sh(f"curl -s -m 20 -A 'Mozilla/5.0' -o /tmp/f.xml -w '%{{http_code}} %{{size_download}}' '{url}'; grep -o -m1 '<pubDate>[^<]*' /tmp/f.xml | head -2 | tr '\\n' ' '"))
+open(f"{OUT}/index.txt", "w").write("\n".join(L) + "\n"); print("\n".join(L))
