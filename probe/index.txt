@@ -1,32 +1,33 @@
 https://vesti.kravos.net/
 HTTP/2 200 
-last-modified: Fri, 06 Nov 2026 13:37:50 GMT
-etag: "6aedd82e-7a3d"
-expires: Fri, 06 Nov 2026 17:01:44 GMT
+last-modified: Fri, 06 Nov 2026 13:37:51 GMT
+etag: "6aedd82f-7a3d"
+expires: Fri, 06 Nov 2026 17:04:27 GMT
 cache-control: max-age=600
 age: 0
 x-cache: MISS
 x-cache-hits: 0
 https://vesti.kravos.net/data.json
 HTTP/2 200 
-last-modified: Fri, 06 Nov 2026 13:37:51 GMT
-etag: "6aedd82f-6be69"
-expires: Fri, 06 Nov 2026 17:01:44 GMT
+last-modified: Fri, 06 Nov 2026 13:37:50 GMT
+etag: "6aedd82e-6be69"
+expires: Fri, 06 Nov 2026 17:04:28 GMT
 cache-control: max-age=600
 age: 0
 x-cache: MISS
 x-cache-hits: 0
-generated 198 min ago; failed: ['Žurnal']
-SVET: 160 stories, newest article 201 min ago; top: Hoax bomb threats target European airlines and airports for second tim
-   newest per source (h ago): {'vreme': 6.7, 'euronews': 5.4, 'reuters': 4.1, 'politico': 4.1, 'bbc': 4.0, 'dw': 3.9, 'nova': 3.8, 'n1': 3.7, 'guardian': 3.6, 'ap': 3.4, 'danas': 3.4, 'aljazeera': 3.4}
-SRBIJA: 130 stories, newest article 202 min ago; top: Direktoru Zabele određeno policijsko zadržavanje
-   newest per source (h ago): {'cins': 26.8, 'krik': 25.3, 'istinomer': 22.2, 'radar': 6.5, 'bi': 5.9, 'insajder': 3.8, 'vreme': 3.4, 'danas': 3.4, 'n1': 3.4, 'nova': 3.4}
-SPORT: 160 stories, newest article 202 min ago; top: Zvanično: Luka Ilić je ponovo fudbaler Crvene zvezde
-   newest per source (h ago): {'guardian': 8.5, 'eurohoops': 5.0, 'rtssport': 4.2, 'bbcsport': 3.8, 'meridian': 3.8, 'guardiansport': 3.6, 'danas': 3.6, 'sportklub': 3.5, 'b92sport': 3.5, 'nova': 3.5, 'aljazeera': 3.5, 'sportske': 3.4, 'motorsport': 3.4}
-BEZBEDNOST: 101 stories, newest article 212 min ago; top: Want to Rent an Internet Address at the White House?
-   newest per source (h ago): {'krebs': 36.3, 'ars': 17.7, 'therecord': 16.9, 'darkreading': 7.9, 'thn': 4.8, 'bleeping': 4.2, 'securityweek': 3.5}
-BEOGRAD: 34 stories, newest article 287 min ago; top: NOĆ U GRADU Ekipe Hitne pomoći imale 116 intervencija, evo kome je naj
-   newest per source (h ago): {'n1bg': 57.5, 'danasbg': 26.4, 'novabg': 23.2, 'blicbg': 4.8, 'kurirbg': 4.8}
+generated 201 min ago; failed: ['Žurnal']
+index.html has mirror logic: False
+SVET: 160 stories, newest article 204 min ago; top: Hoax bomb threats target European airlines and airports for second tim
+   newest per source (h ago): {'vreme': 6.8, 'euronews': 5.4, 'reuters': 4.2, 'politico': 4.1, 'bbc': 4.0, 'dw': 4.0, 'nova': 3.9, 'n1': 3.8, 'guardian': 3.7, 'ap': 3.4, 'danas': 3.4, 'aljazeera': 3.4}
+SRBIJA: 130 stories, newest article 204 min ago; top: Direktoru Zabele određeno policijsko zadržavanje
+   newest per source (h ago): {'cins': 26.8, 'krik': 25.4, 'istinomer': 22.2, 'radar': 6.6, 'bi': 5.9, 'insajder': 3.8, 'vreme': 3.5, 'danas': 3.4, 'n1': 3.4, 'nova': 3.4}
+SPORT: 160 stories, newest article 204 min ago; top: Zvanično: Luka Ilić je ponovo fudbaler Crvene zvezde
+   newest per source (h ago): {'guardian': 8.5, 'eurohoops': 5.1, 'rtssport': 4.2, 'bbcsport': 3.9, 'meridian': 3.9, 'guardiansport': 3.6, 'danas': 3.6, 'sportklub': 3.6, 'b92sport': 3.6, 'nova': 3.5, 'aljazeera': 3.5, 'sportske': 3.4, 'motorsport': 3.4}
+BEZBEDNOST: 101 stories, newest article 215 min ago; top: Want to Rent an Internet Address at the White House?
+   newest per source (h ago): {'krebs': 36.3, 'ars': 17.7, 'therecord': 16.9, 'darkreading': 7.9, 'thn': 4.8, 'bleeping': 4.3, 'securityweek': 3.6}
+BEOGRAD: 34 stories, newest article 290 min ago; top: NOĆ U GRADU Ekipe Hitne pomoći imale 116 intervencija, evo kome je naj
+   newest per source (h ago): {'n1bg': 57.5, 'danasbg': 26.5, 'novabg': 23.2, 'blicbg': 4.9, 'kurirbg': 4.8}
 direct n1: 200 72634<pubDate>Fri, 06 Nov 2026 17:35:36 +0100
 direct danas: 200 121161<pubDate>Fri, 06 Nov 2026 16:50:14 +0000
 direct nova: 200 68273<pubDate>Fri, 06 Nov 2026 17:44:10 +0100
