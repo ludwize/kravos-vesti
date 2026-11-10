@@ -8,6 +8,11 @@ def bail():
 try:
     r = subprocess.run("python3 web/build.py /tmp/site && cp web/index.html /tmp/site/", shell=True, capture_output=True, text=True)
     L.append(r.stdout[-800:] + r.stderr[-1500:])
+    sys.path.insert(0, "web"); import build as B, urllib.request
+    src = next(x for x in B.load_sources() if x["id"] == "b92auto")
+    xml = B.fetch(src["feeds"][0])
+    arts = B.parse_feed(xml, src, time.time())
+    L.append(f"b92auto debug: {len(xml)} bytes, {len(arts)} parsed; " + "; ".join(f"{round((time.time()-a['ts'])/3600,1)}h tags={sorted(a['tags'])[:4]} {a['title'][:40]}" for a in arts[:4]))
     d = json.load(open("/tmp/site/data.json"))
     names = {k: v["name"] for k, v in d["sources"].items()}
     for sec in ["AUTO", "LJUBIMCI"]:
@@ -16,7 +21,7 @@ try:
         srcs = collections.Counter(names.get(a["s"], a["s"]) for st in lst for a in st["a"])
         L.append(f"\n{sec}: {len(lst)} stories; cats {dict(c)}; sources {dict(srcs)}")
         for st in lst[:25]: L.append(f"   [{','.join(st['a'][0]['c'])}] {names.get(st['a'][0]['s'])}: {st['a'][0]['t'][:90]}")
-    subprocess.run("pip install --quiet playwright && python3 -m playwright install --with-deps chromium > /dev/null 2>&1", shell=True)
+    subprocess.run("(python3 -m pip install --quiet --break-system-packages playwright || python3 -m pip install --quiet playwright) && python3 -m playwright install --with-deps chromium > /dev/null 2>&1", shell=True)
     srv = subprocess.Popen(["python3", "-m", "http.server", "8765", "-d", "/tmp/site"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     time.sleep(2)
     from playwright.async_api import async_playwright
