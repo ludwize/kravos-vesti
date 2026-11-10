@@ -78,7 +78,14 @@ for name, url in FEEDS.items():
         summary.write(f"\n### {name} -> PARSE ERROR {e} {body[:160]!r}\n")
         continue
     items = root.findall(".//item") or root.findall(".//{http://purl.org/rss/1.0/}item") or root.findall(".//atom:entry", NS)
-    summary.write(f"\n### {name}: {len(items)} items, root={root.tag}\n")
+    import email.utils, time as _t
+    ages = []
+    for it in items:
+        dd = text(it.find("pubDate")) or text(it.find("dc:date", NS)) or text(it.find("atom:updated", NS))
+        try: ages.append((_t.time() - email.utils.parsedate_to_datetime(dd).timestamp()) / 3600)
+        except Exception: pass
+    fresh = f" newest {min(ages):.1f}h, last24h {sum(1 for a in ages if a < 24)}" if ages else ""
+    summary.write(f"\n### {name}: {len(items)} items, root={root.tag}{fresh}\n")
     for it in items[:3]:
         def g(tag):
             return it.find(tag, NS) if ":" in tag else (it.find(tag) if it.find(tag) is not None else it.find("{http://purl.org/rss/1.0/}" + tag))
@@ -92,4 +99,7 @@ for name, url in FEEDS.items():
         cats = [text(c) for c in it.findall("category")][:5]
         summary.write(f"- {title[:110]}\n  link={link}\n  date={date} cats={cats}\n  desc={len(desc)} content={len(content)} media={media[:1]} enc={enc[:1]}\n  desc0={re.sub(r'<[^>]+>', ' ', desc)[:160]!r}\n")
 log.close(); summary.close()
+# keep only the text summaries (raw feeds can trip GitHub push protection)
+for f in os.listdir(OUT):
+    if not f.endswith(".txt"): os.remove(os.path.join(OUT, f))
 print(open(os.path.join(OUT, "index.txt")).read())
