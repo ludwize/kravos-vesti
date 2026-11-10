@@ -1,12 +1,13 @@
 53 sources, 48 categories
-1092 articles -> 645 stories; failed: []; data.json 478 KB
+  ! rtssport https://www.rts.rs/page/sport/ci/rss.html: <urlopen error _ssl.c:1063: The handshake operation timed out>
+1075 articles -> 647 stories; failed: ['RTS Sport']; data.json 472 KB
 
-b92auto debug: 16413 bytes, 20 parsed; 0.4h tags=['automobili', 'land-rover-tuzio-byd-zbog-navodnog-kopiranja-tehnologije-modela-defender', 'zanimljivosti'] Land Rover napao BYD: Tvrdi da su Kinezi; 2.1h tags=['automobili', 'garaza', 'start-stop-sistem-u-automobilu-zasto-poznati-mehanicar-savetuje-iskljucivanje'] Mehaničar sa 50 godina iskustva ima važa; 16.1h tags=['aktuelno', 'automobili', 'putujete-automobilom-u-italiju-nova-pravila-mogla-bi-skupo-da-vas-kostaju'] Ova evropska zemlja obračunavaće kazne z; 18.9h tags=['aktuelno', 'automobili', 'ozbiljan-problem-za-ford-u-sad-putnici-mogu-da-zadobiju-opekotine-zbog-vazdusnih-jastuka'] Ozbiljan problem za Ford u SAD: Putnici 
 
-AUTO: 81 stories; cats {'ev': 43, 'modeli': 6, 'saveti': 5, 'industrija': 5}; sources {'Electrek': 23, 'InsideEVs': 11, 'Motor1': 20, 'B92 Automobili': 15, 'Autocar': 14, 'Kurir Auto': 3}
+AUTO: 82 stories; cats {'ev': 44, 'modeli': 6, 'saveti': 5, 'industrija': 5}; sources {'Electrek': 24, 'InsideEVs': 11, 'Motor1': 20, 'B92 Automobili': 15, 'Autocar': 14, 'Kurir Auto': 3}
    [ev,modeli] Electrek: PlugShare finally adds dark mode, and there’s more for EV drivers
    [ev] Electrek: Ford’s EV batteries retain more than 90% health after 100,000 miles
    [ev] InsideEVs: Land Rover Is Going After BYD Over This Alleged Defender Lookalike: Report
+   [ev] Electrek: Honda shows off its next electric motorcycle, and it’s wilder than you thought
    [] Motor1: Mercedes Chairman Says Gas And Diesel Engines Still Have 10–15 Years Left
    [ev] B92 Automobili: Land Rover napao BYD: Tvrdi da su Kinezi rastavili Defender i iskopirali njegovu tehnologi
    [] Motor1: This Porsche 924 Was The UAE's First Performance Police Car
@@ -28,7 +29,6 @@ AUTO: 81 stories; cats {'ev': 43, 'modeli': 6, 'saveti': 5, 'industrija': 5}; so
    [ev] Electrek: Yozma IN 10 Pro e-dirt bike hits exclusive new $1,614 low, Anker early Black Friday securi
    [ev] Electrek: The electric Vespa just got better where it actually matters
    [ev] InsideEVs: Ford's Radical New EV Manufacturing Process Is Already Building Trucks
-   [ev] Electrek: Wire just showed off its biggest electric motorcycle lineup yet
 
 LJUBIMCI: 8 stories; cats {'divlje': 5, 'psi': 4, 'zastita': 1, 'zdravlje_lj': 1}; sources {'Guardian': 6, 'N1': 1, 'Blic Beograd': 1}
    [divlje] Guardian: Alien menace or victim of xenophobia? The battle over Britain’s parakeets
@@ -39,8 +39,5 @@ LJUBIMCI: 8 stories; cats {'divlje': 5, 'psi': 4, 'zastita': 1, 'zdravlje_lj': 1
    [divlje] Guardian: Country diary: Teasing out spiders with a tuning fork | Susie White
    [psi,zdravlje_lj,divlje] Guardian: When the 11-plus test went to the dogs | Brief letters
    [psi] Blic Beograd: BEOGRADSKI ROMEO I JULIJA! O zabranjenoj ljubavi Zagle i Badže sa Dorćola pisao i Nušić: P
-Traceback (most recent call last):
-  File "/home/runner/work/kravos-vesti/kravos-vesti/.github/probe/probe.py", line 27, in <module>
-    from playwright.async_api import async_playwright
-ModuleNotFoundError: No module named 'playwright'
-
+pip: 0 
+page errors: []
