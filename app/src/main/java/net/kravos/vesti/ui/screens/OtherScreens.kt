@@ -51,6 +51,7 @@ import net.kravos.vesti.ui.Fmt
 import net.kravos.vesti.ui.LocalApp
 import net.kravos.vesti.ui.LocalNav
 import net.kravos.vesti.ui.Route
+import net.kravos.vesti.ui.Tab
 import net.kravos.vesti.ui.components.ArticleRow
 import net.kravos.vesti.ui.components.Empty
 import net.kravos.vesti.ui.components.Kicker
@@ -241,5 +242,56 @@ private fun Toggle(title: String, sub: String?, value: Boolean, onChange: (Boole
             checked = value, onCheckedChange = onChange,
             colors = SwitchDefaults.colors(checkedTrackColor = p.accent, checkedThumbColor = MaterialTheme.colorScheme.background),
         )
+    }
+}
+
+// ---------- Više ----------
+
+/** Every section (incl. the ones not in the bottom bar), saved articles and settings. */
+@Composable
+fun MoreScreen(pad: PaddingValues) {
+    val app = LocalApp.current
+    val nav = LocalNav.current
+    val p = LocalPalette.current
+    val feed by app.repo.feed.collectAsState()
+    val savedItems by app.saved.items.collectAsState()
+    val now = System.currentTimeMillis()
+    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = pad.calculateBottomPadding() + 24.dp)) {
+        item("mast") {
+            Column(Modifier.fillMaxWidth().statusBarsPadding().padding(start = 18.dp, end = 18.dp, top = 14.dp)) {
+                Text("SVE SEKCIJE", style = MaterialTheme.typography.labelSmall, color = p.dim)
+                Spacer(Modifier.height(2.dp))
+                Text("Više", style = MaterialTheme.typography.displaySmall)
+                Spacer(Modifier.height(10.dp))
+                Box(Modifier.fillMaxWidth().height(2.dp).background(p.ink))
+            }
+        }
+        items(Tab.STRIP, key = { it.name }) { t ->
+            val sec = t.section
+            val n = when {
+                sec != null -> feed?.stories?.get(sec)?.count { now - it.latest < 24 * 3600_000L }
+                t == Tab.AKTUELNO -> feed?.stories?.values?.flatten()?.count { now - it.latest < 8 * 3600_000L && it.sources.size >= 2 }
+                else -> null
+            }
+            Row(
+                Modifier.fillMaxWidth().clickable { nav.tab(t) }.padding(horizontal = 18.dp, vertical = 15.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text(t.label, Modifier.weight(1f), style = MaterialTheme.typography.titleLarge)
+                if (n != null && n > 0) Text("$n danas", style = MaterialTheme.typography.labelMedium, color = p.dim)
+            }
+            Rule(Modifier.padding(horizontal = 18.dp))
+        }
+        item("saved") {
+            Spacer(Modifier.height(18.dp))
+            Row(Modifier.fillMaxWidth().clickable { nav.go(Route.Saved) }.padding(horizontal = 18.dp, vertical = 15.dp), verticalAlignment = Alignment.CenterVertically) {
+                Text("Sačuvano", Modifier.weight(1f), style = MaterialTheme.typography.titleLarge)
+                if (savedItems.isNotEmpty()) Text("${savedItems.size}", style = MaterialTheme.typography.labelMedium, color = p.dim)
+            }
+            Rule(Modifier.padding(horizontal = 18.dp))
+            Row(Modifier.fillMaxWidth().clickable { nav.go(Route.Settings) }.padding(horizontal = 18.dp, vertical = 15.dp)) {
+                Text("Podešavanja", style = MaterialTheme.typography.titleLarge)
+            }
+        }
     }
 }

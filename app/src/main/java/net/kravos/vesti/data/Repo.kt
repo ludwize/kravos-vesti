@@ -84,11 +84,14 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
             val src = Sources.of(sid) ?: continue
             for (a0 in list) {
                 if (a0.tags.any { it in src.skip }) continue
-                if (hideEnt && a0.tags.any { it in Sources.ENT_TAGS }) continue
+                val isAuto = src.section == Section.AUTO || a0.tags.any { it in Sources.AUTO_TAGS }
+                if (hideEnt && !isAuto && src.section != Section.LJUBIMCI && a0.tags.any { it in Sources.ENT_TAGS }) continue
                 val maxAge = if (src.section == Section.BEZBEDNOST) 7 * 86400_000L else 3 * 86400_000L
                 if (now - a0.published > maxAge) continue
                 val section = when {
-                    src.section == Section.SPORT || src.section == Section.BEZBEDNOST || src.section == Section.BEOGRAD -> src.section
+                    src.section == Section.SPORT || src.section == Section.BEZBEDNOST || src.section == Section.BEOGRAD ||
+                        src.section == Section.AUTO || src.section == Section.LJUBIMCI -> src.section
+                    isAuto -> Section.AUTO
                     a0.tags.any { it in Sources.SPORT_TAGS } -> Section.SPORT
                     src.section == Section.SRBIJA && src.lang == "sr" && a0.tags.any { it in Sources.WORLD_TAGS } -> Section.SVET
                     else -> src.section
@@ -99,6 +102,11 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
                 if (!seen.add(a.section.name + a.id)) continue
                 if (!seenTitle.add(sid + "|" + Text.norm(a.title))) continue
                 arts += a
+                // pet stories from any section are also listed under Ljubimci
+                if (a.section != Section.LJUBIMCI && a.section != Section.BEZBEDNOST && isPet(a.title) && seen.add(Section.LJUBIMCI.name + a.id)) {
+                    val pet = a.copy(section = Section.LJUBIMCI)
+                    arts += pet.copy(cats = Categories.assign(pet))
+                }
             }
         }
         arts.sortByDescending { it.published }
@@ -106,6 +114,11 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
             .groupBy { it.section }
             .mapValues { (_, l) -> l.sortedByDescending { Cluster.score(it, now) } }
         _feed.value = Feed(arts, stories, failed.mapNotNull { Sources.of(it)?.name }.sorted(), now)
+    }
+
+    private fun isPet(title: String): Boolean {
+        val words = Regex("[a-z0-9]+").findAll(Text.norm(title)).map { it.value }.toList()
+        return words.any { it in Sources.PET_EXACT } || words.any { w -> Sources.PET_PREFIX.any { w.startsWith(it) } }
     }
 
     /** Reader text: saved copy → full text in the feed → extracted from the page. */

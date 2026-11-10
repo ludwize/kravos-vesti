@@ -1,6 +1,8 @@
 package net.kravos.vesti.data
 
+import net.kravos.vesti.data.Section.AUTO
 import net.kravos.vesti.data.Section.BEOGRAD
+import net.kravos.vesti.data.Section.LJUBIMCI
 import net.kravos.vesti.data.Section.BEZBEDNOST
 import net.kravos.vesti.data.Section.SPORT
 import net.kravos.vesti.data.Section.SRBIJA
@@ -82,6 +84,21 @@ object Categories {
             "uhapsen hapsen ubist ubijen pucnjav nesrec policij tuzilast osumnjic pritvor napad napadac =hitna pozar eksplozij teroris"),
         Cat("dogadjaji", "Kultura i događaji", BEOGRAD, setOf("kultura"),
             "koncert festival izlozb pozorist muzej sajam manifestac trofej maraton dogadjaj premijer =bitef =fest"),
+        // Automobili
+        Cat("ev", "Električni i hibridi", AUTO, setOf("električni automobili", "electric vehicles", "ev"),
+            "elektri =ev =evs =phev =bev hibrid hybrid baterij battery punjac punjenj charging charger tesla =byd domet range plug", setOf("electrek", "insideevs")),
+        Cat("modeli", "Novi modeli i testovi", AUTO, setOf("test", "review", "first drive"),
+            "novi =nova predstav premijer otkriv =test testir review drive debut unveil reveal revealed facelift generacij generation"),
+        Cat("saveti", "Saveti i propisi", AUTO, setOf("saveti"),
+            "savet trik =kazna =kazne kazni propis zakon pravil vozac vozace registrac gorivo gorivu =cena =cene =cenu tips =fine =fines =law"),
+        Cat("industrija", "Tržište i industrija", AUTO, emptySet(),
+            "prodaj prodat trzist fabrik proizvodnj carin tarif =sales market factory plant recall opoziv akcij =jobs tariff"),
+        // Ljubimci
+        Cat("psi", "Psi", LJUBIMCI, emptySet(), "=pas =psa =psi =psu =pse psima =pasa =psom kucenc =dog =dogs puppy pupp"),
+        Cat("macke", "Mačke", LJUBIMCI, emptySet(), "mack =mace macor =cat =cats kitten"),
+        Cat("zdravlje_lj", "Zdravlje i nega", LJUBIMCI, emptySet(), "veterin =vet =vets zdravlj bolest vakcin ishran hran health disease vaccin food"),
+        Cat("divlje", "Divlje životinje", LJUBIMCI, setOf("animals", "wildlife"), "divlj medved =vuk vukov ptic orao =zoo wild bird whale =bear wolf species"),
+        Cat("zastita", "Zaštita i udomljavanje", LJUBIMCI, emptySet(), "udomlj udomi azil napusten zlostavlj zastit welfare rescue shelter adopt abuse cruelty"),
         // Sport
         Cat("fudbal", "Fudbal", SPORT, setOf("fudbal", "football", "soccer", "superliga", "domaći fudbal", "lige petice", "premier league", "champions league", "liga šampiona"),
             "fudbal football soccer =fk uefa fifa premier superlig =gol =golova =goal champions manchester arsenal liverpool chelsea barcelon =real bayern juventus =milan =inter =psg tottenham"),

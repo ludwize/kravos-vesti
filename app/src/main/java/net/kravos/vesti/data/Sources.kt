@@ -1,6 +1,8 @@
 package net.kravos.vesti.data
 
+import net.kravos.vesti.data.Section.AUTO
 import net.kravos.vesti.data.Section.BEOGRAD
+import net.kravos.vesti.data.Section.LJUBIMCI
 import net.kravos.vesti.data.Section.BEZBEDNOST
 import net.kravos.vesti.data.Section.SPORT
 import net.kravos.vesti.data.Section.SRBIJA
@@ -49,6 +51,18 @@ object Sources {
         Source("novabg", "Nova", BEOGRAD, listOf("https://nova.rs/tag/beograd/feed/"), skip = setOf("vremenska-prognoza", "vremenska prognoza")),
         Source("danasbg", "Danas", BEOGRAD, listOf("https://www.danas.rs/tag/beograd/feed/")),
         Source("beobuild", "Beobuild", BEOGRAD, listOf("https://www.beobuild.rs/feed"), skip = setOf("predstavljamo")),
+        // Automobili (auto pieces from N1, Nova, Danas... are routed here too)
+        Source("b92auto", "B92 Automobili", AUTO, listOf("https://www.b92.net/info/rss/automobili.xml")),
+        Source("kurirauto", "Kurir Auto", AUTO, listOf("https://www.kurir.rs/rss/auto")),
+        Source("n1auto", "N1 Auto", AUTO, listOf("https://n1info.rs/magazin/auto/feed/")),
+        Source("electrek", "Electrek", AUTO, listOf("https://electrek.co/feed/"), lang = "en"),
+        Source("insideevs", "InsideEVs", AUTO, listOf("https://insideevs.com/rss/news/all/"), lang = "en"),
+        Source("autocar", "Autocar", AUTO, listOf("https://www.autocar.co.uk/rss"), lang = "en"),
+        Source("motor1", "Motor1", AUTO, listOf("https://www.motor1.com/rss/news/all/"), lang = "en"),
+        Source("caranddriver", "Car and Driver", AUTO, listOf("https://www.caranddriver.com/rss/all.xml/"), lang = "en", defaultOn = false),
+        // Ljubimci (few dedicated feeds; pet stories from every other source are copied here by PET_* words)
+        Source("n1ljub", "N1", LJUBIMCI, listOf("https://n1info.rs/tag/ljubimci/feed/")),
+        Source("guardianpets", "Guardian", LJUBIMCI, listOf("https://www.theguardian.com/lifeandstyle/pets/rss", "https://www.theguardian.com/world/animals/rss"), lang = "en"),
         // Sport (N1, Nova, Danas, BBC, Al Jazeera... also feed their sport pieces into this tab)
         Source("sportklub", "Sport Klub", SPORT, listOf("https://sportklub.n1info.rs/feed/")),
         Source("b92sport", "B92 Sport", SPORT, listOf("https://www.b92.net/rss/sport")),
@@ -74,6 +88,17 @@ object Sources {
         "sport", "sport-klub", "sport klub", "sports", "fudbal", "košarka", "kosarka", "tenis", "odbojka", "vaterpolo",
         "formula 1", "football", "rukomet",
     )
+
+    /** Car pieces from general outlets move to the Automobili tab (instead of being hidden as lifestyle). */
+    val AUTO_TAGS = setOf("auto", "automobili", "automobil", "motoring", "cars", "auto moto")
+
+    /** A title word equal to one of these (normalized, no diacritics) puts the article in Ljubimci too. */
+    val PET_EXACT = setOf(
+        "pas", "psa", "psi", "psu", "pse", "psima", "pasa", "psom", "kucence", "kucici", "mace", "macor", "mackica",
+        "dog", "dogs", "puppy", "puppies", "cat", "cats", "kitten", "kittens", "pets",
+    )
+    /** ...or starts with one of these. */
+    val PET_PREFIX = setOf("macka", "macke", "macku", "mackom", "mackama", "ljubimc", "ljubimac", "zivotinj", "veterin", "animal")
 
     /** Showbiz / lifestyle, hidden when "Sakrij zabavu i lifestyle" is on. */
     val ENT_TAGS = setOf(

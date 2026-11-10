@@ -150,7 +150,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 @media (max-width: 640px) {
   .wrap { padding: 0 16px; }
-  .bar nav a { padding: 13px 4px 11px; font-size: 12px; }
+  .bar nav a { padding: 13px 8px 11px; font-size: 13px; }
   .bar { gap: 2px; }
   .tools .icon { width: 28px; }
   .tools .icon { width: 32px; }
@@ -196,11 +196,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 (() => {
   const TABS = [
     { id: "danas", label: "Danas", sec: null },
+    { id: "aktuelno", label: "Najaktuelnije", short: "Aktuelno", sec: null },
     { id: "srbija", label: "Srbija", sec: "SRBIJA" },
     { id: "beograd", label: "Beograd", sec: "BEOGRAD" },
     { id: "svet", label: "Svet", sec: "SVET" },
     { id: "bezbednost", label: "Bezbednost", short: "Sajber", sec: "BEZBEDNOST" },
     { id: "sport", label: "Sport", sec: "SPORT" },
+    { id: "auto", label: "Automobili", short: "Auto", sec: "AUTO" },
+    { id: "ljubimci", label: "Ljubimci", sec: "LJUBIMCI" },
   ];
   const DAYS = ["nedelja", "ponedeljak", "utorak", "sreda", "četvrtak", "petak", "subota"];
   const MONTHS = ["januar", "februar", "mart", "april", "maj", "jun", "jul", "avgust", "septembar", "oktobar", "novembar", "decembar"];
@@ -345,10 +348,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   function render() {
     if (!data && state.tab !== "sacuvano") return;
     document.querySelectorAll("#nav a").forEach((a) => a.classList.toggle("on", a.dataset.t === state.tab));
+    const onTab = document.querySelector("#nav a.on");
+    if (onTab) onTab.scrollIntoView({ inline: "center", block: "nearest" });
     const main = $("#main");
     let html = "";
     if (state.tab === "sacuvano") html = renderSaved();
     else if (state.tab === "danas") html = state.mode === "new" ? danasHead() + wire(Object.values(data.sections).flat()) : danasHead() + renderDanas();
+    else if (state.tab === "aktuelno") html = renderHot();
     else {
       const tab = TABS.find((t) => t.id === state.tab);
       let list = data.sections[tab.sec] || [];
@@ -360,6 +366,20 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     bind();
   }
 
+  // "Najaktuelnije": what most outlets cover right now, across all sections
+  // (updated in the last 8 h, 2+ sources, ranked by sources with a 3 h half-life).
+  function renderHot() {
+    const head = `<div class="shead"><div><div class="kicker" style="color:var(--dim)">Šta svi prate upravo sada</div><h2>Najaktuelnije</h2></div></div>`;
+    const seenLead = new Set();
+    const list = Object.values(data.sections).flat()
+      .filter((st) => now() - latest(st) < 8 * 3600 && sources(st).length >= 2)
+      .map((st) => ({ st, sc: Math.pow(sources(st).length, 1.7) * Math.exp(-((now() - latest(st)) / 3600) * Math.LN2 / 3) * (st.a.some((x) => x.l) ? 1.3 : 1) }))
+      .sort((x, y) => y.sc - x.sc).map((x) => x.st)
+      .filter((st) => !seenLead.has(st.a[0].id) && seenLead.add(st.a[0].id))
+      .slice(0, 40);
+    return head + (list.length ? frontPage(list) : `<div class="empty">Trenutno nema priča koje prati više izvora.</div>`);
+  }
+
   function danasHead() {
     return `<div class="shead"><div><div class="kicker" style="color:var(--dim)">Pregled dana</div><h2>Danas</h2></div>
       <div class="modes"><button data-m="top" class="${state.mode === "top" ? "on" : ""}">Najvažnije</button><button data-m="new" class="${state.mode === "new" ? "on" : ""}">Najnovije</button></div></div>`;
@@ -369,12 +389,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     let html = "";
     const live = (data.sections.SRBIJA || []).flatMap((st) => st.a).filter((a) => a.l && now() - a.ts < 12 * 3600).sort((x, y) => y.ts - x.ts).slice(0, 2);
     if (live.length) html += `<div class="livebar">${live.map((a) => `<a href="${esc(a.u)}" target="_blank" rel="noopener"><span class="live">UŽIVO</span><span>${esc(a.t)}</span></a>`).join("")}</div>`;
-    for (const [sec, tabId, n] of [["SRBIJA", "srbija", 9], ["BEOGRAD", "beograd", 5], ["SVET", "svet", 7], ["BEZBEDNOST", "bezbednost", 5], ["SPORT", "sport", 5]]) {
+    for (const [sec, tabId, n] of [["SRBIJA", "srbija", 9], ["BEOGRAD", "beograd", 5], ["SVET", "svet", 7], ["BEZBEDNOST", "bezbednost", 5], ["SPORT", "sport", 5], ["AUTO", "auto", 3], ["LJUBIMCI", "ljubimci", 3]]) {
       const list = (data.sections[sec] || []).slice(0, n);
       if (!list.length) continue;
       const tab = TABS.find((t) => t.id === tabId);
       html += `<section class="block"><div class="bh"><span class="kicker">${esc(tab.label)}</span><a href="#/${tabId}">Sve ›</a></div>`;
-      if (sec === "BEZBEDNOST") html += `<section class="grid" style="border-top:0;margin-top:0">${list.map(card).join("")}</section>`;
+      if (sec === "BEZBEDNOST" || sec === "AUTO" || sec === "LJUBIMCI") html += `<section class="grid" style="border-top:0;margin-top:0">${list.map(card).join("")}</section>`;
       else html += frontPage(list);
       html += `</section>`;
     }

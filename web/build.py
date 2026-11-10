@@ -438,6 +438,13 @@ def main():
     world_tags = load_set(os.path.join(KT, "Sources.kt"), "WORLD_TAGS")
     sport_tags = load_set(os.path.join(KT, "Sources.kt"), "SPORT_TAGS")
     ent_tags = load_set(os.path.join(KT, "Sources.kt"), "ENT_TAGS")
+    auto_tags = load_set(os.path.join(KT, "Sources.kt"), "AUTO_TAGS")
+    pet_exact = load_set(os.path.join(KT, "Sources.kt"), "PET_EXACT")
+    pet_prefix = tuple(load_set(os.path.join(KT, "Sources.kt"), "PET_PREFIX"))
+
+    def is_pet(title):
+        ws = re.findall(r"[a-z0-9]+", norm(title))
+        return any(w in pet_exact for w in ws) or any(w.startswith(pet_prefix) for w in ws)
     print(f"{len(sources)} sources, {len(cats)} categories")
     now = time.time()
     rank = {s["id"]: i for i, s in enumerate(sources)}
@@ -473,13 +480,16 @@ def main():
         if not ok:
             failed.append(s["name"])
         for a in lst:
-            if a["tags"] & s["skip"] or a["tags"] & ent_tags:
+            is_auto = s["section"] == "AUTO" or bool(a["tags"] & auto_tags)
+            if a["tags"] & s["skip"] or (a["tags"] & ent_tags and not is_auto and s["section"] != "LJUBIMCI"):
                 continue
             max_age = 7 * 86400 if s["section"] == "BEZBEDNOST" else 3 * 86400
             if now - a["ts"] > max_age:
                 continue
-            if s["section"] in ("SPORT", "BEZBEDNOST", "BEOGRAD"):
+            if s["section"] in ("SPORT", "BEZBEDNOST", "BEOGRAD", "AUTO", "LJUBIMCI"):
                 sec = s["section"]
+            elif is_auto:
+                sec = "AUTO"
             elif a["tags"] & sport_tags:
                 sec = "SPORT"
             elif s["section"] == "SRBIJA" and s["lang"] == "sr" and a["tags"] & world_tags:
@@ -495,6 +505,12 @@ def main():
             seen.add(sec + a["id"]); seen_title.add(key)
             a["cats"] = assign(a, cats)
             arts.append(a)
+            # pet stories from any section are also listed under Ljubimci
+            if sec not in ("LJUBIMCI", "BEZBEDNOST") and is_pet(a["title"]) and "LJUBIMCI" + a["id"] not in seen:
+                seen.add("LJUBIMCI" + a["id"])
+                pet = dict(a, section="LJUBIMCI")
+                pet["cats"] = assign(pet, cats)
+                arts.append(pet)
     arts.sort(key=lambda a: -a["ts"])
     stories = cluster(arts, rank)
     by_sec = {}

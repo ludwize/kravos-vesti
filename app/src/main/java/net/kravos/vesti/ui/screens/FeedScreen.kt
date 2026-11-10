@@ -1,6 +1,9 @@
 package net.kravos.vesti.ui.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.ui.draw.clip
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -104,13 +107,15 @@ fun FeedScreen(tab: Tab, pad: PaddingValues) {
         LazyColumn(Modifier.fillMaxSize(), state = listState, contentPadding = PaddingValues(bottom = pad.calculateBottomPadding() + 24.dp)) {
             val f = feed
             item("mast") { Masthead(tab, cat, counts) { cat = it; scope.launch { listState.scrollToItem(0) } } }
-            item("mode") { ModeSwitch(mode) { mode = it } }
+            item("strip") { SectionStrip(tab) }
+            if (tab != Tab.AKTUELNO) item("mode") { ModeSwitch(mode) { mode = it } }
             when {
                 f == null -> item("load") { Spinner() }
                 f.articles.isEmpty() -> item("err") {
                     if (refreshing) Spinner()
                     else ErrorBox(if (f.failed.isNotEmpty()) "Ne odgovaraju: " + f.failed.joinToString(", ") else null) { scope.launch { app.repo.refresh(force = true) } }
                 }
+                tab == Tab.AKTUELNO -> hot(f, openStory)
                 mode == 1 -> latest(f, tab.section, cat, open)
                 tab == Tab.DANAS -> digest(f, openStory, open) { nav.tab(it) }
                 else -> section(f, tab.section!!, cat, openStory)
@@ -205,16 +210,71 @@ private fun LazyListScope.digest(f: Feed, openStory: (Story) -> Unit, open: (Art
         items(live, key = { "live-" + it.id }) { a -> LiveRow(a) { open(a) } }
         item("live-rule") { Rule() }
     }
-    val plan = listOf(Triple(Section.SRBIJA, Tab.SRBIJA, 6), Triple(Section.BEOGRAD, Tab.BEOGRAD, 4), Triple(Section.SVET, Tab.SVET, 5), Triple(Section.BEZBEDNOST, Tab.BEZBEDNOST, 4), Triple(Section.SPORT, Tab.SPORT, 4))
+    val plan = listOf(
+        Triple(Section.SRBIJA, Tab.SRBIJA, 6), Triple(Section.BEOGRAD, Tab.BEOGRAD, 4), Triple(Section.SVET, Tab.SVET, 5),
+        Triple(Section.BEZBEDNOST, Tab.BEZBEDNOST, 4), Triple(Section.SPORT, Tab.SPORT, 4),
+        Triple(Section.AUTO, Tab.AUTO, 3), Triple(Section.LJUBIMCI, Tab.LJUBIMCI, 3),
+    )
     for ((sec, tab, n) in plan) {
         val list = f.stories[sec].orEmpty().take(n)
         if (list.isEmpty()) continue
         item("h-${sec.name}") { SectionHeader(sec.label) { goTab(tab) } }
         list.forEachIndexed { i, s ->
             item("d-${sec.name}-${s.id}") {
-                if (i == 0 && sec != Section.BEZBEDNOST) StoryHero(s) { openStory(s) } else StoryRow(s) { openStory(s) }
+                if (i == 0 && sec != Section.BEZBEDNOST && sec != Section.AUTO && sec != Section.LJUBIMCI) StoryHero(s) { openStory(s) } else StoryRow(s) { openStory(s) }
                 if (i < list.lastIndex) Rule(Modifier.padding(horizontal = 18.dp))
             }
+        }
+    }
+}
+
+/**
+ * "Najaktuelnije": what most outlets are covering right now, across all sections.
+ * Stories updated in the last 8 h, ranked by number of sources with a 3 h half-life.
+ */
+private fun LazyListScope.hot(f: Feed, openStory: (Story) -> Unit) {
+    val now = System.currentTimeMillis()
+    val seen = HashSet<String>()
+    val list = f.stories.values.flatten()
+        .filter { now - it.latest < 8 * 3600_000L && it.sources.size >= 2 }
+        .sortedByDescending { s ->
+            val ageH = (now - s.latest) / 3600_000.0
+            Math.pow(s.sources.size.toDouble(), 1.7) * Math.exp(-ageH * Math.log(2.0) / 3.0) * (if (s.live) 1.3 else 1.0)
+        }
+        .filter { seen.add(it.lead.id) } // a story copied into Ljubimci appears once
+        .take(40)
+    if (list.isEmpty()) { item("none") { net.kravos.vesti.ui.components.Empty("Trenutno nema priča koje prati više izvora.") }; return }
+    list.forEachIndexed { i, s ->
+        item("h-${s.id}") {
+            if (i == 0) StoryHero(s) { openStory(s) } else StoryRow(s) { openStory(s) }
+            Rule(Modifier.padding(horizontal = 18.dp))
+        }
+    }
+}
+
+/** Horizontally scrolling list of every section, Google News style. */
+@Composable
+private fun SectionStrip(cur: Tab) {
+    val nav = LocalNav.current
+    val p = LocalPalette.current
+    val state = androidx.compose.foundation.lazy.rememberLazyListState(initialFirstVisibleItemIndex = (Tab.STRIP.indexOf(cur) - 1).coerceAtLeast(0))
+    androidx.compose.foundation.lazy.LazyRow(
+        Modifier.fillMaxWidth().padding(top = 8.dp), state = state,
+        contentPadding = PaddingValues(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
+        items(Tab.STRIP, key = { it.name }) { t ->
+            val sel = t == cur
+            Text(
+                t.label,
+                Modifier.clip(RoundedCornerShape(50))
+                    .background(if (sel) p.ink else MaterialTheme.colorScheme.background)
+                    .border(1.dp, if (sel) p.ink else p.rule, RoundedCornerShape(50))
+                    .clickable { nav.tab(t) }
+                    .padding(horizontal = 13.dp, vertical = 7.dp),
+                style = MaterialTheme.typography.labelMedium,
+                fontWeight = if (sel) FontWeight.Bold else FontWeight.Medium,
+                color = if (sel) MaterialTheme.colorScheme.background else p.ink,
+            )
         }
     }
 }

@@ -30,6 +30,7 @@ import androidx.compose.material.icons.filled.Public
 import androidx.compose.material.icons.filled.Shield
 import androidx.compose.material.icons.filled.Place
 import androidx.compose.material.icons.filled.LocationCity
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -57,6 +58,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import net.kravos.vesti.App
 import net.kravos.vesti.ui.screens.FeedScreen
+import net.kravos.vesti.ui.screens.MoreScreen
 import net.kravos.vesti.ui.screens.ReaderScreen
 import net.kravos.vesti.ui.screens.SavedScreen
 import net.kravos.vesti.ui.screens.SettingsScreen
@@ -121,8 +123,9 @@ private fun Root(app: App) {
             Column {
                 Box(Modifier.fillMaxWidth().padding(0.dp).background(p.rule).padding(top = 0.5.dp))
                 NavigationBar(containerColor = MaterialTheme.colorScheme.background, tonalElevation = 0.dp) {
-                    Tab.entries.forEach { t ->
-                        val sel = nav.tab.value == t && top == null
+                    Tab.BOTTOM.forEach { t ->
+                        val cur = nav.tab.value
+                        val sel = top == null && (cur == t || (t == Tab.VISE && cur !in Tab.BOTTOM))
                         NavigationBarItem(
                             selected = sel,
                             onClick = { nav.tab(t) },
@@ -135,6 +138,7 @@ private fun Root(app: App) {
                                         Tab.BEZBEDNOST -> Icons.Filled.Shield
                                         Tab.BEOGRAD -> Icons.Filled.LocationCity
                                         Tab.SPORT -> Icons.Filled.SportsSoccer
+                                        else -> Icons.Filled.Menu
                                     },
                                     null,
                                 )
@@ -176,6 +180,7 @@ private fun Root(app: App) {
                             is Route.SourceFeed -> SourceScreen(dest.sourceId, padding)
                             is Route.Settings -> SettingsScreen(padding, release) { scope.launch { release = Updater.latest() } }
                             is Route.Saved -> SavedScreen(padding)
+                            Tab.VISE -> MoreScreen(padding)
                             is Tab -> FeedScreen(dest, padding)
                             else -> Unit
                         }

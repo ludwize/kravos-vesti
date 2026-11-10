@@ -10,11 +10,22 @@ import net.kravos.vesti.data.Section
 
 enum class Tab(val label: String, val section: Section?, val short: String = label) {
     DANAS("Danas", null),
+    AKTUELNO("Najaktuelnije", null, "Aktuelno"),
     SRBIJA("Srbija", Section.SRBIJA),
     BEOGRAD("Beograd", Section.BEOGRAD),
     SVET("Svet", Section.SVET),
     BEZBEDNOST("Bezbednost", Section.BEZBEDNOST, "Sajber"),
     SPORT("Sport", Section.SPORT),
+    AUTO("Automobili", Section.AUTO, "Auto"),
+    LJUBIMCI("Ljubimci", Section.LJUBIMCI),
+    VISE("Više", null);
+
+    companion object {
+        /** Bottom bar; every other section is in the top strip and under "Više". */
+        val BOTTOM = listOf(DANAS, SRBIJA, SVET, SPORT, VISE)
+        /** Sections shown in the scrolling strip at the top of every feed. */
+        val STRIP = entries.filter { it != VISE }
+    }
 }
 
 sealed class Route {
