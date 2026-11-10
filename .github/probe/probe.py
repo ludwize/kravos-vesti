@@ -1,23 +1,103 @@
 #!/usr/bin/env python3
-"""Why does vesti.kravos.net look stale? Check data.json freshness, newest article per section, failing feeds, cache headers."""
-import json, os, subprocess, sys, time, urllib.request
-OUT = sys.argv[1]; os.makedirs(OUT, exist_ok=True)
-L = []
-def sh(c): return subprocess.run(c, shell=True, capture_output=True, text=True).stdout.strip()
-for u in ["https://vesti.kravos.net/", "https://vesti.kravos.net/data.json"]:
-    L.append(u + "\n" + sh(f"curl -sI -m 20 '{u}' | grep -i -E '^(HTTP|last-modified|cache-control|age|x-cache|etag|expires)'"))
-d = json.load(urllib.request.urlopen("https://vesti.kravos.net/data.json?x=%d" % time.time()))
-now = time.time()
-L.append(f"generated {round((now - d['generated'])/60)} min ago; failed: {d['failed']}")
-L.append("index.html has mirror logic: " + str("MIRROR" in urllib.request.urlopen("https://vesti.kravos.net/?x=%d" % now).read().decode()))
-for sec, lst in d["sections"].items():
-    ts = [a["ts"] for st in lst for a in st["a"]]
-    by = {}
-    for st in lst:
-        for a in st["a"]: by[a["s"]] = max(by.get(a["s"], 0), a["ts"])
-    stale = {k: round((now - v)/3600, 1) for k, v in sorted(by.items(), key=lambda x: x[1])}
-    L.append(f"{sec}: {len(lst)} stories, newest article {round((now - max(ts))/60)} min ago; top: {lst[0]['a'][0]['t'][:70]}\n   newest per source (h ago): {stale}")
-# fetch feeds directly from the runner too
-for name, url in [("n1", "https://n1info.rs/feed/"), ("danas", "https://www.danas.rs/feed/"), ("nova", "https://nova.rs/feed/"), ("bbc", "https://feeds.bbci.co.uk/news/world/rss.xml")]:
-    L.append(f"direct {name}: " + sh(f"curl -s -m 20 -A 'Mozilla/5.0' -o /tmp/f.xml -w '%{{http_code}} %{{size_download}}' '{url}'; grep -o -m1 '<pubDate>[^<]*' /tmp/f.xml | head -2 | tr '\\n' ' '"))
-open(f"{OUT}/index.txt", "w").write("\n".join(L) + "\n"); print("\n".join(L))
+"""Fetch every candidate RSS feed (and one article page per feed) from a GitHub runner and summarize what comes back."""
+import os, re, sys, urllib.request, urllib.error, xml.etree.ElementTree as ET
+
+OUT = sys.argv[1]
+os.makedirs(OUT, exist_ok=True)
+UA = {"User-Agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36",
+      "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, text/html, */*"}
+log = open(os.path.join(OUT, "index.txt"), "w")
+
+FEEDS = {
+    # ljubimci
+    "nova_ljub": "https://nova.rs/tag/ljubimci/feed/",
+    "nova_ljub2": "https://nova.rs/magazin/ljubimci/feed/",
+    "n1_ljub": "https://n1info.rs/tag/ljubimci/feed/",
+    "danas_ljub": "https://www.danas.rs/tag/ljubimci/feed/",
+    "danas_zivot": "https://www.danas.rs/tag/zivotinje/feed/",
+    "blic_ljub": "https://www.blic.rs/rss/Zabava/Ljubimci",
+    "kurir_ljub": "https://www.kurir.rs/rss/stars/ljubimci",
+    "mondo_ljub": "https://mondo.rs/rss/656/Zabava/Ljubimci",
+    "zena_ljub": "https://zena.blic.rs/rss/Ljubimci",
+    "lepotaizdr": "https://www.lepotaizdravlje.rs/feed/",
+    "dodo": "https://www.thedodo.com/rss",
+    "dodo2": "https://www.thedodo.com/rss/feed",
+    "guardian_animals": "https://www.theguardian.com/world/animals/rss",
+    "guardian_pets": "https://www.theguardian.com/lifeandstyle/pets/rss",
+    "bbc_animals": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+    "petmd": "https://www.petmd.com/rss.xml",
+    # automobili
+    "b92_auto": "https://www.b92.net/rss/automobili",
+    "b92_auto2": "https://www.b92.net/info/rss/automobili.xml",
+    "autobild": "https://www.autobild.rs/feed",
+    "autobild2": "https://autobild.rs/feed/",
+    "mondo_auto": "https://mondo.rs/rss/641/Auto",
+    "kurir_auto": "https://www.kurir.rs/rss/auto",
+    "blic_auto": "https://www.blic.rs/rss/Auto",
+    "nova_auto": "https://nova.rs/magazin/auto/feed/",
+    "n1_auto": "https://n1info.rs/magazin/auto/feed/",
+    "polovni": "https://www.polovniautomobili.com/magazin/feed",
+    "autoklub": "https://www.autoklub.rs/feed",
+    "electrek": "https://electrek.co/feed/",
+    "insideevs": "https://insideevs.com/rss/news/all/",
+    "autocar": "https://www.autocar.co.uk/rss",
+    "motor1": "https://www.motor1.com/rss/news/all/",
+    "caranddriver": "https://www.caranddriver.com/rss/all.xml/",
+    "guardian_cars": "https://www.theguardian.com/technology/motoring/rss",
+}
+
+NS = {"content": "http://purl.org/rss/1.0/modules/content/", "media": "http://search.yahoo.com/mrss/",
+      "atom": "http://www.w3.org/2005/Atom", "dc": "http://purl.org/dc/elements/1.1/"}
+
+
+def fetch(url):
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=25) as r:
+            return r.status, r.read(), r.geturl()
+    except urllib.error.HTTPError as e:
+        return e.code, e.read(), url
+    except Exception as e:
+        return 0, str(e).encode(), url
+
+
+def text(el):
+    return (el.text or "").strip() if el is not None else ""
+
+
+summary = open(os.path.join(OUT, "summary.txt"), "w")
+for name, url in FEEDS.items():
+    code, body, final = fetch(url)
+    open(os.path.join(OUT, name + ".xml"), "wb").write(body)
+    log.write(f"{code}  {len(body):>8}  {name}  {url}\n")
+    if code != 200:
+        summary.write(f"\n### {name} -> {code} {body[:120]!r}\n")
+        continue
+    try:
+        root = ET.fromstring(body)
+    except Exception as e:
+        summary.write(f"\n### {name} -> PARSE ERROR {e} {body[:160]!r}\n")
+        continue
+    items = root.findall(".//item") or root.findall(".//{http://purl.org/rss/1.0/}item") or root.findall(".//atom:entry", NS)
+    summary.write(f"\n### {name}: {len(items)} items, root={root.tag}\n")
+    for it in items[:3]:
+        def g(tag):
+            return it.find(tag, NS) if ":" in tag else (it.find(tag) if it.find(tag) is not None else it.find("{http://purl.org/rss/1.0/}" + tag))
+        title = text(g("title")) or text(it.find("atom:title", NS))
+        link = text(g("link")) or (it.find("atom:link", NS).get("href") if it.find("atom:link", NS) is not None else "")
+        date = text(g("pubDate")) or text(g("dc:date")) or text(it.find("atom:updated", NS))
+        desc = text(g("description"))
+        content = text(g("content:encoded"))
+        media = [m.get("url") for m in it.findall("media:content", NS) + it.findall("media:thumbnail", NS)]
+        enc = [e.get("url") for e in it.findall("enclosure")]
+        cats = [text(c) for c in it.findall("category")][:5]
+        summary.write(f"- {title[:110]}\n  link={link}\n  date={date} cats={cats}\n  desc={len(desc)} content={len(content)} media={media[:1]} enc={enc[:1]}\n  desc0={re.sub(r'<[^>]+>', ' ', desc)[:160]!r}\n")
+    # sample one article page for the reader extractor
+    first = items[0] if items else None
+    if first is not None:
+        link = text(first.find("link")) or (first.find("atom:link", NS).get("href") if first.find("atom:link", NS) is not None else "")
+        if link:
+            c2, b2, fin = fetch(link)
+            open(os.path.join(OUT, name + ".article.html"), "wb").write(b2)
+            log.write(f"   article {c2} {len(b2)} {fin}\n")
+log.close(); summary.close()
+print(open(os.path.join(OUT, "index.txt")).read())
