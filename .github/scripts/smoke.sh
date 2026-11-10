@@ -105,10 +105,11 @@ scroll
 tap_regex 'pre [0-9]+ (min|h)'; sleep 10; shot 42-svet-reader
 scroll; shot 43-svet-reader-scroll
 back; back
-tap_text "Sajber"; sleep 3; shot 50-bezbednost
+tap_text "Bezbednost"; sleep 3; shot 50-bezbednost
 tap_regex '.{50,}'; sleep 10; shot 51-bezb-reader
 scroll; shot 52-bezb-reader-scroll
 back
+tap_text "Najaktuelnije"; sleep 3; shot 44-aktuelno
 tap_text "Sport"; sleep 3; shot 55-sport
 scroll; shot 56-sport-scroll
 tap_text "Sport"; sleep 2
@@ -116,6 +117,13 @@ tap_text "Kategorija"; sleep 2; shot 57-sport-menu
 tap_text "Košarka"; sleep 3; shot 58-kosarka
 tap_regex '.{50,}'; sleep 10; shot 59-sport-reader
 back
+tap_text "Više"; sleep 3; shot 56a-vise
+tap_text "Automobili"; sleep 4; shot 56b-auto
+tap_text "Kategorija"; sleep 2; shot 56c-auto-menu
+adb shell input keyevent KEYCODE_BACK; sleep 1
+tap_regex '.{50,}'; sleep 10; shot 56d-auto-reader
+back
+tap_text "Ljubimci"; sleep 4; shot 56e-ljubimci
 tap_text "Sačuvano"; sleep 3; shot 60-sacuvano
 tap_regex 'NOVA.*|N1.*|DANAS.*|[A-Z ]+ · .*'; sleep 6; shot 61-saved-reader
 back
