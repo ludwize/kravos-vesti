@@ -1,17 +1,20 @@
 53 sources, 48 categories
-1078 articles -> 629 stories; failed: []; data.json 470 KB
+1092 articles -> 645 stories; failed: []; data.json 478 KB
 
+b92auto debug: 16413 bytes, 20 parsed; 0.4h tags=['automobili', 'land-rover-tuzio-byd-zbog-navodnog-kopiranja-tehnologije-modela-defender', 'zanimljivosti'] Land Rover napao BYD: Tvrdi da su Kinezi; 2.1h tags=['automobili', 'garaza', 'start-stop-sistem-u-automobilu-zasto-poznati-mehanicar-savetuje-iskljucivanje'] Mehaničar sa 50 godina iskustva ima važa; 16.1h tags=['aktuelno', 'automobili', 'putujete-automobilom-u-italiju-nova-pravila-mogla-bi-skupo-da-vas-kostaju'] Ova evropska zemlja obračunavaće kazne z; 18.9h tags=['aktuelno', 'automobili', 'ozbiljan-problem-za-ford-u-sad-putnici-mogu-da-zadobiju-opekotine-zbog-vazdusnih-jastuka'] Ozbiljan problem za Ford u SAD: Putnici 
 
-AUTO: 66 stories; cats {'ev': 39, 'modeli': 3, 'industrija': 4, 'saveti': 1}; sources {'Electrek': 23, 'InsideEVs': 11, 'Motor1': 20, 'Autocar': 14, 'Kurir Auto': 3}
+AUTO: 81 stories; cats {'ev': 43, 'modeli': 6, 'saveti': 5, 'industrija': 5}; sources {'Electrek': 23, 'InsideEVs': 11, 'Motor1': 20, 'B92 Automobili': 15, 'Autocar': 14, 'Kurir Auto': 3}
    [ev,modeli] Electrek: PlugShare finally adds dark mode, and there’s more for EV drivers
    [ev] Electrek: Ford’s EV batteries retain more than 90% health after 100,000 miles
    [ev] InsideEVs: Land Rover Is Going After BYD Over This Alleged Defender Lookalike: Report
    [] Motor1: Mercedes Chairman Says Gas And Diesel Engines Still Have 10–15 Years Left
+   [ev] B92 Automobili: Land Rover napao BYD: Tvrdi da su Kinezi rastavili Defender i iskopirali njegovu tehnologi
    [] Motor1: This Porsche 924 Was The UAE's First Performance Police Car
    [] Motor1: Polestar's New Concept Looks Fantastic. Too Bad It Won't Reach Production
    [] Autocar: When retro's a no-go: Polestar concept is a masterclass in design reinvention
    [modeli] Autocar: Polestar’s future revealed: Radical coupé shows sporting ambitions
    [ev] InsideEVs: Honda Is Betting $3 Billion On Hybrids As It Pulls Back From EVs
+   [saveti] B92 Automobili: Mehaničar sa 50 godina iskustva ima važan savet: Isključite ovu funkciju u automobilu
    [modeli] Autocar: Rolls-Royce Spectre
    [industrija] Motor1: Honda’s New Ohio Plant Will Reportedly Build Next-Gen Acura MDX And Two Flagship SUVs
    [] Autocar: BMW could build V8 Alpina concept as luxury brand's 'M1 moment'
@@ -26,8 +29,6 @@ AUTO: 66 stories; cats {'ev': 39, 'modeli': 3, 'industrija': 4, 'saveti': 1}; so
    [ev] Electrek: The electric Vespa just got better where it actually matters
    [ev] InsideEVs: Ford's Radical New EV Manufacturing Process Is Already Building Trucks
    [ev] Electrek: Wire just showed off its biggest electric motorcycle lineup yet
-   [ev] Motor1: Tesla Will Have To Refund Cybertruck Deposits, Musk Says
-   [ev] Electrek: Musk admits Tesla doesn’t have enough talent to build more than one car at a time after ex
 
 LJUBIMCI: 8 stories; cats {'divlje': 5, 'psi': 4, 'zastita': 1, 'zdravlje_lj': 1}; sources {'Guardian': 6, 'N1': 1, 'Blic Beograd': 1}
    [divlje] Guardian: Alien menace or victim of xenophobia? The battle over Britain’s parakeets
@@ -39,7 +40,7 @@ LJUBIMCI: 8 stories; cats {'divlje': 5, 'psi': 4, 'zastita': 1, 'zdravlje_lj': 1
    [psi,zdravlje_lj,divlje] Guardian: When the 11-plus test went to the dogs | Brief letters
    [psi] Blic Beograd: BEOGRADSKI ROMEO I JULIJA! O zabranjenoj ljubavi Zagle i Badže sa Dorćola pisao i Nušić: P
 Traceback (most recent call last):
-  File "/home/runner/work/kravos-vesti/kravos-vesti/.github/probe/probe.py", line 22, in <module>
+  File "/home/runner/work/kravos-vesti/kravos-vesti/.github/probe/probe.py", line 27, in <module>
     from playwright.async_api import async_playwright
 ModuleNotFoundError: No module named 'playwright'
 
