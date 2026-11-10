@@ -1,34 +1,33 @@
-https://vesti.kravos.net/
-HTTP/2 200 
-last-modified: Fri, 06 Nov 2026 13:37:51 GMT
-etag: "6aedd82f-7a3d"
-expires: Fri, 06 Nov 2026 17:04:27 GMT
-cache-control: max-age=600
-age: 0
-x-cache: MISS
-x-cache-hits: 0
-https://vesti.kravos.net/data.json
-HTTP/2 200 
-last-modified: Fri, 06 Nov 2026 13:37:50 GMT
-etag: "6aedd82e-6be69"
-expires: Fri, 06 Nov 2026 17:04:28 GMT
-cache-control: max-age=600
-age: 0
-x-cache: MISS
-x-cache-hits: 0
-generated 201 min ago; failed: ['Žurnal']
-index.html has mirror logic: False
-SVET: 160 stories, newest article 204 min ago; top: Hoax bomb threats target European airlines and airports for second tim
-   newest per source (h ago): {'vreme': 6.8, 'euronews': 5.4, 'reuters': 4.2, 'politico': 4.1, 'bbc': 4.0, 'dw': 4.0, 'nova': 3.9, 'n1': 3.8, 'guardian': 3.7, 'ap': 3.4, 'danas': 3.4, 'aljazeera': 3.4}
-SRBIJA: 130 stories, newest article 204 min ago; top: Direktoru Zabele određeno policijsko zadržavanje
-   newest per source (h ago): {'cins': 26.8, 'krik': 25.4, 'istinomer': 22.2, 'radar': 6.6, 'bi': 5.9, 'insajder': 3.8, 'vreme': 3.5, 'danas': 3.4, 'n1': 3.4, 'nova': 3.4}
-SPORT: 160 stories, newest article 204 min ago; top: Zvanično: Luka Ilić je ponovo fudbaler Crvene zvezde
-   newest per source (h ago): {'guardian': 8.5, 'eurohoops': 5.1, 'rtssport': 4.2, 'bbcsport': 3.9, 'meridian': 3.9, 'guardiansport': 3.6, 'danas': 3.6, 'sportklub': 3.6, 'b92sport': 3.6, 'nova': 3.5, 'aljazeera': 3.5, 'sportske': 3.4, 'motorsport': 3.4}
-BEZBEDNOST: 101 stories, newest article 215 min ago; top: Want to Rent an Internet Address at the White House?
-   newest per source (h ago): {'krebs': 36.3, 'ars': 17.7, 'therecord': 16.9, 'darkreading': 7.9, 'thn': 4.8, 'bleeping': 4.3, 'securityweek': 3.6}
-BEOGRAD: 34 stories, newest article 290 min ago; top: NOĆ U GRADU Ekipe Hitne pomoći imale 116 intervencija, evo kome je naj
-   newest per source (h ago): {'n1bg': 57.5, 'danasbg': 26.5, 'novabg': 23.2, 'blicbg': 4.9, 'kurirbg': 4.8}
-direct n1: 200 72634<pubDate>Fri, 06 Nov 2026 17:35:36 +0100
-direct danas: 200 121161<pubDate>Fri, 06 Nov 2026 16:50:14 +0000
-direct nova: 200 68273<pubDate>Fri, 06 Nov 2026 17:44:10 +0100
-direct bbc: 200 22550<pubDate>Fri, 06 Nov 2026 16:23:16 GMT
+200     27444  nova_ljub  https://nova.rs/tag/ljubimci/feed/
+404    165253  nova_ljub2  https://nova.rs/magazin/ljubimci/feed/
+200     27364  n1_ljub  https://n1info.rs/tag/ljubimci/feed/
+200     91516  danas_ljub  https://www.danas.rs/tag/ljubimci/feed/
+200    105737  danas_zivot  https://www.danas.rs/tag/zivotinje/feed/
+200    100202  blic_ljub  https://www.blic.rs/rss/Zabava/Ljubimci
+404     99021  kurir_ljub  https://www.kurir.rs/rss/stars/ljubimci
+200         0  mondo_ljub  https://mondo.rs/rss/656/Zabava/Ljubimci
+200        15  zena_ljub  https://zena.blic.rs/rss/Ljubimci
+200    167765  lepotaizdr  https://www.lepotaizdravlje.rs/feed/
+404    353585  dodo  https://www.thedodo.com/rss
+404    354579  dodo2  https://www.thedodo.com/rss/feed
+200     68524  guardian_animals  https://www.theguardian.com/world/animals/rss
+200     65939  guardian_pets  https://www.theguardian.com/lifeandstyle/pets/rss
+200     30077  bbc_animals  https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+404     73223  petmd  https://www.petmd.com/rss.xml
+404    252468  b92_auto  https://www.b92.net/rss/automobili
+200     16413  b92_auto2  https://www.b92.net/info/rss/automobili.xml
+0       156  autobild  https://www.autobild.rs/feed
+0       152  autobild2  https://autobild.rs/feed/
+200     84071  mondo_auto  https://mondo.rs/rss/641/Auto
+200     80441  kurir_auto  https://www.kurir.rs/rss/auto
+200     48207  blic_auto  https://www.blic.rs/rss/Auto
+404    165253  nova_auto  https://nova.rs/magazin/auto/feed/
+200     28943  n1_auto  https://n1info.rs/magazin/auto/feed/
+404    227458  polovni  https://www.polovniautomobili.com/magazin/feed
+0        63  autoklub  https://www.autoklub.rs/feed
+200    277063  electrek  https://electrek.co/feed/
+200     13337  insideevs  https://insideevs.com/rss/news/all/
+200    333350  autocar  https://www.autocar.co.uk/rss
+200     13639  motor1  https://www.motor1.com/rss/news/all/
+200     35516  caranddriver  https://www.caranddriver.com/rss/all.xml/
+200     64597  guardian_cars  https://www.theguardian.com/technology/motoring/rss

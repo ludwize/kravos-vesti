@@ -1,0 +1,351 @@
+
+### nova_ljub: 20 items, root=rss newest 744.7h, last24h 0
+- "Pre 5 godina dovela sam štene u kuću. Danas niko ne može da veruje da je to pas, jer je veći od mene"
+  link=https://nova.rs/magazin/lifestyle/pre-5-godina-dovela-sam-stene-u-kucu-danas-niko-ne-moze-da-veruje-da-je-to-pas-jer-je-veci-od-mene/
+  date=Sat, 10 Oct 2026 10:21:24 +0200 cats=['Lifestyle', 'ljubimci']
+  desc=118 content=225 media=['https://nova.rs/media/images/2026/2/1771399678_Alis_i_njen_veliki_pas_2.width-1200.jpg'] enc=[]
+  desc0='Kada je Alis dovela štene kući, nije mogla ni da nasluti da će joj za njega jednog dana biti potrebna oprema za konje.'
+- Trener pasa kaže da ovu rasu pasa "nikada ne bi doveo u porodični dom"
+  link=https://nova.rs/magazin/lifestyle/trener-pasa-kaze-da-ovu-rasu-pasa-nikada-ne-bi-doveo-u-porodicni-dom/
+  date=Wed, 23 Sep 2026 12:36:20 +0200 cats=['Lifestyle', 'ljubimci']
+  desc=150 content=268 media=['https://nova.rs/media/images/2026/9/22/1790072860_ralf-sauter-77-u-fUBfT4-unsplash.width-1200.jpg'] enc=[]
+  desc0='Krupne, izražajne oči, vesela narav i ogromna privrženost vlasnicima učinili su španijele veoma popularnim kućnim ljubimcima. Ipak, jedan poznati tren'
+- Ovo je 5 najpametnijih rasa pasa na svetu: Izgledaju "blentavo" ali znaju sve
+  link=https://nova.rs/magazin/lifestyle/ovo-je-5-najpametnijih-rasa-pasa-na-svetu-izgledaju-blentavo-ali-znaju-sve/
+  date=Mon, 21 Sep 2026 12:15:17 +0200 cats=['Lifestyle', 'ljubimci']
+  desc=141 content=272 media=['https://nova.rs/media/images/2025/11/1762943767_1748951336-richard-burlton-HTpmedSyZag-unsplash.width-1200.jpg'] enc=[]
+  desc0='Psi su neverovatno inteligentne životinje, a neke rase se ističu po svojim sposobnostima rešavanja problema, brzom učenju i prilagodljivosti.'
+
+### nova_ljub2 -> 404 b'<!DOCTYPE html>\n<html lang="sr-RS">\n    <head>\n        <meta charset="utf-8" />\n        <title>\n            Stranica nij'
+
+### n1_ljub: 20 items, root=rss newest 12.2h, last24h 1
+- Zašto psi imaju mali džep na uhu - postoje dve teorije
+  link=https://n1info.rs/magazin/ljubimci/zasto-psi-imaju-mali-dzep-na-uhu-postoje-dve-teorije/
+  date=Mon, 09 Nov 2026 21:46:00 +0100 cats=['Ljubimci', 'anatomija', 'ljubimci', 'uho', 'psi']
+  desc=150 content=261 media=['https://n1info.rs/media/images/2026/11/9/1794230840_shutterstock_2779320397.width-1200.jpg'] enc=[]
+  desc0='Vlasnici pasa koji pažljivije pogledaju uho svog ljubimca mogu primetiti mali, ali specifičan kožni nabor na donjoj spoljašnjoj ivici ušne školjke. Ta'
+- Psi imaju više od 12 krvnih grupa, a jedna je posebno važna za transfuziju
+  link=https://n1info.rs/magazin/ljubimci/psi-imaju-vise-od-12-krvnih-grupa-a-jedna-je-posebno-vazna-za-transfuziju/
+  date=Sat, 03 Oct 2026 13:31:24 +0200 cats=['Ljubimci', 'transfuzija', 'ljubimci', 'psi', 'krvne grupe']
+  desc=150 content=261 media=['https://n1info.rs/media/images/2026/10/1/1790862242_shutterstock_2593121345.width-1200.jpg'] enc=[]
+  desc0='Krvna grupa može biti presudna kada psu zatreba transfuzija, a njihov sistem krvnih grupa znatno se razlikuje od ljudskog. Psi imaju više od 12 poznat'
+- Zašto mačke guraju predmete sa stola - postoji nekoliko razloga
+  link=https://n1info.rs/magazin/ljubimci/zasto-macke-guraju-predmete-sa-stola-postoji-nekoliko-razloga/
+  date=Tue, 29 Sep 2026 22:49:17 +0200 cats=['Ljubimci', 'ponašanje', 'ljubimci', 'mačke']
+  desc=149 content=261 media=['https://n1info.rs/media/images/2026/9/28/1790603745_shutterstock_1541513537.width-1200.jpg'] enc=[]
+  desc0='Mačke ne bacaju predmete sa stola zato što su "zloće" ili zato što žele da se osvete. Takvo ponašanje uglavnom ima određenu svrhu, čak i kada se nama'
+
+### danas_ljub: 50 items, root=rss newest 1265.9h, last24h 0
+- Šta vam pas zaista poručuje kada vas pogleda „krivim“ pogledom
+  link=https://www.danas.rs/zivot/zasto-vas-pas-gleda-krivim-pogledom/
+  date=Fri, 18 Sep 2026 15:05:01 +0000 cats=['Život', 'ljubimci', 'Pas', 'Pogled krivice']
+  desc=913 content=0 media=[] enc=[]
+  desc0=' Mnogi vlasnici pasa uvereni su da njihov pas dobro zna kada je uradio nešto što nije smeo. Spuštena glava, uši povučene unazad, pogled u stranu i uzdah često s'
+- Za kućne ljubimce iz Srbije više nije potreban titar antitela na besnilo pri putovanju u EU
+  link=https://www.danas.rs/vesti/ekonomija/za-kucne-ljubimce-iz-srbije-vise-nije-potreban-titar-antitela-na-besnilo-pri-putovanju-u-eu/
+  date=Wed, 17 Jun 2026 08:31:13 +0000 cats=['Ekonomija', 'Antitela', 'EU', 'ljubimci', 'putovanje']
+  desc=1174 content=0 media=[] enc=[]
+  desc0=' Ministarstvo poljoprivrede i Uprava za veterinu saopštili su danas da je Srbija uvrštena na listu trećih zemalja za koje prilikom nekomercijalnog kretanja pasa'
+- „Tihi ubica“ na plažama: Dreserka pasa upozorila na opasnost koju mnogi vlasnici zanemaruju
+  link=https://www.danas.rs/zivot/pzorenje-za-vlasnike-pasa-na-plazi/
+  date=Mon, 15 Jun 2026 09:56:20 +0000 cats=['Život', 'ljubimci', 'plaza', 'Psi', 'upozorenje']
+  desc=1060 content=0 media=[] enc=[]
+  desc0=' Dreserka pasa Sara Rouz upozorila je vlasnike kućnih ljubimaca na opasnost koju naziva „tihim ubicom“, a koja postaje sve izraženija dolaskom toplijeg vremena.'
+
+### danas_zivot: 50 items, root=rss newest 207.9h, last24h 0
+- Zašto vrane organizuju „sahrane“, a kitovi nose „perike“: Pet neobičnih ponašanja životinja koja zbunjuju nauč
+  link=https://www.danas.rs/zivot/neobicna-ponasanja-zivotinja/
+  date=Sun, 01 Nov 2026 17:05:57 +0000 cats=['Život', 'Nauka', 'kitovi', 'Lenjivci', 'ponasanje']
+  desc=1055 content=0 media=[] enc=[]
+  desc0=' Životinjski svet pun je neobičnih pojava koje na prvi pogled deluju gotovo neverovatno. Neke životinje koriste predmete kao alat, druge razvijaju složene način'
+- U Amazonskoj prašumi pronašli čoveka koji već 38 godina živi potpuno sam: Posadio je 1.500 stabala, a meso nab
+  link=https://www.danas.rs/zivot/covek-ziveo-sam-u-prasumi-amazona-38-godina/
+  date=Mon, 21 Sep 2026 14:59:25 +0000 cats=['Život', 'Putopisi', 'Amazon', 'drveće', 'Prašuma']
+  desc=1080 content=0 media=[] enc=[]
+  desc0=' Duboko u amazonskoj prašumi, daleko od gradova, prodavnica, puteva i svega što podrazumevamo pod savremenim životom, jedan čovek već gotovo četiri decenije živ'
+- Prekretnica za ugroženu vrstu papagaja: Kakapo dobio podmladak posle 75 godina
+  link=https://www.danas.rs/vesti/klimatske-promene/ugrozena-vrsta-papagaja-kakapo/
+  date=Wed, 02 Sep 2026 21:34:25 +0000 cats=['Klimatske promene', 'Kakapo', 'Novi Zeland', 'papagaj', 'papagaji']
+  desc=1117 content=0 media=[] enc=[]
+  desc0=' Prvi put u poslednjih 75 godina vrsta papagaja kakapo, koja se smatra ugroženom autohtonom vrstom, dobila je ozbiljan podmladak. Broj pripadnika ove vrste papa'
+
+### blic_ljub: 70 items, root=rss newest 0.1h, last24h 70
+- "PROBIJENE SU SVE GRANICE MORALA" Pevačica isprozivala Milicu Todorović zbog veze sa oženjenim: "Da se to nije
+  link=https://www.blic.rs/zabava/probijene-su-granice-morala-pevacica-isprozivala-milicu-todorovic-zbog-ozenjenog/01v2q2x
+  date=Tue, 10 Nov 2026 09:56:17 +0100 cats=[]
+  desc=198 content=517 media=[] enc=[]
+  desc0='Pevačica Jasna Milenković Jami jednom prilikom se osvrnula na koleginicu Milicu Todorović i skandal koji je izbio kada se saznalo da je njen partner sa kojim je'
+- Imaju od 14 do 16 godina i već su pobedili tragača: Srednjoškolci oduševili u "Poteri" i odneli kući osvojeni 
+  link=https://www.blic.rs/slobodno-vreme/srednjoskolci-odusevili-u-poteri-pobedili-tragaca-i-odneli-kuci-novac/qlv4c8v
+  date=Tue, 10 Nov 2026 09:56:10 +0100 cats=[]
+  desc=241 content=536 media=[] enc=[]
+  desc0='Za znanje, radoznalost i hrabrost očigledno nije potrebno čekati „ozbiljne godine“. Aleksa, Darja, Srđa i Trifun imaju između 14 i 16 godina, mnoštvo talenata i'
+- HITNO OGLAŠAVANJE "BATUTA" ZBOG MALIH BOGINJA Epidemija u Boru, broj obolelih skočio u oktobru, od pacijenta s
+  link=https://www.blic.rs/zdravlje/aktuelnosti/hitno-oglasavanje-batuta-o-malim-boginjama-zarazio-se-i-zdravstveni-radnik/t1syjhr
+  date=Tue, 10 Nov 2026 09:52:25 +0100 cats=[]
+  desc=228 content=549 media=[] enc=[]
+  desc0='Nakon što je u Boru proglašena epidemija malih boginja, danas se oglasio i Institut za javno zdravlje Srbije "Dr Milan Jovanović Batut", navodeći da je od počet'
+
+### kurir_ljub -> 404 b'<!DOCTYPE html><html  lang="sr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-s'
+
+### mondo_ljub -> PARSE ERROR no element found: line 1, column 0 b''
+
+### zena_ljub -> PARSE ERROR no element found: line 1, column 15 b'<!DOCTYPE html>'
+
+### lepotaizdr: 10 items, root=rss newest 12.0h, last24h 9
+- Horoskop za 10. novembar 2026: Ovi znakovi više ne mogu da odlažu neizbežno
+  link=https://lepotaizdravlje.rs/horoskop/horoskop-za-10-novembar-2026/
+  date=Mon, 09 Nov 2026 21:00:09 +0000 cats=['Horoskop', 'Horoskop za 10. novembar 2026']
+  desc=357 content=9199 media=[] enc=[]
+  desc0='Horoskop za 10. novembar 2026. obeležava Mesec u Škorpiji, koji u prvi plan stavlja emocije, intuiciju i odnose koje više ne možemo da posmatramo površno. Ovo j'
+- Sezona proslava je pred nama, pronašli smo modele satenskih haljina za svaki tip građe
+  link=https://lepotaizdravlje.rs/moda/trend/satenske-haljine-za-svaki-tip-gradje/
+  date=Mon, 09 Nov 2026 19:00:57 +0000 cats=['Trend']
+  desc=331 content=18324 media=[] enc=[]
+  desc0='Sezona proslava je pred nama, a ako postoji materijal koji gotovo bez truda izgleda elegantno, ženstveno i dovoljno svečano, onda je to saten. Ipak, pronaći mod'
+- Od sportskih legendi do modnih ikona – Ovih 7 biografskih serija vredi pogledati
+  link=https://lepotaizdravlje.rs/kultura/serije/biografske-serije-koje-vredi-pogledati/
+  date=Mon, 09 Nov 2026 18:00:51 +0000 cats=['Serije']
+  desc=363 content=11908 media=[] enc=[]
+  desc0='Biografske serije oduvek su privlačila pažnju publike, naročito kada na male ekrane donose priče o ljudima koji su obeležili sport, modu, muziku i pop-kulturu. '
+
+### dodo -> 404 b'<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><title>The Dodo - For Animal People</title><link rel="icon" '
+
+### dodo2 -> 404 b'<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><title>The Dodo - For Animal People</title><link rel="icon" '
+
+### guardian_animals: 20 items, root=rss newest 4.0h, last24h 2
+- Alien menace or victim of xenophobia? The battle over Britain’s parakeets
+  link=https://www.theguardian.com/news/2026/nov/10/alien-menace-or-victim-of-xenophobia-the-battle-over-britains-parakeets
+  date=Tue, 10 Nov 2026 05:00:29 GMT cats=['Birds', 'Animals', 'Environment', 'Wildlife', 'World news']
+  desc=1536 content=0 media=['https://i.guim.co.uk/img/media/55c9a3fdc870a8cf846bfc0c8662b40c47ee154c/0_1704_3478_2782/master/3478.jpg?width=140&quality=85&auto=format&fit=max&s=21feb2da446438e389fae96d2f329f70'] enc=[]
+  desc0=' Established in UK cities for decades and much loved for their green plumage, the Himalayan birds have been recast as an ecological threat. But is the idea of i'
+- This grim story of marine park whales could yet have a positive outcome – if it teaches us to value other spec
+  link=https://www.theguardian.com/commentisfree/2026/nov/09/marine-park-whales-species-mammals-marineland-canada
+  date=Mon, 09 Nov 2026 10:00:06 GMT cats=['Whales', 'Animal welfare', 'Dolphins', 'Animals', 'Marine life']
+  desc=844 content=0 media=['https://i.guim.co.uk/img/media/5dc5f5a8320ccfc636ee9766b9f173ee0f5a74bd/831_0_4169_3335/master/4169.jpg?width=140&quality=85&auto=format&fit=max&s=d83677671e2a459b58ec4d2ed3940d39'] enc=[]
+  desc0=' There is no ‘saving’ these traumatised mammals from places like Marineland in Canada. Humans need to understand that our actions are not easily undone  Remembe'
+- A new start after 60: I was burnt out and facing redundancy. So I set up a bee farm – and learned the joys of 
+  link=https://www.theguardian.com/lifeandstyle/2026/nov/09/new-start-after-60-burnt-out-redundancy-bee-farm-simple-life
+  date=Mon, 09 Nov 2026 06:30:01 GMT cats=['Bees', 'Environment', 'Insects', 'Wildlife', 'Animals']
+  desc=1316 content=0 media=['https://i.guim.co.uk/img/media/5ea622343ea614816aaadd2f9b7217dcd6f33d46/0_348_2400_1920/master/2400.jpg?width=140&quality=85&auto=format&fit=max&s=21058414e73c0b62159332cca20502b4'] enc=[]
+  desc0=' Jeff Lee had spent decades as an investigative journalist. But when he upped sticks with his wife to buy a farm in rural British Columbia, he didn’t just chang'
+
+### guardian_pets: 20 items, root=rss newest 22.0h, last24h 1
+- The pet I’ll never forget: Mae the labrador, who keeps me safe with her keen nose and piercing stare
+  link=https://www.theguardian.com/lifeandstyle/2026/nov/09/the-pet-ill-never-forget-mae-black-labrador-medical-alert-dog
+  date=Mon, 09 Nov 2026 11:00:07 GMT cats=['Dogs', 'Pets', 'Life and style', 'Multiple sclerosis']
+  desc=872 content=0 media=['https://i.guim.co.uk/img/media/c725f7fdfca9440c76989695a7fb5d64f7e2d4a2/567_47_2508_2007/master/2508.jpg?width=140&quality=85&auto=format&fit=max&s=db21935159f250fb8db31ba7007d7c29'] enc=[]
+  desc0=' Before getting her, I would fall, injure myself and then wake up alone. I’ve trained Mae to be a medical alert dog and she has helped me to embrace life again '
+- A barking-mad fee to train your dog | Letters
+  link=https://www.theguardian.com/lifeandstyle/2026/nov/03/a-barking-mad-fee-to-train-your-dog
+  date=Tue, 03 Nov 2026 17:49:58 GMT cats=['Dogs', 'Pets', 'Animals', 'Society', 'Life and style']
+  desc=1219 content=0 media=['https://i.guim.co.uk/img/media/fc42691cc3ce0e2c2ae42fb832415086d24b1733/0_0_5006_4004/master/5006.jpg?width=140&quality=85&auto=format&fit=max&s=db1a1d57e8a0a3285a7bb7feebe6e442'] enc=[]
+  desc0='  Dr Susannah O’Hanlon  responds to an article that claimed in-person dog training can cost £150 an hour  Your article ( Bone of contention: why dog trainers ar'
+- The pest I’ll never forget: the cats who filled our house with live mice
+  link=https://www.theguardian.com/lifeandstyle/2026/nov/03/the-pest-i-ll-never-forget-cats-filled-house-with-live-mice
+  date=Tue, 03 Nov 2026 06:55:40 GMT cats=['Cats', 'Life and style', 'Pets', 'Animals', 'Homes']
+  desc=1407 content=0 media=['https://i.guim.co.uk/img/media/1de30bfea4419db7b75e5a8054d78eea157cf215/0_0_3000_2400/master/3000.jpg?width=140&quality=85&auto=format&fit=max&s=3f1318493e1d3609fe8d485ee6d639a8'] enc=[]
+  desc0=' Our house was a mouse-free zone until our new kittens began venturing into the nearby woods in search of prey and playthings  This is a cat-and-mouse story in '
+
+### bbc_animals: 41 items, root=rss newest 0.8h, last24h 9
+- The swan sanctuary wetland fighting climate change
+  link=https://www.bbc.co.uk/news/articles/c60rleej7dqgo?at_medium=RSS&at_campaign=rss
+  date=Tue, 10 Nov 2026 06:30:29 GMT cats=[]
+  desc=96 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/30ea/live/8890dd70-d912-11f1-a81d-35e942472442.png'] enc=[]
+  desc0='The global campaign to restore the "soggy secret weapon" that can combat against climate change.'
+- The superpower battle over energy – and what it means for your bills
+  link=https://www.bbc.co.uk/news/articles/cw62y2z53pg1o?at_medium=RSS&at_campaign=rss
+  date=Tue, 10 Nov 2026 00:08:28 GMT cats=[]
+  desc=96 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9b1f/live/f53bf9d0-dc57-11f1-b441-2b33b063138f.jpg'] enc=[]
+  desc0='A tug-of-war between China and the US could have a big impact on energy costs, but who will win?'
+- Birds return to waterfowl park after oil vandalism
+  link=https://www.bbc.co.uk/news/articles/c6gqwq1x85e0o?at_medium=RSS&at_campaign=rss
+  date=Mon, 09 Nov 2026 14:52:07 GMT cats=[]
+  desc=96 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/93f1/live/5bac05d0-dc2f-11f1-958b-3f65a8ba2dc3.jpg'] enc=[]
+  desc0='The vandalism of a nearby home heating oil tank resulted in the death of 13 birds from the park.'
+
+### petmd -> 404 b'<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><link re'
+
+### b92_auto -> 404 b'<!DOCTYPE html>\n<html lang="sr">\n<head>\n\n    \n    <title>B92.net - Najnovije vesti iz Srbije i sveta</title>\n    <meta c'
+
+### b92_auto2: 20 items, root=rss newest 0.3h, last24h 6
+- Land Rover napao BYD: Tvrdi da su Kinezi rastavili Defender i iskopirali njegovu tehnologiju
+  link=https://www.b92.net/automobili/zanimljivosti/283423/land-rover-tuzio-byd-zbog-navodnog-kopiranja-tehnologije-modela-defender/vest
+  date=Tue, 10 Nov 2026 08:45:00 +0000 cats=['Automobili']
+  desc=87 content=0 media=[] enc=['https://www.b92.net/data/images/2026-11-09/286722_00_f.jpg']
+  desc0='Britanski proizvođač optužio BYD da je kopirao model Defender – slučaj završio na sudu.'
+- Mehaničar sa 50 godina iskustva ima važan savet: Isključite ovu funkciju u automobilu
+  link=https://www.b92.net/automobili/garaza/283535/start-stop-sistem-u-automobilu-zasto-poznati-mehanicar-savetuje-iskljucivanje/vest
+  date=Tue, 10 Nov 2026 07:00:00 +0000 cats=['Automobili']
+  desc=89 content=0 media=[] enc=['https://www.b92.net/data/images/2024-11-20/83831_instrument-tabla-song-pin-shutterstock-778460413_f.jpg']
+  desc0='Jedan pritisak na dugme mogao bi da produži život vašeg motora, tvrdi američki mehaničar.'
+- Ova evropska zemlja obračunavaće kazne za svaki kilometar prekoračenja brzine
+  link=https://www.b92.net/automobili/aktuelno/283493/putujete-automobilom-u-italiju-nova-pravila-mogla-bi-skupo-da-vas-kostaju/vest
+  date=Mon, 09 Nov 2026 17:00:00 +0000 cats=['Automobili']
+  desc=75 content=0 media=[] enc=['https://www.b92.net/data/images/2026-11-09/286791_autoput-poljska-monticello-shutterstock-1950258325_f.jpg']
+  desc0='Putujete automobilom u Italiju? Nova pravila mogla bi skupo da vas koštaju.'
+
+### autobild -> 0 b'<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f'
+
+### autobild2 -> 0 b'<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f'
+
+### mondo_auto: 100 items, root=rss newest 1.3h, last24h 39
+- Eko straža podnela krivičnu prijavu protiv Jelene Karleuše i Manje Grčić: Zbog prepiske o zapošljavanju na RTS
+  link=https://mondo.rs/Info/Crna-hronika/a2309182/eko-straza-podnela-krivicnu-prijavu-protiv-jelene-karleuse-i-manje-grcic.html
+  date=Tue, 10 Nov 2026 07:40:36 GMT cats=[]
+  desc=123 content=0 media=[] enc=['https://static2.mondo.rs/Thumbnail/1750936/jpeg/Manja-Grcic-i-Jelena-Karleusa.jpg?ts=2026-11-10T08:32:43']
+  desc0='  '
+- Autom namerno hteo da ubije mladića (22): Horor u Aleksincu, hitno uhapšen muškarac (35)
+  link=https://mondo.rs/Info/Crna-hronika/a2308867/muskarac-u-aleksincu-autom-pokusao-da-ubije-mladica.html
+  date=Mon, 09 Nov 2026 22:44:03 GMT cats=[]
+  desc=106 content=0 media=[] enc=['https://static2.mondo.rs/Thumbnail/961237/jpeg/Policijska-marica?ts=2021-06-19T23:28:25']
+  desc0='  '
+- Velika akcija policije u Kruševcu: Uhapšeno više osoba zbog droge
+  link=https://mondo.rs/Info/Crna-hronika/a2309139/akcija-hapsenja-u-krusevcu-zbog-droge.html
+  date=Mon, 09 Nov 2026 22:34:13 GMT cats=[]
+  desc=134 content=0 media=[] enc=['https://static2.mondo.rs/Thumbnail/1292888/jpeg/policija_noc_hronika_stefan_stojanovic-2.jpg?ts=2023-08-14T10:01:15']
+  desc0='  '
+
+### kurir_auto: 100 items, root=rss newest 11.5h, last24h 2
+- Trik za koji mnogi vozači ne znaju: Ovo dugme rešava problem zamagljenih stakala na automobilu, ne krećite dok
+  link=https://www.kurir.rs/zabava/auto/10157382/ovo-dugme-resava-problem-zamagljenih-stakala-na-automobilu-ne-krecite-dok-ga-ne-pritisnete
+  date=Mon, 09 Nov 2026 21:30:43 GMT cats=[]
+  desc=114 content=0 media=[] enc=['https://static.kurir.rs/Thumbnail/2418911/jpeg/profimedia-0162316029.jpg?ts=2025-11-05T14:54:46']
+  desc0='  '
+- Chery Tiggo 9 CSH ostvario domet od 1.374 kilometra tokom testa izdržljivosti
+  link=https://www.kurir.rs/zabava/auto/10157674/chery-tiggo-9-csh-ostvario-domet-od-1-374-kilometra-tokom-testa-izdrzljivosti
+  date=Mon, 09 Nov 2026 13:27:11 GMT cats=[]
+  desc=110 content=0 media=[] enc=['https://static.kurir.rs/Thumbnail/2700423/jpeg/Chery-Tiggo-9-CSH.jpg?ts=2026-11-09T14:25:26']
+  desc0='  '
+- Iz automobila deluje kao da vam maše: Evo šta motociklista zapravo poručuje podignutim dlanom
+  link=https://www.kurir.rs/zabava/auto/10152917/sta-znaci-kada-motociklista-podigne-levu-ruku
+  date=Sat, 07 Nov 2026 17:09:27 GMT cats=[]
+  desc=114 content=0 media=[] enc=['https://static.kurir.rs/Thumbnail/2697259/jpeg/profimedia-1042957870.jpg?ts=2026-11-04T10:51:18']
+  desc0='  '
+
+### blic_auto -> PARSE ERROR not well-formed (invalid token): line 52, column 84 b'<!DOCTYPE html>\n<html lang="sr">\n    <head><script>/* <![CDATA[ */ ringDataLayer = {"context":{"variant":{"accelerator":"d3d3LmJsaWMucnM6OjcuOC41Mg=="},"id":{"w'
+
+### nova_auto -> 404 b'<!DOCTYPE html>\n<html lang="sr-RS">\n    <head>\n        <meta charset="utf-8" />\n        <title>\n            Stranica nij'
+
+### n1_auto: 20 items, root=rss newest 97.6h, last24h 0
+- Trik za koji mnogi ne znaju: Dugme koje rešava problem zamagljenih stakala
+  link=https://n1info.rs/magazin/auto/trik-za-koji-mnogi-ne-znaju-dugme-koje-resava-problem-zamagljenih-stakala/
+  date=Fri, 06 Nov 2026 08:26:46 +0100 cats=['Auto', 'zamagljena stakla', 'trik']
+  desc=150 content=261 media=['https://n1info.rs/media/images/2026/11/6/1793949989_shutterstock_1713927754.width-1200.jpg'] enc=[]
+  desc0='Sa dolaskom hladnijih dana mnogi vozači suočavaju se sa istim problemom – čim sednu u automobil i pokrenu motor, vetrobransko i bočna stakla počinju d'
+- Britanski magazin proglasio najbolji polovni auto za 2026. godinu
+  link=https://n1info.rs/magazin/auto/britanski-magazin-proglasio-najbolji-polovni-auto-za-2026-godinu/
+  date=Thu, 05 Nov 2026 11:29:57 +0100 cats=['Auto', 'auto', 'polovni automobili']
+  desc=150 content=261 media=['https://n1info.rs/media/images/2026/11/5/1793874257_shutterstock_2521043013.width-1200.jpg'] enc=[]
+  desc0='Britanski magazin Auto Express upravo je Hyundai Ioniq 5 proglasio za najbolji polovni automobil 2026. godine, što je prvi električni model koji je os'
+- Neobičan tunel u Kini privlači pažnju - svetlosni efekti nisu tu samo zbog izgleda
+  link=https://n1info.rs/magazin/auto/neobican-tunel-u-kini-privlaci-paznju-svetlosni-efekti-nisu-tu-samo-zbog-izgleda/
+  date=Wed, 04 Nov 2026 14:37:07 +0100 cats=['Auto', 'atrakcija', 'tunel']
+  desc=76 content=185 media=['https://n1info.rs/media/images/2026/11/4/1793791648_profimedia-0650549658.width-1200.jpg'] enc=[]
+  desc0='Najduži podvodni tunel u Kini izgleda kao da je iz naučnofantastičnog filma.'
+
+### polovni -> 404 b'<!DOCTYPE html><html lang="sr-Latn-RS" data-dpl-id="108197027acdd9db30466c88f2b0eb57153b2c0b"><head><meta charSet="utf-8'
+
+### autoklub -> 0 b'<urlopen error [Errno -3] Temporary failure in name resolution>'
+
+### electrek: 150 items, root=rss newest 7.9h, last24h 14
+- Humble Hauler autonomous trailer takes the truck out of trucking [update]
+  link=https://electrek.co/2026/11/09/humble-hauler-autonomous-trailer-takes-the-truck-out-of-trucking/
+  date=Tue, 10 Nov 2026 01:05:00 +0000 cats=['News']
+  desc=720 content=0 media=[] enc=[]
+  desc0='    Less than a year after its founding, truckless trucking brand Humble Robotics has secured more than $75 million after a $51 million Series A funding round t'
+- PlugShare finally adds dark mode, and there’s more for EV drivers
+  link=https://electrek.co/2026/11/09/plugshare-finally-adds-dark-mode-and-theres-more-for-ev-drivers/
+  date=Tue, 10 Nov 2026 00:37:02 +0000 cats=['News']
+  desc=792 content=0 media=[] enc=[]
+  desc0='    PlugShare is giving its EV charging app a big overhaul. Version 8.0 arrives worldwide for iPhone on November 10, with dark mode, a trip planner that shows h'
+- The Mercedes-Benz EQS drove 539 miles on a single charge. Still worried about range?
+  link=https://electrek.co/2026/11/09/mercedes-eqs-drove-539-miles-without-stopping-to-charge/
+  date=Mon, 09 Nov 2026 21:49:32 +0000 cats=['News']
+  desc=677 content=0 media=[] enc=[]
+  desc0='    The new  Mercedes-Benz EQS 450+  covered 539 miles without stopping to charge, making range anxiety look like a thing of the past. \n\n\n\n  more… '
+
+### insideevs: 20 items, root=rss newest 11.4h, last24h 7
+- Land Rover Is Going After BYD Over This Alleged Defender Lookalike: Report
+  link=https://insideevs.com/news/814898/byd-raided-jlr-netherlands-legal/
+  date=Mon, 09 Nov 2026 21:37:03 +0000 cats=[]
+  desc=127 content=0 media=[] enc=['https://cdn.motor1.com/images/mgl/P3Vw34/s3/jlr-defender-110-byd-ti7-hero.jpg']
+  desc0="Jaguar Land Rover is challenging BYD over its Defender-like SUV. The dispute has already prompted raids on BYD's Dutch offices."
+- BMW Is Embracing Cheaper LFP Batteries For Its Newest EVs
+  link=https://insideevs.com/news/814874/bmw-confirms-lfp-batteries-evs/
+  date=Mon, 09 Nov 2026 19:14:00 +0000 cats=[]
+  desc=128 content=0 media=[] enc=['https://cdn.motor1.com/images/mgl/E6XV1o/s3/ev-test.jpg']
+  desc0="BMW's newest EVs boast impressive range. Now cheaper batteries could help bring their prices down, even if it means fewer miles."
+- Ford's Radical New EV Manufacturing Process Is Already Building Trucks
+  link=https://insideevs.com/news/814711/ford-first-fathoms-pre-production/
+  date=Mon, 09 Nov 2026 18:44:59 +0000 cats=[]
+  desc=128 content=0 media=[] enc=['https://cdn.motor1.com/images/mgl/ZnzWoK/s3/fathom.jpg']
+  desc0='Ford has built its first Fathom electric pickups on its Louisville production line. Now it needs to prove the process can scale.'
+
+### autocar: 44 items, root=rss newest 1.0h, last24h 6
+- When retro's a no-go: Polestar concept is a masterclass in design reinvention
+  link=https://www.autocar.co.uk/opinion/new-cars/when-retros-no-go-polestar-concept-masterclass-design-reinvention
+  date=Tue, 10 Nov 2026 08:00:00 +0000 cats=['Opinion']
+  desc=2690 content=0 media=[] enc=[]
+  desc0="   \n\nFormula 2030 sparks excitement about brand's bold future, while retaining its best-loved elements\n \n How do you reinvent the styling language of a brand th"
+- Polestar’s future revealed: Radical coupé shows sporting ambitions
+  link=https://www.autocar.co.uk/car-news/new-cars/polestar%E2%80%99s-future-revealed-radical-coup%C3%A9-shows-sporting-ambitions
+  date=Tue, 10 Nov 2026 08:00:00 +0000 cats=['News']
+  desc=8134 content=0 media=[] enc=[]
+  desc0='   \n\nFormula 2030 concept car sets racing-inspired template for incoming range of new models\n \n Polestar has pledged to make performance car thrills a higher pr'
+- Rolls-Royce Spectre
+  link=https://www.autocar.co.uk/car-review/rolls-royce/spectre
+  date=Tue, 10 Nov 2026 07:00:00 +0000 cats=['Car review']
+  desc=2769 content=0 media=[] enc=[]
+  desc0='   \nRolls-Royce fights the habit of 120 years and launches its first electric car\n\n\xa0The Rolls-Royce Spectre is the super-luxury car company’s first electric veh'
+
+### motor1: 20 items, root=rss newest 2.1h, last24h 13
+- Honda’s New Ohio Plant Will Reportedly Build Next-Gen Acura MDX And Two Flagship SUVs
+  link=https://www.motor1.com/news/814927/honda-ohio-plant-build-acura/
+  date=Tue, 10 Nov 2026 06:55:26 +0000 cats=[]
+  desc=137 content=0 media=[] enc=['https://cdn.motor1.com/images/mgl/ojE7bL/s3/honda-us-production.jpg']
+  desc0="Ohio's $3.38 billion Honda investment boosts hybrid capacity, adds 2,390 jobs statewide, and prepares the Acura MDX for its next chapter."
+- Ford: Mustang Mach-E Batteries Age Better Than Expected
+  link=https://www.motor1.com/news/814913/ford-mustang-mache-battery-health-report/
+  date=Mon, 09 Nov 2026 22:00:00 +0000 cats=[]
+  desc=126 content=0 media=[] enc=['https://cdn.motor1.com/images/mgl/Xxy26/s3/2021-ford-mustang-mach-e-gt-pricing.jpg']
+  desc0='Ford examined 36,000 first-year Mustang Mach-Es and found that the average battery retained 92 percent of its original health.'
+- This Alpina Volkswagen Beetle Render Is Weird In All The Right Ways
+  link=https://www.motor1.com/news/814909/alpina-volkswagen-beetle-rendering/
+  date=Mon, 09 Nov 2026 20:34:14 +0000 cats=[]
+  desc=115 content=0 media=[] enc=['https://cdn.motor1.com/images/mgl/W8be9o/s3/alpina-b1-volkswagen-beetle-rendering-by-abimelec-design.jpg']
+  desc0='Digital artist Abimelec Design imagines a gussied-up Volkswagen Beetle wearing its shiniest Alpina suit. We dig it.'
+
+### caranddriver: 50 items, root=rss newest 10.7h, last24h 9
+- View Exterior Photos of the 2026 Mercedes-Benz E450
+  link=https://www.caranddriver.com/photos/g73249519/2026-mercedes-benz-e450-long-term-reliability-maintenance-exterior-gallery/
+  date=Mon, 09 Nov 2026 22:20:59 +0000 cats=[]
+  desc=72 content=0 media=['https://hips.hearstapps.com/hmg-prod/images/b016c432-38b8-4c19-83fd-11d8822baead.jpg'] enc=[]
+  desc0=' See the exterior of the 2026 Mercedes-Benz E450 from every angle. '
+- 10,000 Miles with Our 2026 Mercedes-Benz E450, and the Love Bombing Continues
+  link=https://www.caranddriver.com/reviews/a71900013/2026-mercedes-benz-e450-long-term-reliability-maintenance/
+  date=Mon, 09 Nov 2026 22:16:00 +0000 cats=[]
+  desc=91 content=0 media=['https://hips.hearstapps.com/hmg-prod/images/b2629d0e-ff17-4ade-b162-e6c84fe3941d.jpg'] enc=[]
+  desc0=' We can’t get enough of the way the E-class drives. '
+- Audi Has Officially Ended Production of the A8 Flagship Sedan
+  link=https://www.caranddriver.com/news/a74378869/audi-a8-sedan-production-ended/
+  date=Mon, 09 Nov 2026 20:53:15 +0000 cats=[]
+  desc=111 content=0 media=['https://hips.hearstapps.com/hmg-prod/images/a218143-medium-1635867809.jpg'] enc=[]
+  desc0=' After more than thirty years, Audi presses pause on its biggest sedan. '
+
+### guardian_cars: 17 items, root=rss newest 15.5h, last24h 1
+- The worst two words in the dead of night? ‘Motorway closed’ | Adrian Chiles
+  link=https://www.theguardian.com/commentisfree/2026/nov/04/the-worst-two-words-in-the-dead-of-night-motorway-closed
+  date=Wed, 04 Nov 2026 15:00:37 GMT cats=['Motoring', 'Life and style', 'UK news']
+  desc=1572 content=0 media=['https://i.guim.co.uk/img/media/2a8de24f7a389814af32ae91a524995597e2728c/533_0_7212_5773/master/7212.jpg?width=140&quality=85&auto=format&fit=max&s=3599b651d6bf77f28724adaee7fe3f3c'] enc=[]
+  desc0=' You are shunted into side streets, crawling along, united with your fellow drivers in wordless despair. Last week, at 2am, my spirit broke  The worst three wor'
+- Save Hammersmith Bridge – but keep it free of cars | Letters
+  link=https://www.theguardian.com/politics/2026/oct/29/save-hammersmith-bridge-but-keep-it-free-of-cars
+  date=Thu, 29 Oct 2026 17:54:56 GMT cats=['Transport policy', 'Transport', 'UK news', 'Politics', 'Architecture']
+  desc=1702 content=0 media=['https://i.guim.co.uk/img/media/cda5611ac0b922d25168ecd280b3669091ac56d7/436_0_6880_5504/master/6880.jpg?width=140&quality=85&auto=format&fit=max&s=c6c7365be2dccc9f83235621c8d052ac'] enc=[]
+  desc0=' Readers respond to Simon Jenkins’s article on the west London crossing  Simon Jenkins is a great defender of our national heritage, having produced many books '
+- U-turn on EV policy could stall UK’s take-up of EVs | Fiona Harvey and Jasper Jolly
+  link=https://www.theguardian.com/environment/2026/oct/25/policy-u-turn-uk-electric-vehicles
+  date=Sun, 25 Oct 2026 12:00:04 GMT cats=['Electric, hybrid and low-emission cars', 'Greenhouse gas emissions', 'Motoring', 'Environment']
+  desc=802 content=0 media=['https://i.guim.co.uk/img/media/98dafebbb2f563aff059cc3b9f77cd32f0173ea0/1495_338_4286_3429/master/4286.jpg?width=140&quality=85&auto=format&fit=max&s=978e8c7203cec588db4189a9dc62e019'] enc=[]
+  desc0=' The 2030 target for 80% of new cars to have zero emissions could be cut to as low as half  Electric cars make people happy. More than nine in 10 EV drivers – 9'
