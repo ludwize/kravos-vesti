@@ -1,33 +1,45 @@
-200     27444  nova_ljub  https://nova.rs/tag/ljubimci/feed/
-404    165253  nova_ljub2  https://nova.rs/magazin/ljubimci/feed/
-200     27364  n1_ljub  https://n1info.rs/tag/ljubimci/feed/
-200     91516  danas_ljub  https://www.danas.rs/tag/ljubimci/feed/
-200    105737  danas_zivot  https://www.danas.rs/tag/zivotinje/feed/
-200    100202  blic_ljub  https://www.blic.rs/rss/Zabava/Ljubimci
-404     99021  kurir_ljub  https://www.kurir.rs/rss/stars/ljubimci
-200         0  mondo_ljub  https://mondo.rs/rss/656/Zabava/Ljubimci
-200        15  zena_ljub  https://zena.blic.rs/rss/Ljubimci
-200    167765  lepotaizdr  https://www.lepotaizdravlje.rs/feed/
-404    353585  dodo  https://www.thedodo.com/rss
-404    354579  dodo2  https://www.thedodo.com/rss/feed
-200     68524  guardian_animals  https://www.theguardian.com/world/animals/rss
-200     65939  guardian_pets  https://www.theguardian.com/lifeandstyle/pets/rss
-200     30077  bbc_animals  https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
-404     73223  petmd  https://www.petmd.com/rss.xml
-404    252468  b92_auto  https://www.b92.net/rss/automobili
-200     16413  b92_auto2  https://www.b92.net/info/rss/automobili.xml
-0       156  autobild  https://www.autobild.rs/feed
-0       152  autobild2  https://autobild.rs/feed/
-200     84071  mondo_auto  https://mondo.rs/rss/641/Auto
-200     80441  kurir_auto  https://www.kurir.rs/rss/auto
-200     48207  blic_auto  https://www.blic.rs/rss/Auto
-404    165253  nova_auto  https://nova.rs/magazin/auto/feed/
-200     28943  n1_auto  https://n1info.rs/magazin/auto/feed/
-404    227458  polovni  https://www.polovniautomobili.com/magazin/feed
-0        63  autoklub  https://www.autoklub.rs/feed
-200    277063  electrek  https://electrek.co/feed/
-200     13337  insideevs  https://insideevs.com/rss/news/all/
-200    333350  autocar  https://www.autocar.co.uk/rss
-200     13639  motor1  https://www.motor1.com/rss/news/all/
-200     35516  caranddriver  https://www.caranddriver.com/rss/all.xml/
-200     64597  guardian_cars  https://www.theguardian.com/technology/motoring/rss
+53 sources, 48 categories
+1078 articles -> 629 stories; failed: []; data.json 470 KB
+
+
+AUTO: 66 stories; cats {'ev': 39, 'modeli': 3, 'industrija': 4, 'saveti': 1}; sources {'Electrek': 23, 'InsideEVs': 11, 'Motor1': 20, 'Autocar': 14, 'Kurir Auto': 3}
+   [ev,modeli] Electrek: PlugShare finally adds dark mode, and there’s more for EV drivers
+   [ev] Electrek: Ford’s EV batteries retain more than 90% health after 100,000 miles
+   [ev] InsideEVs: Land Rover Is Going After BYD Over This Alleged Defender Lookalike: Report
+   [] Motor1: Mercedes Chairman Says Gas And Diesel Engines Still Have 10–15 Years Left
+   [] Motor1: This Porsche 924 Was The UAE's First Performance Police Car
+   [] Motor1: Polestar's New Concept Looks Fantastic. Too Bad It Won't Reach Production
+   [] Autocar: When retro's a no-go: Polestar concept is a masterclass in design reinvention
+   [modeli] Autocar: Polestar’s future revealed: Radical coupé shows sporting ambitions
+   [ev] InsideEVs: Honda Is Betting $3 Billion On Hybrids As It Pulls Back From EVs
+   [modeli] Autocar: Rolls-Royce Spectre
+   [industrija] Motor1: Honda’s New Ohio Plant Will Reportedly Build Next-Gen Acura MDX And Two Flagship SUVs
+   [] Autocar: BMW could build V8 Alpina concept as luxury brand's 'M1 moment'
+   [ev] Electrek: Humble Hauler autonomous trailer takes the truck out of trucking [update]
+   [ev] Autocar: New BMW i3 rated: EV goes straight to the top of the class
+   [ev] Electrek: The Mercedes-Benz EQS drove 539 miles on a single charge. Still worried about range?
+   [saveti] Kurir Auto: Trik za koji mnogi vozači ne znaju: Ovo dugme rešava problem zamagljenih stakala na automo
+   [] Motor1: This Alpina Volkswagen Beetle Render Is Weird In All The Right Ways
+   [ev] InsideEVs: BMW Is Embracing Cheaper LFP Batteries For Its Newest EVs
+   [ev] Electrek: Toyota sells 3 electric SUVs, but which one is best for you?
+   [ev] Electrek: Yozma IN 10 Pro e-dirt bike hits exclusive new $1,614 low, Anker early Black Friday securi
+   [ev] Electrek: The electric Vespa just got better where it actually matters
+   [ev] InsideEVs: Ford's Radical New EV Manufacturing Process Is Already Building Trucks
+   [ev] Electrek: Wire just showed off its biggest electric motorcycle lineup yet
+   [ev] Motor1: Tesla Will Have To Refund Cybertruck Deposits, Musk Says
+   [ev] Electrek: Musk admits Tesla doesn’t have enough talent to build more than one car at a time after ex
+
+LJUBIMCI: 8 stories; cats {'divlje': 5, 'psi': 4, 'zastita': 1, 'zdravlje_lj': 1}; sources {'Guardian': 6, 'N1': 1, 'Blic Beograd': 1}
+   [divlje] Guardian: Alien menace or victim of xenophobia? The battle over Britain’s parakeets
+   [psi] N1: Zašto psi imaju mali džep na uhu - postoje dve teorije
+   [psi] Guardian: The pet I’ll never forget: Mae the labrador, who keeps me safe with her keen nose and pier
+   [divlje,zastita] Guardian: This grim story of marine park whales could yet have a positive outcome – if it teaches us
+   [divlje] Guardian: A new start after 60: I was burnt out and facing redundancy. So I set up a bee farm – and 
+   [divlje] Guardian: Country diary: Teasing out spiders with a tuning fork | Susie White
+   [psi,zdravlje_lj,divlje] Guardian: When the 11-plus test went to the dogs | Brief letters
+   [psi] Blic Beograd: BEOGRADSKI ROMEO I JULIJA! O zabranjenoj ljubavi Zagle i Badže sa Dorćola pisao i Nušić: P
+Traceback (most recent call last):
+  File "/home/runner/work/kravos-vesti/kravos-vesti/.github/probe/probe.py", line 22, in <module>
+    from playwright.async_api import async_playwright
+ModuleNotFoundError: No module named 'playwright'
+
