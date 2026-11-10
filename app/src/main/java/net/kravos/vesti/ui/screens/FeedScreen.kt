@@ -148,9 +148,14 @@ private fun Masthead(tab: Tab, cat: String?, counts: Map<String, Int>, onCat: (S
                     ) {
                         Text(
                             catLabel ?: tab.label, Modifier.weight(1f, fill = false),
-                            style = if (catLabel == null) MaterialTheme.typography.displaySmall
-                            else MaterialTheme.typography.displaySmall.copy(fontSize = 28.sp, lineHeight = 33.sp),
-                            maxLines = 2, overflow = TextOverflow.Ellipsis,
+                            // long section names ("Automobili", "Najaktuelnije") get a smaller size instead of breaking mid-word
+                            style = when {
+                                catLabel != null -> MaterialTheme.typography.displaySmall.copy(fontSize = 28.sp, lineHeight = 33.sp)
+                                tab.label.length > 11 -> MaterialTheme.typography.displaySmall.copy(fontSize = 25.sp, lineHeight = 30.sp)
+                                tab.label.length > 8 -> MaterialTheme.typography.displaySmall.copy(fontSize = 28.sp, lineHeight = 33.sp)
+                                else -> MaterialTheme.typography.displaySmall
+                            },
+                            maxLines = if (catLabel != null) 2 else 1, softWrap = catLabel != null, overflow = TextOverflow.Ellipsis,
                         )
                         if (sec != null) Icon(Icons.Filled.ArrowDropDown, "Kategorija", Modifier.size(34.dp), tint = p.dim)
                     }
