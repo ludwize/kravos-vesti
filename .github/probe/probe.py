@@ -91,13 +91,5 @@ for name, url in FEEDS.items():
         enc = [e.get("url") for e in it.findall("enclosure")]
         cats = [text(c) for c in it.findall("category")][:5]
         summary.write(f"- {title[:110]}\n  link={link}\n  date={date} cats={cats}\n  desc={len(desc)} content={len(content)} media={media[:1]} enc={enc[:1]}\n  desc0={re.sub(r'<[^>]+>', ' ', desc)[:160]!r}\n")
-    # sample one article page for the reader extractor
-    first = items[0] if items else None
-    if first is not None:
-        link = text(first.find("link")) or (first.find("atom:link", NS).get("href") if first.find("atom:link", NS) is not None else "")
-        if link:
-            c2, b2, fin = fetch(link)
-            open(os.path.join(OUT, name + ".article.html"), "wb").write(b2)
-            log.write(f"   article {c2} {len(b2)} {fin}\n")
 log.close(); summary.close()
 print(open(os.path.join(OUT, "index.txt")).read())
