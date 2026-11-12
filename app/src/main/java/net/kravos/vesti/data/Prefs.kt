@@ -46,7 +46,18 @@ class Prefs(context: Context) {
         return stored + defaults.filter { it !in seen }
     }
 
-    init { sp.edit().putString("seenSources", Sources.ALL.joinToString(",") { it.id }).apply() }
+    init {
+        sp.edit().putString("seenSources", Sources.ALL.joinToString(",") { it.id }).apply()
+        // Nov 2026: security trimmed to 3 outlets inside "Nauka i tehnologija"; turn the others off once for existing installs
+        if (!sp.getBoolean("trimSajber1", false)) {
+            val off = setOf("thn", "securityweek", "darkreading")
+            if (sp.getBoolean("sourcesSet", false)) {
+                _sources.value = _sources.value - off
+                sp.edit().putString("sources", _sources.value.joinToString(",")).apply()
+            }
+            sp.edit().putBoolean("trimSajber1", true).apply()
+        }
+    }
 
     var autoUpdateCheck: Boolean
         get() = sp.getBoolean("autoUpdate", true)

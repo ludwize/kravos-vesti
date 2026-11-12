@@ -18,6 +18,8 @@ data class Source(
     val skip: Set<String> = emptySet(),
     /** If set, keep only articles carrying one of these (lower-cased) feed categories: for general feeds we want one rubric of. */
     val only: Set<String> = emptySet(),
+    /** If set, keep only articles whose title or summary mentions one of these (normalized, prefix match): "beograd", venues... */
+    val mention: Set<String> = emptySet(),
 )
 
 data class Article(

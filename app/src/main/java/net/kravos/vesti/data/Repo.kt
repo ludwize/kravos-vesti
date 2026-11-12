@@ -86,6 +86,10 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
                 if (a0.tags.any { it in src.skip }) continue
                 if (src.only.isNotEmpty() && a0.tags.none { it in src.only }) continue
                 if (Sources.JUNK_TITLE.containsMatchIn(a0.title)) continue
+                if (src.mention.isNotEmpty()) {
+                    val t = Text.norm(a0.title + " " + a0.summary)
+                    if (src.mention.none { t.contains(it) }) continue
+                }
                 val isAuto = src.section == Section.AUTO || a0.tags.any { it in Sources.AUTO_TAGS }
                 if (hideEnt && !isAuto && src.section != Section.LJUBIMCI && a0.tags.any { it in Sources.ENT_TAGS }) continue
                 val maxAge = if (src.section == Section.NAUKA || src.section == Section.BEOGRAD) 4 * 86400_000L else 3 * 86400_000L

@@ -10,6 +10,12 @@ import net.kravos.vesti.data.Section.SVET
 
 /** All outlets, verified from a GitHub runner on 26 Oct 2026 (.github/probe). */
 object Sources {
+    /** Belgrade and its main venues: event sources that also cover other cities keep only these. */
+    private val BG_PLACES = setOf(
+        "beograd", "sava centr", "mts dvoran", "stark aren", "beogradska aren", "hangar", "drugstore", "dom omladin", "kolarc",
+        "tasmajdan", "zappa", "barutan", "kc grad", "kombank dvoran", "usce", "kalemegdan", "ada ciganlij", "belgrade",
+    )
+
     private fun gn(site: String) =
         "https://news.google.com/rss/search?q=when:1d+site:$site&hl=en-US&gl=US&ceid=US:en"
 
@@ -62,10 +68,10 @@ object Sources {
         Source("telecoms", "Telecoms.com", NAUKA, listOf("https://www.telecoms.com/rss.xml"), lang = "en"),
         Source("therecord", "The Record", NAUKA, listOf("https://therecord.media/feed"), lang = "en"),
         Source("bleeping", "BleepingComputer", NAUKA, listOf("https://www.bleepingcomputer.com/feed/"), lang = "en"),
-        Source("securityweek", "SecurityWeek", NAUKA, listOf("https://www.securityweek.com/feed/"), lang = "en"),
+        Source("securityweek", "SecurityWeek", NAUKA, listOf("https://www.securityweek.com/feed/"), lang = "en", defaultOn = false),
         Source("krebs", "Krebs on Security", NAUKA, listOf("https://krebsonsecurity.com/feed/"), lang = "en"),
-        Source("thn", "The Hacker News", NAUKA, listOf("https://feeds.feedburner.com/TheHackersNews"), lang = "en"),
-        Source("darkreading", "Dark Reading", NAUKA, listOf("https://www.darkreading.com/rss.xml"), lang = "en", reader = false),
+        Source("thn", "The Hacker News", NAUKA, listOf("https://feeds.feedburner.com/TheHackersNews"), lang = "en", defaultOn = false),
+        Source("darkreading", "Dark Reading", NAUKA, listOf("https://www.darkreading.com/rss.xml"), lang = "en", reader = false, defaultOn = false),
         // Beograd (dedicated city feeds; their articles also stay in Srbija when they come from a general feed)
         Source("blicbg", "Blic Beograd", BEOGRAD, listOf("https://www.blic.rs/rss/Vesti/Beograd")),
         Source("kurirbg", "Kurir Beograd", BEOGRAD, listOf("https://www.kurir.rs/rss/vesti/beograd")),
@@ -75,13 +81,16 @@ object Sources {
         Source("beobuild", "Beobuild", BEOGRAD, listOf("https://www.beobuild.rs/feed"), skip = setOf("predstavljamo")),
         // Beograd: events (what's on, concerts, fairs)
         Source("danubg", "Dan u Beogradu", BEOGRAD, listOf("https://www.danubeogradu.rs/feed/")),
-        Source("headliner", "Headliner", BEOGRAD, listOf("https://headliner.rs/feed/")),
-        Source("n1kon", "N1", BEOGRAD, listOf("https://n1info.rs/tag/koncert/feed/")),
-        Source("novakon", "Nova", BEOGRAD, listOf("https://nova.rs/tag/koncert/feed/")),
+        Source("headliner", "Headliner", BEOGRAD, listOf("https://headliner.rs/feed/"), mention = BG_PLACES),
+        Source("n1kon", "N1", BEOGRAD, listOf("https://n1info.rs/tag/koncert/feed/"), mention = BG_PLACES),
+        Source("novakon", "Nova", BEOGRAD, listOf("https://nova.rs/tag/koncert/feed/"), mention = BG_PLACES),
         Source("bgsajam", "Beogradski sajam", BEOGRAD, listOf("https://sajam.rs/feed/")),
         Source("stillinbg", "Still in Belgrade", BEOGRAD, listOf("https://stillinbelgrade.com/feed/"), lang = "en"),
-        Source("gnbgd", "Najave (Google vesti)", BEOGRAD, reader = false,
-            feeds = listOf("https://news.google.com/rss/search?q=Beograd+(koncert+OR+izlo%C5%BEba+OR+festival+OR+predstava+OR+sajam)+when:2d&hl=sr&gl=RS&ceid=RS:sr-Latn")),
+        Source(
+            "gnbgd", "Najave (Google vesti)", BEOGRAD,
+            listOf("https://news.google.com/rss/search?q=Beograd+(koncert+OR+izlo%C5%BEba+OR+festival+OR+predstava+OR+sajam)+when:2d&hl=sr&gl=RS&ceid=RS:sr-Latn"),
+            reader = false,
+        ),
         // Automobili (auto pieces from N1, Nova, Danas... are routed here too)
         Source("b92auto", "B92 Automobili", AUTO, listOf("https://www.b92.net/info/rss/automobili.xml")),
         Source("kurirauto", "Kurir Auto", AUTO, listOf("https://www.kurir.rs/rss/auto")),

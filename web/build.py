@@ -123,11 +123,14 @@ def kt_calls(path, name, consts=None):
 
 def load_sources():
     res = []
-    for pos, kw in kt_calls(os.path.join(KT, "Sources.kt"), "Source"):
+    src = open(os.path.join(KT, "Sources.kt"), encoding="utf-8").read()
+    m = re.search(r"val BG_PLACES = setOf\(", src)
+    consts = {"BG_PLACES": kt_value("setOf(" + call_body(src, m.end() - 1) + ")", {})} if m else {}
+    for pos, kw in kt_calls(os.path.join(KT, "Sources.kt"), "Source", consts):
         if len(pos) < 4:
             continue
         res.append(dict(id=pos[0], name=pos[1], section=pos[2], feeds=pos[3], lang=kw.get("lang", "sr"),
-                        on=kw.get("defaultOn", True), reader=kw.get("reader", True), skip=set(kw.get("skip", [])), only=set(kw.get("only", []))))
+                        on=kw.get("defaultOn", True), reader=kw.get("reader", True), skip=set(kw.get("skip", [])), only=set(kw.get("only", [])), mention=kw.get("mention", [])))
     return res
 
 
@@ -486,6 +489,8 @@ def main():
             if s["only"] and not (a["tags"] & s["only"]):
                 continue
             if JUNK.search(a["title"]):
+                continue
+            if s["mention"] and not any(m in norm(a["title"] + " " + a["summary"]) for m in s["mention"]):
                 continue
             is_auto = s["section"] == "AUTO" or bool(a["tags"] & auto_tags)
             if a["tags"] & s["skip"] or (a["tags"] & ent_tags and not is_auto and s["section"] != "LJUBIMCI"):
