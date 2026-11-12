@@ -270,7 +270,6 @@ fun MoreScreen(pad: PaddingValues) {
             val sec = t.section
             val n = when {
                 sec != null -> feed?.stories?.get(sec)?.count { now - it.latest < 24 * 3600_000L }
-                t == Tab.AKTUELNO -> feed?.stories?.values?.flatten()?.count { now - it.latest < 8 * 3600_000L && it.sources.size >= 2 }
                 else -> null
             }
             Row(

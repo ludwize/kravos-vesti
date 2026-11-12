@@ -84,12 +84,13 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
             val src = Sources.of(sid) ?: continue
             for (a0 in list) {
                 if (a0.tags.any { it in src.skip }) continue
+                if (src.only.isNotEmpty() && a0.tags.none { it in src.only }) continue
                 val isAuto = src.section == Section.AUTO || a0.tags.any { it in Sources.AUTO_TAGS }
                 if (hideEnt && !isAuto && src.section != Section.LJUBIMCI && a0.tags.any { it in Sources.ENT_TAGS }) continue
-                val maxAge = if (src.section == Section.BEZBEDNOST) 7 * 86400_000L else 3 * 86400_000L
+                val maxAge = if (src.section == Section.NAUKA || src.section == Section.BEOGRAD) 4 * 86400_000L else 3 * 86400_000L
                 if (now - a0.published > maxAge) continue
                 val section = when {
-                    src.section == Section.SPORT || src.section == Section.BEZBEDNOST || src.section == Section.BEOGRAD ||
+                    src.section == Section.SPORT || src.section == Section.NAUKA || src.section == Section.BEOGRAD ||
                         src.section == Section.AUTO || src.section == Section.LJUBIMCI -> src.section
                     isAuto -> Section.AUTO
                     a0.tags.any { it in Sources.SPORT_TAGS } -> Section.SPORT
@@ -103,7 +104,7 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
                 if (!seenTitle.add(sid + "|" + Text.norm(a.title))) continue
                 arts += a
                 // pet stories from any section are also listed under Ljubimci
-                if (a.section != Section.LJUBIMCI && a.section != Section.BEZBEDNOST && isPet(a.title) && seen.add(Section.LJUBIMCI.name + a.id)) {
+                if (a.section != Section.LJUBIMCI && isPet(a.title) && seen.add(Section.LJUBIMCI.name + a.id)) {
                     val pet = a.copy(section = Section.LJUBIMCI)
                     arts += pet.copy(cats = Categories.assign(pet))
                 }

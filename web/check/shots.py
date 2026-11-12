@@ -22,7 +22,7 @@ async def main():
             await pg.screenshot(path=f"{OUT}/{name}-2-svet.png")
             await pg.click(".story[data-s]"); await pg.wait_for_timeout(1200)
             await pg.screenshot(path=f"{OUT}/{name}-3-panel.png")
-            await pg.goto(URL + "#/bezbednost?n", wait_until="networkidle"); await pg.wait_for_timeout(1000)
+            await pg.goto(URL + "#/nauka?n", wait_until="networkidle"); await pg.wait_for_timeout(1000)
             await pg.screenshot(path=f"{OUT}/{name}-4-sajber-najnovije.png")
         open(f"{OUT}/stats.txt", "a").write(f"page errors: {errs}\n")
         await b.close()

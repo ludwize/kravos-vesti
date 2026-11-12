@@ -127,7 +127,7 @@ def load_sources():
         if len(pos) < 4:
             continue
         res.append(dict(id=pos[0], name=pos[1], section=pos[2], feeds=pos[3], lang=kw.get("lang", "sr"),
-                        on=kw.get("defaultOn", True), reader=kw.get("reader", True), skip=set(kw.get("skip", []))))
+                        on=kw.get("defaultOn", True), reader=kw.get("reader", True), skip=set(kw.get("skip", [])), only=set(kw.get("only", []))))
     return res
 
 
@@ -480,13 +480,15 @@ def main():
         if not ok:
             failed.append(s["name"])
         for a in lst:
+            if s["only"] and not (a["tags"] & s["only"]):
+                continue
             is_auto = s["section"] == "AUTO" or bool(a["tags"] & auto_tags)
             if a["tags"] & s["skip"] or (a["tags"] & ent_tags and not is_auto and s["section"] != "LJUBIMCI"):
                 continue
-            max_age = 7 * 86400 if s["section"] == "BEZBEDNOST" else 3 * 86400
+            max_age = 4 * 86400 if s["section"] in ("NAUKA", "BEOGRAD") else 3 * 86400
             if now - a["ts"] > max_age:
                 continue
-            if s["section"] in ("SPORT", "BEZBEDNOST", "BEOGRAD", "AUTO", "LJUBIMCI"):
+            if s["section"] in ("SPORT", "NAUKA", "BEOGRAD", "AUTO", "LJUBIMCI"):
                 sec = s["section"]
             elif is_auto:
                 sec = "AUTO"
@@ -506,7 +508,7 @@ def main():
             a["cats"] = assign(a, cats)
             arts.append(a)
             # pet stories from any section are also listed under Ljubimci
-            if sec not in ("LJUBIMCI", "BEZBEDNOST") and is_pet(a["title"]) and "LJUBIMCI" + a["id"] not in seen:
+            if sec != "LJUBIMCI" and is_pet(a["title"]) and "LJUBIMCI" + a["id"] not in seen:
                 seen.add("LJUBIMCI" + a["id"])
                 pet = dict(a, section="LJUBIMCI")
                 pet["cats"] = assign(pet, cats)

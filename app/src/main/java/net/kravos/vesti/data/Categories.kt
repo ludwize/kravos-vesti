@@ -3,7 +3,7 @@ package net.kravos.vesti.data
 import net.kravos.vesti.data.Section.AUTO
 import net.kravos.vesti.data.Section.BEOGRAD
 import net.kravos.vesti.data.Section.LJUBIMCI
-import net.kravos.vesti.data.Section.BEZBEDNOST
+import net.kravos.vesti.data.Section.NAUKA
 import net.kravos.vesti.data.Section.SPORT
 import net.kravos.vesti.data.Section.SRBIJA
 import net.kravos.vesti.data.Section.SVET
@@ -60,17 +60,23 @@ object Categories {
             "=ai artificial vestack tehnolog technolog google apple openai microsoft =chip chips nvidia"),
         Cat("klima", "Klima i katastrofe", SVET, emptySet(),
             "climate klim flood poplav earthquake zemljotres hurricane uragan wildfire pozar drought susa storm oluj typhoon tajfun"),
-        // Bezbednost
-        Cat("ranjivosti", "Ranjivosti", BEZBEDNOST, emptySet(), "=cve cve vulnerab flaw flaws patch patches =zero zeroday exploit =rce =kev cvss =bug =bugs"),
-        Cat("ransomware", "Ransomware", BEZBEDNOST, emptySet(), "ransomware ransom extortion lockbit"),
-        Cat("curenja", "Curenja i napadi", BEZBEDNOST, emptySet(), "breach leak leaked exposed stolen hack hacked hacker hackers compromis attack attacks"),
-        Cat("drzavni", "Državni akteri", BEZBEDNOST, emptySet(),
-            "=apt espionage =spy spying spies china chinese russia russian =korea korean =iran iranian lazarus sandworm typhoon =gru"),
-        Cat("prevare", "Prevare i phishing", BEZBEDNOST, emptySet(), "phishing scam scams scammer fraud smishing malvertis impersonat"),
-        Cat("malver", "Malver", BEZBEDNOST, emptySet(), "malware trojan botnet infostealer stealer backdoor rootkit loader =rat spyware"),
-        Cat("ai_s", "AI", BEZBEDNOST, emptySet(), "=ai =llm llms =agent =agents agentic chatgpt openai gemini copilot artificial"),
-        Cat("zakon", "Zakon i istrage", BEZBEDNOST, emptySet(),
-            "=law =laws regulat =fcc gdpr =ban =bans sanction privacy court lawsuit =fine =fined arrest charged sentenc police europol =fbi =doj extradit indict takedown seized"),
+        // Nauka i tehnologija
+        Cat("ai", "Veštačka inteligencija", NAUKA, setOf("ai", "artificial intelligence"),
+            "=ai =llm llms chatgpt openai gemini copilot anthropic claude artificial vestack =agent =agents agentic nvidia"),
+        Cat("sajber", "Sajber bezbednost", NAUKA, setOf("security", "bezbednost"),
+            "sajber cyber haker hack hacked hacker ransomware malware phishing breach vulnerab =cve cve exploit botnet spyware zero",
+            setOf("therecord", "bleeping", "securityweek", "krebs", "thn", "darkreading")),
+        Cat("svemir", "Svemir", NAUKA, setOf("space", "svemir", "astronomy"),
+            "svemir kosmos kosmic =nasa =esa spacex raket rocket satelit satellite =mars =mesec =moon asteroid galax planet teleskop telescope orbit astronaut starship launch", setOf("space")),
+        Cat("nauka", "Nauka i medicina", NAUKA, setOf("nauka", "наука", "природа", "science", "health", "biology", "physics"),
+            "naucni naucnic istraziv studij study research scientist fizik physics biolog hemij chemi medicin =lek vakcin vaccine cancer genet =dna fosil fossil dinosaur klim climate quantum kvant arheolo archaeolog brain mozak",
+            setOf("newscientist", "sciam", "quanta", "sciencedaily", "physorg", "bbcsci", "guardiansci")),
+        Cat("uredjaji", "Uređaji i igre", NAUKA, setOf("uređaji", "gadgets", "gaming", "telefoni"),
+            "telefon phone iphone samsung galaxy pixel android =ios laptop tablet konzol playstation xbox nintendo =gta =igra =igre gaming =game =games windows =mac macbook apple gadget ekran"),
+        Cat("internet", "Internet i kompanije", NAUKA, setOf("softver i servisi", "social media", "apps"),
+            "google =meta facebook instagram tiktok twitter amazon microsoft musk startup aplikacij =app =apps mrez social platform internet softver software"),
+        Cat("telekom", "Telekomunikacije", NAUKA, emptySet(),
+            "=5g =6g telekom telecom operator mobiln spektr spectrum vodafone ericsson nokia huawei =mts yettel starlink broadband fiber roaming esim =ran", setOf("lightreading", "telecoms")),
         // Beograd
         Cat("saobracaj", "Saobraćaj i GSP", BEOGRAD, setOf("saobraćaj", "gsp"),
             "=gsp saobracaj sudar guzv autobus tramvaj trolejbus metro =linij =linije linija prevoz parking naplatn zastoj obustav =most mosta =bus semafor"),
@@ -82,7 +88,14 @@ object Categories {
             "sapic gradonacelni gradsk =izbori izbora =cls budzet"),
         Cat("hronika_bg", "Hronika", BEOGRAD, setOf("hronika", "crna hronika"),
             "uhapsen hapsen ubist ubijen pucnjav nesrec policij tuzilast osumnjic pritvor napad napadac =hitna pozar eksplozij teroris"),
-        Cat("dogadjaji", "Kultura i događaji", BEOGRAD, setOf("kultura"),
+        Cat("koncerti", "Koncerti i muzika", BEOGRAD, setOf("koncert", "koncerti", "muzika", "najave", "music guide"),
+            "koncert nastup svirk turnej =album bend =dj festival", setOf("headliner", "n1kon", "novakon")),
+        Cat("pozoriste", "Pozorište i film", BEOGRAD, setOf("film", "pozorište", "bioskopski repertoari"),
+            "pozorist predstav premijer =film =filma =filmu bioskop repertoar =fest =bitef glumac glumic opera balet"),
+        Cat("izlozbe", "Izložbe i sajmovi", BEOGRAD, setOf("izložbe", "beogradski sajam"),
+            "izlozb muzej galerij sajam =sajma bazar vasar manifestac", setOf("bgsajam")),
+        Cat("izlasci", "Izlasci i vikend", BEOGRAD, setOf("izlasci", "shopping", "what's on", "city guide"),
+            "vikend izlasci zurk restoran kafan market dogadjaj", setOf("danubg", "stillinbg")),
             "koncert festival izlozb pozorist muzej sajam manifestac trofej maraton dogadjaj premijer =bitef =fest"),
         // Automobili
         Cat("ev", "Električni i hibridi", AUTO, setOf("električni automobili", "electric vehicles", "ev"),

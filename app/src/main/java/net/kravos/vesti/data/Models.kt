@@ -1,6 +1,6 @@
 package net.kravos.vesti.data
 
-enum class Section(val label: String) { SRBIJA("Srbija"), BEOGRAD("Beograd"), SVET("Svet"), BEZBEDNOST("Bezbednost"), SPORT("Sport"), AUTO("Automobili"), LJUBIMCI("Ljubimci") }
+enum class Section(val label: String) { SRBIJA("Srbija"), BEOGRAD("Beograd"), SVET("Svet"), NAUKA("Nauka i tehnologija"), SPORT("Sport"), AUTO("Automobili"), LJUBIMCI("Ljubimci") }
 
 /**
  * A news outlet. [reader] = false means the in-app reader can't get the text (e.g. Google News
@@ -16,6 +16,8 @@ data class Source(
     val reader: Boolean = true,
     /** URL path segments to drop entirely (agency reposts, English duplicates...). */
     val skip: Set<String> = emptySet(),
+    /** If set, keep only articles carrying one of these (lower-cased) feed categories: for general feeds we want one rubric of. */
+    val only: Set<String> = emptySet(),
 )
 
 data class Article(

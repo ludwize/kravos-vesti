@@ -3,7 +3,7 @@ package net.kravos.vesti.data
 import net.kravos.vesti.data.Section.AUTO
 import net.kravos.vesti.data.Section.BEOGRAD
 import net.kravos.vesti.data.Section.LJUBIMCI
-import net.kravos.vesti.data.Section.BEZBEDNOST
+import net.kravos.vesti.data.Section.NAUKA
 import net.kravos.vesti.data.Section.SPORT
 import net.kravos.vesti.data.Section.SRBIJA
 import net.kravos.vesti.data.Section.SVET
@@ -36,14 +36,36 @@ object Sources {
         Source("dw", "DW", SVET, listOf("https://rss.dw.com/xml/rss-en-world"), lang = "en"),
         Source("france24", "France 24", SVET, listOf("https://www.france24.com/en/rss"), lang = "en", defaultOn = false),
         Source("npr", "NPR", SVET, listOf("https://feeds.npr.org/1004/rss.xml"), lang = "en", defaultOn = false),
-        // Bezbednost
-        Source("therecord", "The Record", BEZBEDNOST, listOf("https://therecord.media/feed"), lang = "en"),
-        Source("bleeping", "BleepingComputer", BEZBEDNOST, listOf("https://www.bleepingcomputer.com/feed/"), lang = "en"),
-        Source("securityweek", "SecurityWeek", BEZBEDNOST, listOf("https://www.securityweek.com/feed/"), lang = "en"),
-        Source("krebs", "Krebs on Security", BEZBEDNOST, listOf("https://krebsonsecurity.com/feed/"), lang = "en"),
-        Source("thn", "The Hacker News", BEZBEDNOST, listOf("https://feeds.feedburner.com/TheHackersNews"), lang = "en"),
-        Source("darkreading", "Dark Reading", BEZBEDNOST, listOf("https://www.darkreading.com/rss.xml"), lang = "en", reader = false),
-        Source("ars", "Ars Technica", BEZBEDNOST, listOf("https://arstechnica.com/security/feed/"), lang = "en"),
+        // Nauka i tehnologija (the former "Bezbednost" section; security outlets stay as its "Sajber bezbednost" category)
+        Source("n1sci", "N1 SciTech", NAUKA, listOf("https://n1info.rs/magazin/scitech/feed/")),
+        Source("b92tehno", "B92 Tehnopolis", NAUKA, listOf("https://www.b92.net/info/rss/tehnopolis.xml")),
+        Source("benchmark", "Benchmark", NAUKA, listOf("https://benchmark.rs/feed/")),
+        Source("telegraftech", "Telegraf Hi-Tech", NAUKA, listOf("https://www.telegraf.rs/rss/hi-tech")),
+        Source("startit", "Startit", NAUKA, listOf("https://startit.rs/feed/")),
+        Source("rtsnauka", "RTS Nauka", NAUKA, listOf("https://www.rts.rs/page/magazine/sr/rss/510/nauka.html"), only = setOf("наука", "технологија", "природа")),
+        Source("ars", "Ars Technica", NAUKA, listOf("https://feeds.arstechnica.com/arstechnica/index"), lang = "en"),
+        Source("verge", "The Verge", NAUKA, listOf("https://www.theverge.com/rss/index.xml"), lang = "en"),
+        Source("wired", "Wired", NAUKA, listOf("https://www.wired.com/feed/rss"), lang = "en"),
+        Source("mittr", "MIT Technology Review", NAUKA, listOf("https://www.technologyreview.com/feed/"), lang = "en"),
+        Source("techcrunch", "TechCrunch", NAUKA, listOf("https://techcrunch.com/feed/"), lang = "en", defaultOn = false),
+        Source("bbctech", "BBC Tech", NAUKA, listOf("https://feeds.bbci.co.uk/news/technology/rss.xml"), lang = "en"),
+        Source("guardiantech", "Guardian Tech", NAUKA, listOf("https://www.theguardian.com/technology/rss"), lang = "en"),
+        Source("newscientist", "New Scientist", NAUKA, listOf("https://www.newscientist.com/feed/home/"), lang = "en"),
+        Source("sciam", "Scientific American", NAUKA, listOf("https://www.scientificamerican.com/platform/syndication/rss/"), lang = "en"),
+        Source("quanta", "Quanta Magazine", NAUKA, listOf("https://www.quantamagazine.org/feed/"), lang = "en"),
+        Source("sciencedaily", "ScienceDaily", NAUKA, listOf("https://www.sciencedaily.com/rss/top/science.xml"), lang = "en"),
+        Source("physorg", "Phys.org", NAUKA, listOf("https://phys.org/rss-feed/"), lang = "en", defaultOn = false),
+        Source("bbcsci", "BBC Science", NAUKA, listOf("https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"), lang = "en"),
+        Source("guardiansci", "Guardian Science", NAUKA, listOf("https://www.theguardian.com/science/rss"), lang = "en"),
+        Source("space", "Space.com", NAUKA, listOf("https://www.space.com/feeds/all"), lang = "en"),
+        Source("lightreading", "Light Reading", NAUKA, listOf("https://www.lightreading.com/rss.xml"), lang = "en"),
+        Source("telecoms", "Telecoms.com", NAUKA, listOf("https://www.telecoms.com/rss.xml"), lang = "en"),
+        Source("therecord", "The Record", NAUKA, listOf("https://therecord.media/feed"), lang = "en"),
+        Source("bleeping", "BleepingComputer", NAUKA, listOf("https://www.bleepingcomputer.com/feed/"), lang = "en"),
+        Source("securityweek", "SecurityWeek", NAUKA, listOf("https://www.securityweek.com/feed/"), lang = "en"),
+        Source("krebs", "Krebs on Security", NAUKA, listOf("https://krebsonsecurity.com/feed/"), lang = "en"),
+        Source("thn", "The Hacker News", NAUKA, listOf("https://feeds.feedburner.com/TheHackersNews"), lang = "en"),
+        Source("darkreading", "Dark Reading", NAUKA, listOf("https://www.darkreading.com/rss.xml"), lang = "en", reader = false),
         // Beograd (dedicated city feeds; their articles also stay in Srbija when they come from a general feed)
         Source("blicbg", "Blic Beograd", BEOGRAD, listOf("https://www.blic.rs/rss/Vesti/Beograd")),
         Source("kurirbg", "Kurir Beograd", BEOGRAD, listOf("https://www.kurir.rs/rss/vesti/beograd")),
@@ -51,6 +73,15 @@ object Sources {
         Source("novabg", "Nova", BEOGRAD, listOf("https://nova.rs/tag/beograd/feed/"), skip = setOf("vremenska-prognoza", "vremenska prognoza")),
         Source("danasbg", "Danas", BEOGRAD, listOf("https://www.danas.rs/tag/beograd/feed/")),
         Source("beobuild", "Beobuild", BEOGRAD, listOf("https://www.beobuild.rs/feed"), skip = setOf("predstavljamo")),
+        // Beograd: events (what's on, concerts, fairs)
+        Source("danubg", "Dan u Beogradu", BEOGRAD, listOf("https://www.danubeogradu.rs/feed/")),
+        Source("headliner", "Headliner", BEOGRAD, listOf("https://headliner.rs/feed/")),
+        Source("n1kon", "N1", BEOGRAD, listOf("https://n1info.rs/tag/koncert/feed/")),
+        Source("novakon", "Nova", BEOGRAD, listOf("https://nova.rs/tag/koncert/feed/")),
+        Source("bgsajam", "Beogradski sajam", BEOGRAD, listOf("https://sajam.rs/feed/")),
+        Source("stillinbg", "Still in Belgrade", BEOGRAD, listOf("https://stillinbelgrade.com/feed/"), lang = "en"),
+        Source("gnbgd", "Najave (Google vesti)", BEOGRAD, reader = false,
+            feeds = listOf("https://news.google.com/rss/search?q=Beograd+(koncert+OR+izlo%C5%BEba+OR+festival+OR+predstava+OR+sajam)+when:2d&hl=sr&gl=RS&ceid=RS:sr-Latn")),
         // Automobili (auto pieces from N1, Nova, Danas... are routed here too)
         Source("b92auto", "B92 Automobili", AUTO, listOf("https://www.b92.net/info/rss/automobili.xml")),
         Source("kurirauto", "Kurir Auto", AUTO, listOf("https://www.kurir.rs/rss/auto")),

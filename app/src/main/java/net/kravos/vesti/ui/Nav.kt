@@ -10,11 +10,10 @@ import net.kravos.vesti.data.Section
 
 enum class Tab(val label: String, val section: Section?, val short: String = label) {
     DANAS("Danas", null),
-    AKTUELNO("Najaktuelnije", null, "Aktuelno"),
     SRBIJA("Srbija", Section.SRBIJA),
     BEOGRAD("Beograd", Section.BEOGRAD),
     SVET("Svet", Section.SVET),
-    BEZBEDNOST("Bezbednost", Section.BEZBEDNOST, "Sajber"),
+    NAUKA("Nauka i tehnologija", Section.NAUKA, "Nauka"),
     SPORT("Sport", Section.SPORT),
     AUTO("Automobili", Section.AUTO, "Auto"),
     LJUBIMCI("Ljubimci", Section.LJUBIMCI),

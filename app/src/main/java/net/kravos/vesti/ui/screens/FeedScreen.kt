@@ -108,15 +108,19 @@ fun FeedScreen(tab: Tab, pad: PaddingValues) {
             val f = feed
             item("mast") { Masthead(tab, cat, counts) { cat = it; scope.launch { listState.scrollToItem(0) } } }
             item("strip") { SectionStrip(tab) }
-            if (tab != Tab.AKTUELNO) item("mode") { ModeSwitch(mode) { mode = it } }
+            // Danas: Pregled (by section) / Najaktuelnije (most covered right now) / Najnovije (chronological).
+            // Section tabs: Najaktuelnije / Najnovije.
+            val modes = if (tab == Tab.DANAS) listOf("Pregled", "Najaktuelnije", "Najnovije") else listOf("Najaktuelnije", "Najnovije")
+            val kind = modes[mode.coerceIn(0, modes.lastIndex)]
+            item("mode") { ModeSwitch(modes, mode) { mode = it; scope.launch { listState.scrollToItem(0) } } }
             when {
                 f == null -> item("load") { Spinner() }
                 f.articles.isEmpty() -> item("err") {
                     if (refreshing) Spinner()
                     else ErrorBox(if (f.failed.isNotEmpty()) "Ne odgovaraju: " + f.failed.joinToString(", ") else null) { scope.launch { app.repo.refresh(force = true) } }
                 }
-                tab == Tab.AKTUELNO -> hot(f, openStory)
-                mode == 1 -> latest(f, tab.section, cat, open)
+                kind == "Najnovije" -> latest(f, tab.section, cat, open)
+                tab == Tab.DANAS && kind == "Najaktuelnije" -> hot(f, openStory)
                 tab == Tab.DANAS -> digest(f, openStory, open) { nav.tab(it) }
                 else -> section(f, tab.section!!, cat, openStory)
             }
@@ -155,7 +159,7 @@ private fun Masthead(tab: Tab, cat: String?, counts: Map<String, Int>, onCat: (S
                                 tab.label.length > 8 -> MaterialTheme.typography.displaySmall.copy(fontSize = 28.sp, lineHeight = 33.sp)
                                 else -> MaterialTheme.typography.displaySmall
                             },
-                            maxLines = if (catLabel != null) 2 else 1, softWrap = catLabel != null, overflow = TextOverflow.Ellipsis,
+                            maxLines = if (catLabel != null || ' ' in tab.label) 2 else 1, softWrap = catLabel != null || ' ' in tab.label, overflow = TextOverflow.Ellipsis,
                         )
                         if (sec != null) Icon(Icons.Filled.ArrowDropDown, "Kategorija", Modifier.size(34.dp), tint = p.dim)
                     }
@@ -192,11 +196,11 @@ private fun CatItem(label: String, count: Int?, selected: Boolean, onClick: () -
 }
 
 @Composable
-private fun ModeSwitch(mode: Int, onChange: (Int) -> Unit) {
+private fun ModeSwitch(labels: List<String>, mode: Int, onChange: (Int) -> Unit) {
     val p = LocalPalette.current
     Column {
         Row(Modifier.fillMaxWidth().padding(horizontal = 18.dp), horizontalArrangement = Arrangement.spacedBy(22.dp)) {
-            listOf("Najvažnije", "Najnovije").forEachIndexed { i, label ->
+            labels.forEachIndexed { i, label ->
                 val sel = i == mode
                 Column(Modifier.clickable { onChange(i) }.padding(top = 12.dp)) {
                     Text(label, style = MaterialTheme.typography.labelMedium, fontWeight = if (sel) FontWeight.Bold else FontWeight.Medium, color = if (sel) p.ink else p.dim)
@@ -217,7 +221,7 @@ private fun LazyListScope.digest(f: Feed, openStory: (Story) -> Unit, open: (Art
     }
     val plan = listOf(
         Triple(Section.SRBIJA, Tab.SRBIJA, 6), Triple(Section.BEOGRAD, Tab.BEOGRAD, 4), Triple(Section.SVET, Tab.SVET, 5),
-        Triple(Section.BEZBEDNOST, Tab.BEZBEDNOST, 4), Triple(Section.SPORT, Tab.SPORT, 4),
+        Triple(Section.NAUKA, Tab.NAUKA, 5), Triple(Section.SPORT, Tab.SPORT, 4),
         Triple(Section.AUTO, Tab.AUTO, 3), Triple(Section.LJUBIMCI, Tab.LJUBIMCI, 3),
     )
     for ((sec, tab, n) in plan) {
@@ -226,7 +230,7 @@ private fun LazyListScope.digest(f: Feed, openStory: (Story) -> Unit, open: (Art
         item("h-${sec.name}") { SectionHeader(sec.label) { goTab(tab) } }
         list.forEachIndexed { i, s ->
             item("d-${sec.name}-${s.id}") {
-                if (i == 0 && sec != Section.BEZBEDNOST && sec != Section.AUTO && sec != Section.LJUBIMCI) StoryHero(s) { openStory(s) } else StoryRow(s) { openStory(s) }
+                if (i == 0 && sec != Section.AUTO && sec != Section.LJUBIMCI) StoryHero(s) { openStory(s) } else StoryRow(s) { openStory(s) }
                 if (i < list.lastIndex) Rule(Modifier.padding(horizontal = 18.dp))
             }
         }

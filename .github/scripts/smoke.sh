@@ -73,6 +73,9 @@ scroll; shot 04-danas-scroll3
 
 adb shell am force-stop $PKG; adb shell am start -W -n $PKG/.ui.MainActivity >/dev/null 2>&1; sleep 8
 shot 05-warm-start
+tap_text "Najaktuelnije"; sleep 3; shot 06-danas-aktuelno
+tap_text "Najnovije"; sleep 3; shot 07-danas-najnovije
+tap_text "Pregled"; sleep 2
 scroll
 tap_regex '[0-9]+ izvora'; sleep 2
 shot 10-story
@@ -88,7 +91,7 @@ tap_text "Srbija"; sleep 3; shot 30-srbija
 tap_text "Najnovije"; sleep 3; shot 31-srbija-najnovije
 tap_regex '.{50,}'; sleep 10; shot 32-najnovije-reader
 back
-tap_text "Najvažnije"; sleep 2
+tap_text "Najaktuelnije"; sleep 2
 tap_text "Kategorija"; sleep 2; shot 33-category-menu
 tap_text "Politika"; sleep 3; shot 34-politika
 tap_text "Kategorija"; sleep 2
@@ -105,11 +108,10 @@ scroll
 tap_regex 'pre [0-9]+ (min|h)'; sleep 10; shot 42-svet-reader
 scroll; shot 43-svet-reader-scroll
 back; back
-tap_text "Bezbednost"; sleep 3; shot 50-bezbednost
+tap_text "Nauka i tehnologija"; sleep 3; shot 50-nauka
 tap_regex '.{50,}'; sleep 10; shot 51-bezb-reader
 scroll; shot 52-bezb-reader-scroll
 back
-tap_text "Najaktuelnije"; sleep 3; shot 44-aktuelno
 tap_text "Sport"; sleep 3; shot 55-sport
 scroll; shot 56-sport-scroll
 tap_text "Sport"; sleep 2
