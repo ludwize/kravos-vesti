@@ -131,7 +131,7 @@ object Sources {
 
     /** Titles that are shopping/listing filler rather than news (deal and coupon posts, daily funeral lists...). */
     val JUNK_TITLE = Regex(
-        "(coupon|promo code|discount code|black friday deal|best .{0,40} deals?\\b|% off|sahrane i kremacije)",
+        "(coupon|promo code|discount code|black friday deal|best .{0,40} deals?\\b|% off|deals? to shop|sahrane i kremacije)",
         RegexOption.IGNORE_CASE,
     )
 
