@@ -1,64 +1,64 @@
-81 sources, 50 categories
-1538 articles -> 820 stories; failed: []; data.json 596 KB
+82 sources, 50 categories
+1450 articles -> 833 stories; failed: []; data.json 583 KB
 
 
-NAUKA: 160 stories; cats {'ai': 41, 'internet': 26, 'sajber': 51, 'uredjaji': 26, 'nauka': 48, 'telekom': 13, 'svemir': 24}; sources {'BBC Tech': 4, 'Guardian Tech': 6, 'The Verge': 10, 'Wired': 48, 'BleepingComputer': 14, 'SecurityWeek': 10, 'The Hacker News': 15, 'Ars Technica': 13, 'New Scientist': 10, 'BBC Science': 7, 'B92 Tehnopolis': 6, 'Dark Reading': 5, 'Benchmark': 7, 'Light Reading': 7, 'Krebs on Security': 2, 'Guardian Science': 4, 'Telegraf Hi-Tech': 3, 'MIT Technology Review': 2, 'Scientific American': 7, 'Space.com': 14, 'ScienceDaily': 8, 'Telecoms.com': 5, 'Startit': 1, 'The Record': 3, 'Quanta Magazine': 1}
-   [ai] BBC Tech: Nvidia hires major US law firm to investigate alleged Chinese spy affair
-   [] Wired: Wayfair Coupons: Up to 80% Off November 2026
-   [sajber] BleepingComputer: Maersk confirms data breach as WhiteArmor ransomware demands $5 million
-   [sajber] The Hacker News: Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely
-   [sajber] The Hacker News: ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Cli
+NAUKA: 160 stories; cats {'ai': 42, 'uredjaji': 27, 'nauka': 59, 'sajber': 20, 'internet': 24, 'telekom': 18, 'svemir': 28}; sources {'Guardian Tech': 10, 'The Verge': 9, 'Ars Technica': 15, 'BBC Tech': 8, 'New Scientist': 10, 'BBC Science': 10, 'BleepingComputer': 14, 'B92 Tehnopolis': 9, 'Benchmark': 9, 'ScienceDaily': 14, 'Light Reading': 10, 'Wired': 17, 'Guardian Science': 4, 'Telegraf Hi-Tech': 4, 'MIT Technology Review': 2, 'Scientific American': 7, 'Space.com': 15, 'Telecoms.com': 6, 'Startit': 1, 'Krebs on Security': 2, 'The Record': 3, 'Quanta Magazine': 1, 'N1 SciTech': 1}
+   [ai] Guardian Tech: Nvidia board reportedly deciding whether to oust CEO Jensen Huang as stock price plunges
    [ai,uredjaji] Ars Technica: CEO Jensen Huang's job is suddenly on the line at Nvidia
    [nauka] New Scientist: Some PFAS chemicals are declining in English rivers but others are appearing
-   [sajber] The Hacker News: eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise
-   [ai,sajber] The Hacker News: Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion A
+   [sajber] BleepingComputer: Hackers plant GSocket on Linux servers for persistent access
    [] B92 Tehnopolis: Posledice ukrajinskih napada: Trajno izgubljeno 100.000 terabajta
-   [sajber] SecurityWeek: Critical Red Hat Quay Vulnerability Could Expose Private Container Images
-   [sajber,internet] Dark Reading: N-able Takes N-central Platform Offline After Discovery of 33 Flaws
    [uredjaji,internet] Benchmark: Android telefon postaje ključ od kuće: Google Wallet otključava vrata bez dodirivanja brav
+   [nauka] ScienceDaily: Earth's fiery birth may have created hundreds of oceans' worth of water
    [ai,telekom] Light Reading: Orange walks AI tightrope to capture 'hundreds of mil' in value
-   [sajber,internet] Krebs on Security: Microsoft Fixes Nearly 1,100 Security Vulnerabilities
-   [sajber] The Hacker News: Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connection
    [nauka] Wired: The Polar Vortex Is About to Make Weather Weird From the UK to the US
    [telekom] Light Reading: TIM to expand its services through synergies with Poste – CEO
    [telekom] Light Reading: Verizon, Nokia show private 5G chops at UK's Thames Freeport
-   [svemir,uredjaji] Benchmark: Samsung sprema telefon koji menja oblik ekrana: iz 16:9 prelazi u 21:9
+   [uredjaji] Benchmark: Samsung sprema telefon koji menja oblik ekrana: iz 16:9 prelazi u 21:9
    [uredjaji] B92 Tehnopolis: Plava tačka pored baterije: Šta znači i kada treba da se zabrinete VIDEO
-   [] Wired: The 22 Best Early Black Friday Deals: Our Ultimate Picks (2026)
    [ai] Guardian Tech: Fewer hours and higher wages – or more burnout and surveillance: employers told to prepare
-   [sajber] The Hacker News: Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Reposito
    [nauka] Guardian Science: Is BMI working? Cop31 latest, the science of great conversation – podcast
    [uredjaji] Telegraf Hi-Tech: GTA 6 još nije izašao, a već je premašio milijardu dolara: Ove brojke su neverovatne
    [nauka] BBC Science: Campaigners want more land protected from housing
    [nauka] BBC Science: Art trail celebrates arrival of black bears at zoo
    [nauka] BBC Science: Nurdle impact to be researched for a year
    [nauka] BBC Science: 'Summer was a wake-up call, winter could be dire' warning over food supplies
-   [] Wired: TurboTax Full Service Coupons This November 2026
-   [] Wired: Lovehoney Coupon Offers: 70% Off
-   [] Wired: Hydrow Discount Code: Save Up to $150 | November 2026
-   [] Wired: Ruggable Discount Code: 30% Off Rugs | November 2026
-   [] Wired: Ring Promo Code: 50% Off
-   [] Wired: Acer Promo Codes: 40% Off
    [] Ars Technica: Trump wanted little Kei trucks for America, Toyota makes it happen
    [nauka,internet] MIT Technology Review: What to know about this year’s UN climate talks
    [uredjaji] Benchmark: OLED televizori pokazuju ozbiljan problem tokom dugotrajnog korišćenja
    [ai] Telegraf Hi-Tech: Nvidia se sprema da smeni Džensena Huanga
    [svemir] Space.com: SpaceX launches 2nd mystery mission for US Space Force in 6-day span (photos)
-   [ai,sajber,internet] The Hacker News: AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets
-   [sajber] The Hacker News: Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access
    [nauka] ScienceDaily: A massive new simulation reveals how the universe emerged from darkness
-   [uredjaji] Wired: The Best Early Black Friday MacBook Air Deal: $200 Off
+   [] Wired: Walking Pad Deals to Shop Ahead of Black Friday (2026)
+   [svemir,nauka] ScienceDaily: NASA’s Parker Solar Probe discovers a hidden pattern in the Sun’s chaotic magnetic fields
+   [ai,internet] Ars Technica: Ring cameras go mobile as Amazon debuts AI-powered security drone and robot
+   [ai] Guardian Tech: Facial recognition errors put ethnic minorities at risk of wrongful arrest, police watchdo
+   [nauka] ScienceDaily: Scientists discover that necks didn't evolve for the reason we thought
+   [sajber] BleepingComputer: Baker Tilly notifies clients of data breach at third-party provider
+   [sajber] BleepingComputer: Active ScreenConnect attacks breach MSPs, impact dozens of organizations
+   [] BBC Tech: Lego marketplace BrickLink offline after 'unusual activity' detected
+   [] The Verge: Hands on with Home Assistant’s new ‘smart home multi-tool’
+   [] Wired: Pete Hegseth Is About to Get His Ass Kicked
+   [svemir] Space.com: NASA kick-starts a fresh push to bring Mars samples home
+   [ai] The Verge: United won’t let your AI agent book your flight
+   [sajber] BleepingComputer: eMudhra revokes 8 more CA certificates after private key mishap
+   [svemir] Space.com: We can't see Fast Radio Bursts but we can now hear them thanks to a Finnish Cathedral
+   [ai,sajber] BleepingComputer: Notion says Fireworks breach exposed customer AI chat transcripts
+   [ai,svemir] Space.com: On this day in space! Nov. 11, 1966: NASA launches Gemini 12 mission with astronaut icons 
+   [internet,telekom] Ars Technica: T-Mobile illegally imposed 50GB cap on low-income home Internet plan, NY says
+   [nauka] Scientific American: Metal-rich deep-sea ‘nodules’ also harbor diverse ocean life
+   [svemir,nauka] Ars Technica: Anduril says its first satellite can see adversaries maneuver in orbital night
 
-BEOGRAD: 91 stories; cats {'koncerti': 13, 'gradnja': 14, 'izlozbe': 4, 'izlasci': 28, 'hronika_bg': 19, 'vlast': 5, 'pozoriste': 11, 'komunalno': 14, 'saobracaj': 20}; sources {'Blic Beograd': 38, 'Kurir Beograd': 19, 'Headliner': 10, 'Dan u Beogradu': 26, 'Nova': 4, 'N1': 13, 'Danas': 4, 'Still in Belgrade': 2, 'Beogradski sajam': 1}
+BEOGRAD: 105 stories; cats {'koncerti': 19, 'gradnja': 14, 'izlozbe': 11, 'izlasci': 25, 'hronika_bg': 19, 'pozoriste': 14, 'vlast': 5, 'komunalno': 14, 'saobracaj': 20}; sources {'Headliner': 6, 'Najave (Google vesti)': 25, 'Blic Beograd': 38, 'Kurir Beograd': 19, 'Dan u Beogradu': 22, 'Nova': 4, 'N1': 13, 'Danas': 4, 'Still in Belgrade': 2, 'Beogradski sajam': 1}
+   [koncerti] Headliner: Tindersticks se vraćaju u Beograd… S novim albumom “Dog Roses” stiže u mts Dvoranu 14. apr
    [] Blic Beograd: PACIJENTI HITNO OPERISANI ZBOG RAKA U POODMAKLOJ FAZI! Teška noć za lekare na VMA, oglasio
+   [koncerti] Headliner: Uriah Heep se vrhunskim koncertom oprostio od Beograda: Mi smo još tu, vi ste još tu. Muzi
    [koncerti] Headliner: Drugi Dan objavio album “Daj još”… Tri vokala i 12 pesama između roka, metala i hip-hopa
    [gradnja,izlozbe,izlasci] Dan u Beogradu: 34. Bazar na Vračaru
    [gradnja,hronika_bg] Blic Beograd: "KRVOLOČNI SU, NAPADAJU I DECU!" Čopor pasa lutalica nedeljama teroriše Zvezdaru, građani 
    [koncerti] Headliner: W.A.S.P. u Beogradu.. 10 priča iz vremena kada je metal izazivao skandale
-   [koncerti] Headliner: Tindersticks se vraćaju u Beograd… S novim albumom “Dog Roses” stiže u mts Dvoranu 14. apr
+   [koncerti,pozoriste] Najave (Google vesti): Maske: Atelje 212 i Festival prvoizvedenih predstava
    [koncerti] Headliner: Buč Kesidi na turneji “Pusti da gori”… U Beogradu slave deset godina prvog albuma za samo 
-   [koncerti] Headliner: Virtuelni bend Nyoog objavio debitantski album “Prošlost u boji”
-   [koncerti] Headliner: Hejli Vilijams objavila spot za “Dream Girl in Shibuya”… Crno-beli kadrovi sa turneje, ali
    [] Blic Beograd: REZERVE KRVI SAMO ZA DVA DANA Jedna grupa najviše nedostaje, Instituta za transfuziju uput
    [vlast] Nova: CLS: Kasne svi radovi u Beogradu, značajno probijanje rokova
    [] Kurir Beograd: BEOGRAĐANE JE OVO MUČILO NAJVIŠE: Evo zbog čega su tokom noći najčešće zvali lekare Hitne
@@ -73,27 +73,27 @@ BEOGRAD: 91 stories; cats {'koncerti': 13, 'gradnja': 14, 'izlozbe': 4, 'izlasci
    [] Kurir Beograd: NOVO MESTO ZA IGRU I DRUŽENJE: Novo dečje igralište na Bežanijskoj kosi
    [komunalno] Blic Beograd: SPREMITE ZALIHE, VODE NEĆE BITI 12 SATI Radovi zatvaraju slavine u delovima 2 beogradske o
    [pozoriste,izlasci] Dan u Beogradu: Bioskopski repertoari, 12-18. novembar 2026.
+   [izlozbe] Najave (Google vesti): 62. MEĐUNARODNI SAJAM NAMEŠTAJA, OPREME I UNUTRAŠNJE DEKORACIJE (UFI)
    [] Blic Beograd: Od stare beogradske gostionice do riznice narodnog blaga: Manakova kuća čuva duh prošlih v
    [] N1: Telo maloletnog dečaka pronađeno u Rakovici
+   [koncerti] Najave (Google vesti): Koncert povodom Svetskog dana flamenka u Domu omladine | Grad Beograd
    [saobracaj,hronika_bg] N1: Hitna pomoć: Pet saobraćajnih nezgoda noćas u Beogradu, jedna osoba ubodena nožem
+   [koncerti] Najave (Google vesti): 10. Bunt rok festival 2026. - Finale
    [hronika_bg] Blic Beograd: NESREĆE SE REĐALE JEDNA ZA DRUGOM! Pune ruke za posla za Hitnu pomoć u Beogradu: Ima više 
    [gradnja] Blic Beograd: Srbija izgubila skoro trećinu stanovništva, a Beograd bio razoren: Ovako je izgledao kraj 
    [gradnja,pozoriste] Danas: Minja Bogavac za Danas uoči otvaranja Reflektor teatra: „Gradimo, umesto da zbrajamo šta s
-   [koncerti] Headliner: Nik Kejv ponovo protiv veštačke inteligencije: Ovo je konačno poniženje za muziku…
-   [koncerti] Headliner: Next Kodex objavili album “Vol. 2″… Devet pesama na putu do završetka trilogije
-   [izlasci] Dan u Beogradu: Sahrane i kremacije u Beogradu, 12. novembar 2026.
+   [] Najave (Google vesti): Jubilej u Zvezdara teatru: Nenad Jezdić 400. put igra Milutina
    [] Danas: Posle 2 godine pauze, Hali Gali ponovo u klubu Drugstore: Alternativna scena ponovo na jed
+   [koncerti] Najave (Google vesti): "Tindersticks" najavili novi album i koncert u Beogradu: Muzika koja ne traži da bude glas
+   [] Najave (Google vesti): Zagreb tri večeri u znaku Sofronijevića, a Beograd tek čeka spektakl: „Majstori za dušu“ r
    [] Blic Beograd: Vesna Vidović položila venac na Spomen-kosturnicu braniocima Beograda u Prvom svetskom rat
    [hronika_bg] Blic Beograd: POŽAR BUKNUO NA NOVOM BEOGRADU Vatrogasci u dramatičnoj borbi sa VATROM kod Save, sirene O
-   [koncerti] Headliner: Uriah Heep se vrhunskim koncertom oprostio od Beograda: Mi smo još tu, vi ste još tu. Muzi
+   [koncerti] Headliner: Vlatko Stefanovski “Acoustic Night” u Sava centru 21. decembra
+   [izlozbe] Najave (Google vesti): Kanski pobednik stigao u Beograd: U Ložionici otvorena VR izložba „KATABASIS”
+   [] Najave (Google vesti): Skoro šest decenija rokenrola u jednoj večeri: Deep Purple oduševili publiku u Beogradskoj
+   [koncerti] Najave (Google vesti): Festival of Abnormal Music (FAM) #3
    [gradnja] Blic Beograd: "SVAKI DAN OVUDA PROĐE VELIKI BROJ DECE" Oronula i napuštena zgrada na Miljakovcu preti da
-   [hronika_bg] Nova: Velika akcija policije u Beogradu: U toku hapšenje više osoba zbog korupcije
-   [] Blic Beograd: DANAS ODJEKIVALA PALJBA SA KALEMEGDANA Oglasilo se Ministarstvo odbrane: Evo o čemu se rad
-   [saobracaj] Kurir Beograd: NOĆ U BEOGRADU: Troje povređenih u 4 saobraćajke
-   [saobracaj,izlozbe,izlasci] Still in Belgrade: MOST.HUNGARY-SERBIA: An Artistic Bridge Between Serbia and Hungary
-   [izlasci] Still in Belgrade: W.O.L.F. Congress 2026: Architecture, Design and the Future of Cities in Belgrade
-   [saobracaj,vlast] Blic Beograd: BEOGRAD DOBIJA 29 NOVIH TRAMVAJA! Oglasio se Šapić: "U javni prevoz glavnog grada investir
-   [hronika_bg] N1: Komisija: Postupanje VJT u slučaju istrage smrti studentkinje bilo usmereno na prikupljanj
-   [] Blic Beograd: Poznato na šta će biti potrošen novac od donacija vernika koji su celivali Časni pojas Pre
+   [izlasci] Najave (Google vesti): GenD vikend vodič kroz Beograd: Od Pitbulla i French VR Week-a do Kennyja Larkina i Kamelo
+   [pozoriste] Najave (Google vesti): SATIRIČNA KOMEDIJA SITUACIJE: Predstava „Polje malina“ na repertoaru DKSG:
 pip: 0 
 page errors: []
