@@ -1,7 +1,9 @@
-generated 1793178269 failed []
-SRBIJA: 113 stories; top: N1 ispred Ambasade Izraela: Primetna pojačana patrola pripadnika Žandarmerije, c
-SVET: 160 stories; top: Watch: What happens now after close vote in Israeli election?
-SPORT: 160 stories; top: Entoni Edvards sjajno počeo sezonu, ali mora na operaciju
-BEOGRAD: 44 stories; top: Kreće suzbijanje krpelja u Beogradu: Na spisku Košutnjak, Ada, Avala i parkovi, 
-BEZBEDNOST: 110 stories; top: Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Ot
+generated 1794476015 failed []
+SRBIJA: 117 stories; top: Počelo zakazivanje termina za isplatu osiguranih depozita iz Alta banke
+SPORT: 160 stories; top: Denver slavio u Memfisu, dabl-dabl Jokića
+SVET: 160 stories; top: Democrat Scott Colom seals historic win in Mississippi Senate race
+AUTO: 114 stories; top: Tesla extends Cybertruck production to late summer 2027 amid fan backlash
+NAUKA: 160 stories; top: Nvidia hires major US law firm to investigate alleged Chinese spy affair
+BEOGRAD: 91 stories; top: PACIJENTI HITNO OPERISANI ZBOG RAKA U POODMAKLOJ FAZI! Teška noć za lekare na VM
+LJUBIMCI: 17 stories; top: "KRVOLOČNI SU, NAPADAJU I DECU!" Čopor pasa lutalica nedeljama teroriše Zvezdaru
 page errors: []
