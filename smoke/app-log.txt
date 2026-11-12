@@ -1,444 +1,500 @@
-91:11-10 09:27:21.693   523  2212 V SplashScreenExceptionList: SplashScreen checking exception for package net.kravos.vesti (target sdk:35) -> false
-127:11-10 09:27:21.777   842   874 V WindowManagerShell: Transition requested: android.os.BinderProxy@e737f57 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=net.kravos.vesti/.ui.MainActivity } baseActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} topActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} origActivity=null realActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} numActivities=1 lastActiveTime=45337 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@c43ea44} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{ee3a72d net.kravos.vesti.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
-128:11-10 09:27:21.781   523  2212 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=net.kravos.vesti/.ui.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
-172:11-10 09:27:21.844   523  1667 D CoreBackPreview: Window{2330cfa u0 Splash Screen net.kravos.vesti}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@5624011, mPriority=0, mIsAnimationCallback=false}
-188:11-10 09:27:21.878   523   542 V WindowManager: Sent Transition #6 createdAt=11-10 09:27:21.680 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=net.kravos.vesti/.ui.MainActivity } baseActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} topActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} origActivity=null realActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} numActivities=1 lastActiveTime=45337 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{8e13805 Task{dd7c53 #8 type=standard A=10192:net.kravos.vesti}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{fd4905a net.kravos.vesti.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
-190:11-10 09:27:21.878   523   542 V WindowManager:     info={id=6 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{8e13805 Task{dd7c53 #8 type=standard A=10192:net.kravos.vesti}}} m=OPEN f=NONE leash=Surface(name=Task=8)/@0x243e049 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{119128b Task{535d0d9 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xc498703 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-528:11-10 09:27:22.333   523  1818 I ActivityManager: Start proc 2776:net.kravos.vesti/u0a192 for next-top-activity {net.kravos.vesti/net.kravos.vesti.ui.MainActivity}
-566:11-10 09:27:22.404  2776  2776 D nativeloader: Configuring clns-6 for other apk /data/app/~~OlqxF-rAd-NSSXDbK-Lc6A==/net.kravos.vesti-Ohwtmbrdqrohj9SsZq-3qg==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~OlqxF-rAd-NSSXDbK-Lc6A==/net.kravos.vesti-Ohwtmbrdqrohj9SsZq-3qg==/lib/x86_64:/data/app/~~OlqxF-rAd-NSSXDbK-Lc6A==/net.kravos.vesti-Ohwtmbrdqrohj9SsZq-3qg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/net.kravos.vesti
-588:11-10 09:27:22.430  2776  2776 V GraphicsEnvironment: ANGLE GameManagerService for net.kravos.vesti: false
-589:11-10 09:27:22.430  2776  2776 V GraphicsEnvironment: net.kravos.vesti is not listed in per-application setting
-1095:11-10 09:27:23.301   523  2033 D CoreBackPreview: Window{cc28f2c u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a52e0a9, mPriority=0, mIsAnimationCallback=false}
-1747:11-10 09:27:24.731   523  2037 I WindowManager: finishDrawing of relaunch: Window{cc28f2c u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity} 627ms
-1766:11-10 09:27:24.786   523  2212 D CoreBackPreview: Window{cc28f2c u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity}: Setting back callback null
-1768:11-10 09:27:24.789   523  2043 W InputManager-JNI: Input channel object 'cc28f2c net.kravos.vesti/net.kravos.vesti.ui.MainActivity (client)' was disposed without first being removed with the input manager!
-1769:11-10 09:27:24.792   523  2037 W InputManager-JNI: Input channel object '2330cfa Splash Screen net.kravos.vesti (client)' was disposed without first being removed with the input manager!
-1817:11-10 09:27:24.901   523  2039 D CoreBackPreview: Window{a405c7a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4704282, mPriority=0, mIsAnimationCallback=false}
-1847:11-10 09:27:25.021   523   809 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10192, mPackageName='net.kravos.vesti, mAppProcessToken='null'}
-1917:11-10 09:27:25.057   523  2758 I ImeTracker: net.kravos.vesti:cb328eaf: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-1918:11-10 09:27:25.057   523  2758 I ImeTracker: net.kravos.vesti:cb328eaf: onCancelled at PHASE_SERVER_SHOULD_HIDE
-1937:11-10 09:27:25.082  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-1974:11-10 09:27:25.141   523   542 I ActivityTaskManager: Displayed net.kravos.vesti/.ui.MainActivity for user 0: +3s72ms
-2093:11-10 09:27:25.339  2776  3067 I KravosVesti: GET https://insajder.net/feed -> 200 (111604 b)
-2173:11-10 09:27:25.628  2776  3072 I KravosVesti: GET https://vreme.com/feed/ -> 200 (99058 b)
-2294:11-10 09:27:25.860   855   855 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: net.kravos.vesti, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
-2346:11-10 09:27:25.966  2776  3094 I KravosVesti: GET https://radar.nova.rs/feed/ -> 200 (99392 b)
-2456:11-10 09:27:26.155  2776  3091 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:reuters.com&hl=en-US&gl=US&ceid=US:en -> 200 (130599 b)
-2484:11-10 09:27:26.263  2776  3066 I KravosVesti: GET https://n1info.rs/feed/ -> 200 (69472 b)
-2491:11-10 09:27:26.286  2776  3050 I KravosVesti: GET https://www.istinomer.rs/feed/ -> 200 (12292 b)
-2529:11-10 09:27:26.346  2776  3071 I KravosVesti: GET https://nova.rs/feed/ -> 200 (67869 b)
-2569:11-10 09:27:26.453  1060  1060 D CarrierSvcBindHelper: onPackageAdded: net.kravos.vesti
-2574:11-10 09:27:26.470  2776  3096 I KravosVesti: GET https://www.krik.rs/feed/ -> 200 (13721 b)
-2587:11-10 09:27:26.514  2776  3088 I KravosVesti: GET https://www.cins.rs/feed/ -> 200 (14590 b)
-2594:11-10 09:27:26.539  1060  1353 D ImsResolver: maybeAddedImsService, packageName: net.kravos.vesti
-2602:11-10 09:27:26.562  2776  3091 I KravosVesti: GET https://www.theguardian.com/world/rss -> 200 (153094 b)
-2615:11-10 09:27:26.634  2776  3081 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:apnews.com&hl=en-US&gl=US&ceid=US:en -> 200 (119067 b)
-2634:11-10 09:27:26.706  2776  3072 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/rss.xml -> 200 (20948 b)
-2640:11-10 09:27:26.741  2776  3066 I KravosVesti: GET https://www.euronews.com/rss?level=theme&name=news -> 200 (32935 b)
-2655:11-10 09:27:26.775  2776  3049 I KravosVesti: GET https://www.politico.eu/feed/ -> 200 (203520 b)
-2682:11-10 09:27:26.857  2776  3050 I KravosVesti: GET https://www.aljazeera.com/xml/rss/all.xml -> 200 (17093 b)
-2691:11-10 09:27:26.865  2776  3048 I KravosVesti: GET https://balkaninsight.com/feed/ -> 200 (156272 b)
-2704:11-10 09:27:26.928  2776  3081 I KravosVesti: GET https://therecord.media/feed -> 200 (4915 b)
-2792:11-10 09:27:27.114  2776  3091 I KravosVesti: GET https://www.bleepingcomputer.com/feed/ -> 200 (13184 b)
-2799:11-10 09:27:27.127  2776  3049 I KravosVesti: GET https://krebsonsecurity.com/feed/ -> 200 (141263 b)
-2830:11-10 09:27:27.151  2776  3088 I KravosVesti: GET https://www.securityweek.com/feed/ -> 200 (11794 b)
-2837:11-10 09:27:27.154  2776  3096 I KravosVesti: GET https://rss.dw.com/xml/rss-en-world -> 200 (8739 b)
-2906:11-10 09:27:27.360  2776  3094 I KravosVesti: GET https://feeds.feedburner.com/TheHackersNews -> 200 (59635 b)
-2919:11-10 09:27:27.413  2776  3072 I KravosVesti: GET https://arstechnica.com/security/feed/ -> 200 (73384 b)
-2993:11-10 09:27:27.653  2776  3091 I KravosVesti: GET https://n1info.rs/tag/beograd/feed/ -> 200 (29051 b)
-3011:11-10 09:27:27.728  2776  3066 I KravosVesti: GET https://www.darkreading.com/rss.xml -> 200 (78155 b)
-3037:11-10 09:27:27.810  2776  3050 I KravosVesti: GET https://www.kurir.rs/rss/vesti/beograd -> 200 (77994 b)
-3097:11-10 09:27:27.992  2776  3065 I KravosVesti: GET https://nova.rs/tag/beograd/feed/ -> 200 (27216 b)
-3134:11-10 09:27:28.153  2776  3091 I KravosVesti: GET https://n1info.rs/magazin/auto/feed/ -> 200 (28697 b)
-3140:11-10 09:27:28.174  2776  3048 I KravosVesti: GET https://www.blic.rs/rss/Vesti/Beograd -> 200 (94414 b)
-3475:11-10 09:27:28.246  2776  3094 I KravosVesti: GET https://www.kurir.rs/rss/auto -> 200 (80126 b)
-3480:11-10 09:27:28.251  2776  3050 I KravosVesti: GET https://electrek.co/feed/ -> 200 (276192 b)
-3523:11-10 09:27:28.343  2776  3091 I KravosVesti: GET https://insideevs.com/rss/news/all/ -> 200 (13412 b)
-3608:11-10 09:27:28.440  2776  3049 I KravosVesti: GET https://www.motor1.com/rss/news/all/ -> 200 (13609 b)
-3635:11-10 09:27:28.539  2776  3081 I KravosVesti: GET https://n1info.rs/tag/ljubimci/feed/ -> 200 (27105 b)
-3640:11-10 09:27:28.564  2776  3065 I KravosVesti: GET https://www.autocar.co.uk/rss -> 200 (331790 b)
-3710:11-10 09:27:28.800  2776  3094 I KravosVesti: GET https://www.theguardian.com/lifeandstyle/pets/rss -> 200 (65760 b)
-3711:11-10 09:27:28.803  2776  3072 I KravosVesti: GET https://www.beobuild.rs/feed -> 200 (25761 b)
-3780:11-10 09:27:29.137  2776  3538 D ProfileInstaller: Installing profile for net.kravos.vesti
-3783:11-10 09:27:29.169  2776  3048 I KravosVesti: GET https://www.b92.net/rss/sport -> 200 (16213 b)
-3923:11-10 09:27:29.438  1060  1060 D CarrierSvcBindHelper: onPackageModified: net.kravos.vesti
-3925:11-10 09:27:29.456  1060  1353 D ImsResolver: maybeAddedImsService, packageName: net.kravos.vesti
-3928:11-10 09:27:29.471  2776  3065 I KravosVesti: GET https://www.zurnal.rs/rss -> 200 (15581 b)
-4002:11-10 09:27:29.649  2776  3091 I KravosVesti: GET https://sportklub.n1info.rs/feed/ -> 200 (68873 b)
-4099:11-10 09:27:29.850  2776  3048 I KravosVesti: GET https://feeds.bbci.co.uk/sport/rss.xml -> 200 (55647 b)
-4118:11-10 09:27:29.930  2776  3091 I KravosVesti: GET https://www.theguardian.com/sport/rss -> 200 (84889 b)
-4185:11-10 09:27:30.063  2776  3096 I KravosVesti: GET https://www.b92.net/info/rss/automobili.xml -> 200 (16321 b)
-4200:11-10 09:27:30.124  2776  3066 I KravosVesti: GET https://www.eurohoops.net/en/feed/ -> 200 (82223 b)
-4215:11-10 09:27:30.139  2776  3072 I KravosVesti: GET https://www.sportske.net/rss -> 200 (31206 b)
-4266:11-10 09:27:30.241  2776  3091 I KravosVesti: GET https://www.motorsport.com/rss/f1/news/ -> 200 (70598 b)
-4268:11-10 09:27:30.259  2776  3081 I KravosVesti: GET https://www.rts.rs/page/sport/ci/rss.html -> 200 (159303 b)
-4309:11-10 09:27:30.313  2776  3065 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/europe/rss.xml -> 200 (17338 b)
-4413:11-10 09:27:30.487  2776  3050 I KravosVesti: GET https://www.theguardian.com/world/animals/rss -> 200 (68334 b)
-4612:11-10 09:27:31.197  2776  3049 I KravosVesti: GET https://meridiansport.rs/feed/ -> 200 (11584 b)
-7185:11-10 09:27:36.644  2776  3060 I KravosVesti: GET https://www.danas.rs/feed/ -> 200 (111598 b)
-8370:11-10 09:27:38.581  1676  1676 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.vesti], userId:[0], reason:[package is added.].
-8555:11-10 09:27:38.805  1676  1676 I AiAiEcho: AppFetcherImpl onPackageChanged net.kravos.vesti.
-8556:11-10 09:27:38.806  1676  2939 I AiAiEcho: AppIndexer Package:[net.kravos.vesti] UserProfile:[0] Enabled:[true].
-8557:11-10 09:27:38.806  1676  2939 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.vesti], userId:[0], reason:[package is updated.].
-8999:11-10 09:27:39.262  2776  3088 I KravosVesti: GET https://www.danas.rs/tag/beograd/feed/ -> 200 (116718 b)
-15202:11-10 09:27:45.669  1490  3334 I BlockstoreStorage: Clearing Blockstore Data for package net.kravos.vesti [CONTEXT service_id=258 ]
-15205:11-10 09:27:45.694  1409  4294 I FontLog : Package net.kravos.vesti has no metadata [CONTEXT service_id=132 ]
-19816:11-10 09:28:03.835   523  2034 I ActivityManager: Force stopping net.kravos.vesti appid=10192 user=0: from pid 5025
-19819:11-10 09:28:03.843   523  2034 I ActivityManager: Killing 2776:net.kravos.vesti/u0a192 (adj 0): stop net.kravos.vesti due to from pid 5025
-19820:11-10 09:28:03.857   523  2034 W ActivityTaskManager: Force removing ActivityRecord{6f4e442 u0 net.kravos.vesti/.ui.MainActivity t8 f}}: app died, no saved state
-19824:11-10 09:28:03.864   842   874 V WindowManagerShell: Transition requested: android.os.BinderProxy@46b2ae5 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=net.kravos.vesti/.ui.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} numActivities=0 lastActiveTime=45951 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@ad139ba} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
-19826:11-10 09:28:03.870   523   920 I ImeTracker: net.kravos.vesti:af18aeed: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_REMOVE_CLIENT
-19828:11-10 09:28:03.874   523   920 I ImeTracker: net.kravos.vesti:af18aeed: onCancelled at PHASE_SERVER_SHOULD_HIDE
-19829:11-10 09:28:03.892   523  1995 I WindowManager: WIN DEATH: Window{a405c7a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity}
-19830:11-10 09:28:03.894   523  1995 W InputManager-JNI: Input channel object 'a405c7a net.kravos.vesti/net.kravos.vesti.ui.MainActivity (client)' was disposed without first being removed with the input manager!
-19832:11-10 09:28:03.924   523   546 W WindowManager: Failed to deliver inset control state change to w=Window{a405c7a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity EXITING}
-19886:11-10 09:28:04.007   523  2740 V ActivityManager: Got obituary of 2776:net.kravos.vesti
-19887:11-10 09:28:04.007   523  2034 V SplashScreenExceptionList: SplashScreen checking exception for package net.kravos.vesti (target sdk:35) -> false
-19889:11-10 09:28:04.008   523  2034 I ActivityTaskManager: Add Task{dd7c53 #8 type=standard A=10192:net.kravos.vesti} to hidden list because adding Task{bd78d0e #9 type=standard A=10192:net.kravos.vesti}
-19890:11-10 09:28:04.009   523  2034 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=net.kravos.vesti/.ui.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
-19896:11-10 09:28:04.025   523  2740 D CoreBackPreview: Window{a84ae41 u0 Splash Screen net.kravos.vesti}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@638dd40, mPriority=0, mIsAnimationCallback=false}
-19912:11-10 09:28:04.265   523   553 I ActivityManager: Start proc 5046:net.kravos.vesti/u0a192 for next-top-activity {net.kravos.vesti/net.kravos.vesti.ui.MainActivity}
-19945:11-10 09:28:04.631  5046  5046 D nativeloader: Configuring clns-6 for other apk /data/app/~~OlqxF-rAd-NSSXDbK-Lc6A==/net.kravos.vesti-Ohwtmbrdqrohj9SsZq-3qg==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~OlqxF-rAd-NSSXDbK-Lc6A==/net.kravos.vesti-Ohwtmbrdqrohj9SsZq-3qg==/lib/x86_64:/data/app/~~OlqxF-rAd-NSSXDbK-Lc6A==/net.kravos.vesti-Ohwtmbrdqrohj9SsZq-3qg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/net.kravos.vesti
-19951:11-10 09:28:04.690  5046  5046 V GraphicsEnvironment: ANGLE GameManagerService for net.kravos.vesti: false
-19952:11-10 09:28:04.690  5046  5046 V GraphicsEnvironment: net.kravos.vesti is not listed in per-application setting
-19990:11-10 09:28:04.914   523   545 W WindowManager: Failed to deliver inset control state change to w=Window{a405c7a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity EXITING}
-20031:11-10 09:28:04.919   523   542 V WindowManager: Sent Transition #7 createdAt=11-10 09:28:03.857 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=net.kravos.vesti/.ui.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} numActivities=0 lastActiveTime=45951 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{8e13805 Task{dd7c53 #8 type=standard A=10192:net.kravos.vesti}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
-20036:11-10 09:28:04.931   523   542 V WindowManager:     info={id=7 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{55484c9 Task{bd78d0e #9 type=standard A=10192:net.kravos.vesti}}} m=OPEN f=MOVE_TO_TOP leash=Surface(name=Task=9)/@0x60b0582 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{8e13805 Task{dd7c53 #8 type=standard A=10192:net.kravos.vesti}}} m=CLOSE f=NONE leash=Surface(name=Task=8)/@0x243e049 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-20041:11-10 09:28:04.959   523   546 W WindowManager: Failed to deliver inset control state change to w=Window{a405c7a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity EXITING}
-20115:11-10 09:28:05.232   523   539 W WindowManager: Exception thrown during dispatchAppVisibility Window{a405c7a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity EXITING}
-20178:11-10 09:28:05.269   523  2721 D CoreBackPreview: Window{af65883 u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@601b63a, mPriority=0, mIsAnimationCallback=false}
-20306:11-10 09:28:06.406   523  2744 W InputManager-JNI: Input channel object 'a84ae41 Splash Screen net.kravos.vesti (client)' was disposed without first being removed with the input manager!
-20307:11-10 09:28:06.408   523  2704 D CoreBackPreview: Window{a84ae41 u0 Splash Screen net.kravos.vesti EXITING}: Setting back callback null
-20308:11-10 09:28:06.409   523   542 I ActivityTaskManager: Displayed net.kravos.vesti/.ui.MainActivity for user 0: +2s385ms
-20334:11-10 09:28:06.599   523  2744 I ImeTracker: net.kravos.vesti:e519f96f: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-20335:11-10 09:28:06.599   523  2744 I ImeTracker: net.kravos.vesti:e519f96f: onCancelled at PHASE_SERVER_SHOULD_HIDE
-20339:11-10 09:28:06.609  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-20926:11-10 09:28:10.313  1060  1060 D CarrierSvcBindHelper: onHandleForceStop: [net.kravos.vesti]
-20994:11-10 09:28:10.416  5046  5109 I KravosVesti: GET https://radar.nova.rs/feed/ -> 200 (99392 b)
-21006:11-10 09:28:10.443  5046  5114 I KravosVesti: GET https://vreme.com/feed/ -> 200 (99058 b)
-21014:11-10 09:28:10.461  5046  5119 I KravosVesti: GET https://www.cins.rs/feed/ -> 200 (14590 b)
-21015:11-10 09:28:10.462  5046  5097 I KravosVesti: GET https://www.krik.rs/feed/ -> 200 (13721 b)
-21047:11-10 09:28:10.583  5046  5103 I KravosVesti: GET https://balkaninsight.com/feed/ -> 200 (156272 b)
-21096:11-10 09:28:10.756  5046  5141 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:reuters.com&hl=en-US&gl=US&ceid=US:en -> 200 (130599 b)
-21268:11-10 09:28:10.842  5046  5103 I KravosVesti: GET https://www.theguardian.com/world/rss -> 200 (153094 b)
-21282:11-10 09:28:10.900  5046  5130 I KravosVesti: GET https://insajder.net/feed -> 200 (111604 b)
-21284:11-10 09:28:10.910  5046  5102 I KravosVesti: GET https://nova.rs/feed/ -> 200 (67869 b)
-21286:11-10 09:28:10.917  5046  5136 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:apnews.com&hl=en-US&gl=US&ceid=US:en -> 200 (119067 b)
-21287:11-10 09:28:10.919  5046  5103 I KravosVesti: GET https://www.aljazeera.com/xml/rss/all.xml -> 200 (17093 b)
-21310:11-10 09:28:10.994  5046  5090 I KravosVesti: GET https://www.istinomer.rs/feed/ -> 200 (12292 b)
-21319:11-10 09:28:10.999  5046  5090 I KravosVesti: GET https://www.bleepingcomputer.com/feed/ -> 200 (13184 b)
-21320:11-10 09:28:11.004  5046  5141 I KravosVesti: GET https://www.politico.eu/feed/ -> 200 (203520 b)
-21339:11-10 09:28:11.057  5046  5141 I KravosVesti: GET https://krebsonsecurity.com/feed/ -> 200 (141263 b)
-21341:11-10 09:28:11.066  5046  5129 I KravosVesti: GET https://www.danas.rs/feed/ -> 200 (111598 b)
-21476:11-10 09:28:11.129  5046  5119 I KravosVesti: GET https://www.euronews.com/rss?level=theme&name=news -> 200 (32935 b)
-21483:11-10 09:28:11.136  5046  5141 I KravosVesti: GET https://arstechnica.com/security/feed/ -> 200 (73384 b)
-21493:11-10 09:28:11.144  5046  5129 I KravosVesti: GET https://www.blic.rs/rss/Vesti/Beograd -> 200 (94414 b)
-21528:11-10 09:28:11.295  5046  5114 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/rss.xml -> 200 (20948 b)
-21549:11-10 09:28:11.346  5046  5103 I KravosVesti: GET https://therecord.media/feed -> 200 (4915 b)
-21551:11-10 09:28:11.349  5046  5267 D ProfileInstaller: Skipping profile installation for net.kravos.vesti
-21576:11-10 09:28:11.436  5046  5127 I KravosVesti: GET https://n1info.rs/feed/ -> 200 (69472 b)
-21580:11-10 09:28:11.508  5046  5108 I KravosVesti: GET https://www.darkreading.com/rss.xml -> 200 (78155 b)
-21584:11-10 09:28:11.525  5046  5127 I KravosVesti: GET https://www.beobuild.rs/feed -> 200 (25761 b)
-21596:11-10 09:28:11.555  5046  5130 I KravosVesti: GET https://www.securityweek.com/feed/ -> 200 (11794 b)
-21597:11-10 09:28:11.558  5046  5114 I KravosVesti: GET https://www.kurir.rs/rss/auto -> 200 (80126 b)
-21603:11-10 09:28:11.622  5046  5140 I KravosVesti: GET https://rss.dw.com/xml/rss-en-world -> 200 (8739 b)
-21604:11-10 09:28:11.627  5046  5127 I KravosVesti: GET https://electrek.co/feed/ -> 200 (276192 b)
-21606:11-10 09:28:11.648  5046  5136 I KravosVesti: GET https://www.danas.rs/tag/beograd/feed/ -> 200 (116718 b)
-21623:11-10 09:28:11.714  5046  5090 I KravosVesti: GET https://feeds.feedburner.com/TheHackersNews -> 200 (59635 b)
-21635:11-10 09:28:11.758  5046  5140 I KravosVesti: GET https://www.autocar.co.uk/rss -> 200 (331790 b)
-21636:11-10 09:28:11.762  5046  5141 I KravosVesti: GET https://insideevs.com/rss/news/all/ -> 200 (13412 b)
-21637:11-10 09:28:11.768  5046  5119 I KravosVesti: GET https://www.theguardian.com/lifeandstyle/pets/rss -> 200 (65760 b)
-21639:11-10 09:28:11.791  5046  5103 I KravosVesti: GET https://n1info.rs/tag/beograd/feed/ -> 200 (29051 b)
-21662:11-10 09:28:11.849  5046  5127 I KravosVesti: GET https://www.motor1.com/rss/news/all/ -> 200 (13609 b)
-21668:11-10 09:28:11.881  5046  5129 I KravosVesti: GET https://www.kurir.rs/rss/vesti/beograd -> 200 (77994 b)
-21698:11-10 09:28:12.019  5046  5109 I KravosVesti: GET https://nova.rs/tag/beograd/feed/ -> 200 (27216 b)
-21736:11-10 09:28:12.076  5046  5114 I KravosVesti: GET https://n1info.rs/tag/ljubimci/feed/ -> 200 (27105 b)
-21783:11-10 09:28:12.171  5046  5130 I KravosVesti: GET https://n1info.rs/magazin/auto/feed/ -> 200 (28697 b)
-21801:11-10 09:28:12.288  5046  5108 I KravosVesti: GET https://www.b92.net/info/rss/automobili.xml -> 200 (16321 b)
-21815:11-10 09:28:12.407  5046  5129 I KravosVesti: GET https://www.zurnal.rs/rss -> 200 (15581 b)
-21816:11-10 09:28:12.415  5046  5119 I KravosVesti: GET https://sportklub.n1info.rs/feed/ -> 200 (68873 b)
-21821:11-10 09:28:12.427  5046  5136 I KravosVesti: GET https://www.theguardian.com/sport/rss -> 200 (84889 b)
-21836:11-10 09:28:12.496  5046  5109 I KravosVesti: GET https://feeds.bbci.co.uk/sport/rss.xml -> 200 (55647 b)
-21838:11-10 09:28:12.520  5046  5103 I KravosVesti: GET https://www.b92.net/rss/sport -> 200 (16213 b)
-21842:11-10 09:28:12.557  5046  5140 I KravosVesti: GET https://www.motorsport.com/rss/f1/news/ -> 200 (70598 b)
-21877:11-10 09:28:12.604  5046  5136 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/europe/rss.xml -> 200 (17338 b)
-21903:11-10 09:28:12.704  5046  5090 I KravosVesti: GET https://www.rts.rs/page/sport/ci/rss.html -> 200 (159303 b)
-21933:11-10 09:28:12.836  5046  5127 I KravosVesti: GET https://meridiansport.rs/feed/ -> 200 (11584 b)
-21949:11-10 09:28:12.905  5046  5114 I KravosVesti: GET https://www.sportske.net/rss -> 200 (31206 b)
-21996:11-10 09:28:13.037  5046  5130 I KravosVesti: GET https://www.eurohoops.net/en/feed/ -> 200 (82223 b)
-22035:11-10 09:28:13.138  5046  5114 I KravosVesti: GET https://www.theguardian.com/world/animals/rss -> 200 (68334 b)
-23985:11-10 09:28:17.455  5426  5426 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-23991:11-10 09:28:17.478  5426  5426 I AndroidRuntime: Using default boot image
-23992:11-10 09:28:17.478  5426  5426 I AndroidRuntime: Leaving lock profiling enabled
-24138:11-10 09:28:17.802  5426  5426 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-24944:11-10 09:28:19.185  5426  5426 D AndroidRuntime: Shutting down VM
-29478:11-10 09:28:29.383  5641  5641 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-29479:11-10 09:28:29.392  5641  5641 I AndroidRuntime: Using default boot image
-29480:11-10 09:28:29.392  5641  5641 I AndroidRuntime: Leaving lock profiling enabled
-29494:11-10 09:28:29.572  5641  5641 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-29562:11-10 09:28:30.614  5641  5641 D AndroidRuntime: Shutting down VM
-29665:11-10 09:28:32.235  5046  5114 I KravosVesti: GET https://nova.rs/vesti/biznis/strani-analiticari-srpska-privreda-prividno-stabilna-energetika-najveca-slabost/ -> 200 (469814 b)
-37369:11-10 09:28:51.268  6054  6054 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-37370:11-10 09:28:51.273  6054  6054 I AndroidRuntime: Using default boot image
-37371:11-10 09:28:51.273  6054  6054 I AndroidRuntime: Leaving lock profiling enabled
-37386:11-10 09:28:51.439  6054  6054 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-38164:11-10 09:28:52.491  6054  6054 D AndroidRuntime: Shutting down VM
-43086:11-10 09:29:02.761  6292  6292 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-43087:11-10 09:29:02.765  6292  6292 I AndroidRuntime: Using default boot image
-43088:11-10 09:29:02.765  6292  6292 I AndroidRuntime: Leaving lock profiling enabled
-43101:11-10 09:29:02.867  6292  6292 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-43163:11-10 09:29:03.908  6292  6292 D AndroidRuntime: Shutting down VM
-43326:11-10 09:29:11.023  6340  6340 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-43327:11-10 09:29:11.028  6340  6340 I AndroidRuntime: Using default boot image
-43328:11-10 09:29:11.028  6340  6340 I AndroidRuntime: Leaving lock profiling enabled
-43341:11-10 09:29:11.117  6340  6340 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-43399:11-10 09:29:12.157  6340  6340 D AndroidRuntime: Shutting down VM
-43502:11-10 09:29:19.268  6377  6377 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-43503:11-10 09:29:19.272  6377  6377 I AndroidRuntime: Using default boot image
-43504:11-10 09:29:19.272  6377  6377 I AndroidRuntime: Leaving lock profiling enabled
-43517:11-10 09:29:19.352  6377  6377 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-43574:11-10 09:29:20.400  6377  6377 D AndroidRuntime: Shutting down VM
-43659:11-10 09:29:21.837  5046  5120 I KravosVesti: GET https://n1info.rs/biznis/kineske-investicije-posle-izbora-u-srbiji/ -> 200 (433983 b)
-43858:11-10 09:29:37.582  6418  6418 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-43859:11-10 09:29:37.586  6418  6418 I AndroidRuntime: Using default boot image
-43860:11-10 09:29:37.586  6418  6418 I AndroidRuntime: Leaving lock profiling enabled
-43873:11-10 09:29:37.669  6418  6418 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-44239:11-10 09:29:38.735  6418  6418 D AndroidRuntime: Shutting down VM
-45078:11-10 09:29:44.905  6540  6540 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-45079:11-10 09:29:44.911  6540  6540 I AndroidRuntime: Using default boot image
-45080:11-10 09:29:44.911  6540  6540 I AndroidRuntime: Leaving lock profiling enabled
-45093:11-10 09:29:44.996  6540  6540 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-45205:11-10 09:29:46.079  6540  6540 D AndroidRuntime: Shutting down VM
-45230:11-10 09:29:47.130   523  1000 I ImeTracker: net.kravos.vesti:b04638ab: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-45231:11-10 09:29:47.131   523  1000 I ImeTracker: net.kravos.vesti:b04638ab: onCancelled at PHASE_SERVER_SHOULD_HIDE
-45234:11-10 09:29:47.133  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-45334:11-10 09:29:52.197  6573  6573 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-45335:11-10 09:29:52.201  6573  6573 I AndroidRuntime: Using default boot image
-45336:11-10 09:29:52.201  6573  6573 I AndroidRuntime: Leaving lock profiling enabled
-45353:11-10 09:29:52.304  6573  6573 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-45405:11-10 09:29:53.377  6573  6573 D AndroidRuntime: Shutting down VM
-45488:11-10 09:29:54.338   523  1995 I ImeTracker: net.kravos.vesti:b0effb43: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-45489:11-10 09:29:54.338   523  1995 I ImeTracker: net.kravos.vesti:b0effb43: onCancelled at PHASE_SERVER_SHOULD_HIDE
-45492:11-10 09:29:54.340  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-45538:11-10 09:30:00.525  6610  6610 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-45539:11-10 09:30:00.530  6610  6610 I AndroidRuntime: Using default boot image
-45540:11-10 09:30:00.530  6610  6610 I AndroidRuntime: Leaving lock profiling enabled
-45553:11-10 09:30:00.621  6610  6610 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-45613:11-10 09:30:01.657  6610  6610 D AndroidRuntime: Shutting down VM
-45681:11-10 09:30:02.608   523  1734 I ImeTracker: net.kravos.vesti:27f5ab92: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-45682:11-10 09:30:02.608   523  1734 I ImeTracker: net.kravos.vesti:27f5ab92: onCancelled at PHASE_SERVER_SHOULD_HIDE
-45685:11-10 09:30:02.611  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-45690:11-10 09:30:07.625  6634  6634 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-45691:11-10 09:30:07.629  6634  6634 I AndroidRuntime: Using default boot image
-45692:11-10 09:30:07.629  6634  6634 I AndroidRuntime: Leaving lock profiling enabled
-45705:11-10 09:30:07.715  6634  6634 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-45761:11-10 09:30:08.771  6634  6634 D AndroidRuntime: Shutting down VM
-45838:11-10 09:30:09.721   523  1000 I ImeTracker: net.kravos.vesti:6bd05109: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-45839:11-10 09:30:09.721   523  1000 I ImeTracker: net.kravos.vesti:6bd05109: onCancelled at PHASE_SERVER_SHOULD_HIDE
-45842:11-10 09:30:09.724  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-45849:11-10 09:30:14.745  6656  6656 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-45850:11-10 09:30:14.750  6656  6656 I AndroidRuntime: Using default boot image
-45851:11-10 09:30:14.750  6656  6656 I AndroidRuntime: Leaving lock profiling enabled
-45866:11-10 09:30:14.846  6656  6656 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-45920:11-10 09:30:15.872  6656  6656 D AndroidRuntime: Shutting down VM
-46040:11-10 09:30:25.559  6710  6710 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-46041:11-10 09:30:25.563  6710  6710 I AndroidRuntime: Using default boot image
-46042:11-10 09:30:25.563  6710  6710 I AndroidRuntime: Leaving lock profiling enabled
-46055:11-10 09:30:25.649  6710  6710 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-46101:11-10 09:30:26.679  6710  6710 D AndroidRuntime: Shutting down VM
-46177:11-10 09:30:32.617  6727  6727 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-46178:11-10 09:30:32.621  6727  6727 I AndroidRuntime: Using default boot image
-46179:11-10 09:30:32.621  6727  6727 I AndroidRuntime: Leaving lock profiling enabled
-46192:11-10 09:30:32.707  6727  6727 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-46247:11-10 09:30:33.740  6727  6727 D AndroidRuntime: Shutting down VM
-46426:11-10 09:30:40.841  6764  6764 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-46427:11-10 09:30:40.845  6764  6764 I AndroidRuntime: Using default boot image
-46428:11-10 09:30:40.845  6764  6764 I AndroidRuntime: Leaving lock profiling enabled
-46442:11-10 09:30:40.931  6764  6764 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-46487:11-10 09:30:41.956  6764  6764 D AndroidRuntime: Shutting down VM
-46614:11-10 09:30:43.149   523   542 V WindowManager:     info={id=8 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{119128b Task{535d0d9 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xc498703 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{55484c9 Task{bd78d0e #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0x60b0582 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{be16988 token=android.os.Binder@b8e212b})/@0xfa3bcc5 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-46756:11-10 09:30:51.506  6821  6821 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-46757:11-10 09:30:51.510  6821  6821 I AndroidRuntime: Using default boot image
-46758:11-10 09:30:51.510  6821  6821 I AndroidRuntime: Leaving lock profiling enabled
-46771:11-10 09:30:51.601  6821  6821 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-46825:11-10 09:30:52.644  6821  6821 D AndroidRuntime: Shutting down VM
-46988:11-10 09:31:03.202  6864  6864 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-46989:11-10 09:31:03.206  6864  6864 I AndroidRuntime: Using default boot image
-46990:11-10 09:31:03.206  6864  6864 I AndroidRuntime: Leaving lock profiling enabled
-47003:11-10 09:31:03.294  6864  6864 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-47065:11-10 09:31:04.351  6864  6864 D AndroidRuntime: Shutting down VM
-47191:11-10 09:31:06.006  5046  5114 I KravosVesti: GET https://www.euronews.com/2026/11/10/california-voters-reject-one-off-billionaire-wealth-tax-us-media-predicts -> 200 (289546 b)
-47230:11-10 09:31:26.140  6921  6921 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-47231:11-10 09:31:26.144  6921  6921 I AndroidRuntime: Using default boot image
-47232:11-10 09:31:26.144  6921  6921 I AndroidRuntime: Leaving lock profiling enabled
-47245:11-10 09:31:26.226  6921  6921 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-47323:11-10 09:31:27.265  6921  6921 D AndroidRuntime: Shutting down VM
-47453:11-10 09:31:34.367  6956  6956 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-47454:11-10 09:31:34.371  6956  6956 I AndroidRuntime: Using default boot image
-47455:11-10 09:31:34.372  6956  6956 I AndroidRuntime: Leaving lock profiling enabled
-47468:11-10 09:31:34.462  6956  6956 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-47537:11-10 09:31:35.501  6956  6956 D AndroidRuntime: Shutting down VM
-47662:11-10 09:31:55.231  7011  7011 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-47663:11-10 09:31:55.235  7011  7011 I AndroidRuntime: Using default boot image
-47664:11-10 09:31:55.235  7011  7011 I AndroidRuntime: Leaving lock profiling enabled
-47677:11-10 09:31:55.321  7011  7011 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-47777:11-10 09:31:56.363  7011  7011 D AndroidRuntime: Shutting down VM
-47889:11-10 09:32:03.439  7034  7034 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-47890:11-10 09:32:03.444  7034  7034 I AndroidRuntime: Using default boot image
-47891:11-10 09:32:03.444  7034  7034 I AndroidRuntime: Leaving lock profiling enabled
-47904:11-10 09:32:03.531  7034  7034 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-47963:11-10 09:32:04.570  7034  7034 D AndroidRuntime: Shutting down VM
-49203:11-10 09:32:14.281  7116  7116 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-49204:11-10 09:32:14.284  7116  7116 I AndroidRuntime: Using default boot image
-49205:11-10 09:32:14.284  7116  7116 I AndroidRuntime: Leaving lock profiling enabled
-49219:11-10 09:32:14.369  7116  7116 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-49275:11-10 09:32:15.400  7116  7116 D AndroidRuntime: Shutting down VM
-49387:11-10 09:32:16.403   523   542 V WindowManager:     info={id=9 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{119128b Task{535d0d9 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xc498703 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{55484c9 Task{bd78d0e #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0x60b0582 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{be16988 token=android.os.Binder@b8e212b})/@0xfa3bcc5 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-49524:11-10 09:32:21.371  7145  7145 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-49525:11-10 09:32:21.374  7145  7145 I AndroidRuntime: Using default boot image
-49526:11-10 09:32:21.374  7145  7145 I AndroidRuntime: Leaving lock profiling enabled
-49539:11-10 09:32:21.461  7145  7145 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-49596:11-10 09:32:22.500  7145  7145 D AndroidRuntime: Shutting down VM
-49667:11-10 09:32:23.454   523  1385 I ImeTracker: net.kravos.vesti:907d6a8d: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-49668:11-10 09:32:23.455   523  1385 I ImeTracker: net.kravos.vesti:907d6a8d: onCancelled at PHASE_SERVER_SHOULD_HIDE
-49671:11-10 09:32:23.458  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-49692:11-10 09:32:28.616  7173  7173 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-49693:11-10 09:32:28.620  7173  7173 I AndroidRuntime: Using default boot image
-49694:11-10 09:32:28.620  7173  7173 I AndroidRuntime: Leaving lock profiling enabled
-49707:11-10 09:32:28.707  7173  7173 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-49753:11-10 09:32:29.742  7173  7173 D AndroidRuntime: Shutting down VM
-49836:11-10 09:32:30.704   523  1385 I ImeTracker: net.kravos.vesti:48f55f99: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-49837:11-10 09:32:30.704   523  1385 I ImeTracker: net.kravos.vesti:48f55f99: onCancelled at PHASE_SERVER_SHOULD_HIDE
-49840:11-10 09:32:30.707  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-49852:11-10 09:32:36.869  7200  7200 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-49853:11-10 09:32:36.873  7200  7200 I AndroidRuntime: Using default boot image
-49854:11-10 09:32:36.873  7200  7200 I AndroidRuntime: Leaving lock profiling enabled
-49867:11-10 09:32:36.955  7200  7200 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-49921:11-10 09:32:37.982  7200  7200 D AndroidRuntime: Shutting down VM
-50015:11-10 09:32:55.151  7239  7239 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-50016:11-10 09:32:55.155  7239  7239 I AndroidRuntime: Using default boot image
-50017:11-10 09:32:55.155  7239  7239 I AndroidRuntime: Leaving lock profiling enabled
-50030:11-10 09:32:55.243  7239  7239 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-50085:11-10 09:32:56.276  7239  7239 D AndroidRuntime: Shutting down VM
-50187:11-10 09:32:57.254   523   542 V WindowManager:     info={id=10 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{119128b Task{535d0d9 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xc498703 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{55484c9 Task{bd78d0e #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0x60b0582 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{be16988 token=android.os.Binder@b8e212b})/@0xfa3bcc5 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-50248:11-10 09:33:03.390  7274  7274 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-50249:11-10 09:33:03.394  7274  7274 I AndroidRuntime: Using default boot image
-50250:11-10 09:33:03.395  7274  7274 I AndroidRuntime: Leaving lock profiling enabled
-50263:11-10 09:33:03.485  7274  7274 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-50313:11-10 09:33:04.521  7274  7274 D AndroidRuntime: Shutting down VM
-50418:11-10 09:33:12.637  7309  7309 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-50419:11-10 09:33:12.641  7309  7309 I AndroidRuntime: Using default boot image
-50420:11-10 09:33:12.641  7309  7309 I AndroidRuntime: Leaving lock profiling enabled
-50433:11-10 09:33:12.730  7309  7309 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-50492:11-10 09:33:13.764  7309  7309 D AndroidRuntime: Shutting down VM
-50564:11-10 09:33:14.706   523   603 I ImeTracker: net.kravos.vesti:9de80d82: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-50565:11-10 09:33:14.706   523   603 I ImeTracker: net.kravos.vesti:9de80d82: onCancelled at PHASE_SERVER_SHOULD_HIDE
-50568:11-10 09:33:14.708  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-50587:11-10 09:33:17.900  5046  7335 I KravosVesti: GET https://radar.nova.rs/feed/ -> 200 (99392 b)
-50615:11-10 09:33:18.039  5046  7334 I KravosVesti: GET https://insajder.net/feed -> 200 (111604 b)
-50616:11-10 09:33:18.043  5046  7333 I KravosVesti: GET https://balkaninsight.com/feed/ -> 200 (156272 b)
-50631:11-10 09:33:18.199  5046  7303 I KravosVesti: GET https://vreme.com/feed/ -> 200 (99058 b)
-50632:11-10 09:33:18.314  5046  5114 I KravosVesti: GET https://n1info.rs/feed/ -> 200 (69226 b)
-50641:11-10 09:33:18.489  5046  7333 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/rss.xml -> 200 (20948 b)
-50647:11-10 09:33:18.586  5046  7337 I KravosVesti: GET https://www.cins.rs/feed/ -> 200 (14590 b)
-50648:11-10 09:33:18.590  5046  7332 I KravosVesti: GET https://www.krik.rs/feed/ -> 200 (13721 b)
-50654:11-10 09:33:18.598  5046  7337 I KravosVesti: GET https://www.politico.eu/feed/ -> 200 (203520 b)
-50661:11-10 09:33:18.622  5046  7354 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:reuters.com&hl=en-US&gl=US&ceid=US:en -> 200 (130494 b)
-50668:11-10 09:33:18.640  5046  7335 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:apnews.com&hl=en-US&gl=US&ceid=US:en -> 200 (119556 b)
-50672:11-10 09:33:18.695  5046  5114 I KravosVesti: GET https://www.euronews.com/rss?level=theme&name=news -> 200 (32935 b)
-50680:11-10 09:33:18.706  5046  7303 I KravosVesti: GET https://www.bleepingcomputer.com/feed/ -> 200 (13184 b)
-50684:11-10 09:33:18.718  5046  5114 I KravosVesti: GET https://www.securityweek.com/feed/ -> 200 (11794 b)
-50685:11-10 09:33:18.722  5046  7340 I KravosVesti: GET https://www.istinomer.rs/feed/ -> 200 (12292 b)
-50690:11-10 09:33:18.734  5046  7304 I KravosVesti: GET https://nova.rs/feed/ -> 200 (68080 b)
-50695:11-10 09:33:18.743  5046  7334 I KravosVesti: GET https://www.theguardian.com/world/rss -> 200 (152510 b)
-50699:11-10 09:33:18.748  5046  7303 I KravosVesti: GET https://arstechnica.com/security/feed/ -> 200 (73384 b)
-50700:11-10 09:33:18.766  5046  5120 I KravosVesti: GET https://www.danas.rs/feed/ -> 200 (111602 b)
-50716:11-10 09:33:18.813  5046  7333 I KravosVesti: GET https://www.aljazeera.com/xml/rss/all.xml -> 200 (17093 b)
-50723:11-10 09:33:18.838  5046  7332 I KravosVesti: GET https://therecord.media/feed -> 200 (4915 b)
-50734:11-10 09:33:18.888  5046  7337 I KravosVesti: GET https://krebsonsecurity.com/feed/ -> 200 (141263 b)
-50735:11-10 09:33:18.937  5046  7340 I KravosVesti: GET https://feeds.feedburner.com/TheHackersNews -> 200 (59635 b)
-50736:11-10 09:33:18.942  5046  7337 I KravosVesti: GET https://www.beobuild.rs/feed -> 200 (25761 b)
-50751:11-10 09:33:19.048  5046  7354 I KravosVesti: GET https://rss.dw.com/xml/rss-en-world -> 200 (8739 b)
-50755:11-10 09:33:19.243  5046  7334 I KravosVesti: GET https://nova.rs/tag/beograd/feed/ -> 200 (27216 b)
-50756:11-10 09:33:19.284  5046  5114 I KravosVesti: GET https://www.darkreading.com/rss.xml -> 200 (78155 b)
-50765:11-10 09:33:19.376  5046  7334 I KravosVesti: GET https://electrek.co/feed/ -> 200 (276192 b)
-50777:11-10 09:33:19.514  5046  7335 I KravosVesti: GET https://insideevs.com/rss/news/all/ -> 200 (13412 b)
-50781:11-10 09:33:19.570  5046  7303 I KravosVesti: GET https://n1info.rs/tag/beograd/feed/ -> 200 (28875 b)
-50785:11-10 09:33:19.595  5046  5120 I KravosVesti: GET https://www.kurir.rs/rss/vesti/beograd -> 200 (77994 b)
-50791:11-10 09:33:19.613  5046  7333 I KravosVesti: GET https://www.danas.rs/tag/beograd/feed/ -> 200 (116718 b)
-50795:11-10 09:33:19.622  5046  7304 I KravosVesti: GET https://www.blic.rs/rss/Vesti/Beograd -> 200 (94414 b)
-50806:11-10 09:33:19.717  5046  7335 I KravosVesti: GET https://www.autocar.co.uk/rss -> 200 (331790 b)
-50810:11-10 09:33:19.725  5046  7354 I KravosVesti: GET https://www.motor1.com/rss/news/all/ -> 200 (13609 b)
-50822:11-10 09:33:19.862  5046  7340 I KravosVesti: GET https://www.kurir.rs/rss/auto -> 200 (80126 b)
-50824:11-10 09:33:19.871  5046  7333 I KravosVesti: GET https://www.b92.net/rss/sport -> 200 (16213 b)
-50825:11-10 09:33:19.871  5046  7353 I KravosVesti: GET https://n1info.rs/magazin/auto/feed/ -> 200 (28697 b)
-50826:11-10 09:33:19.872  5046  7303 I KravosVesti: GET https://n1info.rs/tag/ljubimci/feed/ -> 200 (27105 b)
-50854:11-10 09:33:19.926   523   603 I ImeTracker: net.kravos.vesti:c0907ba: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-50855:11-10 09:33:19.926   523   603 I ImeTracker: net.kravos.vesti:c0907ba: onCancelled at PHASE_SERVER_SHOULD_HIDE
-50858:11-10 09:33:19.935  1529  1529 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
-50872:11-10 09:33:19.988  5046  5114 I KravosVesti: GET https://www.theguardian.com/lifeandstyle/pets/rss -> 200 (65760 b)
-50881:11-10 09:33:20.145  5046  7334 I KravosVesti: GET https://feeds.bbci.co.uk/sport/rss.xml -> 200 (55647 b)
-50885:11-10 09:33:20.189  5046  7332 I KravosVesti: GET https://www.b92.net/info/rss/automobili.xml -> 200 (16321 b)
-50907:11-10 09:33:20.278  5046  7353 I KravosVesti: GET https://www.theguardian.com/sport/rss -> 200 (84889 b)
-50908:11-10 09:33:20.299  5046  5114 I KravosVesti: GET https://www.eurohoops.net/en/feed/ -> 200 (82223 b)
-50909:11-10 09:33:20.332  5046  7354 I KravosVesti: GET https://www.motorsport.com/rss/f1/news/ -> 200 (70605 b)
-50910:11-10 09:33:20.413  5046  7334 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/europe/rss.xml -> 200 (18072 b)
-50918:11-10 09:33:20.624  5046  7340 I KravosVesti: GET https://www.zurnal.rs/rss -> 200 (15544 b)
-50919:11-10 09:33:20.633  5046  7333 I KravosVesti: GET https://meridiansport.rs/feed/ -> 200 (11584 b)
-50920:11-10 09:33:20.652  5046  7332 I KravosVesti: GET https://www.theguardian.com/world/animals/rss -> 200 (68334 b)
-50921:11-10 09:33:20.672  5046  7303 I KravosVesti: GET https://www.sportske.net/rss -> 200 (31055 b)
-50922:11-10 09:33:20.727  5046  7304 I KravosVesti: GET https://sportklub.n1info.rs/feed/ -> 200 (69724 b)
-50923:11-10 09:33:20.945  7461  7461 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-50924:11-10 09:33:20.949  7461  7461 I AndroidRuntime: Using default boot image
-50925:11-10 09:33:20.949  7461  7461 I AndroidRuntime: Leaving lock profiling enabled
-50938:11-10 09:33:21.034  7461  7461 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-50980:11-10 09:33:21.139  5046  5120 I KravosVesti: GET https://www.rts.rs/page/sport/ci/rss.html -> 200 (158928 b)
-51022:11-10 09:33:22.061  7461  7461 D AndroidRuntime: Shutting down VM
-51077:11-10 09:33:39.224  7499  7499 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-51078:11-10 09:33:39.228  7499  7499 I AndroidRuntime: Using default boot image
-51079:11-10 09:33:39.228  7499  7499 I AndroidRuntime: Leaving lock profiling enabled
-51092:11-10 09:33:39.317  7499  7499 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-51143:11-10 09:33:40.350  7499  7499 D AndroidRuntime: Shutting down VM
-51697:11-10 09:33:48.485  7560  7560 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-51698:11-10 09:33:48.489  7560  7560 I AndroidRuntime: Using default boot image
-51699:11-10 09:33:48.490  7560  7560 I AndroidRuntime: Leaving lock profiling enabled
-51712:11-10 09:33:48.579  7560  7560 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-51782:11-10 09:33:49.628  7560  7560 D AndroidRuntime: Shutting down VM
-51847:11-10 09:33:56.776  7585  7585 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-51848:11-10 09:33:56.780  7585  7585 I AndroidRuntime: Using default boot image
-51849:11-10 09:33:56.780  7585  7585 I AndroidRuntime: Leaving lock profiling enabled
-51862:11-10 09:33:56.867  7585  7585 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-51909:11-10 09:33:57.897  7585  7585 D AndroidRuntime: Shutting down VM
-52008:11-10 09:34:11.011  7615  7615 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-52009:11-10 09:34:11.014  7615  7615 I AndroidRuntime: Using default boot image
-52010:11-10 09:34:11.014  7615  7615 I AndroidRuntime: Leaving lock profiling enabled
-52023:11-10 09:34:11.095  7615  7615 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-52102:11-10 09:34:12.135  7615  7615 D AndroidRuntime: Shutting down VM
-52230:11-10 09:34:13.090   523   542 V WindowManager:     info={id=11 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{119128b Task{535d0d9 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xc498703 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{55484c9 Task{bd78d0e #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0x60b0582 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{be16988 token=android.os.Binder@b8e212b})/@0xfa3bcc5 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-52280:11-10 09:34:18.110  7643  7643 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-52281:11-10 09:34:18.114  7643  7643 I AndroidRuntime: Using default boot image
-52282:11-10 09:34:18.114  7643  7643 I AndroidRuntime: Leaving lock profiling enabled
-52295:11-10 09:34:18.199  7643  7643 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-52354:11-10 09:34:19.230  7643  7643 D AndroidRuntime: Shutting down VM
-52452:11-10 09:34:20.225   523   542 V WindowManager:     info={id=12 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{119128b Task{535d0d9 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xc498703 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{55484c9 Task{bd78d0e #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0x60b0582 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{be16988 token=android.os.Binder@b8e212b})/@0xfa3bcc5 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-52491:11-10 09:34:26.364  7676  7676 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-52492:11-10 09:34:26.368  7676  7676 I AndroidRuntime: Using default boot image
-52493:11-10 09:34:26.369  7676  7676 I AndroidRuntime: Leaving lock profiling enabled
-52506:11-10 09:34:26.454  7676  7676 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-52552:11-10 09:34:27.490  7676  7676 D AndroidRuntime: Shutting down VM
-52671:11-10 09:34:43.715  7735  7735 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-52672:11-10 09:34:43.718  7735  7735 I AndroidRuntime: Using default boot image
-52673:11-10 09:34:43.718  7735  7735 I AndroidRuntime: Leaving lock profiling enabled
-52686:11-10 09:34:43.797  7735  7735 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-52733:11-10 09:34:44.830  7735  7735 D AndroidRuntime: Shutting down VM
-52887:11-10 09:34:55.565  7778  7778 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-52888:11-10 09:34:55.569  7778  7778 I AndroidRuntime: Using default boot image
-52889:11-10 09:34:55.569  7778  7778 I AndroidRuntime: Leaving lock profiling enabled
-52902:11-10 09:34:55.651  7778  7778 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-52953:11-10 09:34:56.691  7778  7778 D AndroidRuntime: Shutting down VM
-53049:11-10 09:35:07.249  7809  7809 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-53050:11-10 09:35:07.252  7809  7809 I AndroidRuntime: Using default boot image
-53051:11-10 09:35:07.252  7809  7809 I AndroidRuntime: Leaving lock profiling enabled
-53064:11-10 09:35:07.342  7809  7809 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-53130:11-10 09:35:08.394  7809  7809 D AndroidRuntime: Shutting down VM
-53254:11-10 09:35:09.631  5046  7332 I KravosVesti: GET https://nova.rs/vesti/drustvo/inspekcija-ceslja-ugostiteljske-objekte-u-severnoj-mitrovici-za-sada-zatvoren-jedan-lokal/ -> 200 (465443 b)
+2891:11-12 09:46:25.075  3156  3365 I KravosVesti: GET https://www.krik.rs/feed/ -> 200 (13550 b)
+2898:11-12 09:46:25.080  3156  3366 I KravosVesti: GET https://radar.nova.rs/feed/ -> 200 (98351 b)
+3073:11-12 09:46:25.206  3156  3369 I KravosVesti: GET https://nova.rs/feed/ -> 200 (66750 b)
+3106:11-12 09:46:25.264  3156  3352 I KravosVesti: GET https://n1info.rs/feed/ -> 200 (68329 b)
+3308:11-12 09:46:25.503  3156  3366 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:apnews.com&hl=en-US&gl=US&ceid=US:en -> 200 (121053 b)
+3309:11-12 09:46:25.504  3156  3364 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:reuters.com&hl=en-US&gl=US&ceid=US:en -> 200 (133212 b)
+3344:11-12 09:46:25.580  3156  3355 I KravosVesti: GET https://www.istinomer.rs/feed/ -> 200 (12008 b)
+3345:11-12 09:46:25.584  3156  3368 I KravosVesti: GET https://www.theguardian.com/world/rss -> 200 (153246 b)
+3364:11-12 09:46:25.630  3156  3362 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/rss.xml -> 200 (25220 b)
+3368:11-12 09:46:25.641  3156  3365 I KravosVesti: GET https://www.euronews.com/rss?level=theme&name=news -> 200 (32292 b)
+3445:11-12 09:46:25.758  3156  3484 I KravosVesti: GET https://rss.dw.com/xml/rss-en-world -> 200 (7921 b)
+3509:11-12 09:46:25.853  3156  3369 I KravosVesti: GET https://www.politico.eu/feed/ -> 200 (192343 b)
+3510:11-12 09:46:25.854  3156  3352 I KravosVesti: GET https://www.aljazeera.com/xml/rss/all.xml -> 200 (17181 b)
+3632:11-12 09:46:25.975  3156  3355 I KravosVesti: GET https://n1info.rs/magazin/scitech/feed/ -> 200 (28767 b)
+3702:11-12 09:46:26.075  3156  3362 I KravosVesti: GET https://feeds.arstechnica.com/arstechnica/index -> 200 (73005 b)
+3774:11-12 09:46:26.154  3156  3352 I KravosVesti: GET https://www.theverge.com/rss/index.xml -> 200 (46715 b)
+3901:11-12 09:46:26.296  3156  3355 I KravosVesti: GET https://www.wired.com/feed/rss -> 200 (42451 b)
+4025:11-12 09:46:26.395  3156  3312 I KravosVesti: GET https://www.technologyreview.com/feed/ -> 200 (113689 b)
+4043:11-12 09:46:26.429  3156  3311 I KravosVesti: GET https://balkaninsight.com/feed/ -> 200 (155182 b)
+4090:11-12 09:46:26.536  3156  3352 I KravosVesti: GET https://feeds.bbci.co.uk/news/technology/rss.xml -> 200 (15500 b)
+4109:11-12 09:46:26.577  3156  3373 I KravosVesti: GET https://benchmark.rs/feed/ -> 200 (15553 b)
+4115:11-12 09:46:26.605  3156  3362 I KravosVesti: GET https://www.theguardian.com/technology/rss -> 200 (126826 b)
+4238:11-12 09:46:26.789  3156  3355 W KravosVesti: GET https://www.newscientist.com/feed/home/ -> 406 
+4240:11-12 09:46:26.791  3156  3156 W KravosVesti: feed newscientist failed: HTTP 406: 
+4242:11-12 09:46:26.806  3156  3362 I KravosVesti: GET https://feeds.bbci.co.uk/news/science_and_environment/rss.xml -> 200 (30289 b)
+4310:11-12 09:46:26.973  3156  3312 I KravosVesti: GET https://www.theguardian.com/science/rss -> 200 (94009 b)
+4410:11-12 09:46:27.155  3156  3354 I KravosVesti: GET https://www.b92.net/info/rss/tehnopolis.xml -> 200 (16918 b)
+4415:11-12 09:46:27.186  3156  3156 W KravosVesti: feed space failed: CLEARTEXT communication to www.space.com not permitted by network security policy
+4429:11-12 09:46:27.207  3156  3368 I KravosVesti: GET https://www.scientificamerican.com/platform/syndication/rss/ -> 200 (28002 b)
+4448:11-12 09:46:27.240   829   829 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: net.kravos.vesti, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+4449:11-12 09:46:27.240  3156  3352 I KravosVesti: GET https://www.quantamagazine.org/feed/ -> 200 (10731 b)
+4524:11-12 09:46:27.308  3156  3373 I KravosVesti: GET https://www.sciencedaily.com/rss/top/science.xml -> 200 (45856 b)
+4567:11-12 09:46:27.350  3156  3364 I KravosVesti: GET https://www.telegraf.rs/rss/hi-tech -> 200 (414265 b)
+4750:11-12 09:46:27.485  3156  3354 I KravosVesti: GET https://www.bleepingcomputer.com/feed/ -> 200 (13054 b)
+4782:11-12 09:46:27.501  3156  3484 I KravosVesti: GET https://startit.rs/feed/ -> 200 (48193 b)
+4783:11-12 09:46:27.503  3156  3311 I KravosVesti: GET https://therecord.media/feed -> 200 (5229 b)
+4867:11-12 09:46:27.607  3156  3368 I KravosVesti: GET https://krebsonsecurity.com/feed/ -> 200 (129912 b)
+4933:11-12 09:46:27.694  3156  3353 I KravosVesti: GET https://www.rts.rs/page/magazine/sr/rss/510/nauka.html -> 200 (145000 b)
+5122:11-12 09:46:27.966  3156  3362 I KravosVesti: GET https://www.telecoms.com/rss.xml -> 200 (74636 b)
+5128:11-12 09:46:28.021  3156  3354 I KravosVesti: GET https://www.danas.rs/tag/beograd/feed/ -> 200 (116934 b)
+5133:11-12 09:46:28.037  3156  3312 I KravosVesti: GET https://www.lightreading.com/rss.xml -> 200 (76043 b)
+5173:11-12 09:46:28.084  3156  3364 I KravosVesti: GET https://nova.rs/tag/beograd/feed/ -> 200 (27014 b)
+5290:11-12 09:46:28.276  3156  4153 D ProfileInstaller: Installing profile for net.kravos.vesti
+5291:11-12 09:46:28.277  3156  3484 I KravosVesti: GET https://n1info.rs/tag/beograd/feed/ -> 200 (28626 b)
+5295:11-12 09:46:28.288  3156  3369 I KravosVesti: GET https://www.kurir.rs/rss/vesti/beograd -> 200 (78052 b)
+5315:11-12 09:46:28.358  3156  3366 I KravosVesti: GET https://www.blic.rs/rss/Vesti/Beograd -> 200 (96474 b)
+5602:11-12 09:46:28.478  3156  3311 I KravosVesti: GET https://nova.rs/tag/koncert/feed/ -> 200 (27720 b)
+5720:11-12 09:46:28.662  3156  3362 I KravosVesti: GET https://n1info.rs/tag/koncert/feed/ -> 200 (26618 b)
+5805:11-12 09:46:28.798  3156  3352 I KravosVesti: GET https://news.google.com/rss/search?q=Beograd+(koncert+OR+izlo%C5%BEba+OR+festival+OR+predstava+OR+sajam)+when:2d&hl=sr&gl=RS&ceid=RS:sr-Latn -> 200 (36879 b)
+5931:11-12 09:46:29.086  3156  3353 I KravosVesti: GET https://headliner.rs/feed/ -> 200 (74975 b)
+5958:11-12 09:46:29.131  3156  3368 I KravosVesti: GET https://n1info.rs/magazin/auto/feed/ -> 200 (28673 b)
+6022:11-12 09:46:29.199  3156  3355 I KravosVesti: GET https://www.danubeogradu.rs/feed/ -> 200 (128105 b)
+6023:11-12 09:46:29.200  3156  3311 I KravosVesti: GET https://www.kurir.rs/rss/auto -> 200 (80063 b)
+6042:11-12 09:46:29.265  3156  3312 I KravosVesti: GET https://stillinbelgrade.com/feed/ -> 200 (12028 b)
+6075:11-12 09:46:29.323  3156  3369 I KravosVesti: GET https://insideevs.com/rss/news/all/ -> 200 (13564 b)
+6131:11-12 09:46:29.364  3156  3366 I KravosVesti: GET https://www.motor1.com/rss/news/all/ -> 200 (13743 b)
+6189:11-12 09:46:29.443  3156  3354 I KravosVesti: GET https://sajam.rs/feed/ -> 200 (86900 b)
+6235:11-12 09:46:29.468  3156  3352 I KravosVesti: GET https://electrek.co/feed/ -> 200 (273218 b)
+6257:11-12 09:46:29.490  3156  3368 I KravosVesti: GET https://www.autocar.co.uk/rss -> 200 (315558 b)
+6323:11-12 09:46:29.607  3156  3369 I KravosVesti: GET https://www.b92.net/rss/sport -> 200 (16807 b)
+6325:11-12 09:46:29.609  3156  3355 I KravosVesti: GET https://n1info.rs/tag/ljubimci/feed/ -> 200 (27105 b)
+6390:11-12 09:46:29.747  3156  3311 I KravosVesti: GET https://www.theguardian.com/lifeandstyle/pets/rss -> 200 (65773 b)
+6441:11-12 09:46:29.806  3156  3364 I KravosVesti: GET https://www.b92.net/info/rss/automobili.xml -> 200 (16311 b)
+6537:11-12 09:46:30.014  1570  1570 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.vesti], userId:[0], reason:[package is added.].
+6548:11-12 09:46:30.049  3156  3369 I KravosVesti: GET https://feeds.bbci.co.uk/sport/rss.xml -> 200 (56531 b)
+6569:11-12 09:46:30.138  3156  3364 I KravosVesti: GET https://www.theguardian.com/sport/rss -> 200 (79434 b)
+6633:11-12 09:46:30.297  3156  3312 I KravosVesti: GET https://sportklub.n1info.rs/feed/ -> 200 (68224 b)
+6646:11-12 09:46:30.349  3156  3368 I KravosVesti: GET https://www.zurnal.rs/rss -> 200 (14277 b)
+6652:11-12 09:46:30.368  3156  3369 I KravosVesti: GET https://www.motorsport.com/rss/f1/news/ -> 200 (70537 b)
+6715:11-12 09:46:30.478  3156  3364 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/europe/rss.xml -> 200 (17403 b)
+6778:11-12 09:46:30.643  3156  3366 I KravosVesti: GET https://www.rts.rs/page/sport/ci/rss.html -> 200 (57323 b)
+6816:11-12 09:46:30.734  3156  3484 I KravosVesti: GET https://www.theguardian.com/world/animals/rss -> 200 (69293 b)
+6835:11-12 09:46:30.781  3156  3365 I KravosVesti: GET https://www.eurohoops.net/en/feed/ -> 200 (96989 b)
+6840:11-12 09:46:30.789  1570  1570 I AiAiEcho: AppFetcherImpl onPackageChanged net.kravos.vesti.
+6844:11-12 09:46:30.795  1570  2402 I AiAiEcho: AppIndexer Package:[net.kravos.vesti] UserProfile:[0] Enabled:[true].
+6845:11-12 09:46:30.795  1570  2402 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.vesti], userId:[0], reason:[package is updated.].
+7263:11-12 09:46:31.130  3156  3352 I KravosVesti: GET https://www.sportske.net/rss -> 200 (32192 b)
+7859:11-12 09:46:31.912  3156  3362 I KravosVesti: GET https://meridiansport.rs/feed/ -> 200 (11283 b)
+7893:11-12 09:46:31.981  1427  3378 I BlockstoreStorage: Clearing Blockstore Data for package net.kravos.vesti [CONTEXT service_id=258 ]
+7907:11-12 09:46:32.002  1387  3630 I FontLog : Package net.kravos.vesti has no metadata [CONTEXT service_id=132 ]
+18285:11-12 09:46:44.348  3156  3373 I KravosVesti: GET https://www.beobuild.rs/feed -> 200 (25761 b)
+34584:11-12 09:47:01.882   521   896 I ActivityManager: Force stopping net.kravos.vesti appid=10192 user=0: from pid 5791
+34589:11-12 09:47:01.890   521   896 I ActivityManager: Killing 3156:net.kravos.vesti/u0a192 (adj 0): stop net.kravos.vesti due to from pid 5791
+34590:11-12 09:47:01.891   521   896 W ActivityTaskManager: Force removing ActivityRecord{8bf4adb u0 net.kravos.vesti/.ui.MainActivity t8 f}}: app died, no saved state
+34591:11-12 09:47:01.893   828   862 V WindowManagerShell: Transition requested: android.os.BinderProxy@d2839b8 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=net.kravos.vesti/.ui.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} numActivities=0 lastActiveTime=32232 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@806d391} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+34597:11-12 09:47:01.937   521   817 I ImeTracker: net.kravos.vesti:6853100c: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_REMOVE_CLIENT
+34598:11-12 09:47:01.937   521   817 I ImeTracker: net.kravos.vesti:6853100c: onCancelled at PHASE_SERVER_SHOULD_HIDE
+34600:11-12 09:47:01.944   521   542 W WindowManager: Failed to deliver inset control state change to w=Window{2886e3a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity}
+34625:11-12 09:47:01.945   521  1830 I WindowManager: WIN DEATH: Window{2886e3a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity}
+34628:11-12 09:47:01.948   521  1830 W InputManager-JNI: Input channel object '2886e3a net.kravos.vesti/net.kravos.vesti.ui.MainActivity (client)' was disposed without first being removed with the input manager!
+34649:11-12 09:47:01.954  1038  1038 D CarrierSvcBindHelper: onHandleForceStop: [net.kravos.vesti]
+34652:11-12 09:47:01.957   521   810 V ActivityManager: Got obituary of 3156:net.kravos.vesti
+34660:11-12 09:47:01.967   521   594 V SplashScreenExceptionList: SplashScreen checking exception for package net.kravos.vesti (target sdk:35) -> false
+34662:11-12 09:47:01.968   521   594 I ActivityTaskManager: Add Task{2a3c978 #8 type=standard A=10192:net.kravos.vesti} to hidden list because adding Task{50f1018 #9 type=standard A=10192:net.kravos.vesti}
+34663:11-12 09:47:01.969   521   594 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=net.kravos.vesti/.ui.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+34681:11-12 09:47:01.997   521  1836 D CoreBackPreview: Window{7287b73 u0 Splash Screen net.kravos.vesti}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a474465, mPriority=0, mIsAnimationCallback=false}
+34692:11-12 09:47:02.008   521   549 I ActivityManager: Start proc 5801:net.kravos.vesti/u0a192 for next-top-activity {net.kravos.vesti/net.kravos.vesti.ui.MainActivity}
+34741:11-12 09:47:02.139  5801  5801 D nativeloader: Configuring clns-6 for other apk /data/app/~~qkb3-EEHYoglL_I-81ORZA==/net.kravos.vesti-UNCBK16n3j0hy4K8KvzbUA==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~qkb3-EEHYoglL_I-81ORZA==/net.kravos.vesti-UNCBK16n3j0hy4K8KvzbUA==/lib/x86_64:/data/app/~~qkb3-EEHYoglL_I-81ORZA==/net.kravos.vesti-UNCBK16n3j0hy4K8KvzbUA==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/net.kravos.vesti
+34745:11-12 09:47:02.203  5801  5801 V GraphicsEnvironment: ANGLE GameManagerService for net.kravos.vesti: false
+34746:11-12 09:47:02.203  5801  5801 V GraphicsEnvironment: net.kravos.vesti is not listed in per-application setting
+35104:11-12 09:47:02.635   521   541 W WindowManager: Failed to deliver inset control state change to w=Window{2886e3a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity EXITING}
+35130:11-12 09:47:02.650   521   538 V WindowManager: Sent Transition #7 createdAt=11-12 09:47:01.891 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=net.kravos.vesti/.ui.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{net.kravos.vesti/net.kravos.vesti.ui.MainActivity} numActivities=0 lastActiveTime=32232 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{8c64824 Task{2a3c978 #8 type=standard A=10192:net.kravos.vesti}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+35132:11-12 09:47:02.650   521   538 V WindowManager:     info={id=7 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{77d4045 Task{50f1018 #9 type=standard A=10192:net.kravos.vesti}}} m=OPEN f=MOVE_TO_TOP leash=Surface(name=Task=9)/@0xc8e0e53 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{8c64824 Task{2a3c978 #8 type=standard A=10192:net.kravos.vesti}}} m=CLOSE f=NONE leash=Surface(name=Task=8)/@0x371b3b6 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+35136:11-12 09:47:02.656   521   542 W WindowManager: Failed to deliver inset control state change to w=Window{2886e3a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity EXITING}
+35169:11-12 09:47:02.689   521  1836 W WindowManager: Exception thrown during dispatchAppVisibility Window{2886e3a u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity EXITING}
+35220:11-12 09:47:02.792   521   896 D CoreBackPreview: Window{606461f u0 net.kravos.vesti/net.kravos.vesti.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f610458, mPriority=0, mIsAnimationCallback=false}
+35503:11-12 09:47:03.489   521   538 I ActivityTaskManager: Displayed net.kravos.vesti/.ui.MainActivity for user 0: +1s533ms
+35514:11-12 09:47:03.508   521   929 D CoreBackPreview: Window{7287b73 u0 Splash Screen net.kravos.vesti EXITING}: Setting back callback null
+35515:11-12 09:47:03.509   521  2857 W InputManager-JNI: Input channel object '7287b73 Splash Screen net.kravos.vesti (client)' was disposed without first being removed with the input manager!
+35522:11-12 09:47:03.532   521  2815 I ImeTracker: net.kravos.vesti:2d677f92: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+35523:11-12 09:47:03.532   521  2815 I ImeTracker: net.kravos.vesti:2d677f92: onCancelled at PHASE_SERVER_SHOULD_HIDE
+35538:11-12 09:47:03.555  1485  1485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
+37573:11-12 09:47:07.344  5801  6015 D ProfileInstaller: Skipping profile installation for net.kravos.vesti
+37659:11-12 09:47:07.768  5801  5894 I KravosVesti: GET https://radar.nova.rs/feed/ -> 200 (98351 b)
+37660:11-12 09:47:07.768  5801  5903 I KravosVesti: GET https://www.cins.rs/feed/ -> 200 (15064 b)
+37662:11-12 09:47:07.769  5801  5889 I KravosVesti: GET https://www.krik.rs/feed/ -> 200 (13550 b)
+37719:11-12 09:47:07.792  5801  5898 I KravosVesti: GET https://balkaninsight.com/feed/ -> 200 (155182 b)
+37723:11-12 09:47:07.856  5801  5871 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:reuters.com&hl=en-US&gl=US&ceid=US:en -> 200 (133212 b)
+37760:11-12 09:47:07.938  5801  5849 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:apnews.com&hl=en-US&gl=US&ceid=US:en -> 200 (121053 b)
+37769:11-12 09:47:07.955  5801  5878 I KravosVesti: GET https://insajder.net/feed -> 200 (117319 b)
+37779:11-12 09:47:08.049  5801  5903 I KravosVesti: GET https://www.politico.eu/feed/ -> 200 (192343 b)
+37783:11-12 09:47:08.061  5801  5849 I KravosVesti: GET https://www.theguardian.com/world/rss -> 200 (153246 b)
+37788:11-12 09:47:08.088  5801  5878 I KravosVesti: GET https://www.aljazeera.com/xml/rss/all.xml -> 200 (17181 b)
+37812:11-12 09:47:08.140  5801  5849 I KravosVesti: GET https://www.euronews.com/rss?level=theme&name=news -> 200 (32292 b)
+37827:11-12 09:47:08.256  5801  5861 I KravosVesti: GET https://rss.dw.com/xml/rss-en-world -> 200 (7921 b)
+37828:11-12 09:47:08.258  5801  5890 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/rss.xml -> 200 (25220 b)
+37834:11-12 09:47:08.310  5801  5898 I KravosVesti: GET https://benchmark.rs/feed/ -> 200 (15553 b)
+37838:11-12 09:47:08.320  5801  5852 I KravosVesti: GET https://n1info.rs/feed/ -> 200 (68329 b)
+37866:11-12 09:47:08.343  5801  5861 I KravosVesti: GET https://startit.rs/feed/ -> 200 (48193 b)
+37877:11-12 09:47:08.365  5801  5897 I KravosVesti: GET https://vreme.com/feed/ -> 200 (81396 b)
+37880:11-12 09:47:08.378  5801  5852 I KravosVesti: GET https://feeds.arstechnica.com/arstechnica/index -> 200 (73005 b)
+37888:11-12 09:47:08.526  5801  5903 I KravosVesti: GET https://n1info.rs/magazin/scitech/feed/ -> 200 (28767 b)
+37889:11-12 09:47:08.528  5801  5860 I KravosVesti: GET https://www.wired.com/feed/rss -> 200 (42451 b)
+37890:11-12 09:47:08.530  5801  5852 I KravosVesti: GET https://www.technologyreview.com/feed/ -> 200 (113689 b)
+37891:11-12 09:47:08.545  5801  5898 I KravosVesti: GET https://feeds.bbci.co.uk/news/technology/rss.xml -> 200 (15500 b)
+37918:11-12 09:47:08.619  5801  5861 I KravosVesti: GET https://www.theverge.com/rss/index.xml -> 200 (46715 b)
+37939:11-12 09:47:08.631  5801  5894 I KravosVesti: GET https://www.istinomer.rs/feed/ -> 200 (12008 b)
+37950:11-12 09:47:08.649  5801  5873 I KravosVesti: GET https://nova.rs/feed/ -> 200 (66750 b)
+37959:11-12 09:47:08.677  5801  5898 W KravosVesti: GET https://www.newscientist.com/feed/home/ -> 406 
+37960:11-12 09:47:08.681  5801  5894 I KravosVesti: GET https://www.sciencedaily.com/rss/top/science.xml -> 200 (45856 b)
+37961:11-12 09:47:08.687  5801  5801 W KravosVesti: feed newscientist failed: HTTP 406: 
+37962:11-12 09:47:08.697  5801  5898 I KravosVesti: GET https://feeds.bbci.co.uk/news/science_and_environment/rss.xml -> 200 (30289 b)
+37963:11-12 09:47:08.702  5801  5852 I KravosVesti: GET https://www.theguardian.com/science/rss -> 200 (94009 b)
+37972:11-12 09:47:08.716  5801  5861 I KravosVesti: GET https://www.quantamagazine.org/feed/ -> 200 (10731 b)
+37982:11-12 09:47:08.748  5801  5801 W KravosVesti: feed space failed: CLEARTEXT communication to www.space.com not permitted by network security policy
+37991:11-12 09:47:08.765  5801  5897 I KravosVesti: GET https://www.scientificamerican.com/platform/syndication/rss/ -> 200 (28002 b)
+38000:11-12 09:47:08.779  5801  5903 I KravosVesti: GET https://www.theguardian.com/technology/rss -> 200 (126826 b)
+38001:11-12 09:47:08.789  5801  5852 I KravosVesti: GET https://www.bleepingcomputer.com/feed/ -> 200 (13054 b)
+38002:11-12 09:47:08.791  5801  5852 I KravosVesti: GET https://krebsonsecurity.com/feed/ -> 200 (129912 b)
+38003:11-12 09:47:08.794  5801  5897 I KravosVesti: GET https://www.blic.rs/rss/Vesti/Beograd -> 200 (96474 b)
+38004:11-12 09:47:08.799  5801  5897 I KravosVesti: GET https://www.kurir.rs/rss/vesti/beograd -> 200 (78052 b)
+38014:11-12 09:47:08.920  5801  5860 I KravosVesti: GET https://therecord.media/feed -> 200 (5229 b)
+38049:11-12 09:47:09.158  5801  5871 I KravosVesti: GET https://www.b92.net/info/rss/tehnopolis.xml -> 200 (16918 b)
+38050:11-12 09:47:09.211  5801  5898 I KravosVesti: GET https://www.lightreading.com/rss.xml -> 200 (76043 b)
+38051:11-12 09:47:09.217  5801  5871 I KravosVesti: GET https://www.beobuild.rs/feed -> 200 (25761 b)
+38060:11-12 09:47:09.273  5801  5868 I KravosVesti: GET https://www.danas.rs/feed/ -> 200 (98040 b)
+38069:11-12 09:47:09.342  5801  5890 I KravosVesti: GET https://www.telegraf.rs/rss/hi-tech -> 200 (414202 b)
+38070:11-12 09:47:09.357  5801  5861 I KravosVesti: GET https://nova.rs/tag/beograd/feed/ -> 200 (27014 b)
+38071:11-12 09:47:09.607  5801  5878 I KravosVesti: GET https://n1info.rs/tag/beograd/feed/ -> 200 (28626 b)
+38072:11-12 09:47:09.612  5801  5861 I KravosVesti: GET https://sajam.rs/feed/ -> 200 (86900 b)
+38081:11-12 09:47:09.661  5801  5849 I KravosVesti: GET https://www.rts.rs/page/magazine/sr/rss/510/nauka.html -> 200 (145000 b)
+38093:11-12 09:47:09.736  5801  5878 I KravosVesti: GET https://news.google.com/rss/search?q=Beograd+(koncert+OR+izlo%C5%BEba+OR+festival+OR+predstava+OR+sajam)+when:2d&hl=sr&gl=RS&ceid=RS:sr-Latn -> 200 (36879 b)
+38094:11-12 09:47:09.741  5801  5898 I KravosVesti: GET https://nova.rs/tag/koncert/feed/ -> 200 (27720 b)
+38095:11-12 09:47:09.745  5801  5871 I KravosVesti: GET https://www.kurir.rs/rss/auto -> 200 (80063 b)
+38096:11-12 09:47:09.774  5801  5846 I KravosVesti: GET https://headliner.rs/feed/ -> 200 (74975 b)
+38097:11-12 09:47:09.784  5801  5878 I KravosVesti: GET https://electrek.co/feed/ -> 200 (273218 b)
+38106:11-12 09:47:09.847  5801  5873 I KravosVesti: GET https://www.danas.rs/tag/beograd/feed/ -> 200 (116934 b)
+38115:11-12 09:47:09.862  5801  5849 I KravosVesti: GET https://insideevs.com/rss/news/all/ -> 200 (13564 b)
+38124:11-12 09:47:09.896  5801  5868 I KravosVesti: GET https://www.b92.net/info/rss/automobili.xml -> 200 (16311 b)
+38125:11-12 09:47:09.902  5801  5898 I KravosVesti: GET https://www.autocar.co.uk/rss -> 200 (315558 b)
+38126:11-12 09:47:09.905  5801  5898 I KravosVesti: GET https://www.theguardian.com/lifeandstyle/pets/rss -> 200 (65773 b)
+38127:11-12 09:47:09.921  5801  5846 I KravosVesti: GET https://www.motor1.com/rss/news/all/ -> 200 (13743 b)
+38144:11-12 09:47:09.984  5801  5852 I KravosVesti: GET https://n1info.rs/tag/koncert/feed/ -> 200 (26618 b)
+38177:11-12 09:47:10.066  5801  5890 I KravosVesti: GET https://stillinbelgrade.com/feed/ -> 200 (12028 b)
+38186:11-12 09:47:10.085  5801  5873 I KravosVesti: GET https://www.b92.net/rss/sport -> 200 (16807 b)
+38195:11-12 09:47:10.096  5801  5861 I KravosVesti: GET https://n1info.rs/magazin/auto/feed/ -> 200 (28673 b)
+38214:11-12 09:47:10.137  5801  5897 I KravosVesti: GET https://www.danubeogradu.rs/feed/ -> 200 (128105 b)
+38223:11-12 09:47:10.315  5801  5861 I KravosVesti: GET https://feeds.bbci.co.uk/sport/rss.xml -> 200 (56531 b)
+38232:11-12 09:47:10.353  5801  5871 I KravosVesti: GET https://www.zurnal.rs/rss -> 200 (14485 b)
+38233:11-12 09:47:10.355  5801  5890 I KravosVesti: GET https://www.eurohoops.net/en/feed/ -> 200 (96989 b)
+38242:11-12 09:47:10.372  5801  5852 I KravosVesti: GET https://www.theguardian.com/sport/rss -> 200 (79434 b)
+38243:11-12 09:47:10.479  5801  5894 I KravosVesti: GET https://www.telecoms.com/rss.xml -> 200 (74636 b)
+38244:11-12 09:47:10.486  5801  5871 I KravosVesti: GET https://www.theguardian.com/world/animals/rss -> 200 (69293 b)
+38245:11-12 09:47:10.490  5801  5878 I KravosVesti: GET https://www.motorsport.com/rss/f1/news/ -> 200 (70537 b)
+38247:11-12 09:47:10.521  5801  5849 I KravosVesti: GET https://n1info.rs/tag/ljubimci/feed/ -> 200 (27105 b)
+38252:11-12 09:47:10.556  5801  5903 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/europe/rss.xml -> 200 (17403 b)
+38260:11-12 09:47:10.815  5801  5873 I KravosVesti: GET https://meridiansport.rs/feed/ -> 200 (11283 b)
+38261:11-12 09:47:10.858  5801  5868 I KravosVesti: GET https://sportklub.n1info.rs/feed/ -> 200 (68224 b)
+39270:11-12 09:47:11.132  5801  5846 I KravosVesti: GET https://www.rts.rs/page/sport/ci/rss.html -> 200 (57323 b)
+39584:11-12 09:47:11.216  5801  5898 I KravosVesti: GET https://www.sportske.net/rss -> 200 (32192 b)
+40055:11-12 09:47:11.736  6263  6263 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+40056:11-12 09:47:11.756  6263  6263 I AndroidRuntime: Using default boot image
+40057:11-12 09:47:11.756  6263  6263 I AndroidRuntime: Leaving lock profiling enabled
+40071:11-12 09:47:11.942  6263  6263 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+40169:11-12 09:47:13.042  6263  6263 D AndroidRuntime: Shutting down VM
+45941:11-12 09:47:20.179  6340  6340 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+45962:11-12 09:47:20.182  6340  6340 I AndroidRuntime: Using default boot image
+45963:11-12 09:47:20.182  6340  6340 I AndroidRuntime: Leaving lock profiling enabled
+46175:11-12 09:47:20.264  6340  6340 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+48296:11-12 09:47:21.317  6340  6340 D AndroidRuntime: Shutting down VM
+50420:11-12 09:47:28.340  6393  6393 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+50421:11-12 09:47:28.343  6393  6393 I AndroidRuntime: Using default boot image
+50422:11-12 09:47:28.343  6393  6393 I AndroidRuntime: Leaving lock profiling enabled
+50435:11-12 09:47:28.396  6393  6393 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+50512:11-12 09:47:29.422  6393  6393 D AndroidRuntime: Shutting down VM
+51293:11-12 09:47:37.764  6460  6460 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+51294:11-12 09:47:37.767  6460  6460 I AndroidRuntime: Using default boot image
+51295:11-12 09:47:37.767  6460  6460 I AndroidRuntime: Leaving lock profiling enabled
+51308:11-12 09:47:37.825  6460  6460 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+51365:11-12 09:47:38.845  6460  6460 D AndroidRuntime: Shutting down VM
+51505:11-12 09:47:48.345  6500  6500 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+51506:11-12 09:47:48.347  6500  6500 I AndroidRuntime: Using default boot image
+51507:11-12 09:47:48.347  6500  6500 I AndroidRuntime: Leaving lock profiling enabled
+51520:11-12 09:47:48.399  6500  6500 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+51566:11-12 09:47:49.417  6500  6500 D AndroidRuntime: Shutting down VM
+51664:11-12 09:47:51.064  5801  5890 I KravosVesti: GET https://www.danas.rs/vesti/drustvo/vjt-u-novom-sadu-uhapsene-dve-osobe-zbog-sumnje-na-poresku-prevaru-i-pranje-novca/ -> 200 (282980 b)
+52432:11-12 09:48:09.430  6626  6626 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+52433:11-12 09:48:09.433  6626  6626 I AndroidRuntime: Using default boot image
+52434:11-12 09:48:09.433  6626  6626 I AndroidRuntime: Leaving lock profiling enabled
+52447:11-12 09:48:09.484  6626  6626 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+52493:11-12 09:48:10.503  6626  6626 D AndroidRuntime: Shutting down VM
+52842:11-12 09:48:20.565  6683  6683 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+52843:11-12 09:48:20.568  6683  6683 I AndroidRuntime: Using default boot image
+52844:11-12 09:48:20.568  6683  6683 I AndroidRuntime: Leaving lock profiling enabled
+52857:11-12 09:48:20.620  6683  6683 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+52908:11-12 09:48:21.651  6683  6683 D AndroidRuntime: Shutting down VM
+53161:11-12 09:48:28.670  6723  6723 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+53162:11-12 09:48:28.672  6723  6723 I AndroidRuntime: Using default boot image
+53163:11-12 09:48:28.672  6723  6723 I AndroidRuntime: Leaving lock profiling enabled
+53176:11-12 09:48:28.725  6723  6723 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+53226:11-12 09:48:29.749  6723  6723 D AndroidRuntime: Shutting down VM
+53514:11-12 09:48:36.745  6770  6770 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+53515:11-12 09:48:36.748  6770  6770 I AndroidRuntime: Using default boot image
+53516:11-12 09:48:36.748  6770  6770 I AndroidRuntime: Leaving lock profiling enabled
+53529:11-12 09:48:36.803  6770  6770 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+53590:11-12 09:48:37.821  6770  6770 D AndroidRuntime: Shutting down VM
+53655:11-12 09:48:39.632  5801  5849 I KravosVesti: GET https://www.danas.rs/kultura/andrej-zvjagincev-rusija-sada-lici-na-cudoviste-faf-minotaur/ -> 200 (285975 b)
+53783:11-12 09:48:54.863  6816  6816 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+53784:11-12 09:48:54.866  6816  6816 I AndroidRuntime: Using default boot image
+53785:11-12 09:48:54.866  6816  6816 I AndroidRuntime: Leaving lock profiling enabled
+53798:11-12 09:48:54.918  6816  6816 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+53855:11-12 09:48:55.944  6816  6816 D AndroidRuntime: Shutting down VM
+53974:11-12 09:49:01.853  6847  6847 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+53975:11-12 09:49:01.856  6847  6847 I AndroidRuntime: Using default boot image
+53976:11-12 09:49:01.856  6847  6847 I AndroidRuntime: Leaving lock profiling enabled
+53990:11-12 09:49:01.909  6847  6847 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+54050:11-12 09:49:02.929  6847  6847 D AndroidRuntime: Shutting down VM
+54122:11-12 09:49:03.937   521   535 I ImeTracker: net.kravos.vesti:9e2cdf57: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+54123:11-12 09:49:03.937   521   535 I ImeTracker: net.kravos.vesti:9e2cdf57: onCancelled at PHASE_SERVER_SHOULD_HIDE
+54126:11-12 09:49:03.938  1485  1485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
+54144:11-12 09:49:08.921  6875  6875 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+54145:11-12 09:49:08.924  6875  6875 I AndroidRuntime: Using default boot image
+54146:11-12 09:49:08.924  6875  6875 I AndroidRuntime: Leaving lock profiling enabled
+54160:11-12 09:49:08.977  6875  6875 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+54207:11-12 09:49:09.993  6875  6875 D AndroidRuntime: Shutting down VM
+54289:11-12 09:49:10.915   521  1836 I ImeTracker: net.kravos.vesti:d191226: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+54290:11-12 09:49:10.915   521  1836 I ImeTracker: net.kravos.vesti:d191226: onCancelled at PHASE_SERVER_SHOULD_HIDE
+54293:11-12 09:49:10.916  1485  1485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
+54308:11-12 09:49:17.000  6911  6911 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+54309:11-12 09:49:17.002  6911  6911 I AndroidRuntime: Using default boot image
+54310:11-12 09:49:17.002  6911  6911 I AndroidRuntime: Leaving lock profiling enabled
+54323:11-12 09:49:17.054  6911  6911 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+54378:11-12 09:49:18.076  6911  6911 D AndroidRuntime: Shutting down VM
+54455:11-12 09:49:18.984   521  1805 I ImeTracker: net.kravos.vesti:851af258: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+54456:11-12 09:49:18.984   521  1805 I ImeTracker: net.kravos.vesti:851af258: onCancelled at PHASE_SERVER_SHOULD_HIDE
+54459:11-12 09:49:18.985  1485  1485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
+54467:11-12 09:49:23.993  6934  6934 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+54468:11-12 09:49:23.996  6934  6934 I AndroidRuntime: Using default boot image
+54469:11-12 09:49:23.996  6934  6934 I AndroidRuntime: Leaving lock profiling enabled
+54482:11-12 09:49:24.055  6934  6934 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+54530:11-12 09:49:25.081  6934  6934 D AndroidRuntime: Shutting down VM
+54612:11-12 09:49:25.996   521  2334 I ImeTracker: net.kravos.vesti:3dd7ee38: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+54613:11-12 09:49:25.996   521  2334 I ImeTracker: net.kravos.vesti:3dd7ee38: onCancelled at PHASE_SERVER_SHOULD_HIDE
+54616:11-12 09:49:25.998  1485  1485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
+54620:11-12 09:49:30.992  6956  6956 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+54621:11-12 09:49:30.994  6956  6956 I AndroidRuntime: Using default boot image
+54622:11-12 09:49:30.994  6956  6956 I AndroidRuntime: Leaving lock profiling enabled
+54635:11-12 09:49:31.050  6956  6956 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+54698:11-12 09:49:32.082  6956  6956 D AndroidRuntime: Shutting down VM
+54805:11-12 09:49:41.620  7002  7002 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+54806:11-12 09:49:41.622  7002  7002 I AndroidRuntime: Using default boot image
+54807:11-12 09:49:41.622  7002  7002 I AndroidRuntime: Leaving lock profiling enabled
+54820:11-12 09:49:41.682  7002  7002 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+54877:11-12 09:49:42.706  7002  7002 D AndroidRuntime: Shutting down VM
+55036:11-12 09:49:48.603  7024  7024 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+55037:11-12 09:49:48.605  7024  7024 I AndroidRuntime: Using default boot image
+55038:11-12 09:49:48.605  7024  7024 I AndroidRuntime: Leaving lock profiling enabled
+55051:11-12 09:49:48.656  7024  7024 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+55100:11-12 09:49:49.677  7024  7024 D AndroidRuntime: Shutting down VM
+55236:11-12 09:49:56.667  7054  7054 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+55237:11-12 09:49:56.669  7054  7054 I AndroidRuntime: Using default boot image
+55238:11-12 09:49:56.669  7054  7054 I AndroidRuntime: Leaving lock profiling enabled
+55251:11-12 09:49:56.720  7054  7054 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+55303:11-12 09:49:57.742  7054  7054 D AndroidRuntime: Shutting down VM
+55429:11-12 09:49:58.650   521   538 V WindowManager:     info={id=8 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{231c290 Task{3104f4c #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x32bf501 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{77d4045 Task{50f1018 #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0xc8e0e53 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{c9073bc token=android.os.Binder@68ee3af})/@0x61485b7 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+55550:11-12 09:50:07.181  7099  7099 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+55551:11-12 09:50:07.184  7099  7099 I AndroidRuntime: Using default boot image
+55552:11-12 09:50:07.184  7099  7099 I AndroidRuntime: Leaving lock profiling enabled
+55565:11-12 09:50:07.238  7099  7099 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+55626:11-12 09:50:08.265  7099  7099 D AndroidRuntime: Shutting down VM
+55710:11-12 09:50:18.679  7132  7132 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+55711:11-12 09:50:18.681  7132  7132 I AndroidRuntime: Using default boot image
+55712:11-12 09:50:18.681  7132  7132 I AndroidRuntime: Leaving lock profiling enabled
+55725:11-12 09:50:18.730  7132  7132 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+55782:11-12 09:50:19.749  7132  7132 D AndroidRuntime: Shutting down VM
+55914:11-12 09:50:21.874  5801  5890 I KravosVesti: GET https://www.danas.rs/svet/izrael-napad-bolnica-naser/ -> 200 (270585 b)
+55944:11-12 09:50:41.325  7185  7185 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+55945:11-12 09:50:41.327  7185  7185 I AndroidRuntime: Using default boot image
+55946:11-12 09:50:41.327  7185  7185 I AndroidRuntime: Leaving lock profiling enabled
+55959:11-12 09:50:41.378  7185  7185 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+56065:11-12 09:50:42.402  7185  7185 D AndroidRuntime: Shutting down VM
+56342:11-12 09:50:49.396  7233  7233 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+56343:11-12 09:50:49.398  7233  7233 I AndroidRuntime: Using default boot image
+56344:11-12 09:50:49.398  7233  7233 I AndroidRuntime: Leaving lock profiling enabled
+56357:11-12 09:50:49.452  7233  7233 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+56438:11-12 09:50:50.472  7233  7233 D AndroidRuntime: Shutting down VM
+56550:11-12 09:51:10.005  7281  7281 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+56551:11-12 09:51:10.007  7281  7281 I AndroidRuntime: Using default boot image
+56552:11-12 09:51:10.007  7281  7281 I AndroidRuntime: Leaving lock profiling enabled
+56565:11-12 09:51:10.058  7281  7281 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+56617:11-12 09:51:11.080  7281  7281 D AndroidRuntime: Shutting down VM
+56737:11-12 09:51:20.600  7332  7332 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+56738:11-12 09:51:20.603  7332  7332 I AndroidRuntime: Using default boot image
+56739:11-12 09:51:20.603  7332  7332 I AndroidRuntime: Leaving lock profiling enabled
+56752:11-12 09:51:20.656  7332  7332 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+56798:11-12 09:51:21.677  7332  7332 D AndroidRuntime: Shutting down VM
+57945:11-12 09:51:22.585   521   538 V WindowManager:     info={id=9 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{231c290 Task{3104f4c #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x32bf501 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{77d4045 Task{50f1018 #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0xc8e0e53 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{c9073bc token=android.os.Binder@68ee3af})/@0x61485b7 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+58030:11-12 09:51:27.585  7392  7392 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+58031:11-12 09:51:27.587  7392  7392 I AndroidRuntime: Using default boot image
+58032:11-12 09:51:27.587  7392  7392 I AndroidRuntime: Leaving lock profiling enabled
+58045:11-12 09:51:27.637  7392  7392 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+58094:11-12 09:51:28.653  7392  7392 D AndroidRuntime: Shutting down VM
+58174:11-12 09:51:29.567   521  1805 I ImeTracker: net.kravos.vesti:a18ede31: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+58175:11-12 09:51:29.567   521  1805 I ImeTracker: net.kravos.vesti:a18ede31: onCancelled at PHASE_SERVER_SHOULD_HIDE
+58178:11-12 09:51:29.568  1485  1485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
+58190:11-12 09:51:34.647  7419  7419 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+58191:11-12 09:51:34.650  7419  7419 I AndroidRuntime: Using default boot image
+58192:11-12 09:51:34.650  7419  7419 I AndroidRuntime: Leaving lock profiling enabled
+58205:11-12 09:51:34.701  7419  7419 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+58256:11-12 09:51:35.751  7419  7419 D AndroidRuntime: Shutting down VM
+58336:11-12 09:51:36.662   521  2857 I ImeTracker: net.kravos.vesti:cabc3340: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+58337:11-12 09:51:36.662   521  2857 I ImeTracker: net.kravos.vesti:cabc3340: onCancelled at PHASE_SERVER_SHOULD_HIDE
+58340:11-12 09:51:36.664  1485  1485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
+58352:11-12 09:51:42.751  7446  7446 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+58353:11-12 09:51:42.753  7446  7446 I AndroidRuntime: Using default boot image
+58354:11-12 09:51:42.753  7446  7446 I AndroidRuntime: Leaving lock profiling enabled
+58367:11-12 09:51:42.809  7446  7446 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+58415:11-12 09:51:43.826  7446  7446 D AndroidRuntime: Shutting down VM
+58534:11-12 09:52:00.849  7483  7483 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+58535:11-12 09:52:00.851  7483  7483 I AndroidRuntime: Using default boot image
+58536:11-12 09:52:00.851  7483  7483 I AndroidRuntime: Leaving lock profiling enabled
+58550:11-12 09:52:00.907  7483  7483 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+58597:11-12 09:52:01.926  7483  7483 D AndroidRuntime: Shutting down VM
+58878:11-12 09:52:02.841   521   538 V WindowManager:     info={id=10 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{231c290 Task{3104f4c #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x32bf501 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{77d4045 Task{50f1018 #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0xc8e0e53 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{c9073bc token=android.os.Binder@68ee3af})/@0x61485b7 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+60824:11-12 09:52:08.910  7605  7605 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+60825:11-12 09:52:08.912  7605  7605 I AndroidRuntime: Using default boot image
+60826:11-12 09:52:08.912  7605  7605 I AndroidRuntime: Leaving lock profiling enabled
+60839:11-12 09:52:08.962  7605  7605 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+60901:11-12 09:52:09.980  7605  7605 D AndroidRuntime: Shutting down VM
+60985:11-12 09:52:12.424  5801  7635 I KravosVesti: GET https://radar.nova.rs/feed/ -> 200 (98351 b)
+61014:11-12 09:52:12.536  5801  7634 I KravosVesti: GET https://insajder.net/feed -> 200 (117319 b)
+61015:11-12 09:52:12.538  5801  7649 I KravosVesti: GET https://balkaninsight.com/feed/ -> 200 (155182 b)
+61024:11-12 09:52:12.598  5801  7648 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:reuters.com&hl=en-US&gl=US&ceid=US:en -> 200 (132938 b)
+61025:11-12 09:52:12.849  5801  5890 I KravosVesti: GET https://n1info.rs/feed/ -> 200 (68368 b)
+61026:11-12 09:52:12.855  5801  5846 I KravosVesti: GET https://vreme.com/feed/ -> 200 (84727 b)
+61032:11-12 09:52:12.860  5801  7630 I KravosVesti: GET https://nova.rs/feed/ -> 200 (66978 b)
+61035:11-12 09:52:12.862  5801  7636 I KravosVesti: GET https://www.cins.rs/feed/ -> 200 (15064 b)
+61037:11-12 09:52:12.867  5801  7630 I KravosVesti: GET https://www.politico.eu/feed/ -> 200 (192343 b)
+61049:11-12 09:52:12.902  5801  7633 I KravosVesti: GET https://www.krik.rs/feed/ -> 200 (13550 b)
+61065:11-12 09:52:12.955  5801  5846 I KravosVesti: GET https://www.aljazeera.com/xml/rss/all.xml -> 200 (17181 b)
+61066:11-12 09:52:12.971  5801  7648 I KravosVesti: GET https://www.euronews.com/rss?level=theme&name=news -> 200 (32292 b)
+61070:11-12 09:52:12.974  5801  7637 I KravosVesti: GET https://news.google.com/rss/search?q=when:1d+site:apnews.com&hl=en-US&gl=US&ceid=US:en -> 200 (121053 b)
+61074:11-12 09:52:13.004  5801  7634 I KravosVesti: GET https://www.theguardian.com/world/rss -> 200 (153246 b)
+61088:11-12 09:52:13.076  5801  5890 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/rss.xml -> 200 (25220 b)
+61089:11-12 09:52:13.078  5801  7637 I KravosVesti: GET https://startit.rs/feed/ -> 200 (48193 b)
+61093:11-12 09:52:13.110  5801  7630 I KravosVesti: GET https://rss.dw.com/xml/rss-en-world -> 200 (7921 b)
+61094:11-12 09:52:13.111  5801  5846 I KravosVesti: GET https://feeds.arstechnica.com/arstechnica/index -> 200 (73005 b)
+61100:11-12 09:52:13.167  5801  7632 I KravosVesti: GET https://www.istinomer.rs/feed/ -> 200 (12008 b)
+61112:11-12 09:52:13.229  5801  5890 I KravosVesti: GET https://www.theverge.com/rss/index.xml -> 200 (46715 b)
+61124:11-12 09:52:13.330  5801  7649 I KravosVesti: GET https://n1info.rs/magazin/scitech/feed/ -> 200 (28841 b)
+61125:11-12 09:52:13.340  5801  7632 I KravosVesti: GET https://www.wired.com/feed/rss -> 200 (42451 b)
+61126:11-12 09:52:13.349  5801  5846 I KravosVesti: GET https://feeds.bbci.co.uk/news/technology/rss.xml -> 200 (15500 b)
+61132:11-12 09:52:13.357  5801  7631 I KravosVesti: GET https://www.danas.rs/feed/ -> 200 (98041 b)
+61141:11-12 09:52:13.373  5801  7630 I KravosVesti: GET https://www.technologyreview.com/feed/ -> 200 (113689 b)
+61150:11-12 09:52:13.405  5801  7649 W KravosVesti: GET https://www.newscientist.com/feed/home/ -> 406 
+61151:11-12 09:52:13.405  5801  5801 W KravosVesti: feed newscientist failed: HTTP 406: 
+61159:11-12 09:52:13.439  5801  5846 I KravosVesti: GET https://www.quantamagazine.org/feed/ -> 200 (10731 b)
+61166:11-12 09:52:13.499  5801  7631 I KravosVesti: GET https://www.scientificamerican.com/platform/syndication/rss/ -> 200 (28002 b)
+61167:11-12 09:52:13.510  5801  7648 I KravosVesti: GET https://www.theguardian.com/science/rss -> 200 (94009 b)
+61171:11-12 09:52:13.522  5801  7632 I KravosVesti: GET https://www.sciencedaily.com/rss/top/science.xml -> 200 (45856 b)
+61188:11-12 09:52:13.605  5801  7649 I KravosVesti: GET https://feeds.bbci.co.uk/news/science_and_environment/rss.xml -> 200 (30289 b)
+61192:11-12 09:52:13.617  5801  5801 W KravosVesti: feed space failed: CLEARTEXT communication to www.space.com not permitted by network security policy
+61201:11-12 09:52:13.668  5801  7637 I KravosVesti: GET https://www.theguardian.com/technology/rss -> 200 (126826 b)
+61202:11-12 09:52:13.670  5801  5846 I KravosVesti: GET https://www.bleepingcomputer.com/feed/ -> 200 (13054 b)
+61216:11-12 09:52:13.775  5801  7649 I KravosVesti: GET https://therecord.media/feed -> 200 (5229 b)
+61220:11-12 09:52:13.779  5801  7636 I KravosVesti: GET https://benchmark.rs/feed/ -> 200 (15553 b)
+61226:11-12 09:52:13.834  5801  7637 I KravosVesti: GET https://krebsonsecurity.com/feed/ -> 200 (129887 b)
+61238:11-12 09:52:13.962  5801  7633 I KravosVesti: GET https://www.b92.net/info/rss/tehnopolis.xml -> 200 (16918 b)
+61253:11-12 09:52:14.064  5801  7648 I KravosVesti: GET https://www.lightreading.com/rss.xml -> 200 (76043 b)
+61266:11-12 09:52:14.246  5801  7630 I KravosVesti: GET https://www.telecoms.com/rss.xml -> 200 (74636 b)
+61267:11-12 09:52:14.249  5801  7630 I KravosVesti: GET https://www.beobuild.rs/feed -> 200 (25761 b)
+61286:11-12 09:52:14.440  5801  7634 I KravosVesti: GET https://www.telegraf.rs/rss/hi-tech -> 200 (414265 b)
+61292:11-12 09:52:14.499  5801  7649 I KravosVesti: GET https://www.kurir.rs/rss/vesti/beograd -> 200 (78052 b)
+61293:11-12 09:52:14.549  5801  7637 I KravosVesti: GET https://nova.rs/tag/beograd/feed/ -> 200 (27014 b)
+61297:11-12 09:52:14.658  5801  5846 I KravosVesti: GET https://n1info.rs/tag/beograd/feed/ -> 200 (28626 b)
+61298:11-12 09:52:14.660  5801  7637 I KravosVesti: GET https://sajam.rs/feed/ -> 200 (86900 b)
+61304:11-12 09:52:14.712  5801  7632 I KravosVesti: GET https://www.blic.rs/rss/Vesti/Beograd -> 200 (96474 b)
+61313:11-12 09:52:14.916  5801  7648 I KravosVesti: GET https://nova.rs/tag/koncert/feed/ -> 200 (27720 b)
+61314:11-12 09:52:14.952  5801  7635 I KravosVesti: GET https://www.rts.rs/page/magazine/sr/rss/510/nauka.html -> 200 (145000 b)
+61315:11-12 09:52:15.015  5801  5846 I KravosVesti: GET https://news.google.com/rss/search?q=Beograd+(koncert+OR+izlo%C5%BEba+OR+festival+OR+predstava+OR+sajam)+when:2d&hl=sr&gl=RS&ceid=RS:sr-Latn -> 200 (36870 b)
+61319:11-12 09:52:15.121  5801  7636 I KravosVesti: GET https://headliner.rs/feed/ -> 200 (74975 b)
+61328:11-12 09:52:15.139  5801  5890 I KravosVesti: GET https://n1info.rs/tag/koncert/feed/ -> 200 (26618 b)
+61332:11-12 09:52:15.144  5801  7631 I KravosVesti: GET https://www.danubeogradu.rs/feed/ -> 200 (128835 b)
+61336:11-12 09:52:15.167  5801  7637 I KravosVesti: GET https://www.kurir.rs/rss/auto -> 200 (80063 b)
+61349:11-12 09:52:15.234  5801  7648 I KravosVesti: GET https://electrek.co/feed/ -> 200 (273218 b)
+61356:11-12 09:52:15.270  5801  5846 I KravosVesti: GET https://insideevs.com/rss/news/all/ -> 200 (13564 b)
+61365:11-12 09:52:15.294  5801  5890 I KravosVesti: GET https://www.autocar.co.uk/rss -> 200 (315558 b)
+61369:11-12 09:52:15.302  5801  7636 I KravosVesti: GET https://www.motor1.com/rss/news/all/ -> 200 (13743 b)
+61374:11-12 09:52:15.362  5801  7635 I KravosVesti: GET https://n1info.rs/magazin/auto/feed/ -> 200 (28673 b)
+61387:11-12 09:52:15.390  5801  7633 I KravosVesti: GET https://www.danas.rs/tag/beograd/feed/ -> 200 (116934 b)
+61398:11-12 09:52:15.505  5801  7634 I KravosVesti: GET https://stillinbelgrade.com/feed/ -> 200 (12028 b)
+61405:11-12 09:52:15.527  5801  7648 I KravosVesti: GET https://n1info.rs/tag/ljubimci/feed/ -> 200 (27105 b)
+61425:11-12 09:52:15.644  5801  7649 I KravosVesti: GET https://www.theguardian.com/lifeandstyle/pets/rss -> 200 (65773 b)
+61437:11-12 09:52:15.833  5801  5846 I KravosVesti: GET https://www.b92.net/rss/sport -> 200 (16807 b)
+61438:11-12 09:52:15.849  5801  7630 I KravosVesti: GET https://feeds.bbci.co.uk/sport/rss.xml -> 200 (56531 b)
+61447:11-12 09:52:15.989  5801  7649 I KravosVesti: GET https://www.theguardian.com/sport/rss -> 200 (79434 b)
+61451:11-12 09:52:15.995  5801  7632 I KravosVesti: GET https://www.b92.net/info/rss/automobili.xml -> 200 (16311 b)
+61457:11-12 09:52:16.097  5801  7631 I KravosVesti: GET https://www.zurnal.rs/rss -> 200 (14485 b)
+61458:11-12 09:52:16.104  5801  5890 I KravosVesti: GET https://sportklub.n1info.rs/feed/ -> 200 (68230 b)
+61459:11-12 09:52:16.109  5801  7632 I KravosVesti: GET https://www.theguardian.com/world/animals/rss -> 200 (69293 b)
+61460:11-12 09:52:16.117  5801  5846 I KravosVesti: GET https://www.motorsport.com/rss/f1/news/ -> 200 (70537 b)
+61461:11-12 09:52:16.135  5801  7636 I KravosVesti: GET https://feeds.bbci.co.uk/news/world/europe/rss.xml -> 200 (17403 b)
+61469:11-12 09:52:16.295  5801  7633 I KravosVesti: GET https://meridiansport.rs/feed/ -> 200 (11400 b)
+61474:11-12 09:52:16.540  5801  7637 I KravosVesti: GET https://www.rts.rs/page/sport/ci/rss.html -> 200 (57538 b)
+61475:11-12 09:52:16.617  5801  7648 I KravosVesti: GET https://www.sportske.net/rss -> 200 (32192 b)
+61476:11-12 09:52:16.794  5801  7635 I KravosVesti: GET https://www.eurohoops.net/en/feed/ -> 200 (96989 b)
+61523:11-12 09:52:17.990  7818  7818 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+61524:11-12 09:52:17.992  7818  7818 I AndroidRuntime: Using default boot image
+61525:11-12 09:52:17.992  7818  7818 I AndroidRuntime: Leaving lock profiling enabled
+61539:11-12 09:52:18.049  7818  7818 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+61587:11-12 09:52:19.066  7818  7818 D AndroidRuntime: Shutting down VM
+61666:11-12 09:52:19.967   521  2122 I ImeTracker: net.kravos.vesti:962eddab: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+61667:11-12 09:52:19.967   521  2122 I ImeTracker: net.kravos.vesti:962eddab: onCancelled at PHASE_SERVER_SHOULD_HIDE
+61670:11-12 09:52:19.969  1485  1485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
+61703:11-12 09:52:25.080   521   534 I ImeTracker: net.kravos.vesti:9a0acfa: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+61704:11-12 09:52:25.080   521   534 I ImeTracker: net.kravos.vesti:9a0acfa: onCancelled at PHASE_SERVER_SHOULD_HIDE
+61707:11-12 09:52:25.081  1485  1485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.vesti fieldId=0 fieldName=null extras=null}, false)
+61710:11-12 09:52:26.068  7852  7852 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+61711:11-12 09:52:26.071  7852  7852 I AndroidRuntime: Using default boot image
+61712:11-12 09:52:26.071  7852  7852 I AndroidRuntime: Leaving lock profiling enabled
+61726:11-12 09:52:26.128  7852  7852 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+61790:11-12 09:52:27.146  7852  7852 D AndroidRuntime: Shutting down VM
+61873:11-12 09:52:44.168  7887  7887 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+61874:11-12 09:52:44.170  7887  7887 I AndroidRuntime: Using default boot image
+61875:11-12 09:52:44.170  7887  7887 I AndroidRuntime: Leaving lock profiling enabled
+61888:11-12 09:52:44.222  7887  7887 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+61960:11-12 09:52:45.239  7887  7887 D AndroidRuntime: Shutting down VM
+62098:11-12 09:52:53.244  7919  7919 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+62099:11-12 09:52:53.247  7919  7919 I AndroidRuntime: Using default boot image
+62100:11-12 09:52:53.247  7919  7919 I AndroidRuntime: Leaving lock profiling enabled
+62113:11-12 09:52:53.298  7919  7919 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+62172:11-12 09:52:54.315  7919  7919 D AndroidRuntime: Shutting down VM
+62259:11-12 09:53:01.298  7945  7945 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+62260:11-12 09:53:01.300  7945  7945 I AndroidRuntime: Using default boot image
+62261:11-12 09:53:01.300  7945  7945 I AndroidRuntime: Leaving lock profiling enabled
+62274:11-12 09:53:01.359  7945  7945 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+62321:11-12 09:53:02.384  7945  7945 D AndroidRuntime: Shutting down VM
+62407:11-12 09:53:15.381  7980  7980 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+62408:11-12 09:53:15.383  7980  7980 I AndroidRuntime: Using default boot image
+62409:11-12 09:53:15.383  7980  7980 I AndroidRuntime: Leaving lock profiling enabled
+62422:11-12 09:53:15.434  7980  7980 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+62482:11-12 09:53:16.459  7980  7980 D AndroidRuntime: Shutting down VM
+62683:11-12 09:53:17.398   521   538 V WindowManager:     info={id=11 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{231c290 Task{3104f4c #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x32bf501 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{77d4045 Task{50f1018 #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0xc8e0e53 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{c9073bc token=android.os.Binder@68ee3af})/@0x61485b7 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+62721:11-12 09:53:22.365  8009  8009 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+62722:11-12 09:53:22.367  8009  8009 I AndroidRuntime: Using default boot image
+62723:11-12 09:53:22.367  8009  8009 I AndroidRuntime: Leaving lock profiling enabled
+62736:11-12 09:53:22.418  8009  8009 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+62791:11-12 09:53:23.436  8009  8009 D AndroidRuntime: Shutting down VM
+62888:11-12 09:53:24.332   521   538 V WindowManager:     info={id=12 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{231c290 Task{3104f4c #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x32bf501 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{77d4045 Task{50f1018 #9 type=standard A=10192:net.kravos.vesti}}} m=TO_BACK f=NONE leash=Surface(name=Task=9)/@0xc8e0e53 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{c9073bc token=android.os.Binder@68ee3af})/@0x61485b7 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+62934:11-12 09:53:30.429  8041  8041 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+62935:11-12 09:53:30.432  8041  8041 I AndroidRuntime: Using default boot image
+62936:11-12 09:53:30.432  8041  8041 I AndroidRuntime: Leaving lock profiling enabled
+62949:11-12 09:53:30.484  8041  8041 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+62995:11-12 09:53:31.498  8041  8041 D AndroidRuntime: Shutting down VM
+63115:11-12 09:53:47.459  8100  8100 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+63116:11-12 09:53:47.462  8100  8100 I AndroidRuntime: Using default boot image
+63117:11-12 09:53:47.462  8100  8100 I AndroidRuntime: Leaving lock profiling enabled
+63131:11-12 09:53:47.516  8100  8100 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+63189:11-12 09:53:48.538  8100  8100 D AndroidRuntime: Shutting down VM
+63393:11-12 09:53:59.061  8150  8150 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+63394:11-12 09:53:59.064  8150  8150 I AndroidRuntime: Using default boot image
+63395:11-12 09:53:59.064  8150  8150 I AndroidRuntime: Leaving lock profiling enabled
+63408:11-12 09:53:59.114  8150  8150 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+63474:11-12 09:54:00.131  8150  8150 D AndroidRuntime: Shutting down VM
+63560:11-12 09:54:10.577  8192  8192 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+63561:11-12 09:54:10.580  8192  8192 I AndroidRuntime: Using default boot image
+63562:11-12 09:54:10.580  8192  8192 I AndroidRuntime: Leaving lock profiling enabled
+63575:11-12 09:54:10.630  8192  8192 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+63630:11-12 09:54:11.647  8192  8192 D AndroidRuntime: Shutting down VM
+63769:11-12 09:54:13.119  5801  7635 I KravosVesti: GET https://n1info.rs/vesti/vjt-u-novom-sadu-uhapseno-jos-dvoje-zbog-poreske-prevare-utaje-i-pranja-novca/ -> 200 (430487 b)

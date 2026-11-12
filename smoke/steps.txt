@@ -3,6 +3,11 @@ shot 02-danas-scroll
 shot 03-danas-scroll2
 shot 04-danas-scroll3
 shot 05-warm-start
+tapped Najaktuelnije
+shot 06-danas-aktuelno
+tapped Najnovije
+shot 07-danas-najnovije
+tapped Pregled
 tapped /[0-9]+ izvora/
 shot 10-story
 shot 11-story-scroll
@@ -18,7 +23,7 @@ tapped Najnovije
 shot 31-srbija-najnovije
 tapped /.{50,}/
 shot 32-najnovije-reader
-tapped Najvažnije
+tapped Najaktuelnije
 tapped Kategorija
 shot 33-category-menu
 tapped Politika
@@ -38,13 +43,11 @@ shot 41-svet-story
 tapped /pre [0-9]+ (min|h)/
 shot 42-svet-reader
 shot 43-svet-reader-scroll
-tapped Bezbednost
-shot 50-bezbednost
+tapped Nauka i tehnologija
+shot 50-nauka
 tapped /.{50,}/
 shot 51-bezb-reader
 shot 52-bezb-reader-scroll
-NOT FOUND: Najaktuelnije
-shot 44-aktuelno
 tapped Sport
 shot 55-sport
 shot 56-sport-scroll
