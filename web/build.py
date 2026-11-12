@@ -438,6 +438,9 @@ def main():
     world_tags = load_set(os.path.join(KT, "Sources.kt"), "WORLD_TAGS")
     sport_tags = load_set(os.path.join(KT, "Sources.kt"), "SPORT_TAGS")
     ent_tags = load_set(os.path.join(KT, "Sources.kt"), "ENT_TAGS")
+    jt = open(os.path.join(KT, "Sources.kt"), encoding="utf-8").read()
+    jm = re.search(r'val JUNK_TITLE = Regex\(\s*"((?:[^"\\]|\\.)*)"', jt)
+    JUNK = re.compile(json.loads('"' + jm.group(1) + '"'), re.I)
     auto_tags = load_set(os.path.join(KT, "Sources.kt"), "AUTO_TAGS")
     pet_exact = load_set(os.path.join(KT, "Sources.kt"), "PET_EXACT")
     pet_prefix = tuple(load_set(os.path.join(KT, "Sources.kt"), "PET_PREFIX"))
@@ -481,6 +484,8 @@ def main():
             failed.append(s["name"])
         for a in lst:
             if s["only"] and not (a["tags"] & s["only"]):
+                continue
+            if JUNK.search(a["title"]):
                 continue
             is_auto = s["section"] == "AUTO" or bool(a["tags"] & auto_tags)
             if a["tags"] & s["skip"] or (a["tags"] & ent_tags and not is_auto and s["section"] != "LJUBIMCI"):

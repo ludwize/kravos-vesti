@@ -67,7 +67,7 @@ object Categories {
             "sajber cyber haker hack hacked hacker ransomware malware phishing breach vulnerab =cve cve exploit botnet spyware zero",
             setOf("therecord", "bleeping", "securityweek", "krebs", "thn", "darkreading")),
         Cat("svemir", "Svemir", NAUKA, setOf("space", "svemir", "astronomy"),
-            "svemir kosmos kosmic =nasa =esa spacex raket rocket satelit satellite =mars =mesec =moon asteroid galax planet teleskop telescope orbit astronaut starship launch", setOf("space")),
+            "svemir kosmos kosmic =nasa =esa spacex raket rocket satelit satellite =mars =mesec =moon asteroid galaksij galaxies planet teleskop telescope orbit astronaut starship launch", setOf("space")),
         Cat("nauka", "Nauka i medicina", NAUKA, setOf("nauka", "наука", "природа", "science", "health", "biology", "physics"),
             "naucni naucnic istraziv studij study research scientist fizik physics biolog hemij chemi medicin =lek vakcin vaccine cancer genet =dna fosil fossil dinosaur klim climate quantum kvant arheolo archaeolog brain mozak",
             setOf("newscientist", "sciam", "quanta", "sciencedaily", "physorg", "bbcsci", "guardiansci")),

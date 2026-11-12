@@ -120,6 +120,12 @@ object Sources {
         "formula 1", "football", "rukomet",
     )
 
+    /** Titles that are shopping/listing filler rather than news (deal and coupon posts, daily funeral lists...). */
+    val JUNK_TITLE = Regex(
+        "(coupon|promo code|discount code|black friday deal|best .{0,40} deals?\\b|% off|sahrane i kremacije)",
+        RegexOption.IGNORE_CASE,
+    )
+
     /** Car pieces from general outlets move to the Automobili tab (instead of being hidden as lifestyle). */
     val AUTO_TAGS = setOf("auto", "automobili", "automobil", "motoring", "cars", "auto moto")
 
