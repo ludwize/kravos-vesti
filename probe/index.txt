@@ -1,43 +1,80 @@
-53 sources, 48 categories
-  ! rtssport https://www.rts.rs/page/sport/ci/rss.html: <urlopen error _ssl.c:1063: The handshake operation timed out>
-1075 articles -> 647 stories; failed: ['RTS Sport']; data.json 472 KB
-
-
-AUTO: 82 stories; cats {'ev': 44, 'modeli': 6, 'saveti': 5, 'industrija': 5}; sources {'Electrek': 24, 'InsideEVs': 11, 'Motor1': 20, 'B92 Automobili': 15, 'Autocar': 14, 'Kurir Auto': 3}
-   [ev,modeli] Electrek: PlugShare finally adds dark mode, and there’s more for EV drivers
-   [ev] Electrek: Ford’s EV batteries retain more than 90% health after 100,000 miles
-   [ev] InsideEVs: Land Rover Is Going After BYD Over This Alleged Defender Lookalike: Report
-   [ev] Electrek: Honda shows off its next electric motorcycle, and it’s wilder than you thought
-   [] Motor1: Mercedes Chairman Says Gas And Diesel Engines Still Have 10–15 Years Left
-   [ev] B92 Automobili: Land Rover napao BYD: Tvrdi da su Kinezi rastavili Defender i iskopirali njegovu tehnologi
-   [] Motor1: This Porsche 924 Was The UAE's First Performance Police Car
-   [] Motor1: Polestar's New Concept Looks Fantastic. Too Bad It Won't Reach Production
-   [] Autocar: When retro's a no-go: Polestar concept is a masterclass in design reinvention
-   [modeli] Autocar: Polestar’s future revealed: Radical coupé shows sporting ambitions
-   [ev] InsideEVs: Honda Is Betting $3 Billion On Hybrids As It Pulls Back From EVs
-   [saveti] B92 Automobili: Mehaničar sa 50 godina iskustva ima važan savet: Isključite ovu funkciju u automobilu
-   [modeli] Autocar: Rolls-Royce Spectre
-   [industrija] Motor1: Honda’s New Ohio Plant Will Reportedly Build Next-Gen Acura MDX And Two Flagship SUVs
-   [] Autocar: BMW could build V8 Alpina concept as luxury brand's 'M1 moment'
-   [ev] Electrek: Humble Hauler autonomous trailer takes the truck out of trucking [update]
-   [ev] Autocar: New BMW i3 rated: EV goes straight to the top of the class
-   [ev] Electrek: The Mercedes-Benz EQS drove 539 miles on a single charge. Still worried about range?
-   [saveti] Kurir Auto: Trik za koji mnogi vozači ne znaju: Ovo dugme rešava problem zamagljenih stakala na automo
-   [] Motor1: This Alpina Volkswagen Beetle Render Is Weird In All The Right Ways
-   [ev] InsideEVs: BMW Is Embracing Cheaper LFP Batteries For Its Newest EVs
-   [ev] Electrek: Toyota sells 3 electric SUVs, but which one is best for you?
-   [ev] Electrek: Yozma IN 10 Pro e-dirt bike hits exclusive new $1,614 low, Anker early Black Friday securi
-   [ev] Electrek: The electric Vespa just got better where it actually matters
-   [ev] InsideEVs: Ford's Radical New EV Manufacturing Process Is Already Building Trucks
-
-LJUBIMCI: 8 stories; cats {'divlje': 5, 'psi': 4, 'zastita': 1, 'zdravlje_lj': 1}; sources {'Guardian': 6, 'N1': 1, 'Blic Beograd': 1}
-   [divlje] Guardian: Alien menace or victim of xenophobia? The battle over Britain’s parakeets
-   [psi] N1: Zašto psi imaju mali džep na uhu - postoje dve teorije
-   [psi] Guardian: The pet I’ll never forget: Mae the labrador, who keeps me safe with her keen nose and pier
-   [divlje,zastita] Guardian: This grim story of marine park whales could yet have a positive outcome – if it teaches us
-   [divlje] Guardian: A new start after 60: I was burnt out and facing redundancy. So I set up a bee farm – and 
-   [divlje] Guardian: Country diary: Teasing out spiders with a tuning fork | Susie White
-   [psi,zdravlje_lj,divlje] Guardian: When the 11-plus test went to the dogs | Brief letters
-   [psi] Blic Beograd: BEOGRADSKI ROMEO I JULIJA! O zabranjenoj ljubavi Zagle i Badže sa Dorćola pisao i Nušić: P
-pip: 0 
-page errors: []
+200     29052  n1_scitech  https://n1info.rs/magazin/scitech/feed/
+200     29872  n1_tag_teh  https://n1info.rs/tag/tehnologija/feed/
+404    165253  nova_tech  https://nova.rs/magazin/tehnologija/feed/
+200     29527  nova_tag_teh  https://nova.rs/tag/tehnologija/feed/
+200     29489  nova_tag_nauka  https://nova.rs/tag/nauka/feed/
+200    101958  danas_tag_teh  https://www.danas.rs/tag/tehnologija/feed/
+200    104429  danas_tag_nauka  https://www.danas.rs/tag/nauka/feed/
+200     17020  b92_tehno  https://www.b92.net/info/rss/tehnopolis.xml
+200     18285  b92_zivot  https://www.b92.net/info/rss/zivot.xml
+200     49001  startit  https://startit.rs/feed/
+403      5682  pcpress  https://pcpress.rs/feed/
+200     15662  benchmark  https://benchmark.rs/feed/
+200    116599  netokracija  https://www.netokracija.rs/feed
+200    132219  sk  https://www.sk.rs/rss.xml
+200    229785  rts_nauka  https://www.rts.rs/page/magazine/sr/rss/510/nauka.html
+200    229785  rts_teh  https://www.rts.rs/page/magazine/sr/rss/511/tehnologija.html
+0        63  elementarijum  https://elementarijum.rs/feed/
+200    559784  naukakrozprice  https://naukakrozprice.rs/feed/
+200     23922  bbc_sr  https://feeds.bbci.co.uk/serbian/lat/rss.xml
+200     78445  mondo_tech  https://mondo.rs/rss/644/Mob-IT
+404     98991  kurir_tech  https://www.kurir.rs/rss/tech
+200    421569  telegraf_tech  https://www.telegraf.rs/rss/hi-tech
+200     73115  ars_all  https://feeds.arstechnica.com/arstechnica/index
+200     46827  verge  https://www.theverge.com/rss/index.xml
+200     42576  wired  https://www.wired.com/feed/rss
+200    114437  mittr  https://www.technologyreview.com/feed/
+200     57408  newscientist  https://www.newscientist.com/feed/home/
+200    122691  nature  https://www.nature.com/nature.rss
+200     46009  sciencedaily  https://www.sciencedaily.com/rss/top/science.xml
+200     31522  physorg  https://phys.org/rss-feed/
+200     10751  quanta  https://www.quantamagazine.org/feed/
+200     30301  bbc_sci  https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+200     15503  bbc_tech  https://feeds.bbci.co.uk/news/technology/rss.xml
+200     94214  guardian_sci  https://www.theguardian.com/science/rss
+200    127231  guardian_tech  https://www.theguardian.com/technology/rss
+200     17075  techcrunch  https://techcrunch.com/feed/
+200   1067773  space  https://www.space.com/feeds/all
+200     43303  spacenews  https://spacenews.com/feed/
+200     28055  sciam  https://www.scientificamerican.com/platform/syndication/rss/
+200     76066  lightreading  https://www.lightreading.com/rss.xml
+200     74657  telecoms  https://www.telecoms.com/rss.xml
+200     14646  rcr  https://www.rcrwireless.com/feed
+0        28  hn  https://hnrss.org/frontpage?points=300
+200    128497  danubg  https://www.danubeogradu.rs/feed/
+401       802  beforeafter  https://www.beforeafter.rs/feed/
+404     38876  gdeizaci  https://www.gdeizaci.com/feed/
+403      5667  belgradebeat  https://belgrade-beat.rs/feed/
+404      5851  tob  https://www.tob.rs/rss
+404     42973  tob2  https://www.tob.rs/sr/feed
+200     69187  kcb  https://www.kcb.org.rs/feed/
+404    130764  beogradrs  https://www.beograd.rs/cir/rss/
+404    110464  beogradrs2  https://www.beograd.rs/lat/rss/
+200     13773  dob  https://domomladine.org/feed/
+200     21846  kolarac  https://www.kolarac.rs/feed/
+200     88534  sajam  https://sajam.rs/feed/
+404     74231  seecult  https://www.seecult.org/rss.xml
+200     18041  b92_kultura  https://www.b92.net/info/rss/kultura.xml
+404    253165  b92_beograd  https://www.b92.net/info/rss/beograd.xml
+200     27535  nova_kultura  https://nova.rs/kultura/feed/
+200     28128  n1_kultura  https://n1info.rs/kultura/feed/
+200    113182  danas_tag_koncert  https://www.danas.rs/tag/koncert/feed/
+200     26842  n1_tag_koncert  https://n1info.rs/tag/koncert/feed/
+200     27956  nova_tag_koncert  https://nova.rs/tag/koncert/feed/
+403      5644  balkanrock  https://balkanrock.com/feed/
+200     75669  headliner  https://headliner.rs/feed/
+0       103  hellycherry  https://www.hellycherry.com/feeds/posts/default?alt=rss
+404       649  nocturne  https://www.nocturnemagazine.net/feed/
+200    368971  beogradnocu  https://beogradnocu.com/feed/
+404     70244  kudaveceras  https://www.kudaveceras.rs/feed/
+200     12058  stillinbg  https://stillinbelgrade.com/feed/
+200     33727  bgonline  https://bgonline.rs/feed/
+403       275  bilet  https://www.bilet.rs/feed/
+0        52  kulturniks  https://kulturnik.rs/feed/
+200     73135  okruzenje  https://www.gradskeinfo.rs/feed/
+200      5698  mojbeograd  https://www.mojbeograd.rs/feed/
+200      5698  beoinfo  https://www.beoinfo.rs/feed/
+200     55880  gradnja  https://www.gradnja.rs/feed/
+200     37182  gn_dogadjaji  https://news.google.com/rss/search?q=Beograd+(koncert+OR+izlo%C5%BEba+OR+festival+OR+predstava+OR+sajam)+when:2d&hl=sr&gl=RS&ceid=RS:sr-Latn
+200     42300  gn_vikend  https://news.google.com/rss/search?q=%22u+Beogradu%22+(vikend+OR+doga%C4%91aji+OR+manifestacija)+when:3d&hl=sr&gl=RS&ceid=RS:sr-Latn
+SITE: generated 3 min ago; sections ['SRBIJA', 'SPORT', 'SVET', 'AUTO', 'BEOGRAD', 'LJUBIMCI', 'BEZBEDNOST']
