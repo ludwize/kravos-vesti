@@ -96,7 +96,6 @@ object Categories {
             "izlozb muzej galerij sajam =sajma bazar vasar manifestac", setOf("bgsajam")),
         Cat("izlasci", "Izlasci i vikend", BEOGRAD, setOf("izlasci", "shopping", "what's on", "city guide"),
             "vikend izlasci zurk restoran kafan market dogadjaj", setOf("danubg", "stillinbg")),
-            "koncert festival izlozb pozorist muzej sajam manifestac trofej maraton dogadjaj premijer =bitef =fest"),
         // Automobili
         Cat("ev", "Električni i hibridi", AUTO, setOf("električni automobili", "electric vehicles", "ev"),
             "elektri =ev =evs =phev =bev hibrid hybrid baterij battery punjac punjenj charging charger tesla =byd domet range plug", setOf("electrek", "insideevs")),
