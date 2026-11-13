@@ -68,6 +68,11 @@ tapped /.{50,}/
 shot 56d-auto-reader
 tapped Ljubimci
 shot 56e-ljubimci
+tapped Više
+tapped Zdravlje
+shot 56f-zdravlje
+tapped Kategorija
+shot 56g-zdravlje-menu
 tapped Sačuvano
 shot 60-sacuvano
 NOT FOUND /NOVA.*|N1.*|DANAS.*|[A-Z ]+ · .*/
