@@ -82,9 +82,10 @@ tapped Danas
 shot 69-danas-top
 tapped Podešavanja
 shot 70-settings
+shot 70b-settings-sync
 shot 71-settings-scroll
 shot 72-settings-scroll2
-tapped Tamna
+NOT FOUND: Tamna
 shot 73-settings-dark
 shot 80-dark-danas
 tapped /[0-9]+ izvora/
