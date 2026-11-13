@@ -1,0 +1,424 @@
+
+### n1_zdravlje: 20 items, root=rss newest 1.7h, last24h 8
+- Neurolog otkrio pet stvari koje nikada ne bi radio nakon hiljada pregleda mozga i slučajeva Alchajmerove boles
+  link=https://n1info.rs/magazin/zdravlje/neurolog-otkrio-pet-stvari-koje-nikada-ne-bi-radio-nakon-sto-je-pregledao-hiljade-snimaka-mozga-i-slucajeva-alchajmerove-bolesti/
+  date=Fri, 13 Nov 2026 14:48:43 +0100 cats=['Zdravlje', 'navike', 'zdravlje', 'alchajmerova bolest', 'neurolog']
+  desc=150 content=261 media=['https://n1info.rs/media/images/2026/9/22/1790059005_shutterstock_1395893876.width-1200.jpg'] enc=[]
+  desc0='Neurolog koji tvrdi da se Alchajmerova bolest u velikoj meri može sprečiti otkrio je pet stvari koje bi ljudi trebalo da izbegavaju kako bi smanjili r'
+- Otkriće naučnika: Krvno-moždana barijera ima ulogu za koju se ranije nije znalo
+  link=https://n1info.rs/magazin/zdravlje/otkrice-naucnika-krvno-mozdana-barijera-ima-ulogu-za-koju-se-ranije-nije-znalo/
+  date=Fri, 13 Nov 2026 12:14:11 +0100 cats=['Zdravlje', 'mozak', 'lečenje', 'alchajmerova bolest', 'studija']
+  desc=150 content=262 media=['https://n1info.rs/media/images/2026/11/13/1794565096_shutterstock_2609267153.width-1200.jpg'] enc=[]
+  desc0='Krvno-moždana barijera ima izuzetno važnu ulogu. Ona održava strogu kontrolu nad tim kojim supstancama je dozvoljen ulazak u naš najosetljiviji organ,'
+- Namirnice koje mnogi svakodnevno jedu povezane su sa izraženijim simptomima PMS-a
+  link=https://n1info.rs/magazin/zdravlje/namirnice-koje-mnogi-svakodnevno-jedu-povezane-su-sa-izrazenijim-simptomima-pms-a/
+  date=Fri, 13 Nov 2026 09:30:34 +0100 cats=['Zdravlje', 'simptomi', 'menstrualni ciklus', 'slatkiši', 'istraživanje']
+  desc=85 content=197 media=['https://n1info.rs/media/images/2026/11/13/1794558574_shutterstock_2063889500.width-1200.jpg'] enc=[]
+  desc0='Nekoliko dana pre menstruacije, čokoladi u kuhinjskom ormariću možda je teže odoleti.'
+
+### n1_tag_zdr: 20 items, root=rss newest 1.7h, last24h 3
+- Neurolog otkrio pet stvari koje nikada ne bi radio nakon hiljada pregleda mozga i slučajeva Alchajmerove boles
+  link=https://n1info.rs/magazin/zdravlje/neurolog-otkrio-pet-stvari-koje-nikada-ne-bi-radio-nakon-sto-je-pregledao-hiljade-snimaka-mozga-i-slucajeva-alchajmerove-bolesti/
+  date=Fri, 13 Nov 2026 14:48:43 +0100 cats=['Zdravlje', 'navike', 'zdravlje', 'alchajmerova bolest', 'neurolog']
+  desc=150 content=261 media=['https://n1info.rs/media/images/2026/9/22/1790059005_shutterstock_1395893876.width-1200.jpg'] enc=[]
+  desc0='Neurolog koji tvrdi da se Alchajmerova bolest u velikoj meri može sprečiti otkrio je pet stvari koje bi ljudi trebalo da izbegavaju kako bi smanjili r'
+- Od problema sa srcem do nesanice: Sedam rizika čestog konzumiranja energetskih pića
+  link=https://n1info.rs/magazin/zdravlje/od-problema-sa-srcem-do-nesanice-sedam-rizika-cestog-konzumiranja-energetskih-pica/
+  date=Fri, 13 Nov 2026 08:33:17 +0100 cats=['Zdravlje', 'energetska pića', 'zdravlje', 'rizici']
+  desc=150 content=262 media=['https://n1info.rs/media/images/2026/11/13/1794555168_shutterstock_2469215051.width-1200.jpg'] enc=[]
+  desc0='Energetska pića mnogima su brz način da se razbude, povećaju koncentraciju ili lakše izdrže naporan dan. Međutim, zbog velike količine kofeina, šećera'
+- Jaja ili ovsena kaša: Koji doručak je bolji za zdravlje srca?
+  link=https://n1info.rs/magazin/zdravlje/jaja-ili-ovsena-kasa-koji-dorucak-je-bolji-za-zdravlje-srca/
+  date=Fri, 13 Nov 2026 06:55:00 +0100 cats=['Zdravlje', 'doručak', 'srce', 'kajgana', 'zdravlje']
+  desc=122 content=219 media=['https://n1info.rs/media/images/2026/11/12/1794496560_Untitled.width-1200.png'] enc=[]
+  desc0='Jutra mogu biti prilično haotična. To posebno važi ako pokušavate da na vreme spremite sebe i porodicu za izlazak iz kuće.'
+
+### nova_zdr: 20 items, root=rss newest 2.6h, last24h 4
+- Ako pijete svaki dan čašicu maslinovog ulja, u organizmu mogu da se dogode važne promene, ali lekari upozorava
+  link=https://nova.rs/magazin/zdravlje/ako-pijete-svaki-dan-casicu-maslinovog-ulja-u-organizmu-mogu-da-se-dogode-vazne-promene-ali-lekari-upozoravaju-na-jednu-stvar/
+  date=Fri, 13 Nov 2026 13:57:24 +0100 cats=['Zdravlje', 'Gastro', 'maslinovo ulje']
+  desc=150 content=257 media=['https://nova.rs/media/images/2026/7/16/1784197678_profimedia-0988468705.width-1200.jpg'] enc=[]
+  desc0='Maslinovo ulje odavno ima reputaciju jedne od najzdravijih namirnica na svetu, ali poslednjih godina sve je popularnija navika da se svakog jutra popi'
+- Lekar koji je pregledao hiljade snimaka mozga i pacijenata sa Alchajmerovom bolešću otkriva pet stvari koje ni
+  link=https://nova.rs/magazin/zdravlje/lekar-koji-je-pregledao-hiljade-snimaka-mozga-i-pacijenata-sa-alchajmerovom-bolescu-otkriva-pet-stvari-koje-nikada-ne-bi-radio/
+  date=Fri, 13 Nov 2026 12:01:05 +0100 cats=['Zdravlje', 'alchajmer', 'simptomi']
+  desc=150 content=256 media=['https://nova.rs/media/images/2026/11/13/1794567631_Simptomi_Alchajmera.width-1200.jpg'] enc=[]
+  desc0='Alchajmerova bolest jedna je od najtežih neurodegenerativnih bolesti, a naučnici već decenijama pokušavaju da otkriju kako da spreče njen nastanak ili'
+- Ako se ne osećate dobro od ranog jutra postoji razlog - evo šta se događa u vazduhu u Srbiji
+  link=https://nova.rs/magazin/vremenska-prognoza/ako-se-ne-osecate-dobro-od-ranog-jutra-postoji-razlog-evo-sta-se-dogadja-u-vazduhu-u-srbiji/
+  date=Fri, 13 Nov 2026 07:46:52 +0100 cats=['Vremenska prognoza', 'Zdravlje', 'promena vremena', 'vremenska prognoza']
+  desc=150 content=286 media=['https://nova.rs/media/images/2025/11/1764264741_Lepo-vreme_080420_Nova-foto-Goran-Srdanov-009-scaled.width-1200.jpg'] enc=[]
+  desc0='Danas (13.11.) natprosečno toplo i vetrovito. Tokom dana malo do umereno oblačno sa sunčanim intervalima. Ujutru i pre podne na severu, jugozapadu i j'
+
+### nova_tag_zdr: 20 items, root=rss newest 57.1h, last24h 0
+- Koliko čučnjeva bi trebalo da možete da uradite u svojim godinama: Pogledajte tabelu i šta se smatra dobrim re
+  link=https://nova.rs/magazin/zdravlje/koliko-cucnjeva-bi-trebalo-da-mozete-da-uradite-u-svojim-godinama-pogledajte-tabelu-i-sta-se-smatra-dobrim-rezultatom/
+  date=Wed, 11 Nov 2026 07:24:49 +0100 cats=['Zdravlje', 'Lifestyle', 'čučanj', 'zdravlje']
+  desc=150 content=258 media=['https://nova.rs/media/images/2026/11/11/1794378253_profimedia-0306976166.width-1200.jpg'] enc=[]
+  desc0='Čučnjevi nisu samo vežba koja se izvodi u teretani. Ovaj pokret svakodnevno ponavljamo kada sedamo na stolicu, ustajemo sa kauča ili se saginjemo da p'
+- Zašto ista količina proteina kod mladih deluje, a kod starijih ne?
+  link=https://nova.rs/magazin/zdravlje/zasto-ista-kolicina-proteina-kod-mladih-deluje-a-kod-starijih-ne/
+  date=Sun, 09 Aug 2026 08:55:28 +0200 cats=['Zdravlje', 'proteini', 'zdravlje']
+  desc=131 content=238 media=['https://nova.rs/media/images/2026/3/23/1774256323_profimedia-1011770049.width-1200.jpg'] enc=[]
+  desc0='Istraživanja sprovedena tokom poslednjih dvadesetak godina pokazala su da organizam sa godinama drugačije reaguje na unos proteina.'
+- "To sam zaradila još tokom korone": Tanja Savić prvi put o zdravstvenim problemima
+  link=https://nova.rs/zabava/showbiz/to-sam-zaradila-jos-tokom-korone-tanja-savic-prvi-put-o-zdravstvenim-problemima/
+  date=Tue, 21 Jul 2026 12:49:41 +0200 cats=['Showbiz', 'tanja savić', 'zdravlje']
+  desc=141 content=280 media=['https://nova.rs/media/images/1764163728_Tanja-Savic-ULAZ-festival-120719-Foto-Ras-Nemanja-Jovan_TSbEdFk.width-1200.jpg'] enc=[]
+  desc0='Pevačica Tanja Savić uveliko je započela svoje letnje nastupe po Crnoj Gori, ali ne krije da joj je potreban odmor kako bi se posvetila sebi.'
+
+### danas_tag_zdr: 50 items, root=rss newest 183.8h, last24h 0
+- Zagađen vazduh u Srbiji odnosi oko 12.000 života godišnje
+  link=https://www.danas.rs/vesti/drustvo/zagadjen-vazduh-u-srbiji-odnosi-oko-12-000-zivota-godisnje/
+  date=Thu, 05 Nov 2026 23:40:51 +0000 cats=['Društvo', 'Aerozagađenje', 'kvalitet vazduha', 'naucni skup', 'srpska akademija nauka i umetnosti']
+  desc=1032 content=0 media=[] enc=[]
+  desc0=' U Srpskoj akademiji nauka i umetnosti prvi put je organizovan naučni skup o uticaju aerozagađenja na zdravlje. Predstavljeni su najnoviji podaci o uticaju loše'
+- U Srbiji od migrene boluje milion građana
+  link=https://www.danas.rs/zivot/zdravlje/u-srbiji-od-migrene-boluje-milion-gradjana/
+  date=Wed, 04 Nov 2026 19:49:44 +0000 cats=['Zdravlje', 'inovativne terapije', 'migrena']
+  desc=810 content=0 media=[] enc=[]
+  desc0=' Migrena je kompleksno neurološko oboljenje, a ne "samo glavobolja", i može se uspešno lečiti, poručili su iz Nacionalnog udruženja za glavobolje.'
+- Kako prepoznati tegobe koje polako narušavaju kvalitet života
+  link=https://www.danas.rs/zivot/zdravlje/kako-prepoznati-tegobe-koje-polako-narusavaju-kvalitet-zivota/
+  date=Mon, 02 Nov 2026 16:16:05 +0000 cats=['Zdravlje', 'Hemoroidi', 'Petni trn', 'pr', 'SEO']
+  desc=1452 content=0 media=[] enc=[]
+  desc0=' Zdravstveni problemi ne pojavljuju se uvek iznenada, praćeni jakim bolovima ili simptomima koji nas odmah odvode lekaru. Mnogo češće počinju kao sitne neprijat'
+
+### danas_zdr -> 302 b''
+
+### b92_zdravlje -> 404 b'<!DOCTYPE html>\n<html lang="sr">\n<head>\n\n    \n    <title>B92.net - Najnovije vesti iz Srbije i sveta</title>\n    <meta c'
+
+### kurir_zdr: 100 items, root=rss newest 0.6h, last24h 13
+- Lupus zbunjuje imunski sistem: Naučnici otkrili neočekivani okidač zbog kojeg telo napada samo sebe
+  link=https://zdravlje.kurir.rs/bolesti/10154389/lupus-naucnici-otkrili-neocekivani-okidac-bolesti
+  date=Fri, 13 Nov 2026 14:52:31 GMT cats=[]
+  desc=122 content=0 media=[] enc=['https://static.kurir.rs/Thumbnail/2276229/jpeg/lupus-shutterstock_1902489136.jpg?ts=2026-11-05T16:04:10']
+  desc0='  '
+- Šta je organizmu najpotrebnije u novembru? Nutricionista otkriva 8 važnih nutrijenata i gde ih možete pronaći
+  link=https://zdravlje.kurir.rs/zdravlje/10160704/sta-je-telu-potrebno-u-novembru-8-vaznih-nutrijenata
+  date=Fri, 13 Nov 2026 14:07:18 GMT cats=[]
+  desc=121 content=0 media=[] enc=['https://static.kurir.rs/Thumbnail/2702621/jpeg/shutterstock_1154783938-copy.jpg?ts=2026-11-13T14:52:25']
+  desc0='  '
+- Fibromi na koži: Zašto nastaju i kada bi ih trebalo ukloniti?
+  link=https://zdravlje.kurir.rs/zdravlje/10158491/fibromi-na-kozi-uzroci-uklanjanje
+  date=Fri, 13 Nov 2026 13:14:45 GMT cats=[]
+  desc=116 content=0 media=[] enc=['https://static.kurir.rs/Thumbnail/2700954/jpeg/shutterstock_2535098947.jpg?ts=2026-11-10T14:37:35']
+  desc0='  '
+
+### blic_zdr: 70 items, root=rss newest 0.1h, last24h 70
+- SADA IMA MILIONE, A NEKADA JE KRPILA KRAJ S KRAJEM Našoj pevačici roditelji rade na pijaci: "To je pošten posa
+  link=https://www.blic.rs/zabava/nadici-ademov-roditelji-rade-na-pijaci-to-je-posten-posao/1qfvkdv
+  date=Fri, 13 Nov 2026 16:26:34 +0100 cats=[]
+  desc=213 content=526 media=[] enc=[]
+  desc0='Nadica Ademov je danas udata za milionera, a nekada je živela skromno, a njeni roditelji su se bavili trgovinom. Naime, mama i tata joj rade na pijaci, kako tad'
+- KAUČ IM JE OMILJENO MESTO Ovih osam rasa pasa obožava odmor: Među njima je i jedan poznati trkač
+  link=https://www.blic.rs/slobodno-vreme/ovih-osam-rasa-pasa-obozava-odmor-medju-njima-je-i-jedan-poznati-trkac/dtxmev6
+  date=Fri, 13 Nov 2026 16:17:58 +0100 cats=[]
+  desc=219 content=495 media=[] enc=[]
+  desc0='Dok pojedini psi jedva čekaju sledeću šetnju i novu priliku za jurnjavu, drugi se posle izlaska rado vraćaju na mekani jastuk. Među ljubiteljima mirnijeg tempa '
+- Mačka SAMA PUTOVALA VOZOM u Nemačkoj, vlasnik ostao na pauzi na jednoj od stanica
+  link=https://www.blic.rs/vesti/svet/macka-sama-putovala-vozom-u-nemackoj-vlasnik-ostao-na-pauzi-na-jednoj-od-stanica/5vpprwq
+  date=Fri, 13 Nov 2026 16:15:45 +0100 cats=[]
+  desc=273 content=534 media=[] enc=[]
+  desc0='Jedna mačka sama je putovala brzim vozom ICE od nemačkog grada Uelcena, udaljenog oko 90 kilometara od Hamburga, krajnjeg odredišta njenog 22-godišnjeg vlasnika'
+
+### rts_zdr: 20 items, root=rss newest 0.0h, last24h 20
+- Одложено суђење студенту из Ниша, оптуженом за насилничко понашање на скупу у Краљеву
+  link=https://www.rts.rs/vesti/hronika/6083134/odlozeno-sudjenje-studentu-iz-nisa-optuzenom-za-nasilnicko-ponasanje-na-skupu-u-kraljevu.html
+  date=Fri, 13 Nov 2026 16:28:06 +0100 cats=['Хроника']
+  desc=168 content=0 media=[] enc=[]
+  desc0='Суђење студенту из Ниша Милану Ђорђевићу, оптуженом за насилничко понашање на јавном скупу у Краљеву 29. априла, одложено је пред Вишим судом у Краљеву за 16. д'
+- КБЦ Звездара: Породиља преминула након порођаја, беба стабилно
+  link=https://www.rts.rs/vesti/hronika/6083132/kbc-zvezdara-preminula-porodilja-.html
+  date=Fri, 13 Nov 2026 16:27:05 +0100 cats=['Хроника']
+  desc=194 content=0 media=[] enc=[]
+  desc0='Клиничко болнички центар Звездара саопштио је да је због тешке постпорођајне компликације преминула породиља, а да је беба смештена у јединицу интензивне неге н'
+- "СКЦ у блокади" затражио оставку директора и распуштање Управног одбора
+  link=https://www.rts.rs/vesti/drustvo/6083126/skc-u-blokadi-zatrazio-ostavku-direktora-i-raspustanje-upravnog-odbora.html
+  date=Fri, 13 Nov 2026 16:30:14 +0100 cats=['Друштво']
+  desc=331 content=0 media=[] enc=[]
+  desc0='Група студената "СКЦ у блокади", која је током прошле године више месеци блокирала просторије Студентског културног центра у Београду, затражила је оставку врши'
+
+### telegraf_zdr: 100 items, root=rss newest 14498.0h, last24h 0
+- AstraZeneka povlači vakcinu nekoliko meseci nakon priznanja o nuspojavama
+  link=https://www.telegraf.rs/zivot-i-stil/zdravlje/3886483-astrazeneka-povlaci-vakcinu-nekoliko-meseci-nakon-priznanja-o-nuspojavama
+  date=Tue, 07 May 2024 23:57:13 +0200 cats=[]
+  desc=155 content=2288 media=[] enc=[]
+  desc0='Britansko-švedska farmaceutska kompanija AstraZeneka najavila je da povlači svoju vakcinu protiv kovida-19 nekoliko meseci nakon što je na londonskom sudu.'
+- 4 načina kako kovid-19 može da ostavi tragove na oku: Varira i očni pritisak, a moguć i moždani udar oka
+  link=https://www.telegraf.rs/zivot-i-stil/zdravlje/3805608-kako-covid-19-utice-na-zdravlje-ociju
+  date=Fri, 22 Dec 2023 11:34:29 +0100 cats=[]
+  desc=156 content=2382 media=[] enc=[]
+  desc0='Iako je zvanično proglašen kraj pandemije Covid-19, i dalje se mnogi suočavaju sa određenim posledicama. Na različite načine reagujemo na infekcije Covid-19'
+- Dr Milovanović upozorava: Deci treba pažljivo davati antibiotike
+  link=https://www.telegraf.rs/zivot-i-stil/zdravlje/3803839-dr-milovanovic-upozorava-deci-treba-pazljivo-davati-antibiotike
+  date=Fri, 22 Dec 2023 09:00:00 +0100 cats=[]
+  desc=1038 content=8551 media=[] enc=[]
+  desc0='Još od trenutka otkrića penicilina 1928. godine, upotreba antibiotika, kao jedinjenja koja služe za lečenje bakterijskih infekcija, je rasla sve više sa godinam'
+
+### mondo_zdr: 100 items, root=rss newest 19.5h, last24h 1
+- Moraju li partneri uvek da idu u isto vreme na spavanje? Odgovor bi mogao da vas potpuno iznenadi
+  link=https://mondo.rs/Magazin/Ljubav/a2310491/da-li-moraju-partneri-uvek-u-isto-vreme-na-spavanje.html
+  date=Thu, 12 Nov 2026 20:00:00 GMT cats=[]
+  desc=103 content=0 media=[] enc=['https://static2.mondo.rs/Thumbnail/1225499/jpeg/spavanje.jpeg?ts=2023-01-01T14:29:04']
+  desc0='  '
+- Sve više parova odustaje od intimnih odnosa: Nisu ni svađe ni prevara problem, već kućni ljubimci
+  link=https://mondo.rs/Magazin/Ljubav/a2241339/da-li-spavanje-sa-ljubimcima-utice-na-intimnost-parova.html
+  date=Wed, 28 Oct 2026 12:43:09 GMT cats=[]
+  desc=97 content=0 media=[] enc=['https://static2.mondo.rs/Thumbnail/1576182/jpeg/Pas.jpg?ts=2025-10-27T09:58:59']
+  desc0='  '
+- Veličina je presudna za dobar seks? Stručnjakinja otkriva što je zapravo važno
+  link=https://mondo.rs/Magazin/Ljubav/a2302602/da-li-je-velicina-presudna-za-dobar-seks.html
+  date=Tue, 27 Oct 2026 21:00:00 GMT cats=[]
+  desc=104 content=0 media=[] enc=['https://static2.mondo.rs/Thumbnail/1198988/jpeg/par-krevet.jpg?ts=2024-08-19T04:54:45']
+  desc0='  '
+
+### zdravlje_rs -> 0 b'<urlopen error timed out>'
+
+### batut -> PARSE ERROR not well-formed (invalid token): line 5, column 14 b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r\n<html xmlns="http://www.w3.org/1999/x'
+
+### stetoskop -> 404 b'<!DOCTYPE html>\n<html lang="sr" class="">\n    <head>\n        <meta charset="utf-8">\n        <meta name="viewport" conten'
+
+### krstarica_zdr -> 0 b'<urlopen error [Errno -5] No address associated with hostname>'
+
+### zdravlje_plus: 10 items, root=rss newest 3554.9h, last24h 0
+- Od ponedeljka 29. juna lekarski sistematski pregledi za upis u srednju školu
+  link=https://zdravljeplus.rs/od-ponedeljka-29-juna-lekarski-sistematski-pregledi-za-upis-u-srednju-skolu/
+  date=Thu, 18 Jun 2026 12:36:47 +0000 cats=['Vesti']
+  desc=102 content=1869 media=[] enc=[]
+  desc0='Dom zdravlja &#8220;Zdravlje Plus&#8221; nastoji da pruži sveobuhvatnu zdravstvenu zaštitu i [&#8230;]'
+- Ana Vučinić
+  link=https://zdravljeplus.rs/ana-vucinic-2/
+  date=Wed, 10 Dec 2025 21:12:47 +0000 cats=['Psihijatrija']
+  desc=121 content=1472 media=[] enc=[]
+  desc0='Psihodijagnostika Psihodijagnostička procena pomaže u boljem razumevanju kognitivnog, emocionalnog i ponašajnog [&#8230;]'
+- Svetski dan borbe protiv dijabetesa – paket usluga kao podrška dijabetičarima
+  link=https://zdravljeplus.rs/svetski-dan-borbe-protiv-dijabetesa-paket-usluga-kao-podrska-dijabeticarima/
+  date=Fri, 14 Nov 2025 10:03:04 +0000 cats=['Vesti']
+  desc=98 content=1639 media=[] enc=[]
+  desc0='Prema podacima Instituta za javno zdravlje Srbije &#8220;Dr Milan Jovanović Batut&#8221; [&#8230;]'
+
+### bbc_health: 56 items, root=rss newest 0.0h, last24h 9
+- NHS, schools and police forces hit by Microsoft outage
+  link=https://www.bbc.co.uk/news/articles/c6vg2ljjpj32o?at_medium=RSS&at_campaign=rss
+  date=Fri, 13 Nov 2026 13:41:25 GMT cats=[]
+  desc=108 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/84f9/live/ddcb76c0-df51-11f1-8364-2717a13d3b08.jpg'] enc=[]
+  desc0='Major airports and intelligence services are unaffected, while the government is still assessing the impact.'
+- Doctor burnout putting maternity patients at risk, says regulator
+  link=https://www.bbc.co.uk/news/articles/ckx28le8dv9wo?at_medium=RSS&at_campaign=rss
+  date=Fri, 13 Nov 2026 00:55:31 GMT cats=[]
+  desc=128 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f050/live/f25348a0-df53-11f1-93e1-3b657b665bcf.jpg'] enc=[]
+  desc0='Trainee doctors delivering babies are more likely to suffer from overwork and burnout than other specialties, evidence suggests.'
+- Sunbed firms must not downplay cancer risk, says watchdog
+  link=https://www.bbc.co.uk/news/articles/c98r7xyjx8g4o?at_medium=RSS&at_campaign=rss
+  date=Thu, 12 Nov 2026 00:13:27 GMT cats=[]
+  desc=136 content=0 media=['https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a838/live/7c0b4310-0735-11f1-b7e1-afb6d0884c18.jpg'] enc=[]
+  desc0='The advertising watchdog says they also must not make misleading claims that sunbeds can treat skin conditions or improve mental health.'
+
+### guardian_health: 20 items, root=rss newest 2.7h, last24h 3
+- Microsoft outage hits hospitals, GPs, schools and police across UK
+  link=https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-hits-nhs-hospitals-gps-schools-and-police-across-uk
+  date=Fri, 13 Nov 2026 12:51:43 GMT cats=['Microsoft', 'NHS', 'Hospitals', 'Police', 'UK news']
+  desc=928 content=0 media=['https://i.guim.co.uk/img/media/d597beba95a7ab1cebd5e34273b7e1bb02e58d8c/284_0_4380_3505/master/4380.jpg?width=140&quality=85&auto=format&fit=max&s=5a58c846937a3c02b679be8ec1edb7cd'] enc=[]
+  desc0=' NHS suffering ‘serious’ and widespread disruption, while people are told of possible delays in receiving prescriptions     Microsoft outage – live updates     '
+- ‘Never thought I’d eat that’: how vegetable prescriptions are helping Britons with diabetes
+  link=https://www.theguardian.com/society/2026/nov/13/diabetes-wellfed-vegetable-prescriptions-cornwall
+  date=Fri, 13 Nov 2026 10:00:15 GMT cats=['Diabetes', 'Health', 'Cornwall', 'UK news', 'England']
+  desc=965 content=0 media=['https://i.guim.co.uk/img/media/d71e1e210eb36d0582da02b03b73a803ca7e06d6/673_0_4683_3748/master/4683.jpg?width=140&quality=85&auto=format&fit=max&s=9f772d1f540d81435f525b7b6cf025e2'] enc=[]
+  desc0=' WellFed participants in Cornwall report better blood sugar levels with help of free veg boxes, cooking and gardening  The participants admitted that throughout'
+- Sadiq Khan joins Labour figures urging PM not to water down electric vehicle targets – as it happened
+  link=https://www.theguardian.com/politics/live/2026/nov/12/milburn-review-neets-young-people-welfare-work-latest-news-updates
+  date=Thu, 12 Nov 2026 17:58:42 GMT cats=['Politics', 'UK news', 'Labour', 'Andy Burnham', 'Welfare']
+  desc=5069 content=0 media=['https://i.guim.co.uk/img/media/e2feeff2390f42a9ffba7d9538bbe38b9f0b3821/1096_0_4763_3812/master/4763.jpg?width=140&quality=85&auto=format&fit=max&s=0c9bd665087cdc8709321dfc8357ae34'] enc=[]
+  desc0=' This blog is now closed  On the Today programme this morning, the Labour MP  Bell Ribeiro-Addy , a prominent leftwinger, indicated she might vote against legis'
+
+### guardian_wellness: 20 items, root=rss newest 25.5h, last24h 0
+- Touch of evil: the terrifying truth about sleep paralysis
+  link=https://www.theguardian.com/lifeandstyle/2026/nov/11/touch-of-evil-the-terrifying-truth-about-sleep-paralysis
+  date=Wed, 11 Nov 2026 10:00:35 GMT cats=['Sleep', 'Health & wellbeing', 'Life and style', 'Science', 'Neuroscience']
+  desc=1503 content=0 media=['https://i.guim.co.uk/img/media/960ff8db9a9c907989ffe0a5009bf19d6d699571/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=276c0a717478acd83d6a4673c4ac7e67'] enc=[]
+  desc0=' One in five people have experienced this frightening state – and the Harvard neuroscientist Baland Jalal has dedicated his career to studying it. Could it be a'
+- The thermostat wars tearing couples apart: ‘It’s hard to feel sexy when you’re freezing cold’
+  link=https://www.theguardian.com/lifeandstyle/2026/nov/11/the-thermostat-wars-tearing-couples-apart-its-hard-to-feel-sexy-when-youre-freezing-cold
+  date=Wed, 11 Nov 2026 05:00:29 GMT cats=['Homes', 'Relationships', 'Life and style', 'Housing', 'Sleep']
+  desc=1050 content=0 media=['https://i.guim.co.uk/img/media/5c7a3c90ecad09b11054c348030176a5845136e5/0_0_3110_2488/master/3110.jpg?width=140&quality=85&auto=format&fit=max&s=73e1f9b16d2471cdcfe12036f581cfb3'] enc=[]
+  desc0=' Almost two-thirds of bedfellows disagree about the perfect room temperature – and the issue can affect office workers and housemates too. It oftens lead to sub'
+- Is it true that … dock leaves cure nettle stings?
+  link=https://www.theguardian.com/lifeandstyle/2026/nov/09/is-it-true-that-dock-leaves-cure-nettle-stings
+  date=Mon, 09 Nov 2026 08:00:03 GMT cats=['Life and style', 'Immunology', 'Plants', 'Health & wellbeing', 'Medical research']
+  desc=777 content=0 media=['https://i.guim.co.uk/img/media/cbb5c7375dfc10bff54dcde8c907b56db558a8cb/0_0_2060_1648/master/2060.jpg?width=140&quality=85&auto=format&fit=max&s=875c12d17af2295430df29aefac7c110'] enc=[]
+  desc0=' It’s a time-honoured treatment and rubbing certainly helps, but other leaves could be just as good  If you’ve ever brushed against a stinging nettle, chances a'
+
+### medicalxpress: 30 items, root=rss newest 0.2h, last24h 30
+- AI analysis of heart ultrasounds may help flag long-term cardiovascular or dementia-related death risk
+  link=https://medicalxpress.com/news/2026-11-ai-analysis-heart-ultrasounds-flag.html
+  date=Fri, 13 Nov 2026 10:20:10 EST cats=['']
+  desc=236 content=0 media=['https://scx1.b-cdn.net/csz/news/tmb/2026/echocardiography-1.jpg'] enc=[]
+  desc0="Having a heart age older than one's actual age, as estimated using artificial intelligence (AI) analysis of ultrasound images, was associated with worse outcome"
+- Human-to-human hantavirus spread confirmed on cruise ship
+  link=https://medicalxpress.com/news/2026-11-human-hantavirus-cruise-ship.html
+  date=Fri, 13 Nov 2026 10:20:04 EST cats=['']
+  desc=428 content=0 media=['https://scx1.b-cdn.net/csz/news/tmb/2026/human-to-human-hantavi.jpg'] enc=[]
+  desc0='In April 2026, an outbreak of severe respiratory infections, presenting as hantavirus pulmonary syndrome (HPS), was detected aboard the cruise ship M/V Hondius,'
+- Does a heart stent prevent future heart attacks in stable patients? 25-year follow-up offers new insight
+  link=https://medicalxpress.com/news/2026-11-heart-stent-future-stable-patients.html
+  date=Fri, 13 Nov 2026 10:00:06 EST cats=['']
+  desc=241 content=0 media=['https://scx1.b-cdn.net/csz/news/tmb/2019/1-cardiology.jpg'] enc=[]
+  desc0="When doctors find a blockage in a patient's heart arteries, a common treatment option is a procedure to open the artery and restore blood flow. But does getting"
+
+### statnews: 20 items, root=rss newest 0.1h, last24h 14
+- STAT+: HHS plans funding for research into ibogaine for PTSD
+  link=https://www.statnews.com/2026/11/13/biotech-news-hhs-funding-for-research-into-ibogaine-for-ptsd/?utm_campaign=rss
+  date=Fri, 13 Nov 2026 15:25:46 +0000 cats=['Biotech', 'Business', 'Pharma', 'The Readout', 'addiction']
+  desc=180 content=1239 media=['https://www.statnews.com/wp-content/uploads/2025/02/4096px-Dept_Health_and_Human_Services_HQ_sign_Washington_DC_2025-02-07_13-58-43_1-1024x576.jpg'] enc=[]
+  desc0='The Trump administration will funnel up to $4.9 million into supporting research into ibogaine, a psychedelic that’s drawn interest as a potential treatment for'
+- Opinion: New organ donation rules are unfair to families
+  link=https://www.statnews.com/2026/11/13/organ-donation-policy-life-sustaining-treatment-brain-death/?utm_campaign=rss
+  date=Fri, 13 Nov 2026 14:59:54 +0000 cats=['First Opinion', 'Health', 'ethics', 'health care', 'neurology']
+  desc=150 content=1064 media=['https://www.statnews.com/wp-content/uploads/2021/01/GettyImages-1229946622-1024x576.jpg'] enc=[]
+  desc0="New organ donation rules may “blur the line between the physicians fighting to save a patient's life and the teams responsible for organ procurement.”"
+- Brain implant startup pauses trials
+  link=https://www.statnews.com/2026/11/13/health-news-brain-implant-startup-pauses-trials/?utm_campaign=rss
+  date=Fri, 13 Nov 2026 14:40:32 +0000 cats=['Health', 'Morning Rounds', 'addiction', 'advocacy', "children's health"]
+  desc=131 content=774 media=['https://www.statnews.com/wp-content/uploads/2024/07/AdobeStock_825639724-1024x576.jpeg'] enc=[]
+  desc0='Synchron has paused clinical trials of its second-generation brain-computer interface. Leaders say the pause is not safety related.'
+
+### sciencedaily_health: 60 items, root=rss newest 2.6h, last24h 5
+- Stopping statins after 70 may be safer than expected, but there's a catch
+  link=https://www.sciencedaily.com/releases/2026/11/261112025534.htm
+  date=Fri, 13 Nov 2026 07:14:39 EST cats=[]
+  desc=367 content=0 media=[] enc=[]
+  desc0='A major study of nearly 1,900 older adults suggests that stopping statins after age 70 may be relatively safe in the short term for people who have never experi'
+- Scientists discover a hidden danger of viral infections that vaccines may prevent
+  link=https://www.sciencedaily.com/releases/2026/11/261112025531.htm
+  date=Fri, 13 Nov 2026 07:55:11 EST cats=[]
+  desc=418 content=0 media=[] enc=[]
+  desc0='A new study reveals that viral infections may leave behind hidden damage to the immune system long after symptoms disappear. Researchers found that mice recover'
+- Common forever chemicals linked to nearly double the rate of aggressive breast cancer
+  link=https://www.sciencedaily.com/releases/2026/11/261112025527.htm
+  date=Thu, 12 Nov 2026 04:34:53 EST cats=[]
+  desc=264 content=0 media=[] enc=[]
+  desc0='An NIH study found that women with high levels of two common “forever chemicals” had up to 93% higher rates of an aggressive form of breast cancer. The discover'
+
+### who: 83 items, root=rss newest 823.7h, last24h 0
+- New WHO technical package to help countries improve health data for COVID-19 response and beyond
+  link=https://www.who.int/news/item/27-08-2020-new-who-technical-package-health-data-for-covid-19-response
+  date=Sat, 10 Oct 2026 07:49:45 Z cats=[]
+  desc=5831 content=0 media=[] enc=[]
+  desc0='     Today, as part of its commitment to strengthening health information systems and improving health[1], especially in the context of the COVID-19 pandemic, W'
+- COVID-19 disrupting mental health services in most countries, WHO survey
+  link=https://www.who.int/news/item/05-10-2020-covid-19-disrupting-mental-health-services-in-most-countries-who-survey
+  date=Tue, 06 Oct 2020 16:42:38 Z cats=[]
+  desc=6573 content=0 media=[] enc=[]
+  desc0=' The COVID-19 pandemic has disrupted or halted critical mental health services in 93% of countries worldwide while the demand for mental health is increasing, a'
+- Global partnership to make available 120 million affordable, quality COVID-19 rapid tests for low- and middle-
+  link=https://www.who.int/news/item/28-09-2020-global-partnership-to-make-available-120-million-affordable-quality-covid-19-rapid-tests-for-low--and-middle-income-countries
+  date=Mon, 28 Sep 2020 18:37:30 Z cats=[]
+  desc=14741 content=0 media=[] enc=[]
+  desc0='   A full access package includes WHO policy guidance on the use of antigen-based rapid diagnostic tests, manufacturer volume guarantees for low and middle-inco'
+
+### nih: 10 items, root=rss
+- For the first time, researchers map out the brain’s behavioral gatekeeper
+  link=https://www.nih.gov/news-events/news-releases/first-time-researchers-map-out-brains-behavioral-gatekeeper
+  date=Thu, 11/12/2026 - 11:00 cats=[]
+  desc=103 content=0 media=[] enc=[]
+  desc0='NIH BRAIN Initiative-supported atlas opens doors to a cellular understanding of neurological disorders.'
+- Two ‘forever chemicals’ associated with higher risk of aggressive breast cancer in NIH analysis
+  link=https://www.nih.gov/news-events/news-releases/two-forever-chemicals-associated-higher-risk-aggressive-breast-cancer-nih-analysis
+  date=Thu, 11/05/2026 - 16:00 cats=[]
+  desc=88 content=0 media=[] enc=[]
+  desc0='Evidence continues to grow on how environmental factors affect women’s health.&amp;nbsp;'
+- Integrated health service delivery through medical mobile units helped to reduce deaths among individuals at r
+  link=https://www.nih.gov/news-events/news-releases/integrated-health-service-delivery-through-medical-mobile-units-helped-reduce-deaths-among-individuals-risk-hiv-who-also-inject-drugs
+  date=Wed, 11/04/2026 - 11:00 cats=[]
+  desc=152 content=0 media=[] enc=[]
+  desc0='NIH-funded clinical trial shows mobile units may help overcome significant barriers to accessing HIV and addiction treatment, but replication is needed.'
+
+### harvard -> 404 b'<!doctype html>\n<html lang="en">\n<head>\n    <meta charset="utf-8">\n    <meta name="viewport" content="width=device-width'
+
+### medicalnewstoday -> 404 b'<!DOCTYPE html><html lang="en" data-halo-suppressed="" data-site-theme-server="mnt"><head>\n<link rel=preload href="https'
+
+### npr_health: 10 items, root=rss newest 3.4h, last24h 3
+- Happy World Kindness Day! Check out our kind photos of kindness to humans -- and cats
+  link=https://www.npr.org/2026/11/13/g-s1-153274/world-kindness-day-altruism-generosity
+  date=Fri, 13 Nov 2026 07:06:28 -0500 cats=[]
+  desc=116 content=712 media=[] enc=[]
+  desc0='Friday, November 13 is World Kindness Day. Your mission: Do something kind. Small acts of kindness definitely count!'
+- Kratom and 7-OH can feel like 'a miracle.' They can also be addictive
+  link=https://www.npr.org/2026/11/13/nx-s1-6039203/kratom-7-oh-dea-addiction-opioid
+  date=Fri, 13 Nov 2026 06:00:00 -0500 cats=[]
+  desc=194 content=797 media=[] enc=[]
+  desc0="In the last decade, strong support for kratom and 7-OH products have kept them federally legal. That's started to change. A crackdown for some highly potent pro"
+- Fed up with the healthcare industry, this red state capped insulin prices for patients
+  link=https://www.npr.org/2026/11/13/nx-s1-6032717/diabetes-insurance-insulin-price
+  date=Fri, 13 Nov 2026 05:00:00 -0500 cats=[]
+  desc=191 content=333 media=[] enc=[]
+  desc0='Republicans and Democrats in North Dakota worked together to limit what people with diabetes have to pay for insulin, joining a growing bipartisan push across t'
+
+### newscientist_health: 10 items, root=rss newest 22.5h, last24h 2
+- Pink noise played during sleep shows promise for Alzheimer’s memory loss
+  link=https://www.newscientist.com/article/2598656-pink-noise-played-during-sleep-shows-promise-for-alzheimers-memory-loss/?utm_campaign=RSS|NSNS&utm_content=health&utm_medium=RSS&utm_source=NSNS
+  date=Thu, 12 Nov 2026 17:00:00 +0000 cats=['Alzheimer’s disease and dementia', 'Health', "Alzheimer's disease"]
+  desc=206 content=0 media=['https://www.newscientist.com/wp-content/uploads/2026/11/SEI_320287222.jpg'] enc=[]
+  desc0="There is some evidence that pink noise signals can boost the brain's ability to clear out waste products. Now there are some indications that this might improve"
+- A little-known immune condition is being mistaken for food allergies
+  link=https://www.newscientist.com/article/2598708-a-little-known-immune-disease-is-being-mistaken-for-food-allergies/?utm_campaign=RSS|NSNS&utm_content=health&utm_medium=RSS&utm_source=NSNS
+  date=Thu, 12 Nov 2026 16:00:00 +0000 cats=['Conditions', 'Health']
+  desc=138 content=0 media=['https://www.newscientist.com/wp-content/uploads/2026/11/SEI_320389244.jpg'] enc=[]
+  desc0='Doctors are calling for greater awareness of eosinophilic oesophagitis, a chronic condition that can cause symptoms similar to anaphylaxis'
+- Blood-thinning drug limits cartilage damage and relieves osteoarthritis pain
+  link=https://www.newscientist.com/article/2598488-blood-thinning-drug-limits-cartilage-damage-and-relieves-osteoarthritis-pain/?utm_campaign=RSS|NSNS&utm_content=health&utm_medium=RSS&utm_source=NSNS
+  date=Wed, 11 Nov 2026 19:00:00 +0000 cats=['Health', 'Medicines and treatments', 'Medical drugs', 'Pain']
+  desc=187 content=0 media=['https://www.newscientist.com/wp-content/uploads/2026/11/SEI_320300237.jpg'] enc=[]
+  desc0='A study in animals suggests a drug used to thin blood might eventually be able to slow down the development of osteoarthritis. Currently, there are no approved '
+
+### kffhealth: 10 items, root=rss newest 5.5h, last24h 2
+- Fed Up With the Healthcare Industry, This Red State Capped Insulin Prices for Patients
+  link=https://kffhealthnews.org/health-industry/insulin-copay-price-caps-diabetes-patients-high-costs-north-dakota-common-ground/
+  date=Fri, 13 Nov 2026 10:00:00 +0000 cats=['Health Industry', 'Healthcare Costs', 'Insurance', 'Rural Health', "Children's Health"]
+  desc=191 content=13363 media=['https://kffhealthnews.org/wp-content/uploads/sites/8/2026/11/ND_08.jpg'] enc=[]
+  desc0='Republicans and Democrats in North Dakota worked together to limit what people with diabetes have to pay for insulin, joining a growing bipartisan push across t'
+- Medicaid Work Rules Don’t Apply to Native Americans. They Could Still Lose Coverage.
+  link=https://kffhealthnews.org/health-care-costs/medicaid-work-rule-requirement-native-american-north-carolina-exemption-coverage/
+  date=Fri, 13 Nov 2026 10:00:00 +0000 cats=['Healthcare Costs', 'Medicaid', 'Race and Health', 'Rural Health', 'Indigenous Health']
+  desc=224 content=12881 media=['https://kffhealthnews.org/wp-content/uploads/sites/8/2026/11/Medicaid_01.jpg'] enc=[]
+  desc0='Work requirements don’t apply to tribal citizens. But federal health officials provided limited guidance on how states should check eligibility. “I’m extremely '
+- Listen to the Latest ‘KFF Health News Minute’
+  link=https://kffhealthnews.org/news/listen-kff-health-news-minute-2026/
+  date=Thu, 12 Nov 2026 10:00:19 +0000 cats=['Audio', 'Multimedia']
+  desc=128 content=18189 media=['https://kffhealthnews.org/wp-content/uploads/sites/8/2026/05/health-minute_2026.jpg'] enc=[]
+  desc0='The "KFF Health News Minute" brings original healthcare and health policy reporting from our newsroom to the airwaves each week.'
+
+### nyt_health: 20 items, root=rss newest 0.9h, last24h 2
+- Kennedy’s Future: Will Democrats Try to Impeach Him, or Actually Work With Him?
+  link=https://www.nytimes.com/2026/11/12/us/politics/rfk-jr-democrats-impeach.html
+  date=Fri, 13 Nov 2026 14:38:10 +0000 cats=['United States Politics and Government', 'Midterm Elections (2026)', 'Impeachment', 'Politics and Government', 'Medicine and Health']
+  desc=182 content=0 media=['https://static01.nyt.com/images/2026/12/07/multimedia/07DC-RFK-FUTURE-top-mgkj/07DC-RFK-FUTURE-top-mgkj-mediumSquareAt3X.jpg'] enc=[]
+  desc0='Most Democrats abhor the health secretary’s stance on vaccines, but some see an opportunity to win voters from his MAHA movement by joining with him on food and'
+- What to Know About New Prostate Cancer Screening Recommendations
+  link=https://www.nytimes.com/2026/11/12/well/prostate-cancer-screening-guideline.html
+  date=Thu, 12 Nov 2026 15:04:02 +0000 cats=['Prostate Cancer', 'Tests (Medical)', 'Disease Rates', 'Prostate Specific Antigen', 'American Cancer Society']
+  desc=75 content=0 media=['https://static01.nyt.com/images/2026/11/12/well/12WELL-ACS-PROSTATE2/12WELL-ACS-PROSTATE2-mediumSquareAt3X.jpg'] enc=[]
+  desc0='Universal screening for the disease has long been a subject of controversy.'
+- Hospitals Brace for Medicaid Work Rules and Deep Funding Cuts
+  link=https://www.nytimes.com/2026/11/11/business/hospitals-medicaid-cuts.html
+  date=Thu, 12 Nov 2026 17:07:15 +0000 cats=['Medicaid', 'Health Insurance and Managed Care', 'United States Politics and Government', 'Hospitals', 'Midterm Elections (2026)']
+  desc=119 content=0 media=['https://static01.nyt.com/images/2026/11/10/multimedia/10biz-medicaid-01-zkhw/10biz-medicaid-01-zkhw-mediumSquareAt3X-v2.jpg'] enc=[]
+  desc0='Health systems are racing to guide millions of patients through new eligibility hoops, slated to go into effect Jan. 1.'
+
+### reuters_health_gn: 11 items, root=rss newest 1.4h, last24h 11
+- Six-year-old Gaza burn victim caught in Israeli dispute over aid - Reuters
+  link=https://news.google.com/rss/articles/CBMizgFBVV95cUxOaFo1ZDdUVlo4bHVVckx2ZkpOazJxa2Z6ZjhDNmhfamN4Q3g0LWdsaGNudjllVHBKYzlJRWgzSzJZbi01RlZJZXFTdk4wY3BFUDFIekFoMWh3M1J3amNfaFUtXzE4Z21OMDVYcV9YMVBoXzdHVzN4LXJIbG9DRFdCUzU1S3gwcGVTOWFRcFVBNXp3Y0ZVb01wbjd0WW1FekgwUEZDNnBnVllLcGJmYTJOcW83aWtmYnZYT3EteEduZWJmMnowOEJjN1dIX0dtZw?oc=5
+  date=Fri, 13 Nov 2026 10:22:16 GMT cats=[]
+  desc=467 content=0 media=[] enc=[]
+  desc0=' Six-year-old Gaza burn victim caught in Israeli dispute over aid &nbsp;&nbsp; Reuters '
+- Takeda launches sleep disorder pill in the US after DEA clearance removes final hurdle - Reuters
+  link=https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZnlDQWRTN1ZJckhRZEU5ak5xQU5CcUJ4b3c5V1FPaWo1YWRTcS1kTTM1RERfRTFneWVGcG9HbXQ0dDJyZGdTSlp5eTEtUl9HN2MzZWdaTERXZ2djQ2pCQlNlTkVpZG5uUXYydnVWT0t5XzlrSHFjTzJOM0FLRlBDQzcwQ3kzeTdmWGZ6cFFWaTF2aUgzWmRrNWpVbDMtSHYxbEotT180VU82dEk0emxlRzk5MzNjem1TVmNNYktJOXNjbll0ZDI4YzRjQTl3M044OG96cUJpMDZvMVVwTnFlX2Jvb1NoZw?oc=5
+  date=Thu, 12 Nov 2026 16:37:21 GMT cats=[]
+  desc=521 content=0 media=[] enc=[]
+  desc0=' Takeda launches sleep disorder pill in the US after DEA clearance removes final hurdle &nbsp;&nbsp; Reuters '
+- Barrick furloughs some employees at Congo mine as Ebola precaution, memo says - Reuters
+  link=https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbml1ZVlXcG1yWF9mWnNpdkZmd3JkUG9NWm1GRko2MHBkdWxqRm5DWU1RZWNlSWh1MHhqMXhSMm9idGJxTU1MQkFIQTU5cUdfSDYwQWhROEY1UTlMaFEyeTBpXzFzZWxjTU1NOUxOS0lheFdVZUNMQmMtMEx2bV9kUGVMdVlTMExRdUJnMkxUVDBvOFZxSHFRVjJFanVtUGI3WWZQdDU5NlEzYV9YM0RjNVczTHVFTlJkNDNKTENidy1pRVJveVQxTy1lSVl4ZmpjbUt0aDFuRXd4dw?oc=5
+  date=Thu, 12 Nov 2026 20:21:02 GMT cats=[]
+  desc=496 content=0 media=[] enc=[]
+  desc0=' Barrick furloughs some employees at Congo mine as Ebola precaution, memo says &nbsp;&nbsp; Reuters '

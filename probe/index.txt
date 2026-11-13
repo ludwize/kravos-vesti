@@ -1,99 +1,32 @@
-82 sources, 50 categories
-1450 articles -> 833 stories; failed: []; data.json 583 KB
-
-
-NAUKA: 160 stories; cats {'ai': 42, 'uredjaji': 27, 'nauka': 59, 'sajber': 20, 'internet': 24, 'telekom': 18, 'svemir': 28}; sources {'Guardian Tech': 10, 'The Verge': 9, 'Ars Technica': 15, 'BBC Tech': 8, 'New Scientist': 10, 'BBC Science': 10, 'BleepingComputer': 14, 'B92 Tehnopolis': 9, 'Benchmark': 9, 'ScienceDaily': 14, 'Light Reading': 10, 'Wired': 17, 'Guardian Science': 4, 'Telegraf Hi-Tech': 4, 'MIT Technology Review': 2, 'Scientific American': 7, 'Space.com': 15, 'Telecoms.com': 6, 'Startit': 1, 'Krebs on Security': 2, 'The Record': 3, 'Quanta Magazine': 1, 'N1 SciTech': 1}
-   [ai] Guardian Tech: Nvidia board reportedly deciding whether to oust CEO Jensen Huang as stock price plunges
-   [ai,uredjaji] Ars Technica: CEO Jensen Huang's job is suddenly on the line at Nvidia
-   [nauka] New Scientist: Some PFAS chemicals are declining in English rivers but others are appearing
-   [sajber] BleepingComputer: Hackers plant GSocket on Linux servers for persistent access
-   [] B92 Tehnopolis: Posledice ukrajinskih napada: Trajno izgubljeno 100.000 terabajta
-   [uredjaji,internet] Benchmark: Android telefon postaje ključ od kuće: Google Wallet otključava vrata bez dodirivanja brav
-   [nauka] ScienceDaily: Earth's fiery birth may have created hundreds of oceans' worth of water
-   [ai,telekom] Light Reading: Orange walks AI tightrope to capture 'hundreds of mil' in value
-   [nauka] Wired: The Polar Vortex Is About to Make Weather Weird From the UK to the US
-   [telekom] Light Reading: TIM to expand its services through synergies with Poste – CEO
-   [telekom] Light Reading: Verizon, Nokia show private 5G chops at UK's Thames Freeport
-   [uredjaji] Benchmark: Samsung sprema telefon koji menja oblik ekrana: iz 16:9 prelazi u 21:9
-   [uredjaji] B92 Tehnopolis: Plava tačka pored baterije: Šta znači i kada treba da se zabrinete VIDEO
-   [ai] Guardian Tech: Fewer hours and higher wages – or more burnout and surveillance: employers told to prepare
-   [nauka] Guardian Science: Is BMI working? Cop31 latest, the science of great conversation – podcast
-   [uredjaji] Telegraf Hi-Tech: GTA 6 još nije izašao, a već je premašio milijardu dolara: Ove brojke su neverovatne
-   [nauka] BBC Science: Campaigners want more land protected from housing
-   [nauka] BBC Science: Art trail celebrates arrival of black bears at zoo
-   [nauka] BBC Science: Nurdle impact to be researched for a year
-   [nauka] BBC Science: 'Summer was a wake-up call, winter could be dire' warning over food supplies
-   [] Ars Technica: Trump wanted little Kei trucks for America, Toyota makes it happen
-   [nauka,internet] MIT Technology Review: What to know about this year’s UN climate talks
-   [uredjaji] Benchmark: OLED televizori pokazuju ozbiljan problem tokom dugotrajnog korišćenja
-   [ai] Telegraf Hi-Tech: Nvidia se sprema da smeni Džensena Huanga
-   [svemir] Space.com: SpaceX launches 2nd mystery mission for US Space Force in 6-day span (photos)
-   [nauka] ScienceDaily: A massive new simulation reveals how the universe emerged from darkness
-   [] Wired: Walking Pad Deals to Shop Ahead of Black Friday (2026)
-   [svemir,nauka] ScienceDaily: NASA’s Parker Solar Probe discovers a hidden pattern in the Sun’s chaotic magnetic fields
-   [ai,internet] Ars Technica: Ring cameras go mobile as Amazon debuts AI-powered security drone and robot
-   [ai] Guardian Tech: Facial recognition errors put ethnic minorities at risk of wrongful arrest, police watchdo
-   [nauka] ScienceDaily: Scientists discover that necks didn't evolve for the reason we thought
-   [sajber] BleepingComputer: Baker Tilly notifies clients of data breach at third-party provider
-   [sajber] BleepingComputer: Active ScreenConnect attacks breach MSPs, impact dozens of organizations
-   [] BBC Tech: Lego marketplace BrickLink offline after 'unusual activity' detected
-   [] The Verge: Hands on with Home Assistant’s new ‘smart home multi-tool’
-   [] Wired: Pete Hegseth Is About to Get His Ass Kicked
-   [svemir] Space.com: NASA kick-starts a fresh push to bring Mars samples home
-   [ai] The Verge: United won’t let your AI agent book your flight
-   [sajber] BleepingComputer: eMudhra revokes 8 more CA certificates after private key mishap
-   [svemir] Space.com: We can't see Fast Radio Bursts but we can now hear them thanks to a Finnish Cathedral
-   [ai,sajber] BleepingComputer: Notion says Fireworks breach exposed customer AI chat transcripts
-   [ai,svemir] Space.com: On this day in space! Nov. 11, 1966: NASA launches Gemini 12 mission with astronaut icons 
-   [internet,telekom] Ars Technica: T-Mobile illegally imposed 50GB cap on low-income home Internet plan, NY says
-   [nauka] Scientific American: Metal-rich deep-sea ‘nodules’ also harbor diverse ocean life
-   [svemir,nauka] Ars Technica: Anduril says its first satellite can see adversaries maneuver in orbital night
-
-BEOGRAD: 105 stories; cats {'koncerti': 19, 'gradnja': 14, 'izlozbe': 11, 'izlasci': 25, 'hronika_bg': 19, 'pozoriste': 14, 'vlast': 5, 'komunalno': 14, 'saobracaj': 20}; sources {'Headliner': 6, 'Najave (Google vesti)': 25, 'Blic Beograd': 38, 'Kurir Beograd': 19, 'Dan u Beogradu': 22, 'Nova': 4, 'N1': 13, 'Danas': 4, 'Still in Belgrade': 2, 'Beogradski sajam': 1}
-   [koncerti] Headliner: Tindersticks se vraćaju u Beograd… S novim albumom “Dog Roses” stiže u mts Dvoranu 14. apr
-   [] Blic Beograd: PACIJENTI HITNO OPERISANI ZBOG RAKA U POODMAKLOJ FAZI! Teška noć za lekare na VMA, oglasio
-   [koncerti] Headliner: Uriah Heep se vrhunskim koncertom oprostio od Beograda: Mi smo još tu, vi ste još tu. Muzi
-   [koncerti] Headliner: Drugi Dan objavio album “Daj još”… Tri vokala i 12 pesama između roka, metala i hip-hopa
-   [gradnja,izlozbe,izlasci] Dan u Beogradu: 34. Bazar na Vračaru
-   [gradnja,hronika_bg] Blic Beograd: "KRVOLOČNI SU, NAPADAJU I DECU!" Čopor pasa lutalica nedeljama teroriše Zvezdaru, građani 
-   [koncerti] Headliner: W.A.S.P. u Beogradu.. 10 priča iz vremena kada je metal izazivao skandale
-   [koncerti,pozoriste] Najave (Google vesti): Maske: Atelje 212 i Festival prvoizvedenih predstava
-   [koncerti] Headliner: Buč Kesidi na turneji “Pusti da gori”… U Beogradu slave deset godina prvog albuma za samo 
-   [] Blic Beograd: REZERVE KRVI SAMO ZA DVA DANA Jedna grupa najviše nedostaje, Instituta za transfuziju uput
-   [vlast] Nova: CLS: Kasne svi radovi u Beogradu, značajno probijanje rokova
-   [] Kurir Beograd: BEOGRAĐANE JE OVO MUČILO NAJVIŠE: Evo zbog čega su tokom noći najčešće zvali lekare Hitne
-   [] Kurir Beograd: KAD SU PRIŠLI DA NJENO TELO PRENESU U KAPELU, IZNENADA JE, KAŽU, OŽIVELA! Kako je najpozna
-   [koncerti] N1: Amira Medunjanin za N1 o predstojećem koncertu u Sava centru
-   [koncerti,pozoriste,izlasci] Dan u Beogradu: Novi film u bioskopima: George Michael: The Faith Tour
-   [komunalno] Kurir Beograd: DANAS JE BEZ STRUJE I CENTAR BEOGRADA: Vračar, Savski venac i delovi još 7 opština, spisak
-   [saobracaj] Kurir Beograd: IZMENE U GSP SAOBRAĆAJU U SREMČICI SVE DO 5. DECEMBRA: Evo kuda idu 511, 511N, 551, 860Š, 
-   [komunalno] Blic Beograd: BEZ STRUJA SUTRA 9 OPŠTINA U BEOGRADU! Najduži spisak isključenja u Lazarevcu, ovo je spis
-   [komunalno] Kurir Beograd: DANAS SU BEZ VODE OVA 2 NASELJA U GROCKOJ: Natočite do vrha, radovi traju ceo dan, od 8 do
-   [] Blic Beograd: IZABELA IZ DANSKE TRAŽILA BRATA IZ BEOGRADA Nakon 35 godina ga pronašla, a RAZLOG tera suz
-   [] Kurir Beograd: NOVO MESTO ZA IGRU I DRUŽENJE: Novo dečje igralište na Bežanijskoj kosi
-   [komunalno] Blic Beograd: SPREMITE ZALIHE, VODE NEĆE BITI 12 SATI Radovi zatvaraju slavine u delovima 2 beogradske o
-   [pozoriste,izlasci] Dan u Beogradu: Bioskopski repertoari, 12-18. novembar 2026.
-   [izlozbe] Najave (Google vesti): 62. MEĐUNARODNI SAJAM NAMEŠTAJA, OPREME I UNUTRAŠNJE DEKORACIJE (UFI)
-   [] Blic Beograd: Od stare beogradske gostionice do riznice narodnog blaga: Manakova kuća čuva duh prošlih v
-   [] N1: Telo maloletnog dečaka pronađeno u Rakovici
-   [koncerti] Najave (Google vesti): Koncert povodom Svetskog dana flamenka u Domu omladine | Grad Beograd
-   [saobracaj,hronika_bg] N1: Hitna pomoć: Pet saobraćajnih nezgoda noćas u Beogradu, jedna osoba ubodena nožem
-   [koncerti] Najave (Google vesti): 10. Bunt rok festival 2026. - Finale
-   [hronika_bg] Blic Beograd: NESREĆE SE REĐALE JEDNA ZA DRUGOM! Pune ruke za posla za Hitnu pomoć u Beogradu: Ima više 
-   [gradnja] Blic Beograd: Srbija izgubila skoro trećinu stanovništva, a Beograd bio razoren: Ovako je izgledao kraj 
-   [gradnja,pozoriste] Danas: Minja Bogavac za Danas uoči otvaranja Reflektor teatra: „Gradimo, umesto da zbrajamo šta s
-   [] Najave (Google vesti): Jubilej u Zvezdara teatru: Nenad Jezdić 400. put igra Milutina
-   [] Danas: Posle 2 godine pauze, Hali Gali ponovo u klubu Drugstore: Alternativna scena ponovo na jed
-   [koncerti] Najave (Google vesti): "Tindersticks" najavili novi album i koncert u Beogradu: Muzika koja ne traži da bude glas
-   [] Najave (Google vesti): Zagreb tri večeri u znaku Sofronijevića, a Beograd tek čeka spektakl: „Majstori za dušu“ r
-   [] Blic Beograd: Vesna Vidović položila venac na Spomen-kosturnicu braniocima Beograda u Prvom svetskom rat
-   [hronika_bg] Blic Beograd: POŽAR BUKNUO NA NOVOM BEOGRADU Vatrogasci u dramatičnoj borbi sa VATROM kod Save, sirene O
-   [koncerti] Headliner: Vlatko Stefanovski “Acoustic Night” u Sava centru 21. decembra
-   [izlozbe] Najave (Google vesti): Kanski pobednik stigao u Beograd: U Ložionici otvorena VR izložba „KATABASIS”
-   [] Najave (Google vesti): Skoro šest decenija rokenrola u jednoj večeri: Deep Purple oduševili publiku u Beogradskoj
-   [koncerti] Najave (Google vesti): Festival of Abnormal Music (FAM) #3
-   [gradnja] Blic Beograd: "SVAKI DAN OVUDA PROĐE VELIKI BROJ DECE" Oronula i napuštena zgrada na Miljakovcu preti da
-   [izlasci] Najave (Google vesti): GenD vikend vodič kroz Beograd: Od Pitbulla i French VR Week-a do Kennyja Larkina i Kamelo
-   [pozoriste] Najave (Google vesti): SATIRIČNA KOMEDIJA SITUACIJE: Predstava „Polje malina“ na repertoaru DKSG:
-pip: 0 
-page errors: []
+200     28940  n1_zdravlje  https://n1info.rs/magazin/zdravlje/feed/
+200     28496  n1_tag_zdr  https://n1info.rs/tag/zdravlje/feed/
+200     27882  nova_zdr  https://nova.rs/magazin/zdravlje/feed/
+200     27638  nova_tag_zdr  https://nova.rs/tag/zdravlje/feed/
+200    117548  danas_tag_zdr  https://www.danas.rs/tag/zdravlje/feed/
+302         0  danas_zdr  https://www.danas.rs/zivot/zdravlje/feed/
+404    252510  b92_zdravlje  https://www.b92.net/info/rss/zdravlje.xml
+200     81085  kurir_zdr  https://www.kurir.rs/rss/zdravlje
+200    102042  blic_zdr  https://www.blic.rs/rss/Vesti/Zdravlje
+200    119513  rts_zdr  https://www.rts.rs/page/stories/sr/rss/1158/zdravlje.html
+200    635443  telegraf_zdr  https://www.telegraf.rs/rss/zdravlje
+200     78850  mondo_zdr  https://mondo.rs/rss/680/Zdravlje
+0        25  zdravlje_rs  https://www.zdravlje.org.rs/index.php/sr/?format=feed&type=rss
+200     35765  batut  https://www.batut.org.rs/index.php?format=feed&type=rss
+404     30619  stetoskop  https://www.stetoskop.info/rss
+0        62  krstarica_zdr  https://zdravlje.krstarica.com/feed/
+200     21756  zdravlje_plus  https://www.zdravljeplus.rs/feed/
+200     40823  bbc_health  https://feeds.bbci.co.uk/news/health/rss.xml
+200     76278  guardian_health  https://www.theguardian.com/society/health/rss
+200     66355  guardian_wellness  https://www.theguardian.com/lifeandstyle/health-and-wellbeing/rss
+200     30627  medicalxpress  https://medicalxpress.com/rss-feed/
+200     59215  statnews  https://www.statnews.com/feed/
+200     46490  sciencedaily_health  https://www.sciencedaily.com/rss/health_medicine.xml
+200    772225  who  https://www.who.int/rss-feeds/news-english.xml
+200      7681  nih  https://www.nih.gov/news-releases/feed.xml
+404    111106  harvard  https://www.health.harvard.edu/blog/feed
+404     90789  medicalnewstoday  https://www.medicalnewstoday.com/newsfeeds/rss
+200     15284  npr_health  https://feeds.npr.org/1128/rss.xml
+200     25024  newscientist_health  https://www.newscientist.com/subject/health/feed/
+200    122194  kffhealth  https://kffhealthnews.org/feed/
+200     45331  nyt_health  https://rss.nytimes.com/services/xml/rss/nyt/Health.xml
+200     16741  reuters_health_gn  https://news.google.com/rss/search?q=when:1d+site:reuters.com/business/healthcare-pharmaceuticals&hl=en-US&gl=US&ceid=US:en
