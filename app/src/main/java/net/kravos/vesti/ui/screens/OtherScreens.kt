@@ -152,6 +152,7 @@ fun SettingsScreen(pad: PaddingValues, release: Release?, onCheck: () -> Unit) {
     Column(Modifier.fillMaxSize()) {
         TopBar("Podešavanja")
         LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = pad.calculateBottomPadding() + 32.dp)) {
+            item("sync") { SyncSettings() }
             item("izgled") {
                 Group("Izgled")
                 Row(Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -180,7 +181,6 @@ fun SettingsScreen(pad: PaddingValues, release: Release?, onCheck: () -> Unit) {
                     }
                 }
             }
-            item("sync") { SyncSettings() }
             item("upd") {
                 Group("Verzija")
                 Column(Modifier.padding(horizontal = 18.dp, vertical = 6.dp)) {
