@@ -221,7 +221,7 @@ private fun LazyListScope.digest(f: Feed, openStory: (Story) -> Unit, open: (Art
     }
     val plan = listOf(
         Triple(Section.SRBIJA, Tab.SRBIJA, 6), Triple(Section.BEOGRAD, Tab.BEOGRAD, 4), Triple(Section.SVET, Tab.SVET, 5),
-        Triple(Section.NAUKA, Tab.NAUKA, 5), Triple(Section.SPORT, Tab.SPORT, 4),
+        Triple(Section.NAUKA, Tab.NAUKA, 5), Triple(Section.ZDRAVLJE, Tab.ZDRAVLJE, 3), Triple(Section.SPORT, Tab.SPORT, 4),
         Triple(Section.AUTO, Tab.AUTO, 3), Triple(Section.LJUBIMCI, Tab.LJUBIMCI, 3),
     )
     for ((sec, tab, n) in plan) {
@@ -230,7 +230,7 @@ private fun LazyListScope.digest(f: Feed, openStory: (Story) -> Unit, open: (Art
         item("h-${sec.name}") { SectionHeader(sec.label) { goTab(tab) } }
         list.forEachIndexed { i, s ->
             item("d-${sec.name}-${s.id}") {
-                if (i == 0 && sec != Section.AUTO && sec != Section.LJUBIMCI) StoryHero(s) { openStory(s) } else StoryRow(s) { openStory(s) }
+                if (i == 0 && sec != Section.ZDRAVLJE && sec != Section.AUTO && sec != Section.LJUBIMCI) StoryHero(s) { openStory(s) } else StoryRow(s) { openStory(s) }
                 if (i < list.lastIndex) Rule(Modifier.padding(horizontal = 18.dp))
             }
         }

@@ -91,13 +91,15 @@ class Repo(context: Context, private val prefs: Prefs, private val saved: Saved)
                     if (src.mention.none { t.contains(it) }) continue
                 }
                 val isAuto = src.section == Section.AUTO || a0.tags.any { it in Sources.AUTO_TAGS }
-                if (hideEnt && !isAuto && src.section != Section.LJUBIMCI && a0.tags.any { it in Sources.ENT_TAGS }) continue
-                val maxAge = if (src.section == Section.NAUKA || src.section == Section.BEOGRAD) 4 * 86400_000L else 3 * 86400_000L
+                val isHealth = src.section == Section.ZDRAVLJE || a0.tags.any { it in Sources.HEALTH_TAGS }
+                if (hideEnt && !isAuto && !isHealth && src.section != Section.LJUBIMCI && a0.tags.any { it in Sources.ENT_TAGS }) continue
+                val maxAge = if (src.section == Section.NAUKA || src.section == Section.BEOGRAD || src.section == Section.ZDRAVLJE) 4 * 86400_000L else 3 * 86400_000L
                 if (now - a0.published > maxAge) continue
                 val section = when {
                     src.section == Section.SPORT || src.section == Section.NAUKA || src.section == Section.BEOGRAD ||
-                        src.section == Section.AUTO || src.section == Section.LJUBIMCI -> src.section
+                        src.section == Section.AUTO || src.section == Section.LJUBIMCI || src.section == Section.ZDRAVLJE -> src.section
                     isAuto -> Section.AUTO
+                    isHealth && src.section == Section.SRBIJA -> Section.ZDRAVLJE
                     a0.tags.any { it in Sources.SPORT_TAGS } -> Section.SPORT
                     src.section == Section.SRBIJA && src.lang == "sr" && a0.tags.any { it in Sources.WORLD_TAGS } -> Section.SVET
                     else -> src.section

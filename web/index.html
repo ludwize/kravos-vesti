@@ -200,6 +200,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     { id: "beograd", label: "Beograd", sec: "BEOGRAD" },
     { id: "svet", label: "Svet", sec: "SVET" },
     { id: "nauka", label: "Nauka i tehnologija", short: "Nauka", sec: "NAUKA" },
+    { id: "zdravlje", label: "Zdravlje", sec: "ZDRAVLJE" },
     { id: "sport", label: "Sport", sec: "SPORT" },
     { id: "auto", label: "Automobili", short: "Auto", sec: "AUTO" },
     { id: "ljubimci", label: "Ljubimci", sec: "LJUBIMCI" },
@@ -388,12 +389,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     let html = "";
     const live = (data.sections.SRBIJA || []).flatMap((st) => st.a).filter((a) => a.l && now() - a.ts < 12 * 3600).sort((x, y) => y.ts - x.ts).slice(0, 2);
     if (live.length) html += `<div class="livebar">${live.map((a) => `<a href="${esc(a.u)}" target="_blank" rel="noopener"><span class="live">UŽIVO</span><span>${esc(a.t)}</span></a>`).join("")}</div>`;
-    for (const [sec, tabId, n] of [["SRBIJA", "srbija", 9], ["BEOGRAD", "beograd", 5], ["SVET", "svet", 7], ["NAUKA", "nauka", 7], ["SPORT", "sport", 5], ["AUTO", "auto", 3], ["LJUBIMCI", "ljubimci", 3]]) {
+    for (const [sec, tabId, n] of [["SRBIJA", "srbija", 9], ["BEOGRAD", "beograd", 5], ["SVET", "svet", 7], ["NAUKA", "nauka", 7], ["ZDRAVLJE", "zdravlje", 4], ["SPORT", "sport", 5], ["AUTO", "auto", 3], ["LJUBIMCI", "ljubimci", 3]]) {
       const list = (data.sections[sec] || []).slice(0, n);
       if (!list.length) continue;
       const tab = TABS.find((t) => t.id === tabId);
       html += `<section class="block"><div class="bh"><span class="kicker">${esc(tab.label)}</span><a href="#/${tabId}">Sve ›</a></div>`;
-      if (sec === "AUTO" || sec === "LJUBIMCI") html += `<section class="grid" style="border-top:0;margin-top:0">${list.map(card).join("")}</section>`;
+      if (sec === "ZDRAVLJE" || sec === "AUTO" || sec === "LJUBIMCI") html += `<section class="grid" style="border-top:0;margin-top:0">${list.map(card).join("")}</section>`;
       else html += frontPage(list);
       html += `</section>`;
     }

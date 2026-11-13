@@ -126,6 +126,10 @@ adb shell input keyevent KEYCODE_BACK; sleep 1
 tap_regex '.{50,}'; sleep 10; shot 56d-auto-reader
 back
 tap_text "Ljubimci"; sleep 4; shot 56e-ljubimci
+tap_text "Više"; sleep 2
+tap_text "Zdravlje"; sleep 4; shot 56f-zdravlje
+tap_text "Kategorija"; sleep 2; shot 56g-zdravlje-menu
+adb shell input keyevent KEYCODE_BACK; sleep 1
 tap_text "Sačuvano"; sleep 3; shot 60-sacuvano
 tap_regex 'NOVA.*|N1.*|DANAS.*|[A-Z ]+ · .*'; sleep 6; shot 61-saved-reader
 back

@@ -4,6 +4,7 @@ import net.kravos.vesti.data.Section.AUTO
 import net.kravos.vesti.data.Section.BEOGRAD
 import net.kravos.vesti.data.Section.LJUBIMCI
 import net.kravos.vesti.data.Section.NAUKA
+import net.kravos.vesti.data.Section.ZDRAVLJE
 import net.kravos.vesti.data.Section.SPORT
 import net.kravos.vesti.data.Section.SRBIJA
 import net.kravos.vesti.data.Section.SVET
@@ -77,6 +78,18 @@ object Categories {
             "google =meta facebook instagram tiktok twitter amazon microsoft musk startup aplikacij =app =apps mrez social platform internet softver software"),
         Cat("telekom", "Telekomunikacije", NAUKA, emptySet(),
             "=5g =6g telekom telecom operator mobiln spektr spectrum vodafone ericsson nokia huawei =mts yettel starlink broadband fiber roaming esim =ran", setOf("lightreading", "telecoms")),
+        // Zdravlje
+        Cat("ishrana", "Ishrana i navike", ZDRAVLJE, setOf("ishrana", "nutrition", "diet"),
+            "ishran nutricion dijet vitamin protein secer =hrana =hranu namirnic voc povrc maslinov kafa kafu =caj alkohol =san =sna spavan nesanic vezb trcan hodanj fitnes =food diet nutrition sleep exercise walking alcohol obesity gojaz"),
+        Cat("bolesti", "Bolesti i lečenje", ZDRAVLJE, setOf("bolesti"),
+            "=rak =raka =raku kancer cancer tumor src =srce srcan =heart stroke =mozdan dijabet diabetes alchajmer alzheimer demenc dementia parkinson insulin pritisak hipertenz =lek =leka =lekove terapij therapy treatment transplant oper surgery statin =bol =bolove migren"),
+        Cat("mentalno", "Mentalno zdravlje", ZDRAVLJE, setOf("mentalno zdravlje", "mental health"),
+            "mentaln psihic psiholog psihijatr depresij anksioz stres =stress burnout sagorev usamljen lonelines mental anxiety depression ptsd adhd autiz autism addict zavisnost"),
+        Cat("istrazivanja_z", "Istraživanja", ZDRAVLJE, emptySet(),
+            "studij istrazivanj istrazivac naucni naucnic otkric =study studies research researchers scientists trial discover",
+            setOf("sdhealth", "nshealth", "medxpress")),
+        Cat("sistem", "Zdravstveni sistem", ZDRAVLJE, setOf("zdravstvo"),
+            "bolnic =klinik =kbc =kcs =ukc =dom =domu =doma lekar lekari medicinsk sestr =rfzo osiguran ministar epidemij virus vakcin grip =kovid covid =hospital hospitals =nhs =gp doctors nurses insurance medicaid medicare =fda =who outbreak pandemic =rfk kennedy"),
         // Beograd
         Cat("saobracaj", "Saobraćaj i GSP", BEOGRAD, setOf("saobraćaj", "gsp"),
             "=gsp saobracaj sudar guzv autobus tramvaj trolejbus metro =linij =linije linija prevoz parking naplatn zastoj obustav =most mosta =bus semafor"),

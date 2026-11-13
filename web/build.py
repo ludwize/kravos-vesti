@@ -445,6 +445,7 @@ def main():
     jm = re.search(r'val JUNK_TITLE = Regex\(\s*"((?:[^"\\]|\\.)*)"', jt)
     JUNK = re.compile(json.loads('"' + jm.group(1) + '"'), re.I)
     auto_tags = load_set(os.path.join(KT, "Sources.kt"), "AUTO_TAGS")
+    health_tags = load_set(os.path.join(KT, "Sources.kt"), "HEALTH_TAGS")
     pet_exact = load_set(os.path.join(KT, "Sources.kt"), "PET_EXACT")
     pet_prefix = tuple(load_set(os.path.join(KT, "Sources.kt"), "PET_PREFIX"))
 
@@ -493,15 +494,18 @@ def main():
             if s["mention"] and not any(m in norm(a["title"] + " " + a["summary"]) for m in s["mention"]):
                 continue
             is_auto = s["section"] == "AUTO" or bool(a["tags"] & auto_tags)
-            if a["tags"] & s["skip"] or (a["tags"] & ent_tags and not is_auto and s["section"] != "LJUBIMCI"):
+            is_health = s["section"] == "ZDRAVLJE" or bool(a["tags"] & health_tags)
+            if a["tags"] & s["skip"] or (a["tags"] & ent_tags and not is_auto and not is_health and s["section"] != "LJUBIMCI"):
                 continue
-            max_age = 4 * 86400 if s["section"] in ("NAUKA", "BEOGRAD") else 3 * 86400
+            max_age = 4 * 86400 if s["section"] in ("NAUKA", "BEOGRAD", "ZDRAVLJE") else 3 * 86400
             if now - a["ts"] > max_age:
                 continue
-            if s["section"] in ("SPORT", "NAUKA", "BEOGRAD", "AUTO", "LJUBIMCI"):
+            if s["section"] in ("SPORT", "NAUKA", "BEOGRAD", "AUTO", "LJUBIMCI", "ZDRAVLJE"):
                 sec = s["section"]
             elif is_auto:
                 sec = "AUTO"
+            elif is_health and s["section"] == "SRBIJA":
+                sec = "ZDRAVLJE"
             elif a["tags"] & sport_tags:
                 sec = "SPORT"
             elif s["section"] == "SRBIJA" and s["lang"] == "sr" and a["tags"] & world_tags:

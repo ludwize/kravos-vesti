@@ -4,6 +4,7 @@ import net.kravos.vesti.data.Section.AUTO
 import net.kravos.vesti.data.Section.BEOGRAD
 import net.kravos.vesti.data.Section.LJUBIMCI
 import net.kravos.vesti.data.Section.NAUKA
+import net.kravos.vesti.data.Section.ZDRAVLJE
 import net.kravos.vesti.data.Section.SPORT
 import net.kravos.vesti.data.Section.SRBIJA
 import net.kravos.vesti.data.Section.SVET
@@ -79,6 +80,18 @@ object Sources {
         Source("novabg", "Nova", BEOGRAD, listOf("https://nova.rs/tag/beograd/feed/"), skip = setOf("vremenska-prognoza", "vremenska prognoza")),
         Source("danasbg", "Danas", BEOGRAD, listOf("https://www.danas.rs/tag/beograd/feed/")),
         Source("beobuild", "Beobuild", BEOGRAD, listOf("https://www.beobuild.rs/feed"), skip = setOf("predstavljamo")),
+        // Zdravlje (health pieces from general feeds are routed here too, see HEALTH_TAGS)
+        Source("n1zdr", "N1 Zdravlje", ZDRAVLJE, listOf("https://n1info.rs/magazin/zdravlje/feed/")),
+        Source("novazdr", "Nova Zdravlje", ZDRAVLJE, listOf("https://nova.rs/magazin/zdravlje/feed/")),
+        Source("kurirzdr", "Kurir Zdravlje", ZDRAVLJE, listOf("https://www.kurir.rs/rss/zdravlje")),
+        Source("bbchealth", "BBC Health", ZDRAVLJE, listOf("https://feeds.bbci.co.uk/news/health/rss.xml"), lang = "en"),
+        Source("guardianhealth", "Guardian Health", ZDRAVLJE, listOf("https://www.theguardian.com/society/health/rss"), lang = "en"),
+        Source("nythealth", "NYT Health", ZDRAVLJE, listOf("https://rss.nytimes.com/services/xml/rss/nyt/Health.xml"), lang = "en"),
+        Source("nprhealth", "NPR Health", ZDRAVLJE, listOf("https://feeds.npr.org/1128/rss.xml"), lang = "en"),
+        Source("nshealth", "New Scientist Health", ZDRAVLJE, listOf("https://www.newscientist.com/subject/health/feed/"), lang = "en"),
+        Source("sdhealth", "ScienceDaily Health", ZDRAVLJE, listOf("https://www.sciencedaily.com/rss/health_medicine.xml"), lang = "en"),
+        Source("stat", "STAT", ZDRAVLJE, listOf("https://www.statnews.com/feed/"), lang = "en", defaultOn = false),
+        Source("medxpress", "Medical Xpress", ZDRAVLJE, listOf("https://medicalxpress.com/rss-feed/"), lang = "en", defaultOn = false),
         // Beograd: events (what's on, concerts, fairs)
         Source("danubg", "Dan u Beogradu", BEOGRAD, listOf("https://www.danubeogradu.rs/feed/")),
         Source("headliner", "Headliner", BEOGRAD, listOf("https://headliner.rs/feed/"), mention = BG_PLACES),
@@ -134,6 +147,9 @@ object Sources {
         "(coupon|promo code|discount code|black friday deal|best .{0,40} deals?\\b|% off|deals? to shop|sahrane i kremacije)",
         RegexOption.IGNORE_CASE,
     )
+
+    /** Health pieces from general outlets move to the Zdravlje tab (instead of being hidden as magazine/lifestyle). */
+    val HEALTH_TAGS = setOf("zdravlje", "health", "medicina", "health-and-wellbeing")
 
     /** Car pieces from general outlets move to the Automobili tab (instead of being hidden as lifestyle). */
     val AUTO_TAGS = setOf("auto", "automobili", "automobil", "motoring", "cars", "auto moto")

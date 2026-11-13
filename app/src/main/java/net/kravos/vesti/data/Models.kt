@@ -1,6 +1,6 @@
 package net.kravos.vesti.data
 
-enum class Section(val label: String) { SRBIJA("Srbija"), BEOGRAD("Beograd"), SVET("Svet"), NAUKA("Nauka i tehnologija"), SPORT("Sport"), AUTO("Automobili"), LJUBIMCI("Ljubimci") }
+enum class Section(val label: String) { SRBIJA("Srbija"), BEOGRAD("Beograd"), SVET("Svet"), NAUKA("Nauka i tehnologija"), ZDRAVLJE("Zdravlje"), SPORT("Sport"), AUTO("Automobili"), LJUBIMCI("Ljubimci") }
 
 /**
  * A news outlet. [reader] = false means the in-app reader can't get the text (e.g. Google News

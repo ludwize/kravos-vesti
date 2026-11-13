@@ -14,6 +14,7 @@ enum class Tab(val label: String, val section: Section?, val short: String = lab
     BEOGRAD("Beograd", Section.BEOGRAD),
     SVET("Svet", Section.SVET),
     NAUKA("Nauka i tehnologija", Section.NAUKA, "Nauka"),
+    ZDRAVLJE("Zdravlje", Section.ZDRAVLJE),
     SPORT("Sport", Section.SPORT),
     AUTO("Automobili", Section.AUTO, "Auto"),
     LJUBIMCI("Ljubimci", Section.LJUBIMCI),
