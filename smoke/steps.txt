@@ -40,10 +40,10 @@ tapped Svet
 shot 40-svet
 tapped /[0-9]+ izvora/
 shot 41-svet-story
-tapped /pre [0-9]+ (min|h)/
+NOT FOUND /pre [0-9]+ (min|h)/
 shot 42-svet-reader
 shot 43-svet-reader-scroll
-tapped Nauka i tehnologija
+NOT FOUND: Nauka i tehnologija
 shot 50-nauka
 tapped /.{50,}/
 shot 51-bezb-reader
@@ -82,10 +82,9 @@ tapped Danas
 shot 69-danas-top
 tapped Podešavanja
 shot 70-settings
-shot 70b-settings-sync
 shot 71-settings-scroll
 shot 72-settings-scroll2
-NOT FOUND: Tamna
+tapped Tamna
 shot 73-settings-dark
 shot 80-dark-danas
 tapped /[0-9]+ izvora/
