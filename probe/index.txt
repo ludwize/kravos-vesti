@@ -1,32 +1,52 @@
-200     28940  n1_zdravlje  https://n1info.rs/magazin/zdravlje/feed/
-200     28496  n1_tag_zdr  https://n1info.rs/tag/zdravlje/feed/
-200     27882  nova_zdr  https://nova.rs/magazin/zdravlje/feed/
-200     27638  nova_tag_zdr  https://nova.rs/tag/zdravlje/feed/
-200    117548  danas_tag_zdr  https://www.danas.rs/tag/zdravlje/feed/
-302         0  danas_zdr  https://www.danas.rs/zivot/zdravlje/feed/
-404    252510  b92_zdravlje  https://www.b92.net/info/rss/zdravlje.xml
-200     81085  kurir_zdr  https://www.kurir.rs/rss/zdravlje
-200    102042  blic_zdr  https://www.blic.rs/rss/Vesti/Zdravlje
-200    119513  rts_zdr  https://www.rts.rs/page/stories/sr/rss/1158/zdravlje.html
-200    635443  telegraf_zdr  https://www.telegraf.rs/rss/zdravlje
-200     78850  mondo_zdr  https://mondo.rs/rss/680/Zdravlje
-0        25  zdravlje_rs  https://www.zdravlje.org.rs/index.php/sr/?format=feed&type=rss
-200     35765  batut  https://www.batut.org.rs/index.php?format=feed&type=rss
-404     30619  stetoskop  https://www.stetoskop.info/rss
-0        62  krstarica_zdr  https://zdravlje.krstarica.com/feed/
-200     21756  zdravlje_plus  https://www.zdravljeplus.rs/feed/
-200     40823  bbc_health  https://feeds.bbci.co.uk/news/health/rss.xml
-200     76278  guardian_health  https://www.theguardian.com/society/health/rss
-200     66355  guardian_wellness  https://www.theguardian.com/lifeandstyle/health-and-wellbeing/rss
-200     30627  medicalxpress  https://medicalxpress.com/rss-feed/
-200     59215  statnews  https://www.statnews.com/feed/
-200     46490  sciencedaily_health  https://www.sciencedaily.com/rss/health_medicine.xml
-200    772225  who  https://www.who.int/rss-feeds/news-english.xml
-200      7681  nih  https://www.nih.gov/news-releases/feed.xml
-404    111106  harvard  https://www.health.harvard.edu/blog/feed
-404     90789  medicalnewstoday  https://www.medicalnewstoday.com/newsfeeds/rss
-200     15284  npr_health  https://feeds.npr.org/1128/rss.xml
-200     25024  newscientist_health  https://www.newscientist.com/subject/health/feed/
-200    122194  kffhealth  https://kffhealthnews.org/feed/
-200     45331  nyt_health  https://rss.nytimes.com/services/xml/rss/nyt/Health.xml
-200     16741  reuters_health_gn  https://news.google.com/rss/search?q=when:1d+site:reuters.com/business/healthcare-pharmaceuticals&hl=en-US&gl=US&ceid=US:en
+93 sources, 55 categories
+1655 articles -> 995 stories; failed: []; data.json 669 KB
+
+
+ZDRAVLJE: 151 stories; cats {'bolesti': 53, 'sistem': 33, 'istrazivanja_z': 42, 'ishrana': 33, 'mentalno': 14}; sources {'N1': 1, 'Nova Zdravlje': 11, 'BBC Health': 19, 'Guardian Health': 20, 'Kurir Zdravlje': 45, 'NYT Health': 9, 'Nova': 1, 'ScienceDaily Health': 19, 'NPR Health': 9, 'N1 Zdravlje': 19, 'New Scientist Health': 7}
+   [bolesti] N1: Neurolog otkrio pet stvari koje nikada ne bi radio nakon hiljada pregleda mozga i slučajev
+   [sistem] BBC Health: NHS, schools and police forces hit by Microsoft outage
+   [] BBC Health: 'I felt awful wearing my school uniform because of how I looked'
+   [bolesti,istrazivanja_z] Kurir Zdravlje: Lupus zbunjuje imunski sistem: Naučnici otkrili neočekivani okidač zbog kojeg telo napada 
+   [sistem] NYT Health: Kennedy’s Future: Will Democrats Try to Impeach Him, or Actually Work With Him?
+   [ishrana] Kurir Zdravlje: Šta je organizmu najpotrebnije u novembru? Nutricionista otkriva 8 važnih nutrijenata i gd
+   [] BBC Health: Are you affected by the Microsoft outage?
+   [] Kurir Zdravlje: Fibromi na koži: Zašto nastaju i kada bi ih trebalo ukloniti?
+   [ishrana,sistem] Nova: Ako pijete svaki dan čašicu maslinovog ulja, u organizmu mogu da se dogode važne promene, 
+   [istrazivanja_z] ScienceDaily Health: Scientists discover a hidden danger of viral infections that vaccines may prevent
+   [istrazivanja_z] ScienceDaily Health: Study of 750,000 pregnancies reveals a surprising twist about Ozempic and Wegovy
+   [] Kurir Zdravlje: Nova injekcija protiv masne jetre daje obećavajuće rezultate: Kod 63% pacijenata povukla s
+   [bolesti,istrazivanja_z] ScienceDaily Health: Stopping statins after 70 may be safer than expected, but there's a catch
+   [] NPR Health: Happy World Kindness Day! Check out our kind photos of kindness to humans -- and cats
+   [bolesti,istrazivanja_z] N1 Zdravlje: Otkriće naučnika: Krvno-moždana barijera ima ulogu za koju se ranije nije znalo
+   [bolesti,mentalno] Kurir Zdravlje: Može li stres da poveća nivo holesterola? Dugotrajna napetost ostavlja trag i na krvnim su
+   [bolesti] Kurir Zdravlje: 200.000 KILOMETARA ZA VELIKI CILJ: „OTVORI PLAVI KRUG“ POKREĆE NOVI IZAZOV ZA PODRŠKU DECI
+   [mentalno] NPR Health: Kratom and 7-OH can feel like 'a miracle.' They can also be addictive
+   [ishrana,bolesti] Guardian Health: ‘Never thought I’d eat that’: how vegetable prescriptions are helping Britons with diabete
+   [bolesti] NPR Health: Fed up with the healthcare industry, this red state capped insulin prices for patients
+   [bolesti] Kurir Zdravlje: Upala tinja u telu i bez simptoma: Može da ugrozi srce, metabolizam i zglobove
+   [ishrana,istrazivanja_z] N1 Zdravlje: Namirnice koje mnogi svakodnevno jedu povezane su sa izraženijim simptomima PMS-a
+   [bolesti] Kurir Zdravlje: Teška astma vezala je Svetlanu za krevet: Biološka terapija joj vratila život – nisam mogl
+   [ishrana,bolesti] N1 Zdravlje: Od problema sa srcem do nesanice: Sedam rizika čestog konzumiranja energetskih pića
+   [bolesti] Kurir Zdravlje: Srce, bubrezi i jetra povezani su više nego što mislimo: Pet stadijuma od zdravlja do ozbi
+   [] Nova Zdravlje: Ako se ne osećate dobro od ranog jutra postoji razlog - evo šta se događa u vazduhu u Srbi
+   [sistem] BBC Health: Trouble at the top - the crisis of confidence in Scotland's NHS leaders
+   [] BBC Health: My physical deformity left me feeling invisible - but one surgeon saw me
+   [bolesti] Nova Zdravlje: Kardiolog moli ljude da prestanu da jedu ovu popularnu grickalicu - u Srbiji je najprodava
+   [bolesti] N1 Zdravlje: Jaja ili ovsena kaša: Koji doručak je bolji za zdravlje srca?
+   [istrazivanja_z] N1 Zdravlje: Tetovaže utiču na imuni sistem na načine koje naučnici tek počinju da razumeju
+   [bolesti,istrazivanja_z] Nova Zdravlje: Studija otkrila: Ovo je najjači bol koji čovek može da doživi
+   [ishrana,istrazivanja_z] ScienceDaily Health: Without this protein, damaged muscle fills with fat and scar tissue
+   [mentalno] BBC Health: Doctor burnout putting maternity patients at risk, says regulator
+   [ishrana,istrazivanja_z] ScienceDaily Health: Animal vs. plant protein reveals a surprising testosterone divide
+   [] N1 Zdravlje: Kako doživotno izlaganje fluoridu u vodi za piće utiče na kognitivne sposobnosti
+   [sistem] N1 Zdravlje: "Vakcinacija je jedini sigurni oblik zaštite": Dragan Janković iz SZO o epidemiji malih bo
+   [sistem] Guardian Health: Sadiq Khan joins Labour figures urging PM not to water down electric vehicle targets – as 
+   [bolesti,sistem] Kurir Zdravlje: Nestale metastaze kod prvog pacijenta koji je primio rusku vakcinu protiv raka: Objavljeni
+   [ishrana,sistem] Kurir Zdravlje: Dom zdravlja Niš organizuje besplatnu akciju: Sutra bez zakazivanja provera šećera u krvi
+   [] BBC Health: "A mammogram can save your life."
+   [sistem] NYT Health: Hospitals Brace for Medicaid Work Rules and Deep Funding Cuts
+   [] Kurir Zdravlje: Kompot od suvih šljiva nije samo bakin eliksir za zatvor: Pomaže radu creva, a sadrži i va
+   [ishrana,bolesti,istrazivanja_z] New Scientist Health: Pink noise played during sleep shows promise for Alzheimer’s memory loss
+   [] BBC Health: Toilets: Are you a squatter or a sitter?
+pip: 0 
+page errors: []
