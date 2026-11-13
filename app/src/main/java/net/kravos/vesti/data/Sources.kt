@@ -129,6 +129,16 @@ object Sources {
         Source("motorsport", "Motorsport F1", SPORT, listOf("https://www.motorsport.com/rss/f1/news/"), lang = "en"),
     )
 
+    /**
+     * Serbian outlets: N1 and Danas lead, the rest fill in. A story's ranking is multiplied by the best weight
+     * among its sources, so a story only Nova/Kurir/Blic carry sinks below one N1 or Danas also covers.
+     */
+    val FILL_IN = setOf(
+        "nova", "novabg", "novakon", "novazdr", "kurirbg", "kurirzdr", "kurirauto", "blicbg", "telegraftech", "b92tehno", "b92auto",
+    )
+    val SECONDARY = setOf("vreme", "radar", "insajder", "krik", "cins", "istinomer", "bi", "rtsnauka", "benchmark", "startit")
+    fun weight(id: String): Double = when (id) { in FILL_IN -> 0.55; in SECONDARY -> 0.8; else -> 1.0 }
+
     private val byId = ALL.associateBy { it.id }
     fun of(id: String): Source? = byId[id]
     fun name(id: String): String = byId[id]?.name ?: id

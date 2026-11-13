@@ -5,6 +5,7 @@ import coil.ImageLoader
 import coil.ImageLoaderFactory
 import coil.disk.DiskCache
 import coil.memory.MemoryCache
+import net.kravos.vesti.data.GistSync
 import net.kravos.vesti.data.Http
 import net.kravos.vesti.data.Prefs
 import net.kravos.vesti.data.Repo
@@ -17,6 +18,8 @@ class App : Application(), ImageLoaderFactory {
         private set
     lateinit var repo: Repo
         private set
+    lateinit var sync: GistSync
+        private set
 
     override fun onCreate() {
         super.onCreate()
@@ -24,6 +27,7 @@ class App : Application(), ImageLoaderFactory {
         prefs = Prefs(this)
         saved = Saved(this)
         repo = Repo(this, prefs, saved)
+        sync = GistSync(prefs, saved)
     }
 
     override fun newImageLoader(): ImageLoader =

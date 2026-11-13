@@ -248,7 +248,8 @@ private fun LazyListScope.hot(f: Feed, openStory: (Story) -> Unit) {
         .filter { now - it.latest < 8 * 3600_000L && it.sources.size >= 2 }
         .sortedByDescending { s ->
             val ageH = (now - s.latest) / 3600_000.0
-            Math.pow(s.sources.size.toDouble(), 1.7) * Math.exp(-ageH * Math.log(2.0) / 3.0) * (if (s.live) 1.3 else 1.0)
+            Math.pow(s.sources.size.toDouble(), 1.7) * Math.exp(-ageH * Math.log(2.0) / 3.0) * (if (s.live) 1.3 else 1.0) *
+                s.sources.maxOf { net.kravos.vesti.data.Sources.weight(it) }
         }
         .filter { seen.add(it.lead.id) } // a story copied into Ljubimci appears once
         .take(40)

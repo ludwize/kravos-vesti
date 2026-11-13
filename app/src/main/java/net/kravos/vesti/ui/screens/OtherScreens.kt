@@ -180,6 +180,7 @@ fun SettingsScreen(pad: PaddingValues, release: Release?, onCheck: () -> Unit) {
                     }
                 }
             }
+            item("sync") { SyncSettings() }
             item("upd") {
                 Group("Verzija")
                 Column(Modifier.padding(horizontal = 18.dp, vertical = 6.dp)) {
@@ -290,6 +291,59 @@ fun MoreScreen(pad: PaddingValues) {
             Rule(Modifier.padding(horizontal = 18.dp))
             Row(Modifier.fillMaxWidth().clickable { nav.go(Route.Settings) }.padding(horizontal = 18.dp, vertical = 15.dp)) {
                 Text("Podešavanja", style = MaterialTheme.typography.titleLarge)
+            }
+        }
+    }
+}
+
+
+// ---------- Sinhronizacija sačuvanih ----------
+
+@Composable
+private fun SyncSettings() {
+    val app = LocalApp.current
+    val p = LocalPalette.current
+    val scope = rememberCoroutineScope()
+    val st by app.sync.state.collectAsState()
+    var token by remember { mutableStateOf("") }
+    Group("Sinhronizacija sačuvanih")
+    Column(Modifier.padding(horizontal = 18.dp, vertical = 6.dp)) {
+        if (st.connected) {
+            Text(
+                "Povezano preko privatnog GitHub gista. Sačuvani članci su isti u aplikaciji i na vesti.kravos.net.",
+                style = MaterialTheme.typography.bodyMedium,
+            )
+            Spacer(Modifier.height(6.dp))
+            Text(
+                when {
+                    st.busy -> "Sinhronizujem…"
+                    st.error != null -> "Greška: ${st.error}"
+                    st.lastSync != null -> "Poslednja sinhronizacija u ${Fmt.clock(st.lastSync!!)}"
+                    else -> ""
+                },
+                style = MaterialTheme.typography.labelMedium, color = if (st.error != null) p.live else p.dim,
+            )
+            Spacer(Modifier.height(8.dp))
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                OutlinedButton(onClick = { scope.launch { app.sync.sync() } }) { Text("Sinhronizuj sada") }
+                OutlinedButton(onClick = { app.sync.disconnect() }) { Text("Prekini vezu") }
+            }
+        } else {
+            Text(
+                "Unesi GitHub token sa dozvolom samo „Gists: Read and write”. Isti token unesi i na webu (ikonica obeleživača).",
+                style = MaterialTheme.typography.bodyMedium, color = p.dim,
+            )
+            Spacer(Modifier.height(8.dp))
+            androidx.compose.material3.OutlinedTextField(
+                value = token, onValueChange = { token = it }, singleLine = true,
+                label = { Text("GitHub token") },
+                visualTransformation = androidx.compose.ui.text.input.PasswordVisualTransformation(),
+                modifier = Modifier.fillMaxWidth(),
+            )
+            st.error?.let { Text("Greška: $it", style = MaterialTheme.typography.labelMedium, color = p.live) }
+            Spacer(Modifier.height(8.dp))
+            OutlinedButton(enabled = token.isNotBlank() && !st.busy, onClick = { scope.launch { if (app.sync.connect(token)) token = "" } }) {
+                Text(if (st.busy) "Povezujem…" else "Poveži")
             }
         }
     }

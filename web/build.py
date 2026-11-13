@@ -398,10 +398,17 @@ def cluster(arts, order_rank):
     for g in groups:
         arts = [d["a"] for d in g["docs"]]
         if len(arts) > 1:
-            lead = min(arts, key=lambda a: (0 if a["image"] and len(a["summary"]) > 40 else 1, order_rank.get(a["src"], 99), -a["ts"]))
+            lead = min(arts, key=lambda a: (-weight(a["src"]), 0 if a["image"] and len(a["summary"]) > 40 else 1, order_rank.get(a["src"], 99), -a["ts"]))
             arts = [lead] + sorted([a for a in arts if a is not lead], key=lambda a: -a["ts"])
         stories.append(dict(id=g["sec"] + ":" + min(arts, key=lambda a: a["ts"])["id"], section=g["sec"], articles=arts))
     return stories
+
+
+WEIGHT = {}  # source id -> ranking weight (N1/Danas lead, other Serbian outlets fill in), from Sources.kt
+
+
+def weight(sid):
+    return WEIGHT.get(sid, 1.0)
 
 
 def score(st, now):
@@ -409,7 +416,7 @@ def score(st, now):
     age_h = max(0, now - max(a["ts"] for a in st["articles"])) / 3600
     breadth = len(srcs) ** 1.6 + 0.15 * (len(st["articles"]) - len(srcs))
     live = any(a["live"] for a in st["articles"])
-    return breadth * math.exp(-age_h * math.log(2) / 8) * (1.3 if live else 1.0)
+    return breadth * math.exp(-age_h * math.log(2) / 8) * (1.3 if live else 1.0) * max(weight(x) for x in srcs)
 
 # ---------------------------------------------------------------- fetching
 
@@ -446,6 +453,10 @@ def main():
     JUNK = re.compile(json.loads('"' + jm.group(1) + '"'), re.I)
     auto_tags = load_set(os.path.join(KT, "Sources.kt"), "AUTO_TAGS")
     health_tags = load_set(os.path.join(KT, "Sources.kt"), "HEALTH_TAGS")
+    for sid in load_set(os.path.join(KT, "Sources.kt"), "FILL_IN"):
+        WEIGHT[sid] = 0.55
+    for sid in load_set(os.path.join(KT, "Sources.kt"), "SECONDARY"):
+        WEIGHT[sid] = 0.8
     pet_exact = load_set(os.path.join(KT, "Sources.kt"), "PET_EXACT")
     pet_prefix = tuple(load_set(os.path.join(KT, "Sources.kt"), "PET_PREFIX"))
 
@@ -557,7 +568,7 @@ def main():
 
     data = dict(
         generated=int(now),
-        sources={s["id"]: dict(name=s["name"], section=s["section"], lang=s["lang"]) for s in sources},
+        sources={s["id"]: dict(name=s["name"], section=s["section"], lang=s["lang"], w=weight(s["id"])) for s in sources},
         categories=[dict(id=c["id"], label=c["label"], section=c["section"]) for c in cats],
         sections={sec: [dict(id=st["id"], a=[pack(a) for a in st["articles"]]) for st in lst] for sec, lst in by_sec.items()},
         failed=sorted(failed),

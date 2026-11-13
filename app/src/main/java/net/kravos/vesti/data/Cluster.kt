@@ -71,7 +71,8 @@ object Cluster {
     private fun order(arts: List<Article>): List<Article> {
         if (arts.size == 1) return arts
         val rank = Sources.ALL.withIndex().associate { it.value.id to it.index }
-        val lead = arts.minWith(compareBy<Article>({ if (it.image != null && it.summary.length > 40) 0 else 1 }, { rank[it.sourceId] ?: 99 }, { -it.published }))
+        // N1/Danas lead a story whenever they carry it; then a version with a picture and a summary
+        val lead = arts.minWith(compareBy<Article>({ -Sources.weight(it.sourceId) }, { if (it.image != null && it.summary.length > 40) 0 else 1 }, { rank[it.sourceId] ?: 99 }, { -it.published }))
         return listOf(lead) + arts.filter { it !== lead }.sortedByDescending { it.published }
     }
 
@@ -79,6 +80,6 @@ object Cluster {
     fun score(s: Story, now: Long): Double {
         val ageH = (now - s.latest).coerceAtLeast(0) / 3600_000.0
         val breadth = s.sources.size.toDouble().pow(1.6) + 0.15 * (s.articles.size - s.sources.size)
-        return breadth * exp(-ageH * ln(2.0) / 8.0) * (if (s.live) 1.3 else 1.0)
+        return breadth * exp(-ageH * ln(2.0) / 8.0) * (if (s.live) 1.3 else 1.0) * s.sources.maxOf { Sources.weight(it) }
     }
 }

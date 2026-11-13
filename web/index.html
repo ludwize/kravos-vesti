@@ -138,6 +138,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .save.on { color: var(--accent); }
 .save svg { width: 19px; height: 19px; }
 
+.syncbox { margin: 16px 0 6px; padding: 14px 16px; border: 1px solid var(--rule); border-radius: 10px; background: var(--card); font-size: 14px; }
+.syncbox p { margin: 6px 0 10px; color: var(--dim); }
+.syncbox form { display: flex; gap: 8px; flex-wrap: wrap; }
+.syncbox input { flex: 1; min-width: 200px; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); color: var(--ink); font: inherit; }
+.syncbox button { padding: 8px 14px; border: 1px solid var(--ink); border-radius: 6px; font-weight: 600; }
+.syncbox.on { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.syncbox.on span { flex: 1; color: var(--dim); }
+.syncbox .err { color: var(--live); }
 .foot { color: var(--dim); font-size: 12px; padding: 26px 0 50px; border-top: 1px solid var(--rule); margin-top: 20px; }
 .empty { color: var(--dim); text-align: center; padding: 70px 20px; }
 .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--ink); color: var(--paper); padding: 9px 16px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 70; }
@@ -230,7 +238,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   let byId = {};          // story id -> story
   let artIndex = {};      // article id -> {a, story}
   let state = { tab: "danas", cat: null, mode: "top" };
-  let saved = store.get("kv-saved", []);
+  // Saved items use the app's format: {id, src, title, link, summary, image, published(ms), section, live, savedAt}
+  const toSyncItem = (x) => (x.title ? x : { id: x.id, src: x.s, title: x.t, link: x.u, summary: "", image: "", published: (x.ts || 0) * 1000, section: "SRBIJA", live: false, savedAt: (x.ts || 0) * 1000 });
+  let saved = store.get("kv-saved", []).map(toSyncItem);
+  let removed = store.get("kv-removed", {});
   let openMenu = null;
 
   // ---------------- formatting
@@ -373,7 +384,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     const seenLead = new Set();
     const list = Object.values(data.sections).flat()
       .filter((st) => now() - latest(st) < 8 * 3600 && sources(st).length >= 2)
-      .map((st) => ({ st, sc: Math.pow(sources(st).length, 1.7) * Math.exp(-((now() - latest(st)) / 3600) * Math.LN2 / 3) * (st.a.some((x) => x.l) ? 1.3 : 1) }))
+      .map((st) => ({ st, sc: Math.pow(sources(st).length, 1.7) * Math.exp(-((now() - latest(st)) / 3600) * Math.LN2 / 3) * (st.a.some((x) => x.l) ? 1.3 : 1) * Math.max(...sources(st).map((x) => (data.sources[x] || {}).w ?? 1)) }))
       .sort((x, y) => y.sc - x.sc).map((x) => x.st)
       .filter((st) => !seenLead.has(st.a[0].id) && seenLead.add(st.a[0].id))
       .slice(0, 40);
@@ -402,17 +413,29 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   }
 
   function renderSaved() {
-    const head = `<div class="shead"><div><div class="kicker">Za kasnije</div><h2>Sačuvano</h2></div></div>`;
-    if (!saved.length) return head + `<div class="empty">Ništa još nije sačuvano.<br>Otvori priču i dodirni obeleživač pored članka.<br><small>Sačuvano na webu se čuva u ovom pregledaču.</small></div>`;
-    return head + `<section class="wire">${saved.map((a) => `<div class="row" data-u="${esc(a.u)}">
-      <div class="tm">${clock(a.ts)}</div><div class="src">${esc(a.sn || srcName(a.s))}</div>
-      <div class="hl">${esc(a.t)}</div>
+    const head = `<div class="shead"><div><div class="kicker">Za kasnije</div><h2>Sačuvano</h2></div></div>` + syncBox();
+    if (!saved.length) return head + `<div class="empty">Ništa još nije sačuvano.<br>Otvori priču i dodirni obeleživač pored članka.</div>`;
+    return head + `<section class="wire">${saved.map((a) => `<div class="row" data-u="${esc(a.link)}">
+      <div class="tm">${clock(Math.floor((a.published || a.savedAt) / 1000))}</div><div class="src">${esc(srcName(a.src))}</div>
+      <div class="hl">${esc(a.title)}</div>
       <button class="save on" data-unsave="${a.id}" title="Ukloni">${ICON_X}</button></div>`).join("")}</section>`;
+  }
+
+  function syncBox() {
+    const st = sync.state;
+    if (!sync.token()) return `<div class="syncbox"><b>Sinhronizacija sa aplikacijom</b>
+      <p>Unesi isti GitHub token kao u aplikaciji (dozvola samo „Gists: Read and write”). Čuva se samo u ovom pregledaču.</p>
+      <form id="syncform"><input id="synctoken" type="password" autocomplete="off" placeholder="github_pat_…" required><button type="submit">Poveži</button></form>
+      ${st.error ? `<p class="err">Greška: ${esc(st.error)}</p>` : ""}</div>`;
+    const msg = st.busy ? "Sinhronizujem…" : st.error ? `Greška: ${esc(st.error)}` : st.last ? `Sinhronizovano sa aplikacijom u ${clock(Math.floor(st.last / 1000))}` : "";
+    return `<div class="syncbox on"><span class="${st.error ? "err" : ""}">${msg}</span>
+      <button id="syncnow">Sinhronizuj</button><button id="syncoff">Prekini vezu</button></div>`;
   }
 
   function renderFoot() {
     const f = data ? `Ažurirano u ${clock(data.generated)} (${ago(data.generated)}) · osvežava se samo` + (data.failed.length ? ` · trenutno ne odgovaraju: ${esc(data.failed.join(", "))}` : "") : "";
     $("#foot").innerHTML = `${f}<br>Naslovi i kratki opisi iz javnih RSS kanala izdavača; svaki članak vodi na originalni sajt.`;
+    if (!data) $("#foot").innerHTML = "";
     $("#savedCount").hidden = !saved.length;
     $("#savedCount").textContent = saved.length;
   }
@@ -429,6 +452,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     document.querySelectorAll("[data-u]").forEach((el) => el.onclick = (e) => { if (!e.target.closest("[data-unsave]")) window.open(el.dataset.u, "_blank", "noopener"); });
     document.querySelectorAll("[data-unsave]").forEach((el) => el.onclick = (e) => { e.stopPropagation(); toggleSave(el.dataset.unsave); render(); });
     document.querySelectorAll(".modes [data-m]").forEach((b) => b.onclick = () => go(state.tab, state.cat, b.dataset.m));
+    const sf = $("#syncform");
+    if (sf) sf.onsubmit = (e) => { e.preventDefault(); const v = $("#synctoken").value; if (v.trim()) sync.connect(v); };
+    const sn = $("#syncnow"); if (sn) sn.onclick = () => sync.run();
+    const so = $("#syncoff"); if (so) so.onclick = () => sync.disconnect();
     const cb = $("#catbtn");
     if (cb) cb.onclick = (e) => { e.stopPropagation(); showCatMenu(cb); };
   }
@@ -501,14 +528,94 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   $("#scrim").onclick = () => history.back();
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") { if (openMenu) closeMenu(); else if (panelOpen) history.back(); } });
 
-  // ---------------- saved (per browser)
+  // ---------------- saved (synced with the app through a private gist)
   const isSaved = (id) => saved.some((x) => x.id === id);
+  function persistSaved() { store.set("kv-saved", saved); store.set("kv-removed", removed); }
   function toggleSave(id) {
-    if (isSaved(id)) saved = saved.filter((x) => x.id !== id);
-    else { const x = artIndex[id]; if (x) saved.unshift({ id, t: x.a.t, u: x.a.u, s: x.a.s, sn: srcName(x.a.s), ts: x.a.ts }); }
-    store.set("kv-saved", saved);
+    const now = Date.now();
+    if (isSaved(id)) { saved = saved.filter((x) => x.id !== id); removed[id] = now; }
+    else {
+      const x = artIndex[id];
+      if (x) {
+        const a = x.a;
+        saved.unshift({ id, src: a.s, title: a.t, link: a.u, summary: a.d || "", image: a.i || "", published: a.ts * 1000, section: x.st.id.split(":")[0] || "SRBIJA", live: !!a.l, savedAt: now });
+        delete removed[id];
+      }
+    }
+    persistSaved();
     renderFoot();
+    sync.soon();
   }
+
+  // Same rules as the app (GistSync.kt): the latest action per article wins; removal marks expire after 120 days.
+  function mergeSaved(rItems, rRemoved) {
+    const rem = { ...removed };
+    for (const [k, v] of Object.entries(rRemoved || {})) if (v > (rem[k] || 0)) rem[k] = v;
+    const by = {};
+    for (const it of [...saved, ...(rItems || [])]) if (it && it.id && (!by[it.id] || it.savedAt > by[it.id].savedAt)) by[it.id] = it;
+    const items = Object.values(by).filter((it) => it.savedAt > (rem[it.id] || 0)).sort((a, b) => b.savedAt - a.savedAt);
+    const keep = new Set(items.map((x) => x.id)), cutoff = Date.now() - 120 * 864e5;
+    const outRem = {};
+    for (const [k, v] of Object.entries(rem)) if (!keep.has(k) && v > cutoff) outRem[k] = v;
+    return { items, removed: outRem };
+  }
+  const docKey = (items, rem) => items.map((x) => x.id + ":" + x.savedAt).sort().join(",") + "|" + Object.keys(rem).sort().map((k) => k + rem[k]).join(",");
+
+  const sync = (() => {
+    const FILE = "kravos-vesti-saved.json", API = "https://api.github.com";
+    const st = { busy: false, error: null, last: store.get("kv-gh-last", 0) };
+    let timer = null;
+    const token = () => store.get("kv-gh-token", null);
+    async function call(method, path, body) {
+      const r = await fetch(API + path, {
+        method, cache: "no-store",
+        headers: { Authorization: "Bearer " + token(), Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", ...(body ? { "Content-Type": "application/json" } : {}) },
+        body: body ? JSON.stringify(body) : undefined,
+      });
+      if (r.status === 401) throw new Error("token nije ispravan ili je istekao");
+      if (r.status === 403 || (r.status === 404 && path === "/gists?per_page=100")) throw new Error("token nema dozvolu za gistove");
+      if (r.status === 404) return null;
+      if (!r.ok) throw new Error("GitHub " + r.status);
+      return r.json();
+    }
+    async function findOrCreate() {
+      for (let page = 1; page <= 5; page++) {
+        const list = await call("GET", `/gists?per_page=100&page=${page}`);
+        const g = (list || []).find((x) => x.files && x.files[FILE]);
+        if (g) return g.id;
+        if (!list || list.length < 100) break;
+      }
+      const g = await call("POST", "/gists", { description: "Kravos Vesti – sačuvani članci (sinhronizacija aplikacije i weba)", public: false, files: { [FILE]: { content: JSON.stringify({ v: 1, items: saved, removed }, null, 1) } } });
+      return g.id;
+    }
+    async function run() {
+      if (!token() || st.busy) return;
+      st.busy = true; refreshUi();
+      try {
+        let id = store.get("kv-gh-gist", null) || await findOrCreate();
+        store.set("kv-gh-gist", id);
+        let g = await call("GET", "/gists/" + id);
+        if (!g) { store.set("kv-gh-gist", null); id = await findOrCreate(); store.set("kv-gh-gist", id); g = await call("GET", "/gists/" + id); }
+        const f = g.files && g.files[FILE];
+        let remote = {};
+        if (f) remote = JSON.parse(f.truncated ? await (await fetch(f.raw_url)).text() : f.content || "{}");
+        const m = mergeSaved(remote.items, remote.removed);
+        saved = m.items; removed = m.removed; persistSaved();
+        if (docKey(saved, removed) !== docKey(remote.items || [], remote.removed || {}))
+          await call("PATCH", "/gists/" + id, { files: { [FILE]: { content: JSON.stringify({ v: 1, items: saved, removed }, null, 1) } } });
+        st.error = null; st.last = Date.now(); store.set("kv-gh-last", st.last);
+      } catch (e) { st.error = e.message || "greška"; }
+      st.busy = false;
+      renderFoot(); refreshUi();
+    }
+    function refreshUi() { if (state.tab === "sacuvano") render(); }
+    return {
+      state: st, token, run,
+      soon() { if (!token()) return; clearTimeout(timer); timer = setTimeout(run, 1500); },
+      async connect(t) { store.set("kv-gh-token", t.trim()); store.set("kv-gh-gist", null); await run(); if (st.error) { store.set("kv-gh-token", null); refreshUi(); } },
+      disconnect() { store.set("kv-gh-token", null); store.set("kv-gh-gist", null); st.error = null; st.last = 0; refreshUi(); },
+    };
+  })();
   let toastT;
   function toast(t) { const el = $("#toast"); el.textContent = t; el.classList.add("on"); clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove("on"), 1600); }
 
@@ -518,7 +625,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   applyTheme();
   state = readHash();
   load(true);
-  setInterval(() => { if (!document.hidden) load(false); }, 3 * 60 * 1000);
+  setInterval(() => { if (!document.hidden) { load(false); sync.run(); } }, 3 * 60 * 1000);
+  sync.run();
   document.addEventListener("visibilitychange", () => { if (!document.hidden) load(false); });
   setInterval(() => { if (data && !openMenu) renderFoot(); }, 60 * 1000);
 })();

@@ -136,6 +136,7 @@ back
 tap_text "Danas"; sleep 2
 tap_text "Danas"; sleep 3; shot 69-danas-top
 tap_text "Podešavanja"; sleep 3; shot 70-settings
+scroll; scroll; scroll; shot 70b-settings-sync
 scroll; shot 71-settings-scroll
 scroll; shot 72-settings-scroll2
 adb shell input swipe $((W / 2)) $((H / 4)) $((W / 2)) $((H * 3 / 4)) 300; sleep 1

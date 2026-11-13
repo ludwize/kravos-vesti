@@ -59,6 +59,17 @@ class Prefs(context: Context) {
         }
     }
 
+    /** Fine-grained GitHub token with "Gists: read and write" only, for syncing Sačuvano with the web. */
+    var syncToken: String?
+        get() = sp.getString("syncToken", null)?.takeIf { it.isNotBlank() }
+        set(v) = sp.edit().putString("syncToken", v).apply()
+    var syncGistId: String?
+        get() = sp.getString("syncGistId", null)
+        set(v) = sp.edit().putString("syncGistId", v).apply()
+    var syncLast: Long
+        get() = sp.getLong("syncLast", 0)
+        set(v) = sp.edit().putLong("syncLast", v).apply()
+
     var autoUpdateCheck: Boolean
         get() = sp.getBoolean("autoUpdate", true)
         set(v) = sp.edit().putBoolean("autoUpdate", v).apply()

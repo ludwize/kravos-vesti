@@ -104,6 +104,7 @@ private fun Root(app: App) {
         app.repo.warmStart()
         while (true) {
             runCatching { app.repo.refresh() }
+            if (app.prefs.syncToken != null) runCatching { app.sync.sync() }
             delay(5 * 60_000L)
             while (!ProcessLifecycleOwner.get().lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)) delay(2_000)
         }
