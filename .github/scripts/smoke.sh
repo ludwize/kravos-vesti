@@ -73,6 +73,25 @@ scroll; shot 04-danas-scroll3
 
 adb shell am force-stop $PKG; adb shell am start -W -n $PKG/.ui.MainActivity >/dev/null 2>&1; sleep 8
 shot 05-warm-start
+# scroll position must survive opening a story and coming back
+tap_text "Pregled"; sleep 2
+scroll; scroll; scroll; sleep 2
+dump; python3 - "$OUT/ui.xml" > "$OUT/pos-before.txt" <<'PY'
+import sys, xml.etree.ElementTree as ET
+r = ET.parse(sys.argv[1]).getroot()
+print("|".join(n.get("text") for n in r.iter("node") if len(n.get("text") or "") > 30)[:400])
+PY
+shot 08-scrolled-before
+tap_regex '[0-9]+ izvora'; sleep 3; shot 08b-opened
+adb shell input keyevent KEYCODE_BACK; sleep 3
+dump; python3 - "$OUT/ui.xml" > "$OUT/pos-after.txt" <<'PY'
+import sys, xml.etree.ElementTree as ET
+r = ET.parse(sys.argv[1]).getroot()
+print("|".join(n.get("text") for n in r.iter("node") if len(n.get("text") or "") > 30)[:400])
+PY
+shot 08c-back
+if cmp -s "$OUT/pos-before.txt" "$OUT/pos-after.txt"; then echo "SCROLL KEPT" >> "$OUT/steps.txt"; else echo "SCROLL LOST" >> "$OUT/steps.txt"; fi
+tap_text "Danas"; sleep 2
 tap_text "Najaktuelnije"; sleep 3; shot 06-danas-aktuelno
 tap_text "Najnovije"; sleep 3; shot 07-danas-najnovije
 tap_text "Pregled"; sleep 2

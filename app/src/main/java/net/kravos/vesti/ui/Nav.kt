@@ -1,5 +1,6 @@
 package net.kravos.vesti.ui
 
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
@@ -41,6 +42,13 @@ class Navigator {
     val tab = mutableStateOf(Tab.DANAS)
     fun go(r: Route) { stack.add(r) }
     fun back(): Boolean = if (stack.isNotEmpty()) { stack.removeAt(stack.lastIndex); true } else false
+    /**
+     * Scroll position of every section's list, kept here (outside the screens) so opening a story or
+     * article and coming back lands on the same spot instead of the top.
+     */
+    private val lists = HashMap<Tab, LazyListState>()
+    fun listState(t: Tab): LazyListState = lists.getOrPut(t) { LazyListState() }
+
     /** Bumped when the already-open tab is tapped again: scroll it back to the top. */
     val reselect = mutableIntStateOf(0)
     fun tab(t: Tab) {

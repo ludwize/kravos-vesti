@@ -20,7 +20,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.filled.ArrowDropDown
@@ -88,7 +87,7 @@ fun FeedScreen(tab: Tab, pad: PaddingValues) {
     val scope = rememberCoroutineScope()
     val animOff = Fmt.animationsOff(LocalContext.current)
     val open = rememberOpenArticle()
-    val listState = rememberLazyListState()
+    val listState = nav.listState(tab)
     val reselect = nav.reselect.intValue
     val reselectAtStart = remember { reselect }
     LaunchedEffect(reselect) { if (reselect != reselectAtStart && nav.tab.value == tab) { if (animOff) listState.scrollToItem(0) else listState.animateScrollToItem(0) } }
