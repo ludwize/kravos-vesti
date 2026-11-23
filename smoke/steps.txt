@@ -3,6 +3,13 @@ shot 02-danas-scroll
 shot 03-danas-scroll2
 shot 04-danas-scroll3
 shot 05-warm-start
+tapped Pregled
+shot 08-scrolled-before
+tapped /[0-9]+ izvora/
+shot 08b-opened
+shot 08c-back
+SCROLL KEPT
+tapped Danas
 tapped Najaktuelnije
 shot 06-danas-aktuelno
 tapped Najnovije
@@ -40,7 +47,7 @@ tapped Svet
 shot 40-svet
 tapped /[0-9]+ izvora/
 shot 41-svet-story
-NOT FOUND /pre [0-9]+ (min|h)/
+tapped /pre [0-9]+ (min|h)/
 shot 42-svet-reader
 shot 43-svet-reader-scroll
 NOT FOUND: Nauka i tehnologija
